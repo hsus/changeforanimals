@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {{content}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+    <script src="{{site.baseurl}}/assets/js/hsus.js"></script>
+
+    {% if site.baseurl %}
+    <!-- Loaded only in local -->
+    <script src="http://localhost:35729/livereload.js"></script>
+    {% endif %}
+  </body>
+</html>
