@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$tablet".
-        on line 7 of assets/sass/components/sticky-nav.scss
+        on line 10 of assets/sass/components/read-more.scss
 
-2: .index nav {
-3:   display: none;
-4: }
-5: 
-6: //  Tablet
-7: @media all and (min-width: $tablet) {
-8: }
-9: 
-10: //  Large Tablet
-11: @media all and (min-width: $lg-tablet) {
-12: }
+5:   }
+6: }
+7: 
+8: 
+9: //  Tablet
+10: @media all and (min-width: $tablet) {
+11: }
+12: 
+13: //  Large Tablet
+14: @media all and (min-width: $lg-tablet) {
+15: }
 
 Backtrace:
-assets/sass/components/sticky-nav.scss:7
+assets/sass/components/read-more.scss:10
 /Users/jkomenda/.rvm/gems/ruby-2.2.1/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/jkomenda/.rvm/gems/ruby-2.2.1/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/jkomenda/.rvm/gems/ruby-2.2.1/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:540:in `block in run_interp_no_strip'
@@ -61,4 +61,4 @@ assets/sass/components/sticky-nav.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$tablet\".\A         on line 7 of assets/sass/components/sticky-nav.scss\A \A 2: .index nav {\A 3:   display: none;\A 4: }\A 5: \A 6: //  Tablet\A 7: @media all and (min-width: $tablet) {\A 8: }\A 9: \A 10: //  Large Tablet\A 11: @media all and (min-width: $lg-tablet) {\A 12: }"; }
+  content: "Error: Undefined variable: \"$tablet\".\A         on line 10 of assets/sass/components/read-more.scss\A \A 5:   }\A 6: }\A 7: \A 8: \A 9: //  Tablet\A 10: @media all and (min-width: $tablet) {\A 11: }\A 12: \A 13: //  Large Tablet\A 14: @media all and (min-width: $lg-tablet) {\A 15: }"; }

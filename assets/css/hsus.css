@@ -297,5 +297,10 @@ p ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
+.index .highlight {
+  font-weight: bold; }
+
+.index nav {
+  display: none; }
 
 /*# sourceMappingURL=hsus.css.map */

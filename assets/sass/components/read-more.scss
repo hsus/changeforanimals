@@ -1,7 +1,10 @@
 // Default / Mobile
-.index nav {
-  display: none;
+.index {
+  .highlight {
+    font-weight: bold;
+  }
 }
+
 
 //  Tablet
 @media all and (min-width: $tablet) {
