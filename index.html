@@ -1,3 +1,104 @@
 ---
 layout: default
 ---
+ <section class="intro">
+  <p><span class="highlight post">For 60 years, The Humane Society of the United States has made unprecedented change for animals</span>. We’ve taken on the biggest fights wherever we find them: on the ground, in the boardroom, in the courts and on Capitol Hill. And we work to change public opinion by bringing issues of animal cruelty out of the shadows. We’ve made momentous progress already, but we’re setting our sights even higher. With your help, our 60th anniversary campaign will raise $60 million, enabling us to create even more transformational change for animals.</p>
+
+  <p>Although we and our affiliates provide hands-on care and services to more than 100,000 animals every year, <span class="highlight pre para">our goal has always been to enact change by attacking the root causes of animal cruelty.</span> We target institutions and practices that affect millions and even billions of animals—like factory farms, puppy mills, inhumane wildlife management programs and animal-testing labs—and work to become part of the solution. We offer alternatives and help develop more humane practices to ensure lasting change. Our staff is comprised of experts in their fields, whose technical knowledge is matched only by their compassion for animals.</p>
+
+  <p>We’ve done so much already. <span class="highlight post">We’ve made sweeping policy and business changes</span>, from making animal cruelty a felony in all 50 states (up from just four states in the mid-1980s) to convincing more than 100 major food retailers to remove extreme confinement of farm animals from their supply chains. We’ve galvanized the public to push for reform, <span class="highlight pre para">and we’ve never been better placed to take on the issues that still exist.</span></p>
+
+  <p>More than any other animal welfare organization, we have the reach and the power to make changes that affect millions of animals nationwide. We’ve gained momentum every year, and we’ve reached a tipping point. During the next five years, we intend to push animal welfare even further into the public consciousness and enact changes that will affect millions more of our fellow creatures. <span class="highlight">The time to act is now.<span> Read on for the details. <span class="highlight period para2">We hope that you will join us</span> in creating transformational change for animals and staying the course until reform is realized.</p>
+</section>
+
+<section class="victories">
+  <div class="victory">
+    <h3>115,851</h3>
+    <p>Animals cared for by The HSUS and affiliates this year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more</p>
+  </div>
+
+  <div class="victory">
+    <h3>58,239</h3>
+    <p>Pets spayed or neutered as part of World Spay Day</p>
+  </div>
+
+  <div class="victory">
+    <h3>2.9+ MILLION</h3>
+    <p>Messages that our supporters sent to government and corporate decision-makers</p>
+  </div>
+
+  <div class="victory">
+    <h3>139</h3>
+    <p>State and local laws, regulations and ordinances passed to help animals</p>
+  </div>
+
+  <div class="victory">
+    <h3>1.4 MILLION</h3>
+    <p>U.S. farm animals spared the misery of factory farms and slaughter plants as a result of our meat-reduction campaign</p>
+  </div>
+</section>
+
+<section class="president">
+  <h2 class="highlight">From the President</h2>
+
+  <h3>The Humane Society of the United States transforms animal lives every day. For more than 60 years, we’ve confronted animal cruelty wherever we find it. We’re poised to take our work to the next level—with your help.</h3>
+
+  <h3 class="highlight">The $60 million we will raise through this five-year campaign will drive reform in key areas where we’ve reached a tipping point. Five themes will guide our work:</h3>
+
+  <ul class="highlight">
+    <li>Implementing 21st century solutions to move away from cruel and archaic practices</li>
+
+    <li>Transitioning to a humane economy that syncs our commercial and social behavior with our core values concerning the proper treatment of animals</li>
+
+    <li>Expanding the notion of civil society throughout the world by promoting kindness to animals, while working to upgrade legal standards</li>
+
+    <li>Broadening our campaigns globally and scaling them up accordingly</li>
+
+    <li>Taking animal protection to the next level to achieve even more meaningful gains in the biggest and most urgent areas of need</li>
+  </ul>
+
+  <p>With these themes in mind, we’ve identified five areas where we’re on the verge of big change. We’ve developed realistic, achievable action plans with five-year milestones and metrics. In summary, we will focus on helping pets in poverty, stopping animal cruelty around the world, advancing alternatives to cruel cosmetic and toxicity testing, changing the course for farm animals and forging a new wildlife management paradigm.</p>
+
+  <p>I’m confident The HSUS can achieve these goals. Our record of change is unmatched by similar organizations, and we’re at a crucial point in history. With this campaign—and with your support—we can build on that record and expand our reach.</p>
+
+  <p>Please join us. Together, we can achieve groundbreaking transformational change for animals.</p>
+
+  <p>Wayne Pacelle, President and CEO<br>
+  The Humane Society of the United States</p>
+
+</section>
+
+
+<section class="campaign-previews">
+  {% for campaign_hash in site.data.campaigns %}
+  {% assign campaign = campaign_hash[1] %}
+  <a href="/{{campaign.url}}/">
+    <div class="preview {{campaign.layout}}" style="background-image:{{campaign.image}};">
+      <h3>{{campaign.title}}</h3>
+      <p>{{campaign.caption}}</p>
+    </div>
+  </a>
+  {% endfor %}
+</section>
+
+
+<section class="event-and-book">
+  <div class="event">
+    <h2>Event Header</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero. Iste asperiores suscipit, consequatur debitis animi impedit numquam facilis iusto porro labore dolorem, maxime magni incidunt. Delectus, est!</p>
+    <a class="cta-button" href="">Attend An Event</a>
+  </div>
+
+  <div class="book">
+    <img src="" alt="Book Cover: The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals By Wayne Pacelle">
+    <h2><a href="http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy">The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals</a></h2>
+    <p>By: Wayne Pacelle</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero.</p>
+    <a class="cta-link" href="http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy">CTA LINK</a>
+  </div>
+</section>
+
+
+
+
+

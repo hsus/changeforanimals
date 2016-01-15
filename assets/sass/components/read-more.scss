@@ -1,0 +1,19 @@
+// Default / Mobile
+.index {
+  .highlight {
+    font-weight: bold;
+  }
+}
+
+
+//  Tablet
+@media all and (min-width: $tablet) {
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+}
