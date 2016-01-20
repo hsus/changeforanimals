@@ -1,26 +1,22 @@
 // Default / Mobile
 .index {
 
-  @-webkit-keyframes fadeIn { from { opacity:0; font-size:0;} to { opacity:1; font-size:inherit; } }
-  @-moz-keyframes fadeIn { from { opacity:0; font-size:0; } to { opacity:1; font-size:inherit; } }
-  @keyframes fadeIn { from { opacity:0; font-size:0; } to { opacity:1; font-size:inherit; } }
+  @-webkit-keyframes hsStretch { from { font-size:0;} to { font-size:inherit; } }
+  @keyframes hsStretch { from { font-size:0; } to { font-size:inherit; } }
+
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
   @-webkit-keyframes fadeOut { from { opacity:1; font-size:inherit; } to { opacity:0; font-size:0; } }
-  @-moz-keyframes fadeOut { from { opacity:1; font-size:inherit; } to { opacity:0; font-size:0;} }
-  @keyframes fadeOut { from { opacity:1; font-size:inherit; } to { opacity:0; font-size:0;} }
+  @keyframes fadeOut { from { opacity:1; font-size:inherit; } to { opacity:0; font-size:0; } }
 
   .showless {
     .more {
-      display: none;
-      -webkit-animation:fadeOut ease-in 1;  
-      -moz-animation:fadeOut ease-in 1;
-      animation:fadeOut ease-in 1; 
-      -webkit-animation-fill-mode:forwards; 
-      -moz-animation-fill-mode:forwards;
-      animation-fill-mode:forwards;    
-      -webkit-animation-duration:0.5s;
-      -moz-animation-duration:0.5s;
-      animation-duration:0.5s;
+      display: none;      
+      -webkit-animation:
+        fadeOut 0.5s ease-in 0s 1 normal forwards running; 
+      animation:
+        fadeOut 0.5s ease-in 0s 1 normal forwards running; 
     }
     .pre:before,    
     .post:after {
@@ -35,16 +31,13 @@
       display: none;
     }
     .more {
-      opacity: 0; 
-      -webkit-animation:fadeIn ease-in 1;  
-      -moz-animation:fadeIn ease-in 1;
-      animation:fadeIn ease-in 1; 
-      -webkit-animation-fill-mode:forwards; 
-      -moz-animation-fill-mode:forwards;
-      animation-fill-mode:forwards;    
-      -webkit-animation-duration:0.7s;
-      -moz-animation-duration:0.7s;
-      animation-duration:0.7s;     
+      opacity: 0;
+      -webkit-animation: 
+        hsStretch 0.5s ease-out 0s 1 normal forwards running,
+        fadeIn 0.3s ease-out 0.3s 1 normal forwards running;
+      animation:
+        hsStretch 0.5s ease-out 0s 1 normal forwards running,
+        fadeIn 0.3s ease-out 0.3s 1 normal forwards running; 
     }
     .pre:before,
     .post:after,
