@@ -15,6 +15,7 @@ layout: default
   <p><a class="readmore">Read More</a></p>
 </section>
 
+
 <section class="victories">
   {% for victory_hash in site.data.homepage.victories %}
   <div class="victory">
@@ -23,6 +24,7 @@ layout: default
   </div>
   {% endfor %}
 </section>
+
 
 <section class="president showless">
   {% assign letter = site.data.homepage.president %}
@@ -63,19 +65,20 @@ layout: default
 </section>
 
 
-<section class="event-and-book">
+<section class="cta">
+  {% assign cta_text = site.data.homepage.cta %}
   <div class="event">
-    <h2>Event Header</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero. Iste asperiores suscipit, consequatur debitis animi impedit numquam facilis iusto porro labore dolorem, maxime magni incidunt. Delectus, est!</p>
-    <a class="cta-button" href="">Attend An Event</a>
+    <h2>{{ cta_text.event-header }}</h2>
+    <p>{{ cta_text.event-body }}</p>
+    <a class="cta-button" href="{{ cta_text.event-link }}">{{ cta_text.event-link-text }}</a>
   </div>
 
   <div class="book">
-    <img src="" alt="Book Cover: The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals By Wayne Pacelle">
-    <h2><a href="http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy">The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals</a></h2>
-    <p>By: Wayne Pacelle</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero.</p>
-    <a class="cta-link" href="http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy">CTA LINK</a>
+    <img src="{{ cta_text.book-image-url }}" alt="{{ cta_text.book-image-alt }}">
+    <h2><a href="{{ cta_text.book-link-url }}">{{ cta_text.book-link-text }}</a></h2>
+    <p>{{ cta_text.book-author }}</p>
+    <p>{{ cta_text.book-blurb }}</p>
+    <a class="cta-link" href="{{ cta_text.book-link-url }}">{{ cta_text.book-cta-link }}</a>
   </div>
 </section>
 
