@@ -3,31 +3,20 @@ layout: default
 ---
 {% assign intro_text = site.data.homepage.intro %}
  <section class="intro showless">
-  <strong class="post">{{ intro_text.bold1 }}</strong><span class="more">{{ intro_text.readmore1 }}</span>
-  
+  <strong class="post">{{ intro_text.bold1 }}</strong><span class="more">{{ intro_text.readmore1 }}</span>  
   <br><br>
-
   <span class="more">{{ intro_text.readmore2-1 }}</span> <strong class="pre initial-caps">{{ intro_text.bold2 }}</strong> <span class="more">{{ intro_text.readmore2-2 }}</span> 
-
   <br class="more"><br class="more">
-
   <span class="more">{{ intro_text.readmore3-1 }}</span> <strong class="post">{{ intro_text.bold3-1 }}</strong><span class="more">{{ intro_text.readmore3-2 }}</span><br class="less"><br class="less"> <strong class="pre">{{ intro_text.bold3-2 }}</strong> 
-  
   <br class="more"><br class="more">
-  
   <span class="more">{{ intro_text.readmore4 }}</span> <strong>{{ intro_text.bold4 }}</strong>
-  
   <br><br><br class="less">
-  
   <strong class="period">{{ intro_text.bold5 }}</strong> <span class="more">{{ intro_text.readmore5 }}</span>
-
   <p><a class="readmore">Read More</a></p>
 </section>
 
-
 <section class="victories">
-
-{% for victory_hash in site.data.homepage.victories %}
+  {% for victory_hash in site.data.homepage.victories %}
   <div class="victory">
     <h3>{{ victory_hash.header }}</h3>
     <p>{{ victory_hash.text }}</p>
@@ -35,34 +24,29 @@ layout: default
   {% endfor %}
 </section>
 
-<section class="president">
-  <h2 class="highlight">From the President</h2>
+<section class="president showless">
+  {% assign letter = site.data.homepage.president %}
+  <p>{{ letter.from }}</p>
+  <h2>{{ letter.about }}</h2>
 
-  <h3>The Humane Society of the United States transforms animal lives every day. For more than 60 years, we’ve confronted animal cruelty wherever we find it. We’re poised to take our work to the next level—with your help.</h3>
+  <h3 class="more">{{ letter.header1 }}</h3>
+  <h3>{{ letter.header2 }}</h3>
 
-  <h3 class="highlight">The $60 million we will raise through this five-year campaign will drive reform in key areas where we’ve reached a tipping point. Five themes will guide our work:</h3>
-
-  <ul class="highlight">
-    <li>Implementing 21st century solutions to move away from cruel and archaic practices</li>
-
-    <li>Transitioning to a humane economy that syncs our commercial and social behavior with our core values concerning the proper treatment of animals</li>
-
-    <li>Expanding the notion of civil society throughout the world by promoting kindness to animals, while working to upgrade legal standards</li>
-
-    <li>Broadening our campaigns globally and scaling them up accordingly</li>
-
-    <li>Taking animal protection to the next level to achieve even more meaningful gains in the biggest and most urgent areas of need</li>
+  <p class="list-top">{{ letter.list-top }}</p>
+  <ul>
+    <li>{{ letter.list1 }}</li>
+    <li>{{ letter.list2 }}</li>
+    <li>{{ letter.list3 }}</li>
+    <li>{{ letter.list4 }}</li>
+    <li>{{ letter.list5 }}</li>
   </ul>
+  <p class="more">{{ letter.body1 }}</p>
+  <p class="more">{{ letter.body2 }}</p>
+  <p class="more">{{ letter.body3 }}</p>
 
-  <p>With these themes in mind, we’ve identified five areas where we’re on the verge of big change. We’ve developed realistic, achievable action plans with five-year milestones and metrics. In summary, we will focus on helping pets in poverty, stopping animal cruelty around the world, advancing alternatives to cruel cosmetic and toxicity testing, changing the course for farm animals and forging a new wildlife management paradigm.</p>
+  <p><a class="readmore">{{ letter.readmore }}</a></p>
 
-  <p>I’m confident The HSUS can achieve these goals. Our record of change is unmatched by similar organizations, and we’re at a crucial point in history. With this campaign—and with your support—we can build on that record and expand our reach.</p>
-
-  <p>Please join us. Together, we can achieve groundbreaking transformational change for animals.</p>
-
-  <p>Wayne Pacelle, President and CEO<br>
-  The Humane Society of the United States</p>
-
+  <p>{{ letter.signature-text }}</p>
 </section>
 
 
