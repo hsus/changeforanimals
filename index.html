@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-{% for intro_hash in site.data.homepage %}
-{% assign intro_text = intro_hash[1]%}
+{% assign intro_text = site.data.homepage.intro %}
  <section class="intro showless">
   <strong class="post">{{ intro_text.bold1 }}</strong><span class="more">{{ intro_text.readmore1 }}</span>
   
@@ -24,34 +23,16 @@ layout: default
 
   <p><a class="readmore">Read More</a></p>
 </section>
-{% endfor %}
 
 
 <section class="victories">
-  <div class="victory">
-    <h3>115,851</h3>
-    <p>Animals cared for by The HSUS and affiliates this year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more</p>
-  </div>
 
+{% for victory_hash in site.data.homepage.victories %}
   <div class="victory">
-    <h3>58,239</h3>
-    <p>Pets spayed or neutered as part of World Spay Day</p>
+    <h3>{{ victory_hash.header }}</h3>
+    <p>{{ victory_hash.text }}</p>
   </div>
-
-  <div class="victory">
-    <h3>2.9+ MILLION</h3>
-    <p>Messages that our supporters sent to government and corporate decision-makers</p>
-  </div>
-
-  <div class="victory">
-    <h3>139</h3>
-    <p>State and local laws, regulations and ordinances passed to help animals</p>
-  </div>
-
-  <div class="victory">
-    <h3>1.4 MILLION</h3>
-    <p>U.S. farm animals spared the misery of factory farms and slaughter plants as a result of our meat-reduction campaign</p>
-  </div>
+  {% endfor %}
 </section>
 
 <section class="president">
