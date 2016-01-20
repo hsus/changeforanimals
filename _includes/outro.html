@@ -1,40 +1,21 @@
 <section class="outro">
-  <h2>At The Humane Society of the United States, we think big.</h2>
+  {% assign outro = site.data.outro %}
+  <h2>{{ outro.header }}</h2>
 
-  <p><span class="highlight">We set ambitious goals, and we have a proven record of meeting them.</span></p>
+  <p>{{ outro.body }}</p>
 
-  <p>Few opportunities exist to help enact change on such a vast scale, to touch so many lives and transform them for the better. <span class="highlight">Becoming a part of our anniversary campaign gives you this unique and powerful change.</span></p>
-
-  <p>By grounding our campaign in specific goals and achievable steps, we’re setting ourselves up for success at this most crucial tipping point in our work. We know you share our vision of a more humane and compassionate world for animals, and we need your help. <span class="highlight">Join our campaign to achieve even more transformational change for animals.</p>
-
-  <h3>We can't do it without you.</h3>
-
-  <a class="readmore">Read More</a>
+  <h3>{{ outro.cta }}</h3>
 
   <div class="actions">
     <div class="action email-phone">
-      Email<br>
-      Phone:
+      {{ outro.phone }}<br>
+      {{ outro.email }}<br>
+      <a href="{{ outro.donate-url }}">{{ outro.donate-text }}</a>
     </div>
 
-    OR
-
-    <div class="action register">
-      <a href="">Register For An Event</a>
+    <div class="action event">
+      <a href="{{ outro.event-url }}">{{ outro.event-cta-text }}</a>
     </div>
-
-    OR
-
-    <div class="action donate">
-      <a href="">Donate Online</a>
-    </div>
-  </div>
-
-  <div class="donors">
-    <div class="donor">Donor Name</div>
-    <div class="donor">Donor Name</div>
-    <div class="donor">Donor Name</div>
-    <div class="donor">Donor Name</div>
   </div>
 
 </section>
