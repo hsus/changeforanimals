@@ -1,15 +1,31 @@
 ---
 layout: default
 ---
- <section class="intro">
-  <p><span class="highlight post">For 60 years, The Humane Society of the United States has made unprecedented change for animals</span>. We’ve taken on the biggest fights wherever we find them: on the ground, in the boardroom, in the courts and on Capitol Hill. And we work to change public opinion by bringing issues of animal cruelty out of the shadows. We’ve made momentous progress already, but we’re setting our sights even higher. With your help, our 60th anniversary campaign will raise $60 million, enabling us to create even more transformational change for animals.</p>
+{% for intro_hash in site.data.homepage %}
+{% assign intro_text = intro_hash[1]%}
+ <section class="intro showless">
+  <strong class="post">{{ intro_text.bold1 }}</strong><span class="more">{{ intro_text.readmore1 }}</span>
+  
+  <br><br>
 
-  <p>Although we and our affiliates provide hands-on care and services to more than 100,000 animals every year, <span class="highlight pre para">our goal has always been to enact change by attacking the root causes of animal cruelty.</span> We target institutions and practices that affect millions and even billions of animals—like factory farms, puppy mills, inhumane wildlife management programs and animal-testing labs—and work to become part of the solution. We offer alternatives and help develop more humane practices to ensure lasting change. Our staff is comprised of experts in their fields, whose technical knowledge is matched only by their compassion for animals.</p>
+  <span class="more">{{ intro_text.readmore2-1 }}</span> <strong class="pre initial-caps">{{ intro_text.bold2 }}</strong> <span class="more">{{ intro_text.readmore2-2 }}</span> 
 
-  <p>We’ve done so much already. <span class="highlight post">We’ve made sweeping policy and business changes</span>, from making animal cruelty a felony in all 50 states (up from just four states in the mid-1980s) to convincing more than 100 major food retailers to remove extreme confinement of farm animals from their supply chains. We’ve galvanized the public to push for reform, <span class="highlight pre para">and we’ve never been better placed to take on the issues that still exist.</span></p>
+  <br class="more"><br class="more">
 
-  <p>More than any other animal welfare organization, we have the reach and the power to make changes that affect millions of animals nationwide. We’ve gained momentum every year, and we’ve reached a tipping point. During the next five years, we intend to push animal welfare even further into the public consciousness and enact changes that will affect millions more of our fellow creatures. <span class="highlight">The time to act is now.<span> Read on for the details. <span class="highlight period para2">We hope that you will join us</span> in creating transformational change for animals and staying the course until reform is realized.</p>
+  <span class="more">{{ intro_text.readmore3-1 }}</span> <strong class="post">{{ intro_text.bold3-1 }}</strong><span class="more">{{ intro_text.readmore3-2 }}</span><br class="less"><br class="less"> <strong class="pre">{{ intro_text.bold3-2 }}</strong> 
+  
+  <br class="more"><br class="more">
+  
+  <span class="more">{{ intro_text.readmore4 }}</span> <strong>{{ intro_text.bold4 }}</strong>
+  
+  <br><br><br class="less">
+  
+  <strong class="period">{{ intro_text.bold5 }}</strong> <span class="more">{{ intro_text.readmore5 }}</span>
+
+  <p><a class="readmore">Read More</a></p>
 </section>
+{% endfor %}
+
 
 <section class="victories">
   <div class="victory">
