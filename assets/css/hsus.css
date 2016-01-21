@@ -199,16 +199,17 @@ input[type="checkbox"], input[type="radio"] {
 html, body {
   font-family: "Frutiger W01", sans-serif;
   font-size: 16px;
-  color: #000; }
+  color: #fff;
+  background-color: #152b51; }
 
 h1 {
-  color: #2A92D1; }
+  color: #fff; }
 
 a {
-  color: #2A92D1; }
+  color: #ce8e00; }
 
 a:hover, a:focus {
-  color: #EE2324; }
+  color: #b57c00; }
 
 p ul {
   list-style: none;
@@ -219,7 +220,7 @@ p ul {
     padding-left: 1.375em;
     text-indent: -.7em; }
     p ul li:before {
-      color: #2A92D1;
+      color: #152b51;
       content: "•";
       font-size: 1.25em;
       line-height: 0.5;
@@ -294,10 +295,23 @@ p ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
-header .tagline {
-  font-family: "MyWriteHand";
-  font-weight: normal;
-  font-style: normal; }
+header {
+  background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
+  background-size: 100%;
+  text-align: center; }
+  header .logo {
+    display: inline-block;
+    margin-top: 15em;
+    margin-bottom: 2em; }
+  header .tagline {
+    display: inline-block;
+    font-family: "MyWriteHand";
+    font-size: 5.25em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 auto 15em;
+    max-width: 90%; }
 
 @-webkit-keyframes hsStretch {
   from {

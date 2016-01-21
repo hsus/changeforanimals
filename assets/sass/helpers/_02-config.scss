@@ -8,10 +8,9 @@
 // Note: darken/lighten used, for effect, e.g.:
 // .example:hover { color: darken($font-name, 5%); }
 
-$blue: #2A92D1; // logo blue
-$green: #3DB651; // logo green
-$yellow: #F9DF00;  // logo yellow
-$red: #EE2324;  // logo red
+$blue: #152b51; 
+$yellow: #ce8e00;  
+$red: #EE2324;  
 
 $light-gray: #EBEBEB;
 $medium-gray: #B2A6A0;
@@ -22,18 +21,14 @@ $black: #000;
 $off-white: $light-gray;
 $white: #fff;
 
-// additional colors
-$success: $green;
-$alert: $red;
-
 // fonts
 $primary-font: 'Frutiger W01',sans-serif;
 $secondary-font: 'MyWriteHand','Brush Script MT', cursive;
 
-html, body { font-family: $primary-font; font-size: 16px; color: $black; }
-h1 { color: $blue; }
-a { color: $blue; }
-a:hover, a:focus { color: $red; }
+html, body { font-family: $primary-font; font-size: 16px; color: $white; background-color: $blue; }
+h1 { color: $white; }
+a { color: $yellow; }
+a:hover, a:focus { color: darken($yellow, 5%); }
 
 
 // List bullets in content.

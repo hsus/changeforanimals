@@ -1,10 +1,23 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 header {
+  background: transparent url('../images/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
+  background-size: 100%; 
+  text-align: center;
+  .logo {
+    display: inline-block;
+    margin-top: em(240);
+    margin-bottom: em(32);
+  }
   .tagline {
+    display: inline-block;
     font-family: "MyWriteHand";
-    font-weight: normal;
+    font-size: em(84);
     font-style: normal;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0 auto em(240);
+    max-width: 90%;
   }
 }
 
