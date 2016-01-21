@@ -197,15 +197,12 @@ input[type="checkbox"], input[type="radio"] {
   padding: 0; }
 
 html, body {
-  font-family: "adelle-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Frutiger W01", sans-serif;
   font-size: 16px;
   color: #000; }
 
 h1 {
   color: #2A92D1; }
-
-h1, h2, h3, h4 {
-  font-family: "canada-type-gibson", "Helvetica Inserat", "Arial Black", sans-serif; }
 
 a {
   color: #2A92D1; }
@@ -297,6 +294,11 @@ p ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
+header .tagline {
+  font-family: "MyWriteHand";
+  font-weight: normal;
+  font-style: normal; }
+
 @-webkit-keyframes hsStretch {
   from {
     font-size: 0; }
