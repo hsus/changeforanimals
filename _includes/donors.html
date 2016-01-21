@@ -1,12 +1,14 @@
 <section class="donors">
-  {% assign donor = site.data.homepage.donors %}  
-  <h2>{{ donor[0].header }}</h2>
-
   {% for donor_hash in site.data.homepage.donors %}
-  <div class="donor">
-    <a href="{{ donor_hash.url }}"><div class="name">{{ donor_hash.name }}</div>
-      <div class="prompt">{{ donor_hash.link-prompt }}</div></a>
-  </div>
-  {% endfor %}
+    {% if donor_hash.header %}
+      <h2>{{ donor_hash.header }}</h2>
+    {% endif %}
 
+    {% if donor_hash.name %}
+      <div class="donor">
+        <a href="{{ donor_hash.url }}"><div class="name">{{ donor_hash.name }}</div>
+          <div class="prompt">{{ donor_hash.link-prompt }}</div></a>
+      </div>
+    {% endif %}
+  {% endfor %}
 </section>
