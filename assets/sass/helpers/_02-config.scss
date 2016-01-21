@@ -8,7 +8,6 @@
 // Note: darken/lighten used, for effect, e.g.:
 // .example:hover { color: darken($font-name, 5%); }
 
-
 $blue: #2A92D1; // logo blue
 $green: #3DB651; // logo green
 $yellow: #F9DF00;  // logo yellow
@@ -28,12 +27,11 @@ $success: $green;
 $alert: $red;
 
 // fonts
-$primary-font: "canada-type-gibson","Helvetica Inserat","Arial Black",sans-serif;
-$secondary-font: "adelle-sans","Helvetica Neue",Helvetica,Arial,sans-serif; ;
+$primary-font: 'Frutiger W01',sans-serif;
+$secondary-font: 'MyWriteHand','Brush Script MT', cursive;
 
-html, body { font-family: $secondary-font; font-size: 16px; color: $black; }
+html, body { font-family: $primary-font; font-size: 16px; color: $black; }
 h1 { color: $blue; }
-h1,h2,h3,h4 { font-family: $primary-font; }
 a { color: $blue; }
 a:hover, a:focus { color: $red; }
 
