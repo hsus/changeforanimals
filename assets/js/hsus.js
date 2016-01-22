@@ -3,7 +3,7 @@ $(document).ready(function() {
   // This function works with sass/components/read-more.scss
   $('.readmore').click(function() {
     var el = $(this),
-        wrapper = el.parent().parent();
+        wrapper = el.parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
       wrapper.find('.readmore').text('Read More');

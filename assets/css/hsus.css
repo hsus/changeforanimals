@@ -198,6 +198,7 @@ input[type="checkbox"], input[type="radio"] {
 
 html, body {
   font-family: "Frutiger W01", sans-serif;
+  font-weight: 200;
   font-size: 16px;
   color: #fff;
   background-color: #152b51; }
@@ -424,15 +425,15 @@ footer {
 header {
   background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;
-  text-align: center;
   display: inline-block;
+  text-align: center;
   width: 100%; }
   header .logo {
     display: block;
     margin: 7.5em auto 1em; }
     header .logo img {
-      max-width: 60%;
-      height: auto; }
+      height: auto;
+      max-width: 60%; }
   header .tagline {
     display: block;
     font-family: "MyWriteHand";
@@ -454,6 +455,111 @@ header {
     header .tagline {
       font-size: 5.25em;
       margin: 0 auto 2.85714em; } }
+.intro {
+  background: transparent url("../images/mobile-intro1.jpg") no-repeat top center;
+  background-size: cover;
+  display: inline-block;
+  font-size: 0.9375em;
+  padding-bottom: 2em;
+  padding-top: 3.33333em;
+  line-height: 1.6;
+  text-align: center;
+  width: 100%; }
+  .intro .wrapper {
+    margin: 0 auto;
+    max-width: 90%; }
+  .intro span i {
+    font-style: normal;
+    color: #ce8e00;
+    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-size: 1.33333em;
+    line-height: 1; }
+  .intro span.italic:after {
+    color: #ce8e00; }
+  .intro span.italic i {
+    font-style: italic; }
+  .intro .more-button {
+    cursor: pointer;
+    margin: 2em auto 0;
+    width: 9.375em;
+    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-size: 0.875em; }
+    .intro .more-button a {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      color: #c1d1df; }
+      .intro .more-button a:after {
+        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: block;
+        margin: 0 auto;
+        content: "";
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 0;
+        border-style: solid;
+        border-width: 0.6875em 0.5em 0 0.5em;
+        border-color: #739abc transparent transparent transparent; }
+    .intro .more-button:hover a {
+      color: #e3eaf0; }
+      .intro .more-button:hover a:after {
+        top: 0.1875em;
+        border-color: #95b3cd transparent transparent transparent; }
+  .intro.showmore .more-button a:after {
+    top: -2.6875em;
+    border-width: 0 0.5em 0.6875em 0.5em;
+    border-color: transparent transparent #739abc transparent; }
+  .intro.showmore .more-button:hover a:after {
+    top: -2.875em;
+    border-color: transparent transparent #95b3cd transparent; }
+
+@media all and (min-width: 36.25em) {
+  .intro {
+    font-size: 1.125em;
+    padding-bottom: 1.66667em;
+    padding-top: 2.77778em; }
+    .intro .wrapper {
+      margin: 0 auto;
+      max-width: 75%; }
+    .intro .more-button {
+      margin-top: 1.66667em; } }
+@media all and (min-width: 45em) {
+  .intro {
+    background-image: url("../images/intro1.jpg");
+    font-size: 1.375em;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 2.72727em;
+    padding-top: 5.45455em; }
+    .intro .wrapper {
+      margin: 0 auto;
+      max-width: 65%; }
+    .intro span i {
+      font-style: normal;
+      color: #ce8e00;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 1.45455em;
+      line-height: 1; }
+    .intro span.italic:after {
+      color: #ce8e00; }
+    .intro span.italic i {
+      font-style: italic; }
+    .intro .more-button {
+      margin-top: 2.72727em; } }
+@media all and (min-width: 87.5em) {
+  .intro {
+    font-size: 1.625em;
+    padding-bottom: 5.76923em;
+    padding-top: 8.84615em; }
+    .intro .wrapper {
+      margin: 0 auto;
+      max-width: 50%; }
+    .intro .more-button {
+      margin-top: 3.84615em; } }
 @-webkit-keyframes hsStretch {
   from {
     font-size: 0; }

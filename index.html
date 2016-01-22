@@ -4,16 +4,18 @@ layout: default
 
 {% assign intro_text = site.data.homepage.intro %}
  <section class="intro showless">
-  <strong class="post">{{ intro_text.bold1 }}</strong><span class="more">{{ intro_text.readmore1 }}</span>  
-  <br><br>
-  <span class="more">{{ intro_text.readmore2-1 }}</span> <strong class="pre initial-caps">{{ intro_text.bold2 }}</strong> <span class="more">{{ intro_text.readmore2-2 }}</span> 
-  <br class="more"><br class="more">
-  <span class="more">{{ intro_text.readmore3-1 }}</span> <strong class="post">{{ intro_text.bold3-1 }}</strong><span class="more">{{ intro_text.readmore3-2 }}</span><br class="less"><br class="less"> <strong class="pre">{{ intro_text.bold3-2 }}</strong> 
-  <br class="more"><br class="more">
-  <span class="more">{{ intro_text.readmore4 }}</span> <strong>{{ intro_text.bold4 }}</strong>
-  <br><br><br class="less">
-  <strong class="period">{{ intro_text.bold5 }}</strong> <span class="more">{{ intro_text.readmore5 }}</span>
-  <p><a class="readmore">Read More</a></p>
+  <div class="wrapper">
+    <span class="post">{{ intro_text.bold1 }}</span><span class="more">{{ intro_text.readmore1 }}</span>  
+    <br><br>
+    <span class="more">{{ intro_text.readmore2-1 }}</span> <span class="pre initial-caps">{{ intro_text.bold2 }}</span> <span class="more">{{ intro_text.readmore2-2 }}</span> 
+    <br class="more"><br class="more">
+    <span class="more">{{ intro_text.readmore3-1 }}</span> <span class="post">{{ intro_text.bold3-1 }}</span><span class="more">{{ intro_text.readmore3-2 }}</span><br class="less"><br class="less"> <span class="pre">{{ intro_text.bold3-2 }}</span> 
+    <br class="more"><br class="more">
+    <span class="more">{{ intro_text.readmore4 }}</span> <span>{{ intro_text.bold4 }}</span>
+    <br><br><br class="less">
+    <span class="period italic">{{ intro_text.bold5 }}</span> <span class="more">{{ intro_text.readmore5 }}</span>
+    <p class="more-button"><a class="readmore">Read More</a></p>
+  </div>
 </section>
 
 
@@ -47,7 +49,7 @@ layout: default
   <p class="more">{{ letter.body2 }}</p>
   <p class="more">{{ letter.body3 }}</p>
 
-  <p><a class="readmore">{{ letter.readmore }}</a></p>
+  <p class="more-button"><a class="readmore">{{ letter.readmore }}</a></p>
 
   <p>{{ letter.signature-text }}</p>
 </section>

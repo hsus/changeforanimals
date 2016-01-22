@@ -27,7 +27,7 @@ $white: #fff;
 $primary-font: 'Frutiger W01',sans-serif;
 $secondary-font: 'MyWriteHand','Brush Script MT', cursive;
 
-html, body { font-family: $primary-font; font-size: 16px; color: $white; background-color: $blue; }
+html, body { font-family: $primary-font; font-weight: 200; font-size: 16px; color: $white; background-color: $blue; }
 h1 { color: $white; }
 a { color: $yellow; }
 a:hover, a:focus { 
