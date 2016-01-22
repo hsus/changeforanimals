@@ -15,7 +15,11 @@
 
 //  Desktop
 @media all and (min-width: $desktop) {
-  .wrapper {
+  .wrapper, nav {
     max-width: $max-width;
+  }
+  nav .wrapper {
+    margin: 0 auto;
+    max-width: $desktop;
   }
 }

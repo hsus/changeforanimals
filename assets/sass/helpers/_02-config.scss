@@ -30,7 +30,10 @@ $secondary-font: 'MyWriteHand','Brush Script MT', cursive;
 html, body { font-family: $primary-font; font-size: 16px; color: $white; background-color: $blue; }
 h1 { color: $white; }
 a { color: $yellow; }
-a:hover, a:focus { color: darken($yellow, 5%); }
+a:hover, a:focus { 
+  color: darken($yellow, 5%);
+  @include transition(color 0.3s linear,background-color 0.3s linear);
+}
 
 
 // List bullets in content.
@@ -58,7 +61,7 @@ p ul {
 // In ems to fix a weird zoom / retina bug: http://blog.55minutes.com/2012/04/media-queries-and-browser-zoom/
 $tablet:      36.25em; // 580px
 $lg-tablet:   45em; // 720px
-$desktop:     75em; // 1200px
+$desktop:     87.5em; // 1400px
 $max-width:   112.5em; // 1800px
 
 // The amount lists, blockquotes and comments are indented.

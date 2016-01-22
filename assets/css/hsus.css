@@ -209,7 +209,10 @@ a {
   color: #ce8e00; }
 
 a:hover, a:focus {
-  color: #b57c00; }
+  color: #b57c00;
+  -webkit-transition: color 0.3s linear, background-color 0.3s linear;
+  -moz-transition: color 0.3s linear, background-color 0.3s linear;
+  transition: color 0.3s linear, background-color 0.3s linear; }
 
 p ul {
   list-style: none;
@@ -233,9 +236,13 @@ p ul {
   margin: 0 auto;
   padding: 0; }
 
-@media all and (min-width: 75em) {
-  .wrapper {
-    max-width: 112.5em; } }
+@media all and (min-width: 87.5em) {
+  .wrapper, nav {
+    max-width: 112.5em; }
+
+  nav .wrapper {
+    margin: 0 auto;
+    max-width: 87.5em; } }
 /**
  * @file
  * Print styling
@@ -306,7 +313,7 @@ p ul {
 footer {
   text-align: center;
   background-image: linear-gradient(#152b51, #060e25);
-  margin-top: 8.75em;
+  padding-top: 8.75em;
   padding-bottom: 6.25em; }
   footer a {
     color: #739abc;
@@ -437,8 +444,8 @@ header {
   text-align: right;
   width: 100%; }
   .index nav .logo-sm {
-    padding: 1.25em;
-    width: 15.625em;
+    padding: 1.125em;
+    width: 16.5625em;
     max-width: 50%;
     height: auto;
     float: left; }
