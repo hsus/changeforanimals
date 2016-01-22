@@ -6,23 +6,94 @@
   text-align: right;
   width: 100%;
   .logo-sm {
-    padding: em(18);
+    padding: em(20) 0 em(18) em(18);
     width: em(265);
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     float: left;
   }
-  a.text {
-    border-bottom: em(5) solid $blue;
-    display: inline-block;
-    text-decoration: none;
-    color: $white;
-    padding: em(28) em(14) em(24) em(14);
+  
+  .mobile-menu-icon {
     @include default-transition;
-    &:hover,.active {
-      border-bottom: em(5) solid $light-blue; 
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: em(75);
+    position: relative;
+    text-indent: -9999px;
+    width: em(75);
+    margin-right: em(16);
+    div {
+      height: 100%;
+      position: relative;
+      width: 100%;
+      z-index: 9999;
+      span {
+        background-color: $white;
+        display: block;
+        font-size: 0px;
+        height: 6px;
+        left: 25%;
+        margin-top: -2px;
+        position: absolute;
+        top: 50%;
+        transition: background-color 0.3s;
+        width: 60%;
+        z-index: 9999;
+        &:before,
+        &:after {
+          background: $white;
+          content: '';
+          height: 100%;
+          left: 0;
+          position: absolute;
+          transform: translateY(-250%);
+          transition: transform 0.3s;
+          width: 100%;
+          z-index: 9999;
+        }
+        &:after {
+          transform: translateY(250%);
+        }
+      }
+    }
+    &.active {
+      div span {
+        background-color: transparent;
+        &:before,
+        &:after {
+          background: $white;
+          transition: transform 0.3s;
+          transform: rotate(45deg) translateY(0);
+        }
+        &:after {
+          transform: rotate(-45deg) translateY(0) ;
+        }
+      }
     }
   }
+  .mobile-menu {
+    background-color: rgba($blue,0.9);
+    bottom: 0;
+    display: none;
+    left: 0;
+    min-height: em(250);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: em(75);
+    z-index: 100;
+    a {
+      display: block;
+      text-decoration: none;
+      font-size: em(24);
+      line-height: 2.5;
+    }
+  }
+  .menu {
+    display: none;
+  }
+
 }
 
 //  Tablet
@@ -30,9 +101,46 @@
 }
 
 //  Large Tablet
-@media all and (min-width: $lg-tablet) {
+@media all and (min-width: em(820)) {
+  .index nav {
+    .logo-sm {
+      padding: em(20) 0 em(12) em(18);
+    }
+    a.text {
+      font-weight: 200;
+      font-size: em(14);
+      border-bottom: em(5,14) solid $blue;
+      display: inline-block;
+      text-decoration: none;
+      color: $white;
+      letter-spacing: 1px;
+      padding: em(30,14) em(7,14) em(22,14) em(7,14);
+      @include default-transition;
+      &:hover,
+      &.active {
+        border-bottom: em(5,14) solid $light-blue; 
+      }
+    }
+    .menu {
+      display: inline-block;
+    }
+    .mobile-menu-icon {
+      display: none;
+    }
+  }
 }
 
 //  Desktop
-@media all and (min-width: $desktop) {
+@media all and (min-width: em(1000)) {
+  .index nav {
+    a.text {
+      font-size: em(18);
+      border-bottom: em(5,18) solid $blue;
+      padding: em(28,18) em(14,18) em(19,18) em(14,18);
+      &:hover,
+      &.active {
+        border-bottom: em(5,18) solid $light-blue; 
+      }
+    }
+  }
 }
