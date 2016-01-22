@@ -1,39 +1,44 @@
 hsus-url: "//www.humanesociety.org/"
 
-logo-url: "/assets/images/logo-white.png"
+logo-url: "/assets/images/logo.svg"
+small-logo-url: "/assets/images/mobile-logo.svg"
 logo-alt: "Logo: The Humane Society of the United States"
 
-tagline: "a humane society starts with you"
+tagline: "a humane society<br/>starts with you"
 
 int-url: "//www.hsi.org/"
-int-logo-url: ""
+int-logo-url: "/assets/images/logo-int.svg"
 int-logo-alt: "The Humane Society International"
 
 footer-tagline: "Creating transformational change for all animals"
 
+social-twitter-text: "twitter"
 social-twitter-url: ""
-social-twitter-icon: ""
+social-twitter-icon: "/assets/images/twitter.svg"
 
+social-pinterest-text: "pinterest"
 social-pinterest-url: ""
-social-pinterest-icon: ""
+social-pinterest-icon: "/assets/images/pinterest.svg"
 
+social-facebook-text: "facebook"
 social-facebook-url: ""
-social-facebook-icon: ""
+social-facebook-icon: "/assets/images/facebook.svg"
 
+social-instagram-text: "instagram"
 social-instagram-url: ""
-social-instagram-icon: ""
+social-instagram-icon: "/assets/images/instagram.svg"
 
+social-youtube-text: "youtube"
 social-youtube-url: ""
-social-youtube-icon: ""
+social-youtube-icon: "/assets/images/youtube.svg"
 
-social-twitter-url: ""
-social-twitter-icon: ""
-
+social-googleplus-text: "googleplus"
 social-googleplus-url: ""
-social-googleplus-icon: ""
+social-googleplus-icon: "/assets/images/googleplus.svg"
 
+social-linkedin-text: "linkedin"
 social-linkedin-url: ""
-social-linkedin-icon: ""
+social-linkedin-icon: "/assets/images/linkedin.svg"
 
 visit-text: "Visit"
 visit-url: "//www.humanesociety.org/"

@@ -1,0 +1,60 @@
+// Component template. See helpers/_02-config.scss for actual widths.
+// Default / Mobile
+footer {
+  text-align: center;
+  background-image:linear-gradient( $blue, $dark-blue );
+  margin-top: em(140);
+  padding-bottom: em(100);
+  a {
+    color: $light-blue;
+    text-decoration: none;
+  }
+  .site-logo img {
+    max-width: em(230);
+    margin-right: em(90);
+  }
+  .int-logo img {
+    max-width: em(180);
+  }
+  .tagline {
+    font-family: $secondary-font;
+    font-size: em(36);
+    margin-top: em(85,36);
+    color: $light-gray;
+  }
+  .social {
+    margin: em(64) 0;
+    a {
+      display: inline-block;
+      width: em(32);
+      height: em(32);
+      margin-right: em(24);
+
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .privacy-contact {
+    margin-top: em(16);
+  }
+
+  .copyright,.non-profit {
+    color: $light-gray;
+    margin-top: em(16);
+  }
+}
+
+//  Tablet
+@media all and (min-width: $tablet) {
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+}
+

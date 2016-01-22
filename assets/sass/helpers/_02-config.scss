@@ -9,10 +9,12 @@
 // .example:hover { color: darken($font-name, 5%); }
 
 $blue: #152b51; 
+$light-blue: #739abc; 
+$dark-blue: #060e25;
 $yellow: #ce8e00;  
 $red: #EE2324;  
 
-$light-gray: #EBEBEB;
+$light-gray: #c1d1df;
 $medium-gray: #B2A6A0;
 $light-grey: $light-gray;
 $medium-grey: $medium-gray;
@@ -55,9 +57,9 @@ p ul {
 // Responsive breakpoints - note: mobile first!
 // In ems to fix a weird zoom / retina bug: http://blog.55minutes.com/2012/04/media-queries-and-browser-zoom/
 $tablet:      36.25em; // 580px
-$lg-tablet:   48em; // 768px
-$desktop:     70.125em; // 1122px
-$max-width:   70.125em;
+$lg-tablet:   45em; // 720px
+$desktop:     75em; // 1200px
+$max-width:   112.5em; // 1800px
 
 // The amount lists, blockquotes and comments are indented.
-$indent-amount: 20px;
+$indent-amount: 16px;

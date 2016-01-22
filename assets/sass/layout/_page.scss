@@ -1,5 +1,9 @@
 // Default / Mobile
-
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
 
 //  Tablet
 @media all and (min-width: $tablet) {
@@ -11,4 +15,7 @@
 
 //  Desktop
 @media all and (min-width: $desktop) {
+  .wrapper {
+    max-width: $max-width;
+  }
 }

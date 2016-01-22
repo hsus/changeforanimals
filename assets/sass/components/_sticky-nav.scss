@@ -1,6 +1,28 @@
 // Default / Mobile
 .index nav {
   display: none;
+  position: fixed;
+  background-color: $blue;
+  text-align: right;
+  width: 100%;
+  .logo-sm {
+    padding: em(20);
+    width: em(250);
+    max-width: 50%;
+    height: auto;
+    float: left;
+  }
+  a.text {
+    border-bottom: em(5) solid $blue;
+    display: inline-block;
+    text-decoration: none;
+    color: $white;
+    padding: em(28) em(14) em(24) em(14);
+    @include default-transition;
+    &:hover,.active {
+      border-bottom: em(5) solid $light-blue; 
+    }
+  }
 }
 
 //  Tablet

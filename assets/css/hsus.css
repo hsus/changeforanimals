@@ -228,6 +228,14 @@ p ul {
       position: relative;
       top: 2px; }
 
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+@media all and (min-width: 75em) {
+  .wrapper {
+    max-width: 112.5em; } }
 /**
  * @file
  * Print styling
@@ -295,24 +303,73 @@ p ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
+footer {
+  text-align: center;
+  background-image: linear-gradient(#152b51, #060e25);
+  margin-top: 8.75em;
+  padding-bottom: 6.25em; }
+  footer a {
+    color: #739abc;
+    text-decoration: none; }
+  footer .site-logo img {
+    max-width: 14.375em;
+    margin-right: 5.625em; }
+  footer .int-logo img {
+    max-width: 11.25em; }
+  footer .tagline {
+    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-size: 2.25em;
+    margin-top: 2.36111em;
+    color: #c1d1df; }
+  footer .social {
+    margin: 4em 0; }
+    footer .social a {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      margin-right: 1.5em; }
+    footer .social img {
+      width: 100%;
+      height: auto; }
+  footer .privacy-contact {
+    margin-top: 1em; }
+  footer .copyright, footer .non-profit {
+    color: #c1d1df;
+    margin-top: 1em; }
+
 header {
   background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
-  background-size: 100%;
-  text-align: center; }
+  background-size: cover;
+  text-align: center;
+  display: inline-block;
+  width: 100%; }
   header .logo {
-    display: inline-block;
-    margin-top: 15em;
-    margin-bottom: 2em; }
+    display: block;
+    margin: 7.5em auto 1em; }
+    header .logo img {
+      max-width: 60%;
+      height: auto; }
   header .tagline {
-    display: inline-block;
+    display: block;
     font-family: "MyWriteHand";
-    font-size: 5.25em;
+    font-size: 2.25em;
     font-style: normal;
     font-weight: normal;
     line-height: 1.1;
-    margin: 0 auto 15em;
-    max-width: 90%; }
+    margin: 0 auto 3.33333em; }
 
+@media all and (min-width: 36.25em) {
+  header .logo {
+    margin: 11.25em auto 1.5em; }
+  header .tagline {
+    font-size: 4em;
+    margin: 0 auto 2.8125em; } }
+@media all and (min-width: 45em) {
+  header {
+    background-image: url("../images/header1.1.jpg"); }
+    header .tagline {
+      font-size: 5.25em;
+      margin: 0 auto 2.85714em; } }
 @-webkit-keyframes hsStretch {
   from {
     font-size: 0; }
@@ -374,6 +431,27 @@ header {
   content: ""; }
 
 .index nav {
-  display: none; }
+  display: none;
+  position: fixed;
+  background-color: #152b51;
+  text-align: right;
+  width: 100%; }
+  .index nav .logo-sm {
+    padding: 1.25em;
+    width: 15.625em;
+    max-width: 50%;
+    height: auto;
+    float: left; }
+  .index nav a.text {
+    border-bottom: 0.3125em solid #152b51;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.75em 0.875em 1.5em 0.875em;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .index nav a.text:hover, .index nav a.text .active {
+      border-bottom: 0.3125em solid #739abc; }
 
 /*# sourceMappingURL=hsus.css.map */

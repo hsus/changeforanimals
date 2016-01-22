@@ -21,5 +21,17 @@ $(document).ready(function() {
     wrapper.find('.more').css('display','inline');
   });
 
+  // Sticky nav
+  $(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset,
+        scroll_pos_test = 10;
+
+    if (y_scroll_pos >= scroll_pos_test) {
+      console.log('Pos: ' + y_scroll_pos)
+      $('.index nav').fadeIn();
+    } else {
+      $('.index nav').fadeOut();
+    }
+  });
 
 });
