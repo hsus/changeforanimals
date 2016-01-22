@@ -27,7 +27,7 @@ layout: default
 </section>
 
 
-<section class="president showless">
+<section class="president showless" id="about">
   {% assign letter = site.data.homepage.president %}
   <p>{{ letter.from }}</p>
   <h2>{{ letter.about }}</h2>
@@ -53,7 +53,7 @@ layout: default
 </section>
 
 
-<section class="campaign-previews">
+<section class="campaign-previews" id="program-areas">
   {% for campaign_hash in site.data.campaigns %}
   {% assign campaign = campaign_hash[1] %}
   <a href="/{{campaign.url}}/">
@@ -66,7 +66,7 @@ layout: default
 </section>
 
 
-<section class="cta">
+<section class="cta" id="events">
   {% assign cta_text = site.data.homepage.cta %}
   <div class="event">
     <h2>{{ cta_text.event-header }}</h2>

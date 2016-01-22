@@ -42,7 +42,7 @@
 
 // Default transition
 @mixin default-transition {
-  @include transition(color 0.3s linear,background-color 0.3s linear);
+  @include transition(all 0.3s linear);
 }
 
 // Default box-shadow

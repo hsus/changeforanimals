@@ -1,0 +1,143 @@
+// Component template. See helpers/_02-config.scss for actual widths.
+// Default / Mobile
+footer {
+  background-image:linear-gradient( $blue, $dark-blue );
+  font-weight: 200;
+  padding-bottom: em(50);
+  padding-top: em(70);
+  text-align: center;
+  a {
+    color: $light-blue;
+    text-decoration: none;
+  }
+  .site-logo img {
+    margin-right: em(32);
+    max-width: em(115);
+  }
+  .int-logo img {
+    max-width: em(90);
+  }
+  .tagline {
+    color: $light-gray;
+    font-family: $secondary-font;
+    font-size: em(24);
+    margin-top: em(48,24);
+  }
+  .social {
+    margin: em(42) 0;
+    a {
+      display: inline-block;
+      height: em(32);
+      margin-left: em(16);
+      margin-right: em(16);
+      position: relative;
+      width: em(32);
+    }
+    .pinterest { padding: em(3); bottom: em(3); }
+    .facebook { padding: em(4); bottom: em(4); }
+    .instagram { padding: em(4); bottom: em(4); }
+    .youtube { padding: em(1); }
+    .linkedin { padding: em(4); bottom: em(4); margin-right: 0;}
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .privacy-contact {
+    margin-top: em(20);
+  }
+  .copyright,.non-profit {
+    color: $light-gray;
+    font-size: em(11);
+    line-height: 1.5;
+    margin-top: em(22);
+    padding: 0 em(8);
+  }
+  .non-profit {
+    margin-top: em(8);
+  }
+}
+
+//  Tablet
+@media all and (min-width: $tablet) {
+  footer {
+    padding-bottom: em(100);
+    padding-top: em(140);
+    .site-logo img {
+      margin-right: em(90);
+      max-width: em(230);
+    }
+    .int-logo img {
+      max-width: em(180);
+    }
+    .tagline {
+      font-size: em(26);
+      margin-top: em(85,28);
+    }
+    .social {
+      margin: em(64) 0;
+      a {
+        height: em(32);
+        margin-left: 0;
+        margin-right: em(24);
+        width: em(32);
+      }
+    }
+    .visit,
+    .privacy-contact {
+      font-size: em(15);
+    }
+    .copyright,
+    .non-profit {    
+      font-size: em(14);
+      line-height: 1.7;
+    }
+  }
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {  
+  footer {
+    .tagline {
+      font-size: em(32);
+      margin-top: em(85,32);
+    }
+    .social {
+      margin: em(84) 0;
+      a {
+        height: em(46);
+        margin-right: em(28);
+        width: em(46);
+      }
+    }
+  }
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+  footer {    
+    .tagline {
+      font-size: em(36);
+      margin-top: em(85,36);
+    }
+    .social {
+      margin: em(84) 0;
+      a {
+        height: em(46);
+        margin-right: em(28);
+        width: em(46);
+      }
+    }
+    .visit,
+    .privacy-contact {
+      font-size: em(20);
+      letter-spacing: 2px;
+    }
+    .copyright,
+    .non-profit {    
+      font-size: em(20);
+      line-height: 1.7;
+    }
+  }
+}
+
