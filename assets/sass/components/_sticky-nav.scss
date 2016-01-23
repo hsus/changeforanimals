@@ -97,10 +97,6 @@
 
 }
 
-//  Tablet
-@media all and (min-width: $tablet) {
-}
-
 //  Large Tablet
 @media all and (min-width: em(820)) {
   .index nav {
@@ -125,8 +121,9 @@
     .menu {
       display: inline-block;
     }
+    .mobile-menu,
     .mobile-menu-icon {
-      display: none;
+      display: none !important;
     }
   }
 }

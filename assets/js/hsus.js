@@ -76,6 +76,8 @@ $(document).ready(function() {
       e.preventDefault();
       $('#menu').find('a').removeClass('active');
       $('html, body').stop().animate({'scrollTop': 0}, 700, 'swing');
+      $('.mobile-menu-icon').toggleClass('active');
+      $('#mobile-menu').fadeToggle();
   });
 
 });

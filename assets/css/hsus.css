@@ -722,8 +722,9 @@ header {
       border-bottom: 0.35714em solid #739abc; }
   .index nav .menu {
     display: inline-block; }
+  .index nav .mobile-menu,
   .index nav .mobile-menu-icon {
-    display: none; } }
+    display: none !important; } }
 @media all and (min-width: 62.5em) {
   .index nav a.text {
     font-size: 1.125em;
