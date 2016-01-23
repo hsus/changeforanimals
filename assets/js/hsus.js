@@ -54,6 +54,23 @@ $(document).ready(function() {
       });
   });
 
+  // Scroll to hash
+  $('#more-button a[href^="#"]').bind('click.smoothscroll',function (e) {
+      e.preventDefault();
+      var target = this.hash,
+          $target = $(target),
+          introPadding = $('#intro').css('padding-top'),
+          intoTop = parseInt(introPadding, 10);
+          if (intoTop > 120) { intoTop = 0; }
+
+      $('html, body').stop().animate( {
+          'scrollTop': $target.offset().top-intoTop
+      }, 700, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+
+
   // Top of page
   $('.logo-sm').bind('click.smoothscroll',function (e) {
       e.preventDefault();

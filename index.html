@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign intro_text = site.data.homepage.intro %}
- <section class="intro showless">
+ <section class="intro showless" id="intro">
   <div class="wrapper">
     <span class="post">{{ intro_text.bold1 }}</span><span class="more">{{ intro_text.readmore1 }}</span>  
     <br><br>
@@ -14,7 +14,7 @@ layout: default
     <span class="more">{{ intro_text.readmore4 }}</span> <span>{{ intro_text.bold4 }}</span>
     <br><br><br class="less">
     <span class="period italic">{{ intro_text.bold5 }}</span> <span class="more">{{ intro_text.readmore5 }}</span>
-    <p class="more-button"><a class="readmore">Read More</a></p>
+    <p class="more-button" id="more-button"><a href="#intro" class="readmore">Read More</a></p>
   </div>
 </section>
 

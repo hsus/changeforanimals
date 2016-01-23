@@ -488,7 +488,9 @@ header {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
-      color: #c1d1df; }
+      color: #c1d1df;
+      text-decoration: none;
+      font-style: italic; }
       .intro .more-button a:after {
         -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -625,7 +627,8 @@ header {
   position: fixed;
   background-color: #152b51;
   text-align: right;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   .index nav .logo-sm {
     padding: 1.25em 0 1.125em 1.125em;
     width: 16.5625em;
