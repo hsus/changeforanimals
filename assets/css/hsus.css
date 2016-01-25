@@ -732,5 +732,84 @@ header {
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
+.victories .wrapper {
+  background: transparent url("../images/mobile-victories1.jpg") no-repeat top center;
+  background-size: cover;
+  min-height: 30em;
+  padding: 2.5em 0 4.375em;
+  text-align: center; }
+  .victories .wrapper .victory {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    width: 80%; }
+  .victories .wrapper h2, .victories .wrapper h3 {
+    color: #ce8e00;
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 0; }
+    .victories .wrapper h2 small, .victories .wrapper h3 small {
+      font-size: 0.5em;
+      font-weight: 400;
+      letter-spacing: none; }
+  .victories .wrapper h2 {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 1em; }
+  .victories .wrapper p {
+    color: #739abc;
+    font-size: 0.875em;
+    letter-spacing: 0.03125em;
+    margin-top: 0.57143em; }
+
+.victory-after {
+  background: transparent url("../images/mobile-victories-after1.jpg") no-repeat top center;
+  background-size: cover;
+  min-height: 30em; }
+
+@media all and (min-width: 36.25em) {
+  .victories .wrapper {
+    padding: 2.5em 0 4.375em; }
+    .victories .wrapper h2 {
+      font-size: 1.625em; }
+    .victories .wrapper .victory {
+      margin: 0.75em 1em 0;
+      width: 36%; } }
+@media all and (min-width: 45em) {
+  .victories .wrapper {
+    background-image: url("../images/victories1.jpg");
+    min-height: 45em;
+    padding: 6.25em 0 4.375em; }
+    .victories .wrapper .victory {
+      margin: 1.5em 2em;
+      width: 24%; }
+
+  .victory-after {
+    background-image: url("../images/victories-after1.jpg");
+    min-height: 45em; } }
+@media all and (min-width: 87.5em) {
+  .victories .wrapper {
+    padding: 9.375em 4em 5.625em; }
+    .victories .wrapper .victory {
+      margin: 2.25em 4em;
+      width: 22%; }
+    .victories .wrapper h2, .victories .wrapper h3 {
+      font-size: 3.25em;
+      letter-spacing: none; }
+      .victories .wrapper h2 small, .victories .wrapper h3 small {
+        font-size: 0.42308em;
+        letter-spacing: -0.02em; }
+    .victories .wrapper h2 {
+      font-size: 2.25em;
+      letter-spacing: 3px;
+      margin-bottom: 0.88889em; }
+    .victories .wrapper p {
+      font-size: 1.25em;
+      letter-spacing: -0.00313em;
+      margin-top: 0.4em; }
+
+  .victory-after {
+    min-height: 62.5em; } }
 
 /*# sourceMappingURL=hsus.css.map */

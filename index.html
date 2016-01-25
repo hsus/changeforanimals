@@ -20,12 +20,20 @@ layout: default
 
 
 <section class="victories">
+  <div class="wrapper">
   {% for victory_hash in site.data.homepage.victories %}
-  <div class="victory">
-    <h3>{{ victory_hash.header }}</h3>
-    <p>{{ victory_hash.text }}</p>
-  </div>
+    {% if victory_hash.header %}
+      <h2>{{ victory_hash.header }}</h2>
+    {% endif %}
+    {% if victory_hash.title %}
+      <div class="victory">
+        <h3>{{ victory_hash.title }}</h3>
+        <p>{{ victory_hash.text }}</p>
+      </div>
+    {% endif %}
   {% endfor %}
+  </div>
+  <div class="victory-after">&nbsp;</div>
 </section>
 
 
