@@ -311,9 +311,6 @@ p ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
-.cta {
-  display: none; }
-
 .campaign-previews {
   width: 100%; }
   .campaign-previews .preview {
@@ -426,6 +423,101 @@ p ul {
       line-height: 6;
       padding-left: 2.5em;
       font-size: 1.25em; } }
+.donors {
+  background: transparent url("../images/mobile-donors1.jpg") no-repeat top center;
+  background-size: cover;
+  min-height: 20.625em;
+  text-align: center;
+  display: inline-block;
+  width: 100%; }
+  .donors h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin: 2em auto 1em;
+    opacity: 0.7;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    max-width: 90%; }
+    .donors h2 em {
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-style: normal;
+      font-size: 1.25em;
+      letter-spacing: 0; }
+  .donors .donor {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    line-height: 1.2;
+    margin-bottom: 2em; }
+    .donors .donor a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.125em;
+      font-weight: 400; }
+      .donors .donor a div {
+        opacity: 0.8; }
+    .donors .donor .prompt {
+      color: #cccccc;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      opacity: 0;
+      font-size: 0.77778em;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .donors .donor .prompt:before {
+        display: block;
+        margin: 0.25em auto 0.5em;
+        content: "";
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 0;
+        border-style: solid;
+        border-width: 0 0.5em 0.6875em 0.5em;
+        border-color: transparent transparent #cccccc transparent; }
+    .donors .donor a:hover .prompt {
+      opacity: 0.7; }
+
+@media all and (min-width: 36.25em) {
+  .donors {
+    min-height: 27.5em; }
+    .donors h2 {
+      font-size: 1.625em;
+      margin-top: 4.61538em;
+      letter-spacing: 2px; }
+      .donors h2 em {
+        font-size: 1.23077em; }
+    .donors .donor {
+      width: 22%;
+      margin-top: 2em; }
+      .donors .donor a {
+        font-size: 1.125em; } }
+@media all and (min-width: 45em) {
+  .donors {
+    background-image: url("../images/donors1.jpg");
+    min-height: 34.375em; }
+    .donors h2 {
+      font-size: 1.75em;
+      margin-top: 5em; }
+      .donors h2 em {
+        font-size: 1.21429em; }
+    .donors .donor {
+      margin-top: 3em; }
+      .donors .donor a {
+        font-size: 1.375em;
+        letter-spacing: 1px; } }
+@media all and (min-width: 87.5em) {
+  .donors {
+    min-height: 41.25em; }
+    .donors h2 {
+      font-size: 2.5em;
+      margin-top: 4.5em; }
+      .donors h2 em {
+        font-size: 1.15em; }
+    .donors .donor {
+      margin-top: 3.25em; }
+      .donors .donor a {
+        font-size: 2em; } }
 footer {
   background-image: linear-gradient(#152b51, #060e25);
   font-weight: 200;

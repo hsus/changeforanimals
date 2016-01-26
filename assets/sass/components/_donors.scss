@@ -1,0 +1,130 @@
+// Component template. See helpers/_02-config.scss for actual widths.
+// Default / Mobile
+.donors {
+  background: transparent url('../images/mobile-donors1.jpg') no-repeat top center; //quality @ 70
+  background-size: cover;
+  min-height: em(330);
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  h2 {
+    font-size: em(20);
+    font-weight: 200;
+    margin: em(40,20) auto em(20,20) ;
+    opacity: 0.7;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    max-width: 90%;
+    em {
+      font-family: $secondary-font;
+      font-style: normal;
+      font-size: em(30,24);
+      letter-spacing: 0;
+    }
+  }
+  .donor {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    line-height: 1.2;
+    margin-bottom: em(32);
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: em(18);
+      font-weight: 400;
+      div {
+        opacity: 0.8;
+      }
+    }
+    .prompt {
+      // display: none;
+      color: darken($white,20%);
+      font-family: $secondary-font;
+      opacity: 0;
+      font-size: em(14,18);
+      @include transition(all 0.3s linear);
+      &:before {        
+        display: block;
+        margin: em(4) auto em(8); 
+        content: "";
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 0;
+        border-style: solid;
+        border-width:  0 em(8) em(11) em(8);
+        border-color: transparent transparent darken($white,20%) transparent;
+      } 
+    }
+    a:hover .prompt {
+      opacity: 0.7;
+    }
+  }
+}
+
+//  Tablet
+@media all and (min-width: $tablet) {
+  .donors {
+    min-height: em(440);
+    h2 {
+      font-size: em(26);
+      margin-top: em(120,26);
+      letter-spacing: 2px;
+      em {
+        font-size: em(32,26);
+      }
+    }
+    .donor {
+      width: 22%;
+      margin-top: em(32);
+      a {
+        font-size: em(18);
+      }
+    }
+  }
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+  .donors {
+    background-image: url('../images/donors1.jpg'); //quality @ 70
+    min-height: em(550);
+    h2 {
+      font-size: em(28);
+      margin-top: em(140,28);
+      em {
+        font-size: em(34,28);
+      }
+    }
+    .donor {
+      margin-top: em(48);
+      a {
+        font-size: em(22);
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+  .donors {
+    min-height: em(660);
+    h2 {
+      font-size: em(40);
+      margin-top: em(180,40);      
+      em {
+        font-size: em(46,40);
+      }
+    }
+    .donor {
+      margin-top: em(52);
+      a {
+        font-size: em(32);
+
+      }
+    }
+  }
+}
+
