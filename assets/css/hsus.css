@@ -805,12 +805,17 @@ header {
       text-decoration: none;
       display: inline-block; }
       .outro .action a.donate:after {
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        transition: all 0.3s linear;
         content: " →";
         color: #ffe09b;
         font-size: 1.25em;
         line-height: 1;
         position: relative;
         top: 0.1em; }
+      .outro .action a:hover.donate:after {
+        left: 2px; }
     .outro .action.event a {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;

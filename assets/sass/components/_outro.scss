@@ -37,6 +37,7 @@
       text-decoration: none;
       display: inline-block;
       &.donate:after {
+        @include default-transition;
         content: " →";
         color: lighten($yellow,40%);
         font-size: em(20);
@@ -44,6 +45,9 @@
         position: relative;
         top: em(2,20);
       }
+      &:hover.donate:after {
+        left: 2px
+      } 
     }
     &.event a {
       @include default-transition;
