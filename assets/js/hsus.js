@@ -61,7 +61,6 @@ $(document).ready(function() {
           || (navigator.msMaxTouchPoints > 0));
     }
 
-
     // Get viewport height and set trigger point
     var windowHeight = elWin.height(),
         overlayStart = windowHeight * .5,
@@ -126,7 +125,7 @@ $(document).ready(function() {
       $(this).addClass('active');
 
       $('html, body').stop().animate( {
-          'scrollTop': $target.offset().top-90
+          'scrollTop': $target.offset().top-73
       }, 700, 'swing', function () {
           window.location.hash = target;
       });

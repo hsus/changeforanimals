@@ -1,21 +1,24 @@
 <section class="outro" id="get-involved">
-  {% assign outro = site.data.outro %}
-  <h2>{{ outro.header }}</h2>
+  <div class="wrapper">
+    {% assign outro = site.data.outro %}
+    <div class="body">
+      <h2>{{ outro.header }}</h2>
 
-  <p>{{ outro.body }}</p>
+      <p>{{ outro.body }}</p>
 
-  <h3>{{ outro.cta }}</h3>
-
-  <div class="actions">
-    <div class="action email-phone">
-      {{ outro.phone }}<br>
-      {{ outro.email }}<br>
-      <a href="{{ outro.donate-url }}">{{ outro.donate-text }}</a>
+      <h3>{{ outro.cta }}</h3>
     </div>
 
-    <div class="action event">
-      <a href="{{ outro.event-url }}">{{ outro.event-cta-text }}</a>
+    <div class="actions">
+      <div class="action email-phone">
+        {{ outro.phone }}<br>
+        {{ outro.email }}<br>
+        <a class="donate" href="{{ outro.donate-url }}">{{ outro.donate-text }}</a>
+      </div>
+
+      <div class="action event">
+        <a href="{{ outro.event-url }}">{{ outro.event-cta-text }}</a>
+      </div>
     </div>
   </div>
-
 </section>
