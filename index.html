@@ -92,19 +92,19 @@ layout: default
 </section>
 
 
-<section class="cta" id="events">
-  {% assign cta_text = site.data.homepage.cta %}
+<section class="events" id="events">
+  {% assign event_text = site.data.homepage.events %}
   <div class="event">
-    <h2>{{ cta_text.event-header }}</h2>
-    <p>{{ cta_text.event-body }}</p>
-    <a class="cta-button" href="{{ cta_text.event-link }}">{{ cta_text.event-link-text }}</a>
+    <h2>{{ event_text.event-header }}</h2>
+    <p>{{ event_text.event-body }}</p>
+    <a class="cta-button" href="{{ event_text.event-link }}">{{ event_text.event-link-text }}</a>
   </div>
 
   <div class="book">
-    <img src="{{ cta_text.book-image-url }}" alt="{{ cta_text.book-image-alt }}">
-    <h2><a href="{{ cta_text.book-link-url }}">{{ cta_text.book-link-text }}</a></h2>
-    <p>{{ cta_text.book-author }}</p>
-    <p>{{ cta_text.book-blurb }}</p>
-    <a class="cta-link" href="{{ cta_text.book-link-url }}">{{ cta_text.book-cta-link }}</a>
+    <img src="{{ event_text.book-image-url }}" alt="{{ event_text.book-image-alt }}">
+    <h2><a href="{{ event_text.book-link-url }}">{{ event_text.book-link-text }}</a></h2>
+    <p>{{ event_text.book-author }}</p>
+    <p>{{ event_text.book-blurb }}</p>
+    <a class="cta-link" href="{{ event_text.book-link-url }}">{{ event_text.book-cta-link }}</a>
   </div>
 </section>

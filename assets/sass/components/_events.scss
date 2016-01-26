@@ -1,0 +1,18 @@
+// Component template. See helpers/_02-config.scss for actual widths.
+// Default / Mobile
+.events {
+  display: none;
+}
+
+//  Tablet
+@media all and (min-width: $tablet) {
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+}
+
