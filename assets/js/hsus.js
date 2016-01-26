@@ -63,10 +63,10 @@ $(document).ready(function() {
           el.find('.overlay').css('transform','translateY('+ percentShown +'%)')
             .end().find('> h3').css('opacity', '0.' + percentShown/10);
         } else if (thisTop <= overlayEnd) {
-           el.find('.overlay').css('transform','translateY(0)')
+          el.find('.overlay').css('transform','translateY(0)')
              .end().find('> h3').css('opacity','0');
         } else {
-          el.find('.overlay').css('transform','translateY(100)')
+          el.find('.overlay').css('transform','translateY(100%)')
              .end().find('> h3').css('opacity','1');
         }
       });

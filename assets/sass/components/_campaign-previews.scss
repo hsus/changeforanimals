@@ -1,5 +1,8 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
+.cta {
+  display: none;
+}
 .campaign-previews {
   width: 100%;
   .preview {
@@ -50,10 +53,10 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 40%;
+      height: 50%;
       margin: 0;
       width: 100%;
-      line-height: 6;
+      line-height: 12;
       color: $white;
       text-align: center;
       font-size: em(16);
