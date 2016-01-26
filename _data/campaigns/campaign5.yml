@@ -1,12 +1,13 @@
 active: TRUE
-layout: three-up
+layout: "three-up"
 url: advancing-science-without-suffering
 financial_tagline: |
   **$5.8 MILLION**  
   Builds Momentum
 title: Advancing Science Without Suffering
 description: Millions of animals are used in cosmetic  and toxicity tests worldwide, despite  growing recognition of flaws inherent in  such tests. We’ve already partnered with  Procter & Gamble to develop AltTox.org,  a site dedicated to advancing non-animal  methods of toxicity testing. We can build  on that momentum to promote 21st-century science and speed the adoption  of alternatives.
-image:
+image: "/assets/images/campaign-science1.jpg"
+icon:  "/assets/images/icon-chimp.svg"
 caption: Science offers promising new approaches to cosmetics and toxicity testing, saving animals from torturous lives in labs.
 celeb_image:
 celeb_video:

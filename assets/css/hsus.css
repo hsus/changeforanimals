@@ -311,6 +311,213 @@ p ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
+.campaign-previews {
+  width: 100%; }
+  .campaign-previews .preview {
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    float: left;
+    min-height: 18.75em; }
+    .campaign-previews .preview .overlay {
+      background-color: rgba(21, 43, 81, 0.9);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(100%);
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      text-align: center; }
+      .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
+        color: white;
+        font-weight: 200;
+        max-width: 90%;
+        margin: 0 auto; }
+      .campaign-previews .preview .overlay h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.66667em; }
+      .campaign-previews .preview .overlay p {
+        font-size: 0.9375em;
+        line-height: 1.6;
+        opacity: 0.7; }
+      .campaign-previews .preview .overlay img {
+        width: 20%;
+        height: auto;
+        margin: 1.875em 0 1.25em; }
+    .campaign-previews .preview:hover .overlay {
+      transform: translateY(0); }
+    .campaign-previews .preview > h3 {
+      background-image: linear-gradient(transparent, #000);
+      font-weight: 200;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 50%;
+      margin: 0;
+      width: 100%;
+      line-height: 12;
+      color: #fff;
+      text-align: center;
+      font-size: 1em;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .campaign-previews .preview:hover > h3 {
+      opacity: 0; }
+
+@media all and (min-width: 45em) {
+  .campaign-previews .preview {
+    width: 33.333%;
+    min-height: 18.75em; }
+    .campaign-previews .preview.first {
+      width: 60%; }
+    .campaign-previews .preview.second {
+      width: 40%; }
+    .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
+      max-width: 80%; }
+    .campaign-previews .preview .overlay h3 {
+      font-size: 1.5em;
+      margin-bottom: 0.66667em; }
+    .campaign-previews .preview .overlay p {
+      font-size: 0.9375em;
+      line-height: 1.6;
+      opacity: 0.7; }
+    .campaign-previews .preview .overlay img {
+      width: 15%;
+      margin: 2em 0 1em; }
+    .campaign-previews .preview > h3 {
+      height: 20%;
+      text-align: left;
+      width: 100%;
+      line-height: 3;
+      padding-left: 1.5em;
+      font-size: 1.125em; } }
+@media all and (min-width: 87.5em) {
+  .campaign-previews .preview {
+    width: 33.333%;
+    min-height: 37.8125em; }
+    .campaign-previews .preview.first {
+      width: 60%; }
+    .campaign-previews .preview.second {
+      width: 40%; }
+    .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
+      max-width: 70%; }
+    .campaign-previews .preview .overlay h3 {
+      font-size: 2em;
+      margin-bottom: 0.5em; }
+    .campaign-previews .preview .overlay p {
+      font-size: 0.9375em;
+      line-height: 1.6;
+      opacity: 0.7; }
+    .campaign-previews .preview .overlay img {
+      width: 15%;
+      margin: 6.875em 0 3.4375em; }
+    .campaign-previews .preview > h3 {
+      height: 20%;
+      width: 100%;
+      line-height: 6;
+      padding-left: 2.5em;
+      font-size: 1.25em; } }
+.donors {
+  background: transparent url("../images/mobile-donors1.jpg") no-repeat top center;
+  background-size: cover;
+  display: inline-block;
+  min-height: 20.625em;
+  text-align: center;
+  width: 100%; }
+  .donors h2 {
+    font-size: 1.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 2em auto 1em;
+    max-width: 90%;
+    opacity: 0.7; }
+    .donors h2 em {
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 1.25em;
+      font-style: normal;
+      letter-spacing: 0; }
+  .donors .donor {
+    display: inline-block;
+    line-height: 1.2;
+    margin-bottom: 2em;
+    vertical-align: top;
+    width: 40%; }
+    .donors .donor a {
+      color: #fff;
+      font-size: 1.125em;
+      font-weight: 400;
+      text-decoration: none; }
+      .donors .donor a div {
+        opacity: 0.8; }
+    .donors .donor .prompt {
+      color: #cccccc;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 0.77778em;
+      opacity: 0;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .donors .donor .prompt:before {
+        border-color: transparent transparent #cccccc transparent;
+        border-style: solid;
+        border-width: 0 0.5em 0.6875em 0.5em;
+        content: "";
+        display: block;
+        height: 0;
+        margin: 0.25em auto 0.5em;
+        position: relative;
+        top: 0;
+        width: 0; }
+    .donors .donor a:hover .prompt {
+      opacity: 0.7 !important; }
+
+@media all and (min-width: 36.25em) {
+  .donors {
+    min-height: 27.5em; }
+    .donors h2 {
+      font-size: 1.625em;
+      letter-spacing: 2px;
+      margin-top: 4.61538em; }
+      .donors h2 em {
+        font-size: 1.23077em; }
+    .donors .donor {
+      margin-top: 2em;
+      width: 22%; }
+      .donors .donor a {
+        font-size: 1.125em; } }
+@media all and (min-width: 45em) {
+  .donors {
+    background-image: url("../images/donors1.jpg");
+    min-height: 34.375em; }
+    .donors h2 {
+      font-size: 1.75em;
+      margin-top: 5em; }
+      .donors h2 em {
+        font-size: 1.21429em; }
+    .donors .donor {
+      margin-top: 3em; }
+      .donors .donor a {
+        font-size: 1.375em;
+        letter-spacing: 1px; } }
+@media all and (min-width: 87.5em) {
+  .donors {
+    min-height: 41.25em; }
+    .donors h2 {
+      font-size: 2.5em;
+      margin-top: 4.5em; }
+      .donors h2 em {
+        font-size: 1.15em; }
+    .donors .donor {
+      margin-top: 3.25em; }
+      .donors .donor a {
+        font-size: 2em; } }
 footer {
   background-image: linear-gradient(#152b51, #060e25);
   font-weight: 200;

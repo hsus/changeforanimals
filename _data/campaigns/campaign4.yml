@@ -1,12 +1,13 @@
 active: TRUE
-layout: three-up
+layout: "three-up"
 url: championing-farm-animal-welfare
 financial_tagline: |
   **$16.3 MILLION**  
   Escalates the Fight
 title: Championing Farm Animal Welfare
 description: In the United States, millions of breeding pigs and egg-laying hens are kept in metal cages where they are virtually immobilized for their entire lives. Demand for meat is rising internationally, and factory-farming practices are spreading to the developing world. In the U.S., we’ve worked with more than 100 major retailers and the biggest names in the food industry to remove extreme confinement practices from their supply chains, and helped more than 100 school systems nationwide go meatless on Mondays. It’s time to expand our reach abroad.
-image:
+image: "/assets/images/campaign-farm1.jpg"
+icon: "/assets/images/icon-cow.svg"
 caption: By working with major corporations and institutions, we can improve living conditions for billions of animals.
 celeb_image:
 celeb_video:

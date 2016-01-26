@@ -21,9 +21,13 @@ $(document).ready(function() {
     wrapper.find('.more').css('display','inline');
   });
 
+
+
+
   // Sticky nav
   $(window).on('scroll', function() {
-    var y_scroll_pos = window.pageYOffset,
+    var elWin = $(this),
+        y_scroll_pos = window.pageYOffset,
         scroll_pos_test = 10;
 
     if (y_scroll_pos >= scroll_pos_test) {
@@ -31,6 +35,61 @@ $(document).ready(function() {
     } else {
       $('.index nav').fadeOut();
     }
+
+    function is_touch_device() {
+     return (('ontouchstart' in window)
+          || (navigator.MaxTouchPoints > 0)
+          || (navigator.msMaxTouchPoints > 0));
+    }
+
+
+    // Get viewport height and set trigger point
+    var windowHeight = elWin.height(),
+        overlayStart = windowHeight * .5,
+        overlayEnd = windowHeight * .2,
+        transitionRange = overlayStart - overlayEnd;
+
+    if (is_touch_device()) {
+      $('.overlay').css('transition','none');
+
+      // On each scroll check if .preview is in the target range
+      $('.preview').each(function() {
+        var el = $(this),
+            thisTop = el.offset().top - elWin.scrollTop(),
+            previewHeight = el.height(),
+            thisBottom = thisTop + previewHeight;
+
+        // Check if this element is in the slide range
+        if (thisTop <= overlayStart && thisTop > overlayEnd ) {
+          var percentShown = Math.round(((thisTop - overlayEnd) / transitionRange)*100);
+          el.find('.overlay').css('transform','translateY('+ percentShown +'%)')
+            .end().find('> h3').css('opacity', '0.' + percentShown/10);
+        } else if (thisTop <= overlayEnd) {
+          el.find('.overlay').css('transform','translateY(0)')
+             .end().find('> h3').css('opacity','0');
+        } else {
+          el.find('.overlay').css('transform','translateY(100%)')
+             .end().find('> h3').css('opacity','1');
+        }
+      });      
+    } 
+
+
+    $('.donor').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+
+      // Check if this element is in the slide range
+      if (thisTop <= overlayEnd*3) {
+        el.find('.prompt').css('opacity','0.7');
+      } else {
+        el.find('.prompt').css('opacity','0');
+      }
+    });
+
+
   });
 
   // Show/Hide mobile menu
