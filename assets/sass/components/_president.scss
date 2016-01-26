@@ -1,0 +1,298 @@
+// Component template. See helpers/_02-config.scss for actual widths.
+// Default / Mobile
+.president {
+  background-image: radial-gradient( circle, lighten($blue,10%), $blue );
+  display: inline-block;
+  margin-top: em(50);
+  width: 100%;
+  .wrapper {
+    margin: 0 2%;
+    max-width: 96%;
+  }
+  .letter-top {
+    text-align: center;
+    p {
+      color: $white;
+      font-size: em(15);
+      font-weight: 700;
+      letter-spacing: em(3,15);
+      margin: 0;
+      opacity: 0.25;
+      text-transform: uppercase;
+    }
+    h2 {
+      color: $yellow;
+      font-size: em(26);
+      font-weight: 200;
+      letter-spacing: em(3,26);
+      margin-top: em(12,26); 
+      opacity: 0.9;
+    }
+  }
+  .pic {
+    display: inline-block;
+    margin: 0 10%;
+    max-width: 80%;
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: em(15);
+      font-weight: 200;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      margin-top: 0;
+      opacity: 0.3;
+      padding-left: 0;
+      text-align: center
+    }
+  }
+  .body {
+    margin-top: em(16);
+    h3 {
+      font-size: em(17);
+      font-weight: 200;
+      letter-spacing: em(1);
+      opacity: 0.75;
+    }
+    p,ul {
+      font-size: em(15);
+      font-weight: 200;
+      letter-spacing: em(1);
+      opacity: 0.75;
+    }
+    .list-top {
+      color: $yellow;
+      font-size: em(17);
+      opacity: 0.9;
+    }
+  }
+  .sig {
+    float: right;
+    font-size: em(14);
+    margin-bottom: em(60);
+    max-width: 45%;
+    opacity: 0.75;
+    text-align: right;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .more-button {
+    cursor: pointer;    
+    font-family: $secondary-font;
+    font-size: em(14);
+    margin-top: em(32);
+    a {
+      @include default-transition;
+      color: $light-grey;
+      font-style: italic;
+      text-decoration: none;
+      &:after {
+        @include transition(all 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+        border-color: $light-blue transparent transparent transparent;
+        border-style: solid;
+        border-width: em(8) em(6) 0 em(6);
+        content: "";
+        display: block;
+        height: 0;
+        left: em(95);
+        position: relative;
+        top: em(6);
+        width: 0;
+      }      
+    }
+    &:hover a {
+      color: lighten($light-grey, 10%);
+      &:after {
+        border-color: lighten($light-blue, 10%) transparent transparent transparent;
+        top: em(8);
+      }
+    }
+  }
+  &.showmore .more-button {
+    a {
+      &:after {
+        border-color: transparent transparent $light-blue transparent;
+        border-width: 0 em(6) em(8) em(6);
+        top: em(-33);
+      }      
+    }
+    &:hover a {
+      &:after {
+        border-color: transparent transparent lighten($light-blue, 10%) transparent;
+        top: em(-36);
+      }
+    }
+  }
+}
+
+
+//  Tablet
+@media all and (min-width: $tablet) {
+  .president {
+    background-image: radial-gradient( circle closest-side, lighten($blue,10%), $blue );
+    margin-top: em(60);
+    .wrapper {
+      margin: 0 2%;
+      max-width: 96%;
+    }
+    .letter-top {
+      text-align: center;
+      p {
+        font-size: em(15);
+        letter-spacing: em(3,15);
+      }
+      h2 {
+        font-size: em(28);
+        letter-spacing: em(3,28);
+        margin-top: em(12,28); 
+      }
+    }
+    .pic {
+      display: inline-block;
+      float: left;
+      margin: 0 0 em(168) 0;
+      max-width: 25%;
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: em(12);
+        margin-top: em(6,12);
+        padding-left: em(6,12);
+        text-align: left;
+      }
+    }
+    .body {
+      margin-left: 28%;
+      margin-top: em(28);
+      h3 {
+        font-size: em(18);
+      }
+      p,ul {
+        font-size: em(15);
+      }
+      .list-top {
+        font-size: em(18);
+      }
+    }
+    .sig {
+      font-size: em(14);
+      margin-bottom: em(60);
+      max-width: 45%;
+      img {
+        max-width: 100%;
+      }
+    }    
+    .more-button {
+      margin-top: em(24);
+    }
+  }
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+  .president {
+    margin-top: em(90);
+    .wrapper {
+      margin: 0 3%;
+      max-width: 94%;
+    }
+    .letter-top {
+      text-align: center;
+      p {
+        font-size: em(16);
+        letter-spacing: em(3,16);
+      }
+      h2 {
+        font-size: em(34);
+        letter-spacing: em(3,34);
+        margin-top: em(12,34); 
+      }
+    }
+    .pic {
+      margin-bottom: em(168);
+      max-width: 25%;
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: em(14);
+        margin-top: em(6,14);
+        padding-left: em(6,14);
+      }
+    }
+    .body {
+      margin-left: 30%;
+      margin-top: em(42);
+      h3 {
+        font-size: em(20);
+      }
+      p,ul {
+        font-size: em(16);
+      }
+      .list-top {
+        font-size: em(20);
+      }
+    }
+    .sig {
+      font-size: em(16);
+      margin-bottom: em(80);
+    }    
+    .more-button {
+      margin-top: em(24);
+    }
+  }
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+  .president {
+    margin-top: em(110);
+    .wrapper {
+      max-width: em(1400);
+    }
+    .letter-top {
+      text-align: center;
+      p {
+        font-size: em(17);
+        letter-spacing: em(3,17);
+      }
+      h2 {
+        font-size: em(42);
+        letter-spacing: em(3,42);
+        margin-top: em(12,42); 
+      }
+    }
+    .pic {
+      margin-bottom: em(268);
+      p {
+        font-size: em(20);
+        margin-top: em(6,20);
+        padding-left: em(6,20);
+      }
+    }
+    .body {
+      margin-left: em(475);
+      margin-top: em(42);
+      h3 {
+        font-size: em(28);
+      }
+      p,ul {
+        font-size: em(22);
+      }
+      .list-top {
+        font-size: em(28);
+      }
+    }
+    .sig {
+      font-size: em(18);
+    }    
+    .more-button {
+      margin-top: em(32);
+    }
+  }
+}
+

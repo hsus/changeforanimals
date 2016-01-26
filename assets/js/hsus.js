@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // This function works with sass/components/read-more.scss
-  $('.readmore').click(function() {
+  $('#intro .readmore').click(function() {
     var el = $(this),
         wrapper = el.parent().parent().parent();
 
@@ -21,7 +21,26 @@ $(document).ready(function() {
     wrapper.find('.more').css('display','inline');
   });
 
+  // This function works with sass/components/read-more.scss
+  $('#about .readmore').click(function() {
+    var el = $(this),
+        wrapper = el.parent().parent().parent().parent();
 
+    if (wrapper.hasClass('showmore')) {
+      wrapper.find('.readmore').text('Read More of Wayne\'s Letter');
+      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+        $(this).hide();
+      });
+    } else {
+      wrapper.find('.readmore').text('Show Less of Wayne\'s Letter');
+      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+        $(this).css('display','inline');
+      });
+    };
+
+    wrapper.toggleClass('showmore showless');
+    wrapper.find('.more').css('display','inline');
+  });
 
 
   // Sticky nav
@@ -98,7 +117,7 @@ $(document).ready(function() {
     $('#mobile-menu').fadeToggle();
   });
 
-  // Scroll to hash
+  // Scroll to hash - Menu
   $('#mobile-menu a[href^="#"],#menu a[href^="#"]').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       var target = this.hash,
@@ -113,8 +132,8 @@ $(document).ready(function() {
       });
   });
 
-  // Scroll to hash
-  $('#more-button a[href^="#"]').bind('click.smoothscroll',function (e) {
+  // Scroll to hash - Read More
+  $('#intro-button a[href^="#"],#pres-button a[href^="#"]').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       var target = this.hash,
           $target = $(target),
