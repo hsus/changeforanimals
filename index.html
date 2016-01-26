@@ -14,7 +14,7 @@ layout: default
     <span class="more">{{ intro_text.readmore4 }}</span> <span>{{ intro_text.bold4 }}</span>
     <br><br><br class="less">
     <span class="period italic">{{ intro_text.bold5 }}</span> <span class="more">{{ intro_text.readmore5 }}</span>
-    <p class="more-button" id="more-button"><a href="#intro" class="readmore">Read More</a></p>
+    <p class="more-button" id="intro-button"><a href="#intro" class="readmore">Read More</a></p>
   </div>
 </section>
 
@@ -38,28 +38,40 @@ layout: default
 
 
 <section class="president showless" id="about">
-  {% assign letter = site.data.homepage.president %}
-  <p>{{ letter.from }}</p>
-  <h2>{{ letter.about }}</h2>
+  <div class="wrapper">
+    {% assign letter = site.data.homepage.president %}
+    <div class="letter-top">  
+      <p>{{ letter.from }}</p>
+      <h2 id="letter-top">{{ letter.about }}</h2>
+    </div>
+    <div class="pic">
+      <img src="{{ letter.image }}" alt="{{ letter.caption }}">
+      <p>{{ letter.caption }}</p>
+    </div>
 
-  <h3 class="more">{{ letter.header1 }}</h3>
-  <h3>{{ letter.header2 }}</h3>
+    <div class="body">
+      <h3 class="more">{{ letter.header1 }}</h3>
+      <h3>{{ letter.header2 }}</h3>
 
-  <p class="list-top">{{ letter.list-top }}</p>
-  <ul>
-    <li>{{ letter.list1 }}</li>
-    <li>{{ letter.list2 }}</li>
-    <li>{{ letter.list3 }}</li>
-    <li>{{ letter.list4 }}</li>
-    <li>{{ letter.list5 }}</li>
-  </ul>
-  <p class="more">{{ letter.body1 }}</p>
-  <p class="more">{{ letter.body2 }}</p>
-  <p class="more">{{ letter.body3 }}</p>
+      <p class="list-top">{{ letter.list-top }}</p>
+      <ul>
+        <li>{{ letter.list1 }}</li>
+        <li>{{ letter.list2 }}</li>
+        <li>{{ letter.list3 }}</li>
+        <li>{{ letter.list4 }}</li>
+        <li>{{ letter.list5 }}</li>
+      </ul>
+      <p class="more">{{ letter.body1 }}</p>
+      <br class="more"><br class="more">
+      <p class="more">{{ letter.body2 }}</p>
+      <br class="more"><br class="more">
+      <p class="more">{{ letter.body3 }}</p>
 
-  <p class="more-button"><a class="readmore">{{ letter.readmore }}</a></p>
+      <p class="more-button" id="pres-button"><a href="#letter-top" class="readmore">{{ letter.readmore }}</a></p>
+    </div>
 
-  <p>{{ letter.signature-text }}</p>
+    <p class="sig"><img src="{{ letter.signature-image }}" alt="{{ letter.signature-text }}"><br/>{{ letter.signature-text }}</p>
+  </div>
 </section>
 
 
