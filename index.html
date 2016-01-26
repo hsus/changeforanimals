@@ -67,9 +67,13 @@ layout: default
   {% for campaign_hash in site.data.campaigns %}
   {% assign campaign = campaign_hash[1] %}
   <a href="/{{campaign.url}}/">
-    <div class="preview {{campaign.layout}}" style="background-image:{{campaign.image}};">
+    <div class="preview {{campaign.layout}}" style="background-image: url('{{campaign.image}}');">
       <h3>{{campaign.title}}</h3>
-      <p>{{campaign.caption}}</p>
+      <div class="overlay">
+        <img src="{{campaign.icon}}" alt="{{campaign.caption}}" />
+        <h3>{{campaign.title}}</h3>
+        <p>{{campaign.caption}}</p>
+      </div>
     </div>
   </a>
   {% endfor %}
