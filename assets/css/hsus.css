@@ -858,7 +858,7 @@ header {
 @media all and (min-width: 45em) {
   .outro {
     background-image: url("../images/outro1.jpg");
-    padding-bottom: 3em; }
+    padding-bottom: 3.25em; }
     .outro .wrapper {
       max-width: 80%;
       margin: 0 10%; }
@@ -868,7 +868,7 @@ header {
     .outro h2 {
       font-size: 2.625em;
       line-height: 1.2;
-      margin: 1.54762em auto 1.07143em;
+      margin: 1.78571em auto 1.07143em;
       max-width: 75%; }
     .outro p {
       line-height: 1.4;

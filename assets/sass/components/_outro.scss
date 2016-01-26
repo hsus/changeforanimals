@@ -108,7 +108,7 @@
 @media all and (min-width: $lg-tablet) {
   .outro {    
     background-image: url('../images/outro1.jpg'); //quality @ 70
-    padding-bottom: em(48);
+    padding-bottom: em(52);
     .wrapper {
       max-width: 80%;
       margin: 0 10%;
@@ -120,7 +120,7 @@
     h2 {
       font-size: em(42);
       line-height: 1.2;
-      margin: em(65,42) auto em(45,42) ;
+      margin: em(75,42) auto em(45,42) ;
       max-width: 75%;
     }
     p {
