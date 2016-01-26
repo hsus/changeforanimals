@@ -42,13 +42,15 @@ $(document).ready(function() {
           || (navigator.msMaxTouchPoints > 0));
     }
 
+
+    // Get viewport height and set trigger point
+    var windowHeight = elWin.height(),
+        overlayStart = windowHeight * .5,
+        overlayEnd = windowHeight * .2,
+        transitionRange = overlayStart - overlayEnd;
+
     if (is_touch_device()) {
       $('.overlay').css('transition','none');
-      // Get viewport height and set trigger point
-      var windowHeight = elWin.height(),
-          overlayStart = windowHeight * .5,
-          overlayEnd = windowHeight * .2,
-          transitionRange = overlayStart - overlayEnd;
 
       // On each scroll check if .preview is in the target range
       $('.preview').each(function() {
@@ -69,8 +71,23 @@ $(document).ready(function() {
           el.find('.overlay').css('transform','translateY(100%)')
              .end().find('> h3').css('opacity','1');
         }
-      });
+      });      
     } 
+
+
+    $('.donor').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+
+      // Check if this element is in the slide range
+      if (thisTop <= overlayEnd*3) {
+        el.find('.prompt').css('opacity','0.7');
+      } else {
+        el.find('.prompt').css('opacity','0');
+      }
+    });
 
 
   });
