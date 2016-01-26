@@ -3,7 +3,7 @@ $(document).ready(function() {
   // This function works with sass/components/read-more.scss
   $('.readmore').click(function() {
     var el = $(this),
-        wrapper = el.parent().parent();
+        wrapper = el.parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
       wrapper.find('.readmore').text('Read More');
@@ -54,11 +54,30 @@ $(document).ready(function() {
       });
   });
 
+  // Scroll to hash
+  $('#more-button a[href^="#"]').bind('click.smoothscroll',function (e) {
+      e.preventDefault();
+      var target = this.hash,
+          $target = $(target),
+          introPadding = $('#intro').css('padding-top'),
+          intoTop = parseInt(introPadding, 10);
+          if (intoTop > 120) { intoTop = 0; }
+
+      $('html, body').stop().animate( {
+          'scrollTop': $target.offset().top-intoTop
+      }, 700, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+
+
   // Top of page
   $('.logo-sm').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       $('#menu').find('a').removeClass('active');
       $('html, body').stop().animate({'scrollTop': 0}, 700, 'swing');
+      $('.mobile-menu-icon').removeClass('active');
+      $('#mobile-menu').fadeOut();
   });
 
 });

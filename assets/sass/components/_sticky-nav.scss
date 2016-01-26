@@ -5,6 +5,7 @@
   background-color: $blue;
   text-align: right;
   width: 100%;
+  z-index: 100;
   .logo-sm {
     padding: em(20) 0 em(18) em(18);
     width: em(265);
@@ -96,10 +97,6 @@
 
 }
 
-//  Tablet
-@media all and (min-width: $tablet) {
-}
-
 //  Large Tablet
 @media all and (min-width: em(820)) {
   .index nav {
@@ -124,8 +121,9 @@
     .menu {
       display: inline-block;
     }
+    .mobile-menu,
     .mobile-menu-icon {
-      display: none;
+      display: none !important;
     }
   }
 }

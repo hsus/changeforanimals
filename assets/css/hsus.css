@@ -198,6 +198,7 @@ input[type="checkbox"], input[type="radio"] {
 
 html, body {
   font-family: "Frutiger W01", sans-serif;
+  font-weight: 200;
   font-size: 16px;
   color: #fff;
   background-color: #152b51; }
@@ -424,15 +425,15 @@ footer {
 header {
   background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;
-  text-align: center;
   display: inline-block;
+  text-align: center;
   width: 100%; }
   header .logo {
     display: block;
     margin: 7.5em auto 1em; }
     header .logo img {
-      max-width: 60%;
-      height: auto; }
+      height: auto;
+      max-width: 60%; }
   header .tagline {
     display: block;
     font-family: "MyWriteHand";
@@ -454,6 +455,113 @@ header {
     header .tagline {
       font-size: 5.25em;
       margin: 0 auto 2.85714em; } }
+.intro {
+  background: transparent url("../images/mobile-intro1.jpg") no-repeat top center;
+  background-size: cover;
+  display: inline-block;
+  font-size: 0.9375em;
+  padding-bottom: 2em;
+  padding-top: 3.33333em;
+  line-height: 1.6;
+  text-align: center;
+  width: 100%; }
+  .intro .wrapper {
+    margin: 0 auto;
+    max-width: 90%; }
+  .intro span i {
+    font-style: normal;
+    color: #ce8e00;
+    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-size: 1.33333em;
+    line-height: 1; }
+  .intro span.italic:after {
+    color: #ce8e00; }
+  .intro span.italic i {
+    font-style: italic; }
+  .intro .more-button {
+    cursor: pointer;
+    margin: 2em auto 0;
+    width: 9.375em;
+    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-size: 0.875em; }
+    .intro .more-button a {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      color: #c1d1df;
+      text-decoration: none;
+      font-style: italic; }
+      .intro .more-button a:after {
+        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: block;
+        margin: 0 auto;
+        content: "";
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 0;
+        border-style: solid;
+        border-width: 0.6875em 0.5em 0 0.5em;
+        border-color: #739abc transparent transparent transparent; }
+    .intro .more-button:hover a {
+      color: #e3eaf0; }
+      .intro .more-button:hover a:after {
+        top: 0.1875em;
+        border-color: #95b3cd transparent transparent transparent; }
+  .intro.showmore .more-button a:after {
+    top: -2.6875em;
+    border-width: 0 0.5em 0.6875em 0.5em;
+    border-color: transparent transparent #739abc transparent; }
+  .intro.showmore .more-button:hover a:after {
+    top: -2.875em;
+    border-color: transparent transparent #95b3cd transparent; }
+
+@media all and (min-width: 36.25em) {
+  .intro {
+    font-size: 1.125em;
+    padding-bottom: 1.66667em;
+    padding-top: 2.77778em; }
+    .intro .wrapper {
+      margin: 0 auto;
+      max-width: 75%; }
+    .intro .more-button {
+      margin-top: 1.66667em; } }
+@media all and (min-width: 45em) {
+  .intro {
+    background-image: url("../images/intro1.jpg");
+    font-size: 1.375em;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 2.72727em;
+    padding-top: 5.45455em; }
+    .intro .wrapper {
+      margin: 0 auto;
+      max-width: 65%; }
+    .intro span i {
+      font-style: normal;
+      color: #ce8e00;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 1.45455em;
+      line-height: 1; }
+    .intro span.italic:after {
+      color: #ce8e00; }
+    .intro span.italic i {
+      font-style: italic; }
+    .intro .more-button {
+      margin-top: 2.72727em; } }
+@media all and (min-width: 87.5em) {
+  .intro {
+    font-size: 1.625em;
+    padding-bottom: 5.76923em;
+    padding-top: 8.84615em; }
+    .intro .wrapper {
+      margin: 0 auto;
+      max-width: 50%; }
+    .intro .more-button {
+      margin-top: 3.84615em; } }
 @-webkit-keyframes hsStretch {
   from {
     font-size: 0; }
@@ -519,7 +627,8 @@ header {
   position: fixed;
   background-color: #152b51;
   text-align: right;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   .index nav .logo-sm {
     padding: 1.25em 0 1.125em 1.125em;
     width: 16.5625em;
@@ -613,8 +722,9 @@ header {
       border-bottom: 0.35714em solid #739abc; }
   .index nav .menu {
     display: inline-block; }
+  .index nav .mobile-menu,
   .index nav .mobile-menu-icon {
-    display: none; } }
+    display: none !important; } }
 @media all and (min-width: 62.5em) {
   .index nav a.text {
     font-size: 1.125em;
@@ -622,5 +732,84 @@ header {
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
+.victories .wrapper {
+  background: transparent url("../images/mobile-victories1.jpg") no-repeat top center;
+  background-size: cover;
+  min-height: 30em;
+  padding: 2.5em 0 4.375em;
+  text-align: center; }
+  .victories .wrapper .victory {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    width: 80%; }
+  .victories .wrapper h2, .victories .wrapper h3 {
+    color: #ce8e00;
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 0; }
+    .victories .wrapper h2 small, .victories .wrapper h3 small {
+      font-size: 0.5em;
+      font-weight: 400;
+      letter-spacing: none; }
+  .victories .wrapper h2 {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 1em; }
+  .victories .wrapper p {
+    color: #739abc;
+    font-size: 0.875em;
+    letter-spacing: 0.03125em;
+    margin-top: 0.57143em; }
+
+.victory-after {
+  background: transparent url("../images/mobile-victories-after1.jpg") no-repeat top center;
+  background-size: cover;
+  min-height: 30em; }
+
+@media all and (min-width: 36.25em) {
+  .victories .wrapper {
+    padding: 2.5em 0 4.375em; }
+    .victories .wrapper h2 {
+      font-size: 1.625em; }
+    .victories .wrapper .victory {
+      margin: 0.75em 1em 0;
+      width: 36%; } }
+@media all and (min-width: 45em) {
+  .victories .wrapper {
+    background-image: url("../images/victories1.jpg");
+    min-height: 45em;
+    padding: 6.25em 0 4.375em; }
+    .victories .wrapper .victory {
+      margin: 1.5em 2em;
+      width: 24%; }
+
+  .victory-after {
+    background-image: url("../images/victories-after1.jpg");
+    min-height: 45em; } }
+@media all and (min-width: 87.5em) {
+  .victories .wrapper {
+    padding: 9.375em 4em 5.625em; }
+    .victories .wrapper .victory {
+      margin: 2.25em 4em;
+      width: 22%; }
+    .victories .wrapper h2, .victories .wrapper h3 {
+      font-size: 3.25em;
+      letter-spacing: none; }
+      .victories .wrapper h2 small, .victories .wrapper h3 small {
+        font-size: 0.42308em;
+        letter-spacing: -0.02em; }
+    .victories .wrapper h2 {
+      font-size: 2.25em;
+      letter-spacing: 3px;
+      margin-bottom: 0.88889em; }
+    .victories .wrapper p {
+      font-size: 1.25em;
+      letter-spacing: -0.00313em;
+      margin-top: 0.4em; }
+
+  .victory-after {
+    min-height: 62.5em; } }
 
 /*# sourceMappingURL=hsus.css.map */
