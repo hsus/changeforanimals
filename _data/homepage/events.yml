@@ -3,10 +3,10 @@ event-body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adip
 event-link: 
 event-link-text: "Attend an Event"
 
-book-image-url: 
+book-image-url: "/assets/images/book-cover1.jpg"
 book-image-alt: "Book Cover: The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals By Wayne Pacelle"
 book-link-url: "http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy"
 book-link-text: "The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals"
-book-author: "By: Wayne Pacelle"
-book-blurb: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero."
-book-cta-link: "CTA LINK"
+book-author: "<strong>By</strong> Wayne Pacelle"
+book-blurb: "<em>The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals</em> describes a revolution in American business and public policy that is changing forever how we treat animals and conduct commerce. Wayne Pacelle, president and CEO of the nation’s most powerful animal protection organization, tells the story from the frontlines, in a book that speaks to both mind and heart."
+book-cta-link: "Purchase the Book"
