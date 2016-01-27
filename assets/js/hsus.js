@@ -101,7 +101,7 @@ $(document).ready(function() {
           thisBottom = thisTop + previewHeight;
 
       // Check if this element is in the slide range
-      if (thisTop <= overlayEnd*3) {
+      if (thisTop <= overlayEnd*3 && thisTop >= overlayEnd*1 ) {
         el.find('.prompt').css('opacity','0.7');
       } else {
         el.find('.prompt').css('opacity','0');
