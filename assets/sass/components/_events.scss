@@ -1,18 +1,255 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .events {
-  display: none;
+  background: transparent url('../images/mobile-events1.jpg') no-repeat top center; //quality @ 70
+  background-size: cover;
+  clear: both;  
+  .wrapper {
+    padding: em(30) 0 em(70);
+    text-align: center;
+    display: inline-block;
+    max-width: 94%;
+    margin: 0 3%;
+  }
+  .event, .book {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .event {
+    h2 {
+      font-size: em(32);
+      font-weight: 200;
+      letter-spacing: 1px;
+      line-height: 1.15;
+      opacity: 0.8;
+      margin: em(45,32) auto em(25,32) ;
+    }
+    p {
+      opacity: 0.8;
+      font-weight: 200;
+      line-height: 1.5;
+    }
+    .cta-button {
+      @include default-transition;
+      background-color: $yellow;
+      color: $white;
+      display: inline-block;
+      text-decoration: none;
+      padding: em(16) em(64);
+      &:hover {
+        background-color: darken($yellow,10%);
+      }
+    }
+  }
+  .book {
+    margin-top: em(32);
+    .book-header {
+      background-color: rgba($light-blue,0.2);
+      padding: em(18);
+      display: inline-block;
+      .cover {
+        float: left;
+        max-width: 30%;
+        margin-right: 5%;
+        img {
+          width: 100%;
+        }
+      }
+      .title {
+        color: $white;
+        text-decoration: none;
+        line-height: 1.3;
+        max-width: 60%;
+        h2 {
+          font-weight: 200;
+          text-align: left;
+          font-size: em(14);
+          margin: 0;
+        }
+      }
+      p {
+        margin: em(8) 0 0 0;
+        padding: 0;
+        text-align: left;
+        font-size: em(14);
+      }
+    }
+    .book-body {
+      background-color: rgba($white,0.15);
+      padding: em(18) em(24);
+      display: inline-block;
+      text-align: left;
+      p {
+        font-size: em(16);
+        line-height: 1.5;
+        opacity: 0.8;
+      }
+      a {
+        display: block;
+        margin-bottom: em(18);
+        margin-top: em(8);
+        color: $white;
+        text-decoration: none;
+        font-size: em(15);
+        opacity: 0.5;
+        @include default-transition;
+        &:after {
+          content: " →";
+          color: lighten($yellow,40%);
+          font-size: em(20);
+          line-height: 1;
+          position: relative;
+          top: em(2,20);
+        }
+        &:hover {          
+          opacity: 1;
+          &:after {            
+            left: 1px;
+          }
+        } 
+      }
+    }
+  }
+}
+.events-after {
+  background: transparent url('../images/mobile-events-after1.jpg') no-repeat top center; //quality @ 20
+  background-size: cover;
+  min-height: em(480);
+  position: static;
+  height: 80vh;
+  min-height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 //  Tablet
 @media all and (min-width: $tablet) {
+  .events {    
+    .event, .book {
+      width: 70%;
+      margin: 0 15%;
+    }
+    .event {
+      h2 {
+        font-size: em(32);
+        line-height: 1.15;
+        margin: em(45,32) auto em(25,32) ;
+      }
+      .cta-button {
+        padding: em(16) em(44);
+      }
+    }
+    .book {      
+      margin-top: em(56);
+      .book-header {
+        padding: em(24);
+        p {          
+          font-size: em(16);
+        }
+      }
+    }
+  }
 }
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
+  .events {
+    background-image: url('../images/events1.jpg'); //quality @ 70   
+    .wrapper {
+      padding: em(120) 0 em(90);
+      max-width: 90%;
+      margin: 0 5%;
+    }    
+    .event, .book {
+      width: 45%;
+      float: left;
+      margin: 0;
+    }
+    .event {
+      margin-right: 10%;
+      p {
+        font-size: em(17);
+      }
+      h2 {
+        font-size: em(42);
+        line-height: 1.2;
+        margin: em(75,42) auto em(45,42) ;
+      }
+      .cta-button {
+        font-size: em(18);
+        margin-top: em(18,18);
+        padding: em(16,18) em(80,18);
+      }
+    }
+  }
+  .events-after {
+    background-image:  url('../images/events-after1.jpg'); //quality @ 20
+    min-height: em(720);
+    position: static;
+    height: 85vh;
+    min-height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 //  Desktop
 @media all and (min-width: $desktop) {
+  .events {
+    .wrapper {
+      padding: em(180) 0 em(140);
+      max-width: 70%;
+      margin: 0 15%;
+    }    
+    .event, .book {
+      width: 45%;
+    }
+    .event {
+      margin-right: 10%;
+      p {
+        font-size: em(22);
+      }
+      h2 {
+        font-size: em(64);
+        line-height: 1.2;
+        margin: em(40,64) auto em(35,64);
+      }
+      .cta-button {
+        font-size: em(20);
+        margin-top: em(18,20);
+        padding: em(16,20) em(80,20);
+      }
+    }
+    .book {
+      .book-header {
+        .title {
+          h2 {
+            font-size: em(20);
+          }
+        }
+      }
+      .book-body {
+        p {
+          font-size: em(18);
+        }
+        a {
+          font-size: em(16);
+        }
+      }
+    }
+  }
+
+  .events-after {      
+    min-height: em(1000);
+    position: static;
+    height: 90vh;
+    min-height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
