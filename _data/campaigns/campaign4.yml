@@ -1,22 +1,27 @@
 active: TRUE
 layout: "three-up"
-url: ending-global-animal-cruelty
+url: "ending-global-animal-cruelty"
+
 financial_tagline: |
   **$7.4 MILLION**  
   Can Do So Much
-title: Ending Global Animal Cruelty
-description: About 120 countries do not prohibit dogfighting. A fifth of the world’s nations lack even a basic anti-cruelty statute. Many notorious U.S. dogfighting kingpins and kennels sell dogs internationally for fights in other countries. Building on our success at making dogfighting and malicious cruelty to animals a felony in all 50 states, we’ll export this successful approach internationally.
+
+title: "Ending Global Animal Cruelty"
+description: "About 120 countries do not prohibit dogfighting. A fifth of the world’s nations lack even a basic anti-cruelty statute. Many notorious U.S. dogfighting kingpins and kennels sell dogs internationally for fights in other countries. Building on our success at making dogfighting and malicious cruelty to animals a felony in all 50 states, we’ll export this successful approach internationally."
+
 image: "/assets/images/campaign-cruelty1.jpg"
 icon: "/assets/images/icon-cruelty.svg"
-caption: Even after the fight is over, dogfighting dogs aren’t safe. They sometimes die from their wounds or are killed if they lost the fight.
+caption: "Even after the fight is over, dogfighting dogs aren’t safe. They sometimes die from their wounds or are killed if they lost the fight."
+
 celeb_image:
 celeb_video:
 celeb_quote: |
   **PROTECTING ANIMALS** from the worst forms of cruelty **IS PART OF A CIVIL SOCIETY**, and it’s time for every nation in the world to have that. **YOU...CAN MAKE IT A REALITY**.  
   —Ian Somerholder  
   Actor, _Vampire Diaries_
+  
 goals:
-  goal1: Expand our network of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems.
-  goal2: Ban dogfighting in 10 countries and reduce dogfighting by 15 percent in Costa Rica and the Philippines, as measured by raids, arrests and dogfighting rings dismantled.
-  goal3: Dismantle 30 of the largest organized dogfighting networks in the United States.
+  goal1: "Expand our network of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems."
+  goal2: "Ban dogfighting in 10 countries and reduce dogfighting by 15 percent in Costa Rica and the Philippines, as measured by raids, arrests and dogfighting rings dismantled."
+  goal3: "Dismantle 30 of the largest organized dogfighting networks in the United States."
 donor_story: |
