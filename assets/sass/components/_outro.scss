@@ -184,14 +184,14 @@
       font-size: em(26);
       line-height: 1.6;
       a {
-        padding-top: em(4,26);
         &.donate:after {
           font-size: em(26,26);
           top: em(2,26);
         }
       }
       &.event a {
-        padding: em(25) em(100);
+        margin-top: em(18,26);
+        padding: em(16) em(80);
       }
     }
   }

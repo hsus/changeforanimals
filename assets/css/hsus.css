@@ -914,13 +914,12 @@ header {
       width: 50%;
       font-size: 1.625em;
       line-height: 1.6; }
-      .outro .action a {
-        padding-top: 0.15385em; }
-        .outro .action a.donate:after {
-          font-size: 1em;
-          top: 0.07692em; }
+      .outro .action a.donate:after {
+        font-size: 1em;
+        top: 0.07692em; }
       .outro .action.event a {
-        padding: 1.5625em 6.25em; } }
+        margin-top: 0.69231em;
+        padding: 1em 5em; } }
 .president {
   background-image: radial-gradient(circle, #20417a, #152b51);
   display: inline-block;
