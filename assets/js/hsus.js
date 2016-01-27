@@ -131,17 +131,31 @@ $(document).ready(function() {
       });
   });
 
-  // Scroll to hash - Read More
-  $('#intro-button a[href^="#"],#pres-button a[href^="#"]').bind('click.smoothscroll',function (e) {
+  // Scroll to hash - Intro
+  $('#intro-button a[href^="#"]').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       var target = this.hash,
           $target = $(target),
           introPadding = $('#intro').css('padding-top'),
-          intoTop = parseInt(introPadding, 10);
-          if (intoTop > 120) { intoTop = 0; }
+          introTop = parseInt(introPadding, 10);
+          if (introTop > 120) { introTop = 0; };
 
       $('html, body').stop().animate( {
-          'scrollTop': $target.offset().top-intoTop
+          'scrollTop': $target.offset().top-introTop
+      }, 700, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+
+  // Scroll to hash - President
+  $('#pres-button a[href^="#"]').bind('click.smoothscroll',function (e) {
+      e.preventDefault();
+      var target = this.hash,
+          $target = $(target),
+          aboutPadding = $('#about').css('padding-top');
+
+      $('html, body').stop().animate( {
+          'scrollTop': $target.offset().top-100
       }, 700, 'swing', function () {
           window.location.hash = target;
       });
