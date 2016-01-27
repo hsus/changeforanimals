@@ -1,16 +1,199 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
-
+.outro {
+  background: transparent url('../images/mobile-outro1.jpg') no-repeat top center; //quality @ 70
+  background-size: cover;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: em(16);
+  .wrapper {
+    max-width: 96%;
+    margin: 0 2%;
+  }  
+  .body {      
+    max-width: 96%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: em(32);
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    margin: em(45,32) auto em(25,32) ;
+    max-width: 84%;
+  }
+  p {
+    line-height: 1.4;
+  }
+  h3 {
+    font-size: em(22);
+  }
+  .action {
+    margin-bottom: em(24);
+    a {
+      color: $white;
+      text-decoration: none;
+      display: inline-block;
+      &.donate:after {
+        @include default-transition;
+        content: " →";
+        color: lighten($yellow,40%);
+        font-size: em(20);
+        line-height: 1;
+        position: relative;
+        top: em(2,20);
+      }
+      &:hover.donate:after {
+        left: 2px
+      } 
+    }
+    &.event a {
+      @include default-transition;
+      background-color: $yellow;
+      padding: em(16) em(64);
+      &:hover {
+        background-color: darken($yellow,10%);
+      }
+    }
+  }
+}
 
 //  Tablet
 @media all and (min-width: $tablet) {
+  .outro {
+    padding-bottom: em(24);
+    .wrapper {
+      max-width: 94%;
+      margin: 0 3%;
+    }  
+    .body {      
+      max-width: 96%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: em(32);
+      line-height: 1.15;
+      margin: em(45,32) auto em(25,32) ;
+      max-width: 84%;
+    }
+    p {
+      line-height: 1.4;
+      font-size: em(17);
+    }
+    h3 {
+      padding: em(16,26) 0 em(32,26);
+      font-size: em(26);
+      font-family: $secondary-font;
+    }
+    .action {
+      margin-bottom: em(24);
+      float: left;
+      width: 50%;
+      a {
+        &.donate:after {
+          font-size: em(20);
+          top: em(2,20);
+        }
+      }
+      &.event a {
+        padding: em(16) em(64);
+      }
+    }
+  }
 }
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
+  .outro {    
+    background-image: url('../images/outro1.jpg'); //quality @ 70
+    padding-bottom: em(52);
+    .wrapper {
+      max-width: 80%;
+      margin: 0 10%;
+    }  
+    .body {      
+      max-width: 96%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: em(42);
+      line-height: 1.2;
+      margin: em(75,42) auto em(45,42) ;
+      max-width: 75%;
+    }
+    p {
+      line-height: 1.4;
+      font-size: em(18);
+    }
+    h3 {
+      padding: em(16,32) 0 em(32,32);
+      font-size: em(32);
+      font-family: $secondary-font;
+    }
+    .action {
+      margin-bottom: em(24);
+      float: left;
+      width: 50%;
+      font-size: em(17);
+      a {
+        &.donate:after {
+          font-size: em(22,17);
+          top: em(2,17);
+        }
+      }
+      &.event a {
+        padding: em(16) em(64);
+      }
+    }
+  }
 }
 
 //  Desktop
 @media all and (min-width: $desktop) {
+  .outro {
+    padding-bottom: em(72);
+    .wrapper {
+      max-width: em(1400);
+      margin: 0 auto;
+    }
+    .body {      
+      max-width: em(930);
+    }
+    h2 {
+      font-size: em(42);
+      line-height: 1.2;
+      margin: em(110,42) auto em(45,42) ;
+      max-width: 65%;
+    }
+    p {
+      line-height: 1.6;
+      font-size: em(22);
+    }
+    h3 {
+      padding: em(32,38) 0 em(56,38);
+      font-size: em(38);
+      font-family: $secondary-font;
+    }
+    .action {
+      padding-top: em(4,24);
+      margin-bottom: em(24);
+      float: left;
+      width: 50%;
+      font-size: em(26);
+      line-height: 1.6;
+      a {
+        &.donate:after {
+          font-size: em(26,26);
+          top: em(2,26);
+        }
+      }
+      &.event a {
+        margin-top: em(18,26);
+        padding: em(16) em(80);
+      }
+    }
+  }
 }
 

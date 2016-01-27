@@ -313,7 +313,7 @@ ul {
     display: none; } }
 .campaign-previews {
   width: 100%;
-  display: inline-block; }
+  display: block; }
   .campaign-previews .preview {
     background-size: cover;
     width: 100%;
@@ -773,10 +773,157 @@ header {
       max-width: 50%; }
     .intro .more-button {
       margin-top: 3.84615em; } }
+.outro {
+  background: transparent url("../images/mobile-outro1.jpg") no-repeat top center;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 1em; }
+  .outro .wrapper {
+    max-width: 96%;
+    margin: 0 2%; }
+  .outro .body {
+    max-width: 96%;
+    margin: 0 auto; }
+  .outro h2 {
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    margin: 1.40625em auto 0.78125em;
+    max-width: 84%; }
+  .outro p {
+    line-height: 1.4; }
+  .outro h3 {
+    font-size: 1.375em; }
+  .outro .action {
+    margin-bottom: 1.5em; }
+    .outro .action a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-block; }
+      .outro .action a.donate:after {
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        content: " →";
+        color: #ffe09b;
+        font-size: 1.25em;
+        line-height: 1;
+        position: relative;
+        top: 0.1em; }
+      .outro .action a:hover.donate:after {
+        left: 2px; }
+    .outro .action.event a {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      background-color: #ce8e00;
+      padding: 1em 4em; }
+      .outro .action.event a:hover {
+        background-color: #9b6b00; }
+
+@media all and (min-width: 36.25em) {
+  .outro {
+    padding-bottom: 1.5em; }
+    .outro .wrapper {
+      max-width: 94%;
+      margin: 0 3%; }
+    .outro .body {
+      max-width: 96%;
+      margin: 0 auto; }
+    .outro h2 {
+      font-size: 2em;
+      line-height: 1.15;
+      margin: 1.40625em auto 0.78125em;
+      max-width: 84%; }
+    .outro p {
+      line-height: 1.4;
+      font-size: 1.0625em; }
+    .outro h3 {
+      padding: 0.61538em 0 1.23077em;
+      font-size: 1.625em;
+      font-family: "MyWriteHand", "Brush Script MT", cursive; }
+    .outro .action {
+      margin-bottom: 1.5em;
+      float: left;
+      width: 50%; }
+      .outro .action a.donate:after {
+        font-size: 1.25em;
+        top: 0.1em; }
+      .outro .action.event a {
+        padding: 1em 4em; } }
+@media all and (min-width: 45em) {
+  .outro {
+    background-image: url("../images/outro1.jpg");
+    padding-bottom: 3.25em; }
+    .outro .wrapper {
+      max-width: 80%;
+      margin: 0 10%; }
+    .outro .body {
+      max-width: 96%;
+      margin: 0 auto; }
+    .outro h2 {
+      font-size: 2.625em;
+      line-height: 1.2;
+      margin: 1.78571em auto 1.07143em;
+      max-width: 75%; }
+    .outro p {
+      line-height: 1.4;
+      font-size: 1.125em; }
+    .outro h3 {
+      padding: 0.5em 0 1em;
+      font-size: 2em;
+      font-family: "MyWriteHand", "Brush Script MT", cursive; }
+    .outro .action {
+      margin-bottom: 1.5em;
+      float: left;
+      width: 50%;
+      font-size: 1.0625em; }
+      .outro .action a.donate:after {
+        font-size: 1.29412em;
+        top: 0.11765em; }
+      .outro .action.event a {
+        padding: 1em 4em; } }
+@media all and (min-width: 87.5em) {
+  .outro {
+    padding-bottom: 4.5em; }
+    .outro .wrapper {
+      max-width: 87.5em;
+      margin: 0 auto; }
+    .outro .body {
+      max-width: 58.125em; }
+    .outro h2 {
+      font-size: 2.625em;
+      line-height: 1.2;
+      margin: 2.61905em auto 1.07143em;
+      max-width: 65%; }
+    .outro p {
+      line-height: 1.6;
+      font-size: 1.375em; }
+    .outro h3 {
+      padding: 0.84211em 0 1.47368em;
+      font-size: 2.375em;
+      font-family: "MyWriteHand", "Brush Script MT", cursive; }
+    .outro .action {
+      padding-top: 0.16667em;
+      margin-bottom: 1.5em;
+      float: left;
+      width: 50%;
+      font-size: 1.625em;
+      line-height: 1.6; }
+      .outro .action a.donate:after {
+        font-size: 1em;
+        top: 0.07692em; }
+      .outro .action.event a {
+        margin-top: 0.69231em;
+        padding: 1em 5em; } }
 .president {
   background-image: radial-gradient(circle, #20417a, #152b51);
   display: inline-block;
-  margin-top: 3.125em;
+  padding-top: 3.125em;
   width: 100%; }
   .president .wrapper {
     margin: 0 2%;
@@ -880,7 +1027,7 @@ header {
 @media all and (min-width: 36.25em) {
   .president {
     background-image: radial-gradient(circle closest-side, #20417a, #152b51);
-    margin-top: 3.75em; }
+    padding-top: 3.75em; }
     .president .wrapper {
       margin: 0 2%;
       max-width: 96%; }
@@ -896,7 +1043,8 @@ header {
     .president .pic {
       display: inline-block;
       float: left;
-      margin: 0 0 10.5em 0;
+      margin: 0;
+      padding-bottom: 10.5em;
       max-width: 25%; }
       .president .pic img {
         width: 100%; }
@@ -924,7 +1072,7 @@ header {
       margin-top: 1.5em; } }
 @media all and (min-width: 45em) {
   .president {
-    margin-top: 5.625em; }
+    padding-top: 5.625em; }
     .president .wrapper {
       margin: 0 3%;
       max-width: 94%; }
@@ -938,7 +1086,7 @@ header {
         letter-spacing: 0.08824em;
         margin-top: 0.35294em; }
     .president .pic {
-      margin-bottom: 10.5em;
+      padding-bottom: 10.5em;
       max-width: 25%; }
       .president .pic img {
         width: 100%; }
@@ -962,7 +1110,7 @@ header {
       margin-top: 1.5em; } }
 @media all and (min-width: 87.5em) {
   .president {
-    margin-top: 6.875em; }
+    padding-top: 6.875em; }
     .president .wrapper {
       max-width: 87.5em; }
     .president .letter-top {
@@ -975,7 +1123,7 @@ header {
         letter-spacing: 0.07143em;
         margin-top: 0.28571em; }
     .president .pic {
-      margin-bottom: 16.75em; }
+      padding-bottom: 16.75em; }
       .president .pic p {
         font-size: 1.25em;
         margin-top: 0.3em;
@@ -1257,7 +1405,14 @@ header {
 .victory-after {
   background: transparent url("../images/mobile-victories-after1.jpg") no-repeat top center;
   background-size: cover;
-  min-height: 30em; }
+  min-height: 30em;
+  position: static;
+  height: 80vh;
+  min-height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
 
 @media all and (min-width: 36.25em) {
   .victories .wrapper {
@@ -1278,7 +1433,13 @@ header {
 
   .victory-after {
     background-image: url("../images/victories-after1.jpg");
-    min-height: 45em; } }
+    min-height: 45em;
+    position: static;
+    height: 85vh;
+    min-height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; } }
 @media all and (min-width: 87.5em) {
   .victories .wrapper {
     padding: 9.375em 4em 5.625em; }
@@ -1301,6 +1462,12 @@ header {
       margin-top: 0.4em; }
 
   .victory-after {
-    min-height: 62.5em; } }
+    min-height: 62.5em;
+    position: static;
+    height: 90vh;
+    min-height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; } }
 
 /*# sourceMappingURL=hsus.css.map */

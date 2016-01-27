@@ -6,11 +6,13 @@ $(document).ready(function() {
         wrapper = el.parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
+      $('#intro').css('background-image','url("/assets/images/intro1.jpg")')
       wrapper.find('.readmore').text('Read More');
       $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).hide();
       });
     } else {
+      $('#intro').css('background-image','radial-gradient(circle closest-side, #20417a, #152b51)')
       wrapper.find('.readmore').text('Read Less');
       $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).css('display','inline');
@@ -61,7 +63,6 @@ $(document).ready(function() {
           || (navigator.msMaxTouchPoints > 0));
     }
 
-
     // Get viewport height and set trigger point
     var windowHeight = elWin.height(),
         overlayStart = windowHeight * .5,
@@ -93,7 +94,6 @@ $(document).ready(function() {
       });      
     } 
 
-
     $('.donor').each(function() {
       var el = $(this),
           thisTop = el.offset().top - elWin.scrollTop(),
@@ -107,7 +107,6 @@ $(document).ready(function() {
         el.find('.prompt').css('opacity','0');
       }
     });
-
 
   });
 
@@ -126,7 +125,7 @@ $(document).ready(function() {
       $(this).addClass('active');
 
       $('html, body').stop().animate( {
-          'scrollTop': $target.offset().top-90
+          'scrollTop': $target.offset().top-73
       }, 700, 'swing', function () {
           window.location.hash = target;
       });
