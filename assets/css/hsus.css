@@ -736,22 +736,43 @@ footer {
       margin-right: 1em;
       position: relative;
       width: 2em; }
+    footer .social svg path {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    footer .social .twitter:hover path {
+      fill: #55acee; }
     footer .social .pinterest {
       padding: 0.1875em;
       bottom: 0.1875em; }
+      footer .social .pinterest:hover path {
+        fill: #bd081c; }
     footer .social .facebook {
       padding: 0.25em;
       bottom: 0.25em; }
+      footer .social .facebook:hover path {
+        fill: #3b5999; }
     footer .social .instagram {
       padding: 0.25em;
       bottom: 0.25em; }
+      footer .social .instagram:hover path {
+        fill: #3f729b; }
     footer .social .youtube {
       padding: 0.0625em; }
+      footer .social .youtube:hover path {
+        fill: #cd201f; }
+    footer .social .googleplus {
+      padding: 0.25em;
+      bottom: 0.25em; }
+      footer .social .googleplus:hover path.bg {
+        fill: #dc4e41; }
     footer .social .linkedin {
       padding: 0.25em;
       bottom: 0.25em;
       margin-right: 0; }
-    footer .social img {
+      footer .social .linkedin:hover path {
+        fill: #0077b5; }
+    footer .social img, footer .social svg {
       height: auto;
       width: 100%; }
   footer .privacy-contact {

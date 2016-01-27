@@ -33,12 +33,31 @@ footer {
       position: relative;
       width: em(32);
     }
-    .pinterest { padding: em(3); bottom: em(3); }
-    .facebook { padding: em(4); bottom: em(4); }
-    .instagram { padding: em(4); bottom: em(4); }
-    .youtube { padding: em(1); }
-    .linkedin { padding: em(4); bottom: em(4); margin-right: 0;}
-    img {
+    svg path { 
+      @include default-transition; 
+    }
+    .twitter { 
+      &:hover path { fill: #55acee; } 
+    }
+    .pinterest { padding: em(3); bottom: em(3); 
+      &:hover path { fill: #bd081c; } 
+    }
+    .facebook { padding: em(4); bottom: em(4); 
+      &:hover path { fill: #3b5999; } 
+    }
+    .instagram { padding: em(4); bottom: em(4);
+      &:hover path { fill: #3f729b; } 
+    }
+    .youtube { padding: em(1); 
+      &:hover path { fill: #cd201f; } 
+    }
+    .googleplus { padding: em(4); bottom: em(4);
+      &:hover path.bg { fill: #dc4e41; } 
+    }
+    .linkedin { padding: em(4); bottom: em(4); margin-right: 0;
+      &:hover path { fill: #0077b5; }
+    }
+    img,svg {
       height: auto;
       width: 100%;
     }
