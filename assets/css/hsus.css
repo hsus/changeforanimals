@@ -1406,7 +1406,14 @@ header {
 .victory-after {
   background: transparent url("../images/mobile-victories-after1.jpg") no-repeat top center;
   background-size: cover;
-  min-height: 30em; }
+  min-height: 30em;
+  position: static;
+  height: 80vh;
+  min-height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
 
 @media all and (min-width: 36.25em) {
   .victories .wrapper {
@@ -1427,7 +1434,13 @@ header {
 
   .victory-after {
     background-image: url("../images/victories-after1.jpg");
-    min-height: 45em; } }
+    min-height: 45em;
+    position: static;
+    height: 85vh;
+    min-height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; } }
 @media all and (min-width: 87.5em) {
   .victories .wrapper {
     padding: 9.375em 4em 5.625em; }
@@ -1450,6 +1463,12 @@ header {
       margin-top: 0.4em; }
 
   .victory-after {
-    min-height: 62.5em; } }
+    min-height: 62.5em;
+    position: static;
+    height: 90vh;
+    min-height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; } }
 
 /*# sourceMappingURL=hsus.css.map */

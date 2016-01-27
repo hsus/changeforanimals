@@ -40,6 +40,13 @@
   background: transparent url('../images/mobile-victories-after1.jpg') no-repeat top center; //quality @ 20
   background-size: cover;
   min-height: em(480);
+  position: static;
+  height: 80vh;
+  min-height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
   
 
@@ -71,6 +78,12 @@
   .victory-after {
     background-image:  url('../images/victories-after1.jpg'); //quality @ 20
     min-height: em(720);
+    position: static;
+    height: 85vh;
+    min-height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
@@ -103,5 +116,11 @@
   }
   .victory-after {
     min-height: em(1000);
+    position: static;
+    height: 90vh;
+    min-height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
   } 
 }
