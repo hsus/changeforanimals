@@ -1,6 +1,6 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
-header {
+.index header {
   background: transparent url('../images/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
   background-size: cover; 
   display: inline-block;
@@ -25,9 +25,10 @@ header {
   }
 }
 
+
 //  Tablet
 @media all and (min-width: $tablet) {
-  header {
+  .index header {
     .logo {
       margin: em(180) auto em(24);
     }
@@ -40,8 +41,7 @@ header {
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
-
-  header {
+  .index header {
     background-image: url('../images/header1.1.jpg');
     .tagline {
       font-size: em(84);

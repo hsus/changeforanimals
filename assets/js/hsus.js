@@ -52,9 +52,9 @@ $(document).ready(function() {
         scroll_pos_test = 10;
 
     if (y_scroll_pos >= scroll_pos_test) {
-      $('.index nav').fadeIn();
+      $('nav').fadeIn();
     } else {
-      $('.index nav').fadeOut();
+      $('nav').fadeOut();
     }
 
     function is_touch_device() {
