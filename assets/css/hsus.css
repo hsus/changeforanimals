@@ -311,6 +311,101 @@ ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
+.campaign header {
+  background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  width: 100%; }
+  .campaign header .gradient {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 10; }
+  .campaign header .wrapper {
+    z-index: 100;
+    max-width: 87.5em;
+    margin: 0 auto;
+    position: relative; }
+  .campaign header .financial {
+    margin-top: 0;
+    display: inline-block;
+    background-color: #152b51;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.04167em 2.70833em; }
+    .campaign header .financial strong {
+      font-size: 1.33333em; }
+  .campaign header .tagline {
+    display: block;
+    font-family: "MyWriteHand";
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: center;
+    width: 21.875em;
+    padding: 0 2.5em; }
+  .campaign header h2 {
+    font-size: 2.25em;
+    max-width: 13.88889em;
+    margin-bottom: 0.77778em;
+    margin-top: 1.33333em; }
+  .campaign header .description {
+    width: 50%;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 4.375em; }
+  .campaign header .caption {
+    position: absolute;
+    right: 0;
+    bottom: 4.375em;
+    z-index: 100;
+    width: 24.375em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.875em 2.1875em;
+    line-height: 1.5; }
+
+@media all and (min-width: 36.25em) {
+  .campaign header .logo {
+    margin: 11.25em auto 1.5em; }
+  .campaign header .tagline {
+    font-size: 1.25em;
+    width: 17.5em;
+    padding: 0 2em; }
+  .campaign header h2 {
+    font-size: 2.625em;
+    max-width: 11.90476em;
+    margin-bottom: 0.57143em;
+    margin-top: 1.14286em; } }
+@media all and (min-width: 45em) {
+  .campaign header {
+    background-image: url("../images/header1.1.jpg"); }
+    .campaign header .tagline {
+      font-size: 1.5em;
+      width: 14.58333em;
+      padding: 0 1.66667em; }
+    .campaign header h2 {
+      font-size: 3.5em;
+      max-width: 8.92857em;
+      margin-bottom: 0.42857em;
+      margin-top: 0.85714em; } }
+@media all and (min-width: 87.5em) {
+  .campaign header {
+    background-image: url("../images/header1.1.jpg"); }
+    .campaign header .tagline {
+      font-size: 1.5em;
+      width: 14.58333em;
+      padding: 0 1.66667em; }
+    .campaign header h2 {
+      font-size: 4.5em;
+      max-width: 6.94444em;
+      margin-bottom: 0.33333em;
+      margin-top: 0.66667em; }
+    .campaign header .description {
+      font-size: 1.5em;
+      margin-bottom: 2.91667em; } }
 .campaign-previews {
   width: 100%;
   display: block; }
@@ -736,22 +831,43 @@ footer {
       margin-right: 1em;
       position: relative;
       width: 2em; }
+    footer .social svg path {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    footer .social .twitter:hover path {
+      fill: #55acee; }
     footer .social .pinterest {
       padding: 0.1875em;
       bottom: 0.1875em; }
+      footer .social .pinterest:hover path {
+        fill: #bd081c; }
     footer .social .facebook {
       padding: 0.25em;
       bottom: 0.25em; }
+      footer .social .facebook:hover path {
+        fill: #3b5999; }
     footer .social .instagram {
       padding: 0.25em;
       bottom: 0.25em; }
+      footer .social .instagram:hover path {
+        fill: #3f729b; }
     footer .social .youtube {
       padding: 0.0625em; }
+      footer .social .youtube:hover path {
+        fill: #cd201f; }
+    footer .social .googleplus {
+      padding: 0.25em;
+      bottom: 0.25em; }
+      footer .social .googleplus:hover path.bg {
+        fill: #dc4e41; }
     footer .social .linkedin {
       padding: 0.25em;
       bottom: 0.25em;
       margin-right: 0; }
-    footer .social img {
+      footer .social .linkedin:hover path {
+        fill: #0077b5; }
+    footer .social img, footer .social svg {
       height: auto;
       width: 100%; }
   footer .privacy-contact {
@@ -819,19 +935,19 @@ footer {
   footer .non-profit {
     font-size: 1.25em;
     line-height: 1.7; } }
-header {
+.index header {
   background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   text-align: center;
   width: 100%; }
-  header .logo {
+  .index header .logo {
     display: block;
     margin: 7.5em auto 1em; }
-    header .logo img {
+    .index header .logo img {
       height: auto;
       max-width: 60%; }
-  header .tagline {
+  .index header .tagline {
     display: block;
     font-family: "MyWriteHand";
     font-size: 2.25em;
@@ -841,15 +957,15 @@ header {
     margin: 0 auto 3.33333em; }
 
 @media all and (min-width: 36.25em) {
-  header .logo {
+  .index header .logo {
     margin: 11.25em auto 1.5em; }
-  header .tagline {
+  .index header .tagline {
     font-size: 4em;
     margin: 0 auto 2.8125em; } }
 @media all and (min-width: 45em) {
-  header {
+  .index header {
     background-image: url("../images/header1.1.jpg"); }
-    header .tagline {
+    .index header .tagline {
       font-size: 5.25em;
       margin: 0 auto 2.85714em; } }
 .intro {
@@ -1298,7 +1414,7 @@ header {
   .president {
     padding-top: 6.875em; }
     .president .wrapper {
-      max-width: 87.5em; }
+      max-width: 84.6875em; }
     .president .letter-top {
       text-align: center; }
       .president .letter-top p {
@@ -1447,20 +1563,20 @@ header {
 .president.showmore .period:after {
   content: ""; }
 
-.index nav {
+nav {
   display: none;
   position: fixed;
   background-color: #152b51;
   text-align: right;
   width: 100%;
-  z-index: 100; }
-  .index nav .logo-sm {
+  z-index: 1000; }
+  nav .logo-sm {
     padding: 1.25em 0 1.125em 1.125em;
     width: 16.5625em;
     max-width: 70%;
     height: auto;
     float: left; }
-  .index nav .mobile-menu-icon {
+  nav .mobile-menu-icon {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -1472,12 +1588,12 @@ header {
     text-indent: -9999px;
     width: 4.6875em;
     margin-right: 1em; }
-    .index nav .mobile-menu-icon div {
+    nav .mobile-menu-icon div {
       height: 100%;
       position: relative;
       width: 100%;
       z-index: 9999; }
-      .index nav .mobile-menu-icon div span {
+      nav .mobile-menu-icon div span {
         background-color: #fff;
         display: block;
         font-size: 0px;
@@ -1489,7 +1605,7 @@ header {
         transition: background-color 0.3s;
         width: 60%;
         z-index: 9999; }
-        .index nav .mobile-menu-icon div span:before, .index nav .mobile-menu-icon div span:after {
+        nav .mobile-menu-icon div span:before, nav .mobile-menu-icon div span:after {
           background: #fff;
           content: '';
           height: 100%;
@@ -1499,17 +1615,17 @@ header {
           transition: transform 0.3s;
           width: 100%;
           z-index: 9999; }
-        .index nav .mobile-menu-icon div span:after {
+        nav .mobile-menu-icon div span:after {
           transform: translateY(250%); }
-    .index nav .mobile-menu-icon.active div span {
+    nav .mobile-menu-icon.active div span {
       background-color: transparent; }
-      .index nav .mobile-menu-icon.active div span:before, .index nav .mobile-menu-icon.active div span:after {
+      nav .mobile-menu-icon.active div span:before, nav .mobile-menu-icon.active div span:after {
         background: #fff;
         transition: transform 0.3s;
         transform: rotate(45deg) translateY(0); }
-      .index nav .mobile-menu-icon.active div span:after {
+      nav .mobile-menu-icon.active div span:after {
         transform: rotate(-45deg) translateY(0); }
-  .index nav .mobile-menu {
+  nav .mobile-menu {
     background-color: rgba(21, 43, 81, 0.9);
     bottom: 0;
     display: none;
@@ -1520,18 +1636,19 @@ header {
     text-align: center;
     top: 4.6875em;
     z-index: 100; }
-    .index nav .mobile-menu a {
+    nav .mobile-menu a {
       display: block;
       text-decoration: none;
       font-size: 1.5em;
       line-height: 2.5; }
-  .index nav .menu {
+  nav .menu,
+  nav .next-menu {
     display: none; }
 
 @media all and (min-width: 51.25em) {
-  .index nav .logo-sm {
-    padding: 1.25em 0 0.75em 1.125em; }
-  .index nav a.text {
+  nav .logo-sm {
+    padding: 1.125em 0 0.875em 1.125em; }
+  nav a.text {
     font-weight: 200;
     font-size: 0.875em;
     border-bottom: 0.35714em solid #152b51;
@@ -1543,19 +1660,35 @@ header {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     transition: all 0.3s linear; }
-    .index nav a.text:hover, .index nav a.text.active {
+    nav a.text:hover, nav a.text.active {
       border-bottom: 0.35714em solid #739abc; }
-  .index nav .menu {
+  nav .menu,
+  nav .next-menu {
     display: inline-block; }
-  .index nav .mobile-menu,
-  .index nav .mobile-menu-icon {
-    display: none !important; } }
+  nav .mobile-menu,
+  nav .mobile-menu-icon {
+    display: none !important; }
+
+  .campaign nav .menu {
+    float: left;
+    margin-left: 6.25em; }
+  .campaign nav .next-menu a:after {
+    content: " →";
+    color: #ffe09b;
+    font-size: 1.375em;
+    line-height: 0.7;
+    position: relative;
+    top: 0.13636em; }
+  .campaign nav .next-menu a:hover {
+    opacity: 1; }
+    .campaign nav .next-menu a:hover:after {
+      left: 1px; } }
 @media all and (min-width: 62.5em) {
-  .index nav a.text {
+  nav a.text {
     font-size: 1.125em;
     border-bottom: 0.27778em solid #152b51;
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
-    .index nav a.text:hover, .index nav a.text.active {
+    nav a.text:hover, nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .victories .wrapper {
   background: transparent url("../images/mobile-victories1.jpg") no-repeat top center;

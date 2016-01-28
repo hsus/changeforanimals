@@ -1,11 +1,11 @@
 // Default / Mobile
-.index nav {
+nav {
   display: none;
   position: fixed;
   background-color: $blue;
   text-align: right;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
   .logo-sm {
     padding: em(20) 0 em(18) em(18);
     width: em(265);
@@ -91,7 +91,8 @@
       line-height: 2.5;
     }
   }
-  .menu {
+  .menu,
+  .next-menu {
     display: none;
   }
 
@@ -99,9 +100,9 @@
 
 //  Large Tablet
 @media all and (min-width: em(820)) {
-  .index nav {
+  nav {
     .logo-sm {
-      padding: em(20) 0 em(12) em(18);
+      padding: em(18) 0 em(14) em(18);
     }
     a.text {
       font-weight: 200;
@@ -118,7 +119,8 @@
         border-bottom: em(5,14) solid $light-blue; 
       }
     }
-    .menu {
+    .menu,
+    .next-menu {
       display: inline-block;
     }
     .mobile-menu,
@@ -126,11 +128,33 @@
       display: none !important;
     }
   }
+  .campaign nav {
+    .menu {
+      float: left;
+      margin-left: em(100);
+    }
+    .next-menu a {
+      &:after {
+        content: " →";
+        color: lighten($yellow,40%);
+        font-size: em(22);
+        line-height: 0.7;
+        position: relative;
+        top: em(3,22);
+      }
+      &:hover {          
+        opacity: 1;
+        &:after {            
+          left: 1px;
+        }
+      }
+    }
+  }
 }
 
 //  Desktop
 @media all and (min-width: em(1000)) {
-  .index nav {
+  nav {
     a.text {
       font-size: em(18);
       border-bottom: em(5,18) solid $blue;

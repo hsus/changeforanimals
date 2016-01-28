@@ -52,9 +52,9 @@ $(document).ready(function() {
         scroll_pos_test = 10;
 
     if (y_scroll_pos >= scroll_pos_test) {
-      $('.index nav').fadeIn();
+      $('nav').fadeIn();
     } else {
-      $('.index nav').fadeOut();
+      $('nav').fadeOut();
     }
 
     function is_touch_device() {
@@ -101,7 +101,7 @@ $(document).ready(function() {
           thisBottom = thisTop + previewHeight;
 
       // Check if this element is in the slide range
-      if (thisTop <= overlayEnd*3) {
+      if (thisTop <= overlayEnd*3 && thisTop >= overlayEnd*1 ) {
         el.find('.prompt').css('opacity','0.7');
       } else {
         el.find('.prompt').css('opacity','0');
@@ -131,17 +131,31 @@ $(document).ready(function() {
       });
   });
 
-  // Scroll to hash - Read More
-  $('#intro-button a[href^="#"],#pres-button a[href^="#"]').bind('click.smoothscroll',function (e) {
+  // Scroll to hash - Intro
+  $('#intro-button a[href^="#"]').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       var target = this.hash,
           $target = $(target),
           introPadding = $('#intro').css('padding-top'),
-          intoTop = parseInt(introPadding, 10);
-          if (intoTop > 120) { intoTop = 0; }
+          introTop = parseInt(introPadding, 10);
+          if (introTop > 120) { introTop = 0; };
 
       $('html, body').stop().animate( {
-          'scrollTop': $target.offset().top-intoTop
+          'scrollTop': $target.offset().top-introTop
+      }, 700, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+
+  // Scroll to hash - President
+  $('#pres-button a[href^="#"]').bind('click.smoothscroll',function (e) {
+      e.preventDefault();
+      var target = this.hash,
+          $target = $(target),
+          aboutPadding = $('#about').css('padding-top');
+
+      $('html, body').stop().animate( {
+          'scrollTop': $target.offset().top-100
       }, 700, 'swing', function () {
           window.location.hash = target;
       });
@@ -156,5 +170,27 @@ $(document).ready(function() {
       $('.mobile-menu-icon').removeClass('active');
       $('#mobile-menu').fadeOut();
   });
+
+  // Find images of class 'svg' and embed code directly.
+  $('img.svg').each(function(){
+    var $img = $(this);
+    var imgID = $img.attr('id');
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+
+    $.get(imgURL, function(data) {
+      var $svg = $(data).find('svg');
+      if(typeof imgID !== 'undefined') {
+          $svg = $svg.attr('id', imgID);
+      }
+      if(typeof imgClass !== 'undefined') {
+          $svg = $svg.attr('class', imgClass+' replaced-svg');
+      }
+      $svg = $svg.removeAttr('xmlns:a');
+      $img.replaceWith($svg);
+    }, 'xml');
+  });
+
+
 
 });

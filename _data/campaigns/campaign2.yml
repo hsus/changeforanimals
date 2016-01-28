@@ -1,23 +1,24 @@
 active: TRUE
 layout: "two-up second"
-url: championing-farm-animal-welfare
-financial_tagline: |
-  **$16.3 MILLION**  
-  Escalates the Fight
-title: Championing Farm Animal Welfare
-description: In the United States, millions of breeding pigs and egg-laying hens are kept in metal cages where they are virtually immobilized for their entire lives. Demand for meat is rising internationally, and factory-farming practices are spreading to the developing world. In the U.S., we’ve worked with more than 100 major retailers and the biggest names in the food industry to remove extreme confinement practices from their supply chains, and helped more than 100 school systems nationwide go meatless on Mondays. It’s time to expand our reach abroad.
+url: "championing-farm-animal-welfare"
+
+financial_tagline: "<strong>$16.3 MILLION</strong><br>Escalates the Fight"
+
+title: "Championing Farm Animal Welfare"
+description: "In the United States, millions of breeding pigs and egg-laying hens are kept in metal cages where they are virtually immobilized for their entire lives. Demand for meat is rising internationally, and factory-farming practices are spreading to the developing world. In the U.S., we’ve worked with more than 100 major retailers and the biggest names in the food industry to remove extreme confinement practices from their supply chains, and helped more than 100 school systems nationwide go meatless on Mondays. It’s time to expand our reach abroad."
+
 image: "/assets/images/campaign-farm1.jpg"
 icon: "/assets/images/icon-cow.svg"
-caption: By working with major corporations and institutions, we can improve living conditions for billions of animals.
+caption: "By working with major corporations and institutions, we can improve living conditions for billions of animals."
+
 celeb_image:
 celeb_video:
-celeb_quote: |
-  *THE HSUS’S FARM AIMAL PROTECTION CAMPAIGN EPITOMIZES EFFECTIVENESS.* They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals
-  — Kate Mara
-  Actor, _Fantastic Four_
+celeb_quote: "THE HSUS’S FARM ANIMAL PROTECTION CAMPAIGN EPITOMIZES EFFECTIVENESS.<em> They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals<br>— Kate Mara<br>Actor,<em>Fantastic Four<em>"
+
 goals:
-  goal1: Pass two major anti-confinement initiatives and work with U.S. farmers and retailers to move a  billion animals to higher welfare standards.
-  goal2: Implement meat-reduction policies at hundreds of institutions across the U.S., such as school  districts, hospital chains, corporate cafeterias  and more.
-  goal3: Launch Meatless Monday in five Asian cities and persuade five multinational corporations  to make Asian operations crate-free.
-  goal4: Work through the finance sector to move 100 million animals out of extreme confinement in  Central Asia and stem the introduction of such  systems in Sub-Saharan Africa.
-donor_story: |
+  goal1: "Pass two major anti-confinement initiatives and work with U.S. farmers and retailers to move a billion animals to higher welfare standards."
+  goal2: "Implement meat-reduction policies at hundreds of institutions across the U.S., such as school  districts, hospital chains, corporate cafeterias and more."
+  goal3: "Launch Meatless Monday in five Asian cities and persuade five multinational corporations  to make Asian operations crate-free."
+  goal4: "Work through the finance sector to move 100 million animals out of extreme confinement in  Central Asia and stem the introduction of such systems in Sub-Saharan Africa."
+
+donor_story: ""
