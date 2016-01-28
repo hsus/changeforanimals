@@ -311,6 +311,48 @@ ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
+.goals {
+  background: transparent url("../images/mobile-goals1.jpg") no-repeat top center;
+  background-size: cover;
+  display: block;
+  text-align: center; }
+  .goals .wrapper {
+    max-width: 94%;
+    margin: 0 3%; }
+  .goals h2 {
+    margin-top: 0;
+    padding-bottom: 1.66667em;
+    padding-top: 5em;
+    font-weight: 200;
+    color: #ce8e00;
+    font-size: 2.25em; }
+  .goals .goal {
+    display: inline-block;
+    width: 35%;
+    font-weight: 200;
+    font-size: 1.5em;
+    line-height: 1.5;
+    vertical-align: top;
+    margin-bottom: 4.16667em; }
+    .goals .goal:nth-of-type(odd) {
+      margin-right: 29%; }
+      .goals .goal:nth-of-type(odd):last-child {
+        margin-right: 0; }
+
+@media all and (min-width: 36.25em) {
+  .goals .wrapper {
+    max-width: 94%;
+    margin: 0 3%; } }
+@media all and (min-width: 45em) {
+  .goals {
+    background-image: url("../images/goals1.jpg"); }
+    .goals .wrapper {
+      max-width: 94%;
+      margin: 0 3%; } }
+@media all and (min-width: 87.5em) {
+  .goals .wrapper {
+    max-width: 87.5em;
+    margin: 0 auto; } }
 .campaign header {
   background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;

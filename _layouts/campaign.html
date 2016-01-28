@@ -69,10 +69,13 @@
         </header>
 
         <section class="goals">
-          {% for goal_hash in campaign.goals %}
-            {% assign goal = goal_hash[1] %}
-            <div class="goal">{{ goal }}</div>
-          {% endfor %}
+          <div class="wrapper">
+            <h2>Goals</h2>
+            {% for goal_hash in campaign.goals %}
+              {% assign goal = goal_hash[1] %}
+              <div class="goal">{{ goal }}</div>
+            {% endfor %}
+          </div>
         </section>
 
         <section class="video">
