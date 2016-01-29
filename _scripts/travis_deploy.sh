@@ -1,6 +1,7 @@
 #!/bin/bash
 if [[ $TRAVIS_BRANCH == 'master' ]] ; then
-  eval "bundle exec rake stage"
+  echo 'This is getting executed'
+  exit 1
 elif [[ $TRAVIS_BRANCH == 'live' ]] ; then
   eval "bundle exec rake publish"
 else
