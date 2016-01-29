@@ -1,9 +1,9 @@
-#task :default => :server
+task :default => :serve
 
 # Compile Sass and generate site
 desc 'Build site with Jekyll'
 task :build do
-  system 'bundle exec sass -r --update sass-globbing assets/sass:assets/css'
+  system 'bundle exec sass --update -r sass-globbing assets/sass:assets/css'
   jekyll 'build'
 end
 
@@ -44,4 +44,3 @@ end
 
 desc 'Serve Jekyll and compile Sass'
 task :develop => [:watch, :serve]
-Rake::Task['develop'].invoke
