@@ -1,0 +1,30 @@
+
+---
+# Amazon 3 id and secret are stored in an environment variable to prevent
+# publication.
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+
+# Amazon s3 bucket name.
+s3_bucket: staging.changinglives.humanesociety.org
+
+# Cloudfront settings
+# cloudfront_distribution_id:
+# cloudfront_invalidate_root:
+
+# Concurrency level for uploads. Decrease if errors are occurring.
+concurrency_level: 5
+
+## gzip active and file extensions
+gzip: true
+gzip:
+  - .html
+  - .css
+  - .md
+  - .js
+
+# Set browser caching.
+max_age:
+  "assets/*": 6000
+  "assets/stylesheets/*": 300
+  "*": 300
