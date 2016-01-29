@@ -9,9 +9,8 @@ s3_secret: <%= ENV['S3_SECRET'] %>
 s3_bucket: staging.changinglives.humanesociety.org
 
 # Cloudfront settings
-# cloudfront_distribution_id:
-# cloudfront_invalidate_root:
-
+cloudfront_distribution_id: E1XYTMSM5HGUOM
+cloudfront_invalidate_root: I1E6YR2RGK9NP4
 # Concurrency level for uploads. Decrease if errors are occurring.
 concurrency_level: 5
 
