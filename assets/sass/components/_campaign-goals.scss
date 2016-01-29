@@ -52,11 +52,11 @@
       font-size: em(28);
     }
     .goal {
-      width: 40%;
+      width: 43%;
       font-size: em(16);
       margin-bottom: em(60,16);
       &:nth-of-type(odd) {
-        margin-right: 19%;
+        margin-right: 12%;
       }
     }
   }
@@ -76,9 +76,12 @@
       font-size: em(32);
     }
     .goal {
-      width: 35%;
+      width: 38%;
       font-size: em(17);
       margin-bottom: em(80,17);
+      &:nth-of-type(odd) {
+        margin-right: 17%;
+      }
     }
   }
 }
@@ -96,9 +99,12 @@
       font-size: em(36);
     }
     .goal {
-      width: 35%;
-      font-size: em(24);
-      margin-bottom: em(100,24);
+      width: 37%;
+      font-size: em(22);
+      margin-bottom: em(100,22);
+      &:nth-of-type(odd) {
+        margin-right: 19%;
+      }
     }
   }
 }
