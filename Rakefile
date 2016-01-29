@@ -3,7 +3,7 @@
 # Compile Sass and generate site
 desc 'Build site with Jekyll'
 task :build do
-  system 'bundle exec sass -r sass-globbing --update assets/sass:assets/css'
+  system 'bundle exec sass -r sass-globbing assets/sass:assets/css'
   jekyll 'build'
 end
 
