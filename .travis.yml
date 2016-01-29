@@ -11,8 +11,9 @@ rvm:
 script:
 - bundle exec sass -r sass-globbing --update assets/sass:assets/css
 - bundle exec jekyll build
-after_success:
 - "chmod a+x ./_scripts/travis_deploy.sh"
+after_success:
+- "./_scripts/travis_deploy.sh"
 branches:
   only:
   - master
