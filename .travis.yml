@@ -8,7 +8,7 @@ before_script:
 - bundle exec sass --update -r sass-globbing  assets/sass:assets/css
 - bundle exec jekyll build
 after_success:
-- "./_scripts/travis_deploy.sh"
+- sh _scripts/travis_deploy.sh
 branches:
   only:
   - master
