@@ -14,4 +14,4 @@ url: "" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-exclude: ['Gemfile', '.gitignore', 'Gemfile.lock', 'Rakefile', 'assets/sass']
+exclude: ['Gemfile', '.gitignore', 'Gemfile.lock', 'Rakefile', 'assets/sass', 'vendor', '.travis.yml', 'Guardfile', 's3_website.yml']
