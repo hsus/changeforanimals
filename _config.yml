@@ -7,7 +7,7 @@
 
 # Site settings
 title: The Humane Society of the United States
-description:
+description: A Humane Society Starts with You
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
