@@ -8,3 +8,7 @@
 
 ## livereload in a separate window
 `rake guard`
+
+## Staging
+
+## Production
