@@ -561,6 +561,134 @@ ul {
       line-height: 6;
       padding-left: 2.5em;
       font-size: 1.25em; } }
+.campaign nav {
+  display: none;
+  position: fixed;
+  background-color: #152b51;
+  text-align: right;
+  width: 100%;
+  z-index: 1000; }
+  .campaign nav .logo-sm {
+    padding: 1.25em 0 1.125em 1.125em;
+    width: 16.5625em;
+    max-width: 70%;
+    height: auto;
+    float: left; }
+  .campaign nav .mobile-menu-icon {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 4.6875em;
+    position: relative;
+    text-indent: -9999px;
+    width: 4.6875em;
+    margin-right: 1em; }
+    .campaign nav .mobile-menu-icon div {
+      height: 100%;
+      position: relative;
+      width: 100%;
+      z-index: 9999; }
+      .campaign nav .mobile-menu-icon div span {
+        background-color: #fff;
+        display: block;
+        font-size: 0px;
+        height: 6px;
+        left: 25%;
+        margin-top: -2px;
+        position: absolute;
+        top: 50%;
+        transition: background-color 0.3s;
+        width: 60%;
+        z-index: 9999; }
+        .campaign nav .mobile-menu-icon div span:before, .campaign nav .mobile-menu-icon div span:after {
+          background: #fff;
+          content: '';
+          height: 100%;
+          left: 0;
+          position: absolute;
+          transform: translateY(-250%);
+          transition: transform 0.3s;
+          width: 100%;
+          z-index: 9999; }
+        .campaign nav .mobile-menu-icon div span:after {
+          transform: translateY(250%); }
+    .campaign nav .mobile-menu-icon.active div span {
+      background-color: transparent; }
+      .campaign nav .mobile-menu-icon.active div span:before, .campaign nav .mobile-menu-icon.active div span:after {
+        background: #fff;
+        transition: transform 0.3s;
+        transform: rotate(45deg) translateY(0); }
+      .campaign nav .mobile-menu-icon.active div span:after {
+        transform: rotate(-45deg) translateY(0); }
+  .campaign nav .mobile-menu {
+    background-color: rgba(21, 43, 81, 0.9);
+    bottom: 0;
+    display: none;
+    left: 0;
+    min-height: 15.625em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 4.6875em;
+    z-index: 100; }
+    .campaign nav .mobile-menu a {
+      display: block;
+      text-decoration: none;
+      font-size: 1.5em;
+      line-height: 2.5; }
+  .campaign nav .menu,
+  .campaign nav .next-menu {
+    display: none; }
+
+@media all and (min-width: 57.5em) {
+  .campaign nav .logo-sm {
+    padding: 1.125em 0 0.875em 1.125em; }
+  .campaign nav .menu {
+    float: left;
+    margin-left: 3.125em; }
+  .campaign nav a.text {
+    font-weight: 200;
+    font-size: 0.875em;
+    border-bottom: 0.35714em solid #152b51;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 2.14286em 0.5em 1.57143em 0.5em;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .campaign nav a.text:hover, .campaign nav a.text.active {
+      border-bottom: 0.35714em solid #739abc; }
+  .campaign nav .next-menu a:after {
+    content: " →";
+    color: #ffe09b;
+    font-size: 1.375em;
+    line-height: 0.7;
+    position: relative;
+    top: 0.13636em; }
+  .campaign nav .next-menu a:hover {
+    opacity: 1; }
+    .campaign nav .next-menu a:hover:after {
+      left: 1px; }
+  .campaign nav .menu,
+  .campaign nav .next-menu {
+    display: inline-block; }
+  .campaign nav .mobile-menu,
+  .campaign nav .mobile-menu-icon {
+    display: none !important; } }
+@media all and (min-width: 72.5em) {
+  .campaign nav .menu {
+    margin-left: 5em; }
+  .campaign nav a.text {
+    font-size: 1.125em;
+    border-bottom: 0.27778em solid #152b51;
+    padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
+    .campaign nav a.text:hover, .campaign nav a.text.active {
+      border-bottom: 0.27778em solid #739abc; } }
 .donors {
   background: transparent url("../images/mobile-donors1.jpg") no-repeat top center;
   background-size: cover;
@@ -1605,20 +1733,20 @@ footer {
 .president.showmore .period:after {
   content: ""; }
 
-nav {
+.index nav {
   display: none;
   position: fixed;
   background-color: #152b51;
   text-align: right;
   width: 100%;
   z-index: 1000; }
-  nav .logo-sm {
+  .index nav .logo-sm {
     padding: 1.25em 0 1.125em 1.125em;
     width: 16.5625em;
     max-width: 70%;
     height: auto;
     float: left; }
-  nav .mobile-menu-icon {
+  .index nav .mobile-menu-icon {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -1630,12 +1758,12 @@ nav {
     text-indent: -9999px;
     width: 4.6875em;
     margin-right: 1em; }
-    nav .mobile-menu-icon div {
+    .index nav .mobile-menu-icon div {
       height: 100%;
       position: relative;
       width: 100%;
       z-index: 9999; }
-      nav .mobile-menu-icon div span {
+      .index nav .mobile-menu-icon div span {
         background-color: #fff;
         display: block;
         font-size: 0px;
@@ -1647,7 +1775,7 @@ nav {
         transition: background-color 0.3s;
         width: 60%;
         z-index: 9999; }
-        nav .mobile-menu-icon div span:before, nav .mobile-menu-icon div span:after {
+        .index nav .mobile-menu-icon div span:before, .index nav .mobile-menu-icon div span:after {
           background: #fff;
           content: '';
           height: 100%;
@@ -1657,17 +1785,17 @@ nav {
           transition: transform 0.3s;
           width: 100%;
           z-index: 9999; }
-        nav .mobile-menu-icon div span:after {
+        .index nav .mobile-menu-icon div span:after {
           transform: translateY(250%); }
-    nav .mobile-menu-icon.active div span {
+    .index nav .mobile-menu-icon.active div span {
       background-color: transparent; }
-      nav .mobile-menu-icon.active div span:before, nav .mobile-menu-icon.active div span:after {
+      .index nav .mobile-menu-icon.active div span:before, .index nav .mobile-menu-icon.active div span:after {
         background: #fff;
         transition: transform 0.3s;
         transform: rotate(45deg) translateY(0); }
-      nav .mobile-menu-icon.active div span:after {
+      .index nav .mobile-menu-icon.active div span:after {
         transform: rotate(-45deg) translateY(0); }
-  nav .mobile-menu {
+  .index nav .mobile-menu {
     background-color: rgba(21, 43, 81, 0.9);
     bottom: 0;
     display: none;
@@ -1678,19 +1806,18 @@ nav {
     text-align: center;
     top: 4.6875em;
     z-index: 100; }
-    nav .mobile-menu a {
+    .index nav .mobile-menu a {
       display: block;
       text-decoration: none;
       font-size: 1.5em;
       line-height: 2.5; }
-  nav .menu,
-  nav .next-menu {
+  .index nav .menu {
     display: none; }
 
 @media all and (min-width: 51.25em) {
-  nav .logo-sm {
+  .index nav .logo-sm {
     padding: 1.125em 0 0.875em 1.125em; }
-  nav a.text {
+  .index nav a.text {
     font-weight: 200;
     font-size: 0.875em;
     border-bottom: 0.35714em solid #152b51;
@@ -1702,35 +1829,19 @@ nav {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     transition: all 0.3s linear; }
-    nav a.text:hover, nav a.text.active {
+    .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.35714em solid #739abc; }
-  nav .menu,
-  nav .next-menu {
+  .index nav .menu {
     display: inline-block; }
-  nav .mobile-menu,
-  nav .mobile-menu-icon {
-    display: none !important; }
-
-  .campaign nav .menu {
-    float: left;
-    margin-left: 6.25em; }
-  .campaign nav .next-menu a:after {
-    content: " →";
-    color: #ffe09b;
-    font-size: 1.375em;
-    line-height: 0.7;
-    position: relative;
-    top: 0.13636em; }
-  .campaign nav .next-menu a:hover {
-    opacity: 1; }
-    .campaign nav .next-menu a:hover:after {
-      left: 1px; } }
+  .index nav .mobile-menu,
+  .index nav .mobile-menu-icon {
+    display: none !important; } }
 @media all and (min-width: 62.5em) {
-  nav a.text {
+  .index nav a.text {
     font-size: 1.125em;
     border-bottom: 0.27778em solid #152b51;
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
-    nav a.text:hover, nav a.text.active {
+    .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .victories .wrapper {
   background: transparent url("../images/mobile-victories1.jpg") no-repeat top center;
