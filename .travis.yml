@@ -11,7 +11,6 @@ rvm:
 script:
 - bundle exec sass -r sass-globbing --update assets/sass:assets/css
 - bundle exec jekyll build
-- casperjs test ./_scripts/phantom_tests.js
 after_success:
 - "./_scripts/travis_deploy.sh"
 branches:
