@@ -2,4 +2,4 @@
 layout: campaign
 permalink: /:title
 ---
-{{ site.data.campaigns.campaign2 }}
+{{site.data.campaigns.campaign2}}
