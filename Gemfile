@@ -7,5 +7,4 @@ gem 'sass', '3.4.20'
 gem 'sass-globbing'
 gem 'guard-livereload'
 gem 's3_website'
-gem 'travis'
 gem "rake", "~> 10"
