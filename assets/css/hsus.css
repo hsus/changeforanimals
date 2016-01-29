@@ -369,8 +369,8 @@ ul {
     z-index: 10; }
   .campaign header .wrapper {
     z-index: 100;
-    max-width: 87.5em;
-    margin: 0 auto;
+    max-width: 94%;
+    margin: 0 3%;
     position: relative; }
   .campaign header .financial {
     margin-top: 0;
@@ -388,26 +388,29 @@ ul {
     line-height: 1.4;
     text-align: center;
     width: 21.875em;
+    max-width: 94%;
     padding: 0 2.5em; }
   .campaign header h2 {
-    font-size: 2.25em;
-    max-width: 13.88889em;
-    margin-bottom: 0.77778em;
-    margin-top: 1.33333em; }
+    font-size: 2em;
+    max-width: 15.625em;
+    margin-bottom: 0.875em;
+    margin-top: 0.75em;
+    max-width: 100%; }
   .campaign header .description {
-    width: 50%;
+    width: 100%;
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 4.375em; }
   .campaign header .caption {
-    position: absolute;
-    right: 0;
-    bottom: 4.375em;
-    z-index: 100;
-    width: 24.375em;
+    bottom: 2.5em;
     background-color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    max-width: 100%;
+    float: right;
     padding: 1.875em 2.1875em;
-    line-height: 1.5; }
+    width: 24.375em;
+    position: relative;
+    z-index: 100; }
 
 @media all and (min-width: 36.25em) {
   .campaign header .logo {
@@ -419,8 +422,16 @@ ul {
   .campaign header h2 {
     font-size: 2.625em;
     max-width: 11.90476em;
-    margin-bottom: 0.57143em;
-    margin-top: 1.14286em; } }
+    margin-bottom: 0.57143em; }
+  .campaign header .description {
+    width: 60%;
+    font-size: 1em;
+    margin-bottom: 4.375em; }
+  .campaign header .caption {
+    bottom: 3.125em;
+    max-width: 35%;
+    position: absolute;
+    right: 0; } }
 @media all and (min-width: 45em) {
   .campaign header {
     background-image: url("../images/header1.1.jpg"); }
@@ -432,10 +443,20 @@ ul {
       font-size: 3.5em;
       max-width: 8.92857em;
       margin-bottom: 0.42857em;
-      margin-top: 0.85714em; } }
+      margin-top: 0.85714em; }
+    .campaign header .description {
+      width: 55%;
+      font-size: 1.125em;
+      margin-bottom: 3.88889em; }
+    .campaign header .caption {
+      bottom: 4.375em; } }
 @media all and (min-width: 87.5em) {
   .campaign header {
     background-image: url("../images/header1.1.jpg"); }
+    .campaign header .wrapper {
+      max-width: 85em;
+      margin: 0 auto;
+      position: relative; }
     .campaign header .tagline {
       font-size: 1.5em;
       width: 14.58333em;
@@ -446,6 +467,7 @@ ul {
       margin-bottom: 0.33333em;
       margin-top: 0.66667em; }
     .campaign header .description {
+      width: 50%;
       font-size: 1.5em;
       margin-bottom: 2.91667em; } }
 .campaign-previews {
