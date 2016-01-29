@@ -1,6 +1,6 @@
 language: ruby
 sudo: false
-cache: bundler
+#cache: bundler
 rvm:
 - 2.2.4
 before_script:
