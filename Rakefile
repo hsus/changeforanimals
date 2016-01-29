@@ -1,3 +1,12 @@
+require 'rubygems'
+require 'rake'
+require 'rdoc'
+require 'date'
+require 'yaml'
+require 'tmpdir'
+require 'jekyll'
+require 'html/proofer'
+
 # Compile Sass and generate site
 desc 'Build site with Jekyll'
 task :build do
