@@ -6,6 +6,8 @@ require 'yaml'
 require 'tmpdir'
 require 'jekyll'
 require 'html/proofer'
+gem "rake", "~> 10"
+gem 'html-proofer'
 
 # Compile Sass and generate site
 desc 'Build site with Jekyll'
@@ -51,3 +53,5 @@ end
 
 desc 'Serve Jekyll and compile Sass'
 task :develop => [:watch, :serve]
+
+task :default => [:build]
