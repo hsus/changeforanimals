@@ -31,6 +31,16 @@ def jekyll(opts = '')
   system 'bundle exec jekyll ' + opts
 end
 
+# Amazon S3 publishing options
+desc "Generate and publish site to production on Amazon S3."
+task :publish => [:build] do
+  system 'bundle exec s3_website push'
+end
+
+desc "Generate and publish site to staging on Amazon S3."
+task :stage => [:build] do
+  system 'bundle exec s3_website push --config-dir=_stage_config'
+end
 
 desc 'Serve Jekyll and compile Sass'
 task :develop => [:watch, :serve]
