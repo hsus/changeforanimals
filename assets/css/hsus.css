@@ -321,38 +321,67 @@ ul {
     margin: 0 3%; }
   .goals h2 {
     margin-top: 0;
-    padding-bottom: 1.66667em;
-    padding-top: 5em;
+    padding-bottom: 0;
+    padding-top: 1.66667em;
     font-weight: 200;
     color: #ce8e00;
-    font-size: 2.25em; }
+    font-size: 1.5em; }
   .goals .goal {
     display: inline-block;
-    width: 35%;
+    width: 80%;
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.5;
     vertical-align: top;
-    margin-bottom: 4.16667em; }
+    margin-bottom: 2.5em; }
     .goals .goal:nth-of-type(odd) {
-      margin-right: 29%; }
+      margin-right: 0%; }
       .goals .goal:nth-of-type(odd):last-child {
         margin-right: 0; }
+    .goals .goal em {
+      font-style: normal;
+      color: #ce8e00; }
 
 @media all and (min-width: 36.25em) {
   .goals .wrapper {
-    max-width: 94%;
-    margin: 0 3%; } }
+    max-width: 84%;
+    margin: 0 8%; }
+  .goals h2 {
+    padding-bottom: 0.35714em;
+    padding-top: 2.14286em;
+    font-size: 1.75em; }
+  .goals .goal {
+    width: 40%;
+    font-size: 1em;
+    margin-bottom: 3.75em; }
+    .goals .goal:nth-of-type(odd) {
+      margin-right: 19%; } }
 @media all and (min-width: 45em) {
   .goals {
     background-image: url("../images/goals1.jpg"); }
     .goals .wrapper {
-      max-width: 94%;
-      margin: 0 3%; } }
+      max-width: 84%;
+      margin: 0 8%; }
+    .goals h2 {
+      padding-bottom: 0.625em;
+      padding-top: 3.125em;
+      font-size: 2em; }
+    .goals .goal {
+      width: 35%;
+      font-size: 1.0625em;
+      margin-bottom: 4.70588em; } }
 @media all and (min-width: 87.5em) {
   .goals .wrapper {
-    max-width: 87.5em;
-    margin: 0 auto; } }
+    max-width: 85em;
+    margin: 0 auto; }
+  .goals h2 {
+    padding-bottom: 1.66667em;
+    padding-top: 5em;
+    font-size: 2.25em; }
+  .goals .goal {
+    width: 35%;
+    font-size: 1.5em;
+    margin-bottom: 4.16667em; } }
 .campaign header {
   background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;
@@ -361,24 +390,24 @@ ul {
   width: 100%; }
   .campaign header .gradient {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 50%;
-    height: 100%;
     z-index: 10; }
   .campaign header .wrapper {
-    z-index: 100;
-    max-width: 94%;
     margin: 0 3%;
-    position: relative; }
+    max-width: 94%;
+    position: relative;
+    z-index: 100; }
   .campaign header .financial {
-    margin-top: 0;
-    display: inline-block;
     background-color: #152b51;
-    text-align: center;
+    display: inline-block;
     font-size: 1.5em;
-    padding: 1.04167em 2.70833em; }
+    margin-top: 0;
+    padding: 1.04167em 2.70833em;
+    text-align: center; }
     .campaign header .financial strong {
       font-size: 1.33333em; }
   .campaign header .tagline {
@@ -386,30 +415,30 @@ ul {
     font-family: "MyWriteHand";
     font-size: 1em;
     line-height: 1.4;
-    text-align: center;
-    width: 21.875em;
     max-width: 94%;
-    padding: 0 2.5em; }
+    padding: 0 2.5em;
+    text-align: center;
+    width: 21.875em; }
   .campaign header h2 {
     font-size: 2em;
-    max-width: 15.625em;
     margin-bottom: 0.875em;
     margin-top: 0.75em;
-    max-width: 100%; }
+    max-width: 100%;
+    max-width: 15.625em; }
   .campaign header .description {
-    width: 100%;
     font-size: 1em;
     line-height: 1.5;
-    margin-bottom: 4.375em; }
+    margin-bottom: 4.375em;
+    width: 100%; }
   .campaign header .caption {
-    bottom: 2.5em;
     background-color: rgba(0, 0, 0, 0.5);
+    bottom: 2.5em;
+    float: right;
     line-height: 1.5;
     max-width: 100%;
-    float: right;
     padding: 1.875em 2.1875em;
-    width: 24.375em;
     position: relative;
+    width: 24.375em;
     z-index: 100; }
 
 @media all and (min-width: 36.25em) {
@@ -417,16 +446,16 @@ ul {
     margin: 11.25em auto 1.5em; }
   .campaign header .tagline {
     font-size: 1.25em;
-    width: 17.5em;
-    padding: 0 2em; }
+    padding: 0 2em;
+    width: 17.5em; }
   .campaign header h2 {
     font-size: 2.625em;
-    max-width: 11.90476em;
-    margin-bottom: 0.57143em; }
+    margin-bottom: 0.57143em;
+    max-width: 11.90476em; }
   .campaign header .description {
-    width: 60%;
     font-size: 1em;
-    margin-bottom: 4.375em; }
+    margin-bottom: 4.375em;
+    width: 60%; }
   .campaign header .caption {
     bottom: 3.125em;
     max-width: 35%;
@@ -437,39 +466,39 @@ ul {
     background-image: url("../images/header1.1.jpg"); }
     .campaign header .tagline {
       font-size: 1.5em;
-      width: 14.58333em;
-      padding: 0 1.66667em; }
+      padding: 0 1.66667em;
+      width: 14.58333em; }
     .campaign header h2 {
       font-size: 3.5em;
-      max-width: 8.92857em;
       margin-bottom: 0.42857em;
-      margin-top: 0.85714em; }
+      margin-top: 0.85714em;
+      max-width: 8.92857em; }
     .campaign header .description {
-      width: 55%;
       font-size: 1.125em;
-      margin-bottom: 3.88889em; }
+      margin-bottom: 3.88889em;
+      width: 55%; }
     .campaign header .caption {
       bottom: 4.375em; } }
 @media all and (min-width: 87.5em) {
   .campaign header {
     background-image: url("../images/header1.1.jpg"); }
     .campaign header .wrapper {
-      max-width: 85em;
       margin: 0 auto;
+      max-width: 85em;
       position: relative; }
     .campaign header .tagline {
       font-size: 1.5em;
-      width: 14.58333em;
-      padding: 0 1.66667em; }
+      padding: 0 1.66667em;
+      width: 14.58333em; }
     .campaign header h2 {
       font-size: 4.5em;
-      max-width: 6.94444em;
       margin-bottom: 0.33333em;
-      margin-top: 0.66667em; }
+      margin-top: 0.66667em;
+      max-width: 6.94444em; }
     .campaign header .description {
-      width: 50%;
       font-size: 1.5em;
-      margin-bottom: 2.91667em; } }
+      margin-bottom: 2.91667em;
+      width: 50%; } }
 .campaign-previews {
   width: 100%;
   display: block; }
