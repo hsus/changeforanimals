@@ -1,5 +1,3 @@
-task :default => :serve
-
 # Compile Sass and generate site
 desc 'Build site with Jekyll'
 task :build do

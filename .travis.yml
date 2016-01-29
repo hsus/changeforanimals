@@ -1,12 +1,12 @@
 language: ruby
 sudo: false
-#cache: bundler
+cache: bundler
 rvm:
 - 2.2.4
 before_script:
-  - bundle exec rake build
-  # - bundle exec sass -r sass-globbing --update assets/sass:assets/css
-  # - bundle exec jekyll build
+  #- bundle exec rake build
+  - bundle exec sass --update -r sass-globbing  assets/sass:assets/css
+  - bundle exec jekyll build
 after_success:
 - "./_scripts/travis_deploy.sh"
 branches:
