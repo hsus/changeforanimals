@@ -1,0 +1,25 @@
+// Default / Mobile
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+//  Tablet
+@media all and (min-width: $tablet) {
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+  .wrapper, nav {
+    max-width: $max-width;
+  }
+  nav .wrapper {
+    margin: 0 auto;
+    max-width: $desktop;
+  }
+}

@@ -1,0 +1,87 @@
+// @file
+// Custom sass mixins
+//
+// Define the custom mixins for your project here.
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+  @include element-invisible;
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+// ensure parent has position: relative;
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Default transition
+@mixin default-transition {
+  @include transition(all 0.3s linear);
+}
+
+// Default box-shadow
+@mixin default-box-shadow {
+  box-shadow: 0 0 2px $dark-grey;
+}
+
+// Inset box-shadow for forms
+@mixin form-shadow {
+  box-shadow: inset 0 0 4px $medium-grey;
+}
+
+// Undo clearfix. Apply to .clearfix:after
+@mixin undo-clearfix {
+  content: "";
+  display: inline-block;
+  height: auto;
+  clear: none;
+  display: none;
+}
+
+// Basic button - two colors
+@mixin button-basic($bg, $fg) {
+  background-color: $bg;
+  border-radius: em(24,20);
+  color: $fg;
+  display: inline-block;
+  font-family: $primary-font;
+  font-size: em(20);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: em(12,20) em(32,20) em(10,20);
+}
+
+// Basic button hover
+@mixin button-basic-hover($hbg, $hfg) {
+  &:hover {
+    background-color: $hbg;
+    color: $hfg;
+  }
+}

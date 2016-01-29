@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="campaign">
+
+    <nav>
+      <div class="wrapper">
+        <a href="/"><img src="{{ site.data.misc.small-logo-url }}" class="logo-sm" alt="Logo: {{site.title}}"></a>
+        
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="#about" class="text about">About the Campaign</a>
+          <a href="#get-involved" class="text get-involved">Get Involved</a>
+          {% if page.next and page.next.categories contains "campaigns"  %}
+            <a href="{{ page.next.url }}" class="next text">
+              <span class="post-title">{{ page.next.title }}</span>
+            </a>
+          {% elsif page.previous and page.previous.categories contains "campaigns"  %}
+            {% for campaign in site.data.campaigns %}
+              {% if forloop.first  %}
+                <a href="{{ campaign[1].url }}" class="next text">
+                  <span class="post-title">{{ campaign[1].title }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="#about" class="text left about">About the Campaign</a>
+          <a href="#get-involved" class="text left get-involved">Get Involved</a>
+        </div>
+
+        <div class="next-menu">
+          {% if page.next and page.next.categories contains "campaigns"  %}
+            <a href="{{ page.next.url }}" class="next text">
+              <span class="post-title">{{ page.next.title }}</span>
+            </a>
+          {% elsif page.previous and page.previous.categories contains "campaigns"  %}
+            {% for campaign in site.data.campaigns %}
+              {% if forloop.first  %}
+                <a href="{{ campaign[1].url }}" class="next text">
+                  <span class="post-title">{{ campaign[1].title }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
+
+        <a class="mobile-menu-icon"><div><span>Menu</span></div></a>
+      </div>
+    </nav>
+
+
+    {% for campaign_hash in site.data.campaigns %}
+      {% assign campaign = campaign_hash[1] %}
+      {% if page.slug == campaign.url %}
+
+        <header class="campaign-header">
+          <div class="gradient">&nbsp;</div>
+          <div class="wrapper">
+            <p class="financial">{{ campaign.financial_tagline }}</p>
+             <div class="tagline">{{ site.data.misc.footer-tagline }}</div>
+
+            <h2>{{ campaign.title }}</h2>
+
+            <p class="description">{{ campaign.description }}</p>  
+          </div>
+          <p class="caption">{{ campaign.caption }}</p>
+        </header>
+
+        <section class="goals">
+          {% for goal_hash in campaign.goals %}
+            {% assign goal = goal_hash[1] %}
+            <div class="goal">{{ goal }}</div>
+          {% endfor %}
+        </section>
+
+        <section class="video">
+          {{ campaign.celeb_video }}
+        </section>
+
+        <section class="celeb">
+          {{ campaign.celeb_image }}
+          {{ campaign.celeb_quote | markdownify }}
+        </section>
+
+        <section class="donor-story">
+          {{ campaign.donor_story | markdownify }}
+        </section>
+
+      {% endif %}
+    {% endfor %}
+
+    {% include outro.html %}
+    {% include footer.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+    <script src="{{site.baseurl}}/assets/js/hsus.js"></script>
+
+    {% if site.baseurl %}
+    <!-- Loaded only in local -->
+    <script src="http://localhost:35729/livereload.js"></script>
+    {% endif %}
+  </body>
+</html>

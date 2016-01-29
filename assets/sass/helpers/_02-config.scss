@@ -1,0 +1,68 @@
+//
+// Note: activate visual grid in styles.scss
+//
+
+//
+// Colors
+//
+// Note: darken/lighten used, for effect, e.g.:
+// .example:hover { color: darken($font-name, 5%); }
+
+$blue: #152b51; 
+$light-blue: #739abc; 
+$dark-blue: #060e25;
+$yellow: #ce8e00;  
+$red: #EE2324;  
+
+$light-gray: #c1d1df;
+$medium-gray: #B2A6A0;
+$light-grey: $light-gray;
+$medium-grey: $medium-gray;
+$black: #000;
+
+$off-white: $light-gray;
+$white: #fff;
+
+// fonts
+$primary-font: 'Frutiger W01',sans-serif;
+$secondary-font: 'MyWriteHand','Brush Script MT', cursive;
+
+html, body { font-family: $primary-font; font-weight: 200; font-size: 16px; color: $white; background-color: $blue; }
+h1 { color: $white; }
+a { color: $yellow; }
+a:hover, a:focus { 
+  color: darken($yellow, 5%);
+  @include transition(color 0.3s linear,background-color 0.3s linear);
+}
+
+
+// List bullets in content.
+ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+  li {
+    padding-bottom: em(16);
+    padding-left: em(18);
+    text-indent: -1.2em;
+    &:before {
+      color: $yellow;
+      content: "•";
+      font-size: em(12);
+      line-height: 0.5;
+      padding-right: em(16);
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+// Responsive breakpoints - note: mobile first!
+// In ems to fix a weird zoom / retina bug: http://blog.55minutes.com/2012/04/media-queries-and-browser-zoom/
+$tablet:      36.25em; // 580px
+$lg-tablet:   45em; // 720px
+$desktop:     87.5em; // 1400px
+$max-width:   112.5em; // 1800px
+
+// The amount lists, blockquotes and comments are indented.
+$indent-amount: 16px;
