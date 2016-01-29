@@ -5,9 +5,7 @@ require 'date'
 require 'yaml'
 require 'tmpdir'
 require 'jekyll'
-require 'html/proofer'
 gem "rake", "~> 10"
-gem 'html-proofer'
 
 # Compile Sass and generate site
 desc 'Build site with Jekyll'
