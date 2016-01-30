@@ -1,15 +1,35 @@
 ---
 layout: default
+
+victories:
+  header: "Our Impact So Far"
+
+  blocks:
+    - title: "115,851"
+      text: "Animals cared for by The HSUS and affiliates this year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more"
+
+    - title: "58,239"
+      text: "Pets spayed or neutered as part of World Spay Day"
+
+    - title: "2.9+ <small>MILLION</small>"
+      text: "Messages that our supporters sent to government and corporate decision-makers"
+
+    - title: "139"
+      text: "State and local laws, regulations and ordinances passed to help animals"
+
+    - title: "1.4 <small>MILLION</small>"
+      text: "U.S. farm animals spared the misery of factory farms and slaughter plants as a result of our meat-reduction campaign"
+
 ---
 
 {% assign intro_text = site.data.homepage.intro %}
  <section class="intro showless" id="intro">
   <div class="wrapper">
-    <span class="post">{{ intro_text.bold1 }}</span><span class="more">{{ intro_text.readmore1 }}</span>  
+    <span class="post">{{ intro_text.bold1 }}</span><span class="more">{{ intro_text.readmore1 }}</span>
     <br><br>
-    <span class="more">{{ intro_text.readmore2-1 }}</span> <span class="pre initial-caps">{{ intro_text.bold2 }}</span> <span class="more">{{ intro_text.readmore2-2 }}</span> 
+    <span class="more">{{ intro_text.readmore2-1 }}</span> <span class="pre initial-caps">{{ intro_text.bold2 }}</span> <span class="more">{{ intro_text.readmore2-2 }}</span>
     <br class="more"><br class="more">
-    <span class="more">{{ intro_text.readmore3-1 }}</span> <span class="post">{{ intro_text.bold3-1 }}</span><span class="more">{{ intro_text.readmore3-2 }}</span><br class="less"><br class="less"> <span class="pre">{{ intro_text.bold3-2 }}</span> 
+    <span class="more">{{ intro_text.readmore3-1 }}</span> <span class="post">{{ intro_text.bold3-1 }}</span><span class="more">{{ intro_text.readmore3-2 }}</span><br class="less"><br class="less"> <span class="pre">{{ intro_text.bold3-2 }}</span>
     <br class="more"><br class="more">
     <span class="more">{{ intro_text.readmore4 }}</span> <span>{{ intro_text.bold4 }}</span>
     <br><br><br class="less">
@@ -21,14 +41,12 @@ layout: default
 
 <section class="victories">
   <div class="wrapper">
-  {% for victory_hash in site.data.homepage.victories %}
-    {% if victory_hash.header %}
-      <h2>{{ victory_hash.header }}</h2>
-    {% endif %}
-    {% if victory_hash.title %}
+    <h2>{{ page.victories.header }}</h2>
+    {% for item in page.victories.blocks %}
+    {% if item.title %}
       <div class="victory">
-        <h3>{{ victory_hash.title }}</h3>
-        <p>{{ victory_hash.text }}</p>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
       </div>
     {% endif %}
   {% endfor %}
@@ -40,7 +58,7 @@ layout: default
 <section class="president showless" id="about">
   <div class="wrapper">
     {% assign letter = site.data.homepage.president %}
-    <div class="letter-top">  
+    <div class="letter-top">
       <p>{{ letter.from }}</p>
       <h2 id="letter-top">{{ letter.about }}</h2>
     </div>
@@ -93,7 +111,7 @@ layout: default
 
 
 <section class="events" id="events">
-  <div class="wrapper">  
+  <div class="wrapper">
     {% assign event_text = site.data.homepage.events %}
     <div class="event">
       <h2>{{ event_text.event-header }}</h2>
