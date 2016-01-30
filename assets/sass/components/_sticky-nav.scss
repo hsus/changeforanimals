@@ -13,7 +13,7 @@
     height: auto;
     float: left;
   }
-  
+
   .mobile-menu-icon {
     @include default-transition;
     cursor: pointer;
@@ -115,7 +115,7 @@
       @include default-transition;
       &:hover,
       &.active {
-        border-bottom: em(5,14) solid $light-blue; 
+        border-bottom: em(5,14) solid $light-blue;
       }
     }
     .menu {
@@ -137,7 +137,7 @@
       padding: em(28,18) em(14,18) em(19,18) em(14,18);
       &:hover,
       &.active {
-        border-bottom: em(5,18) solid $light-blue; 
+        border-bottom: em(5,18) solid $light-blue;
       }
     }
   }
