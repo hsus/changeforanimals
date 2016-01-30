@@ -191,6 +191,13 @@ $(document).ready(function() {
     }, 'xml');
   });
 
+  // Video Playback
+  $('.video').click(function(){
+    var el = $(this);
+    el.find('.overlay').fadeToggle(200,"linear").end()
+      .find('.youtubewrap').fadeToggle(600,"linear");
+  });
+
 
 
 });

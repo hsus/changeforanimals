@@ -78,17 +78,22 @@
           </div>
         </section>
 
-        <section class="video">
-          {{ campaign.celeb_video }}
-        </section>
-
         <section class="celeb">
-          {{ campaign.celeb_image }}
-          {{ campaign.celeb_quote | markdownify }}
+          <div class="wrapper">
+            <img class="headshot" src="{{ campaign.celeb_image }}" alt="Image: {{ campaign.celeb_name }}">
+            <h3>{{ campaign.celeb_name }}</h3>
+            <p class="title">{{ campaign.celeb_title }}</p>
+            <blockquote><span class="quotes left"> &ldquo;</span>{{ campaign.celeb_quote }}<span class="quotes right">&rdquo;</span></blockquote>
+          </div>
+
+          <a class="video"><img class="play-button svg" src="/assets/images/play-button.svg" alt="play video">
+            <div class="overlay">&nbsp;</div>
+            <div class="youtubewrap"><div class="video-container">{{ campaign.celeb_video }}</div></div>
+          </a>
         </section>
 
         <section class="donor-story">
-          {{ campaign.donor_story | markdownify }}
+          {{ campaign.donor_story }}
         </section>
 
       {% endif %}

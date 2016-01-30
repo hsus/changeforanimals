@@ -311,6 +311,160 @@ ul {
   .feed-icons {
     visibility: hidden;
     display: none; } }
+.celeb {
+  background: transparent url("../images/mobile-campaign-farm-celeb1.jpg") no-repeat top center;
+  background-size: cover;
+  display: block;
+  padding: 3.125em 0;
+  text-align: center; }
+  .celeb .wrapper {
+    max-width: 94%;
+    margin: 0 3%; }
+  .celeb .headshot {
+    border-radius: 50%; }
+  .celeb h3 {
+    margin-bottom: 0.07143em;
+    font-size: 1.75em;
+    letter-spacing: 1px; }
+  .celeb .title {
+    margin-top: 0;
+    font-size: 1.125em; }
+  .celeb blockquote {
+    font-size: 1em;
+    font-weight: 200;
+    margin: 2em 0 1.5em 0;
+    letter-spacing: 1px;
+    line-height: 1.4; }
+    .celeb blockquote span {
+      font-size: 1.5em;
+      line-height: 0.4; }
+  .celeb .video {
+    position: relative; }
+    .celeb .video svg path {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .celeb .video .play-button:hover {
+      cursor: pointer; }
+      .celeb .video .play-button:hover path {
+        fill: #e6e6e6; }
+    .celeb .video .overlay {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1000; }
+    .celeb .video .youtubewrap {
+      width: 98%;
+      max-width: 1024px;
+      margin: 5% auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10000;
+      display: none; }
+      .celeb .video .youtubewrap:before {
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        border: 1px solid #fff;
+        color: #000;
+        content: "×";
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        font-size: 21px;
+        font-weight: 400;
+        height: 0.95238em;
+        line-height: 0.75;
+        position: relative;
+        margin-top: -0.625em;
+        margin-left: -1.25em;
+        width: 0.95238em;
+        z-index: 100000; }
+    .celeb .video .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      z-index: 10000; }
+    .celeb .video .video-container iframe,
+    .celeb .video .video-container object,
+    .celeb .video .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+@media all and (min-width: 36.25em) {
+  .celeb {
+    padding: 6.25em 0 6.25em; }
+    .celeb h3 {
+      margin-bottom: 0.07143em;
+      font-size: 1.75em; }
+    .celeb .title {
+      margin-top: 0;
+      font-size: 1.125em; }
+    .celeb blockquote {
+      font-size: 1.125em;
+      margin: 1.77778em; }
+      .celeb blockquote span {
+        font-size: 1.33333em; }
+    .celeb .video .youtubewrap {
+      width: 88%; }
+    .celeb .video .play-button {
+      margin-top: 2em; } }
+@media all and (min-width: 45em) {
+  .celeb {
+    background-image: url("../images/campaign-farm-celeb1.jpg");
+    padding: 6.875em 0 7.5em; }
+    .celeb .wrapper {
+      max-width: 74%;
+      margin: 0 13%; }
+    .celeb h3 {
+      margin-bottom: 0.07143em;
+      font-size: 1.75em; }
+    .celeb .title {
+      margin-top: 0;
+      font-size: 1.125em; }
+    .celeb blockquote {
+      font-size: 1.125em;
+      margin: 1.77778em; }
+      .celeb blockquote span {
+        font-size: 1.33333em; }
+    .celeb .video .youtubewrap {
+      width: 80%; }
+    .celeb .video .play-button {
+      margin-top: 2em; } }
+@media all and (min-width: 87.5em) {
+  .celeb {
+    padding: 9.375em 0 12.5em; }
+    .celeb .wrapper {
+      max-width: 64%;
+      margin: 0 18%; }
+    .celeb h3 {
+      margin-bottom: 0.05556em;
+      font-size: 2.25em; }
+    .celeb .title {
+      margin-top: 0;
+      font-size: 1.5em; }
+    .celeb blockquote {
+      font-size: 1.375em;
+      margin: 1.45455em; }
+      .celeb blockquote span {
+        font-size: 1.09091em; } }
 .goals {
   background: transparent url("../images/mobile-goals1.jpg") no-repeat top center;
   background-size: cover;
