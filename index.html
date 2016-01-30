@@ -20,6 +20,20 @@ victories:
     - title: "1.4 <small>MILLION</small>"
       text: "U.S. farm animals spared the misery of factory farms and slaughter plants as a result of our meat-reduction campaign"
 
+event:
+    header: "Event Header"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero. Iste asperiores suscipit, consequatur debitis animi impedit numquam facilis iusto porro labore dolorem, maxime magni incidunt. Delectus, est!"
+    url:
+    link-text: "Attend an Event"
+
+book:
+  image-url: "/assets/images/book-cover1.jpg"
+  image-alt: "Book Cover: The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals By Wayne Pacelle"
+  url: "http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy"
+  link-text: "The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals"
+  author: "<strong>By</strong> Wayne Pacelle"
+  blurb: "<em>The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals</em> describes a revolution in American business and public policy that is changing forever how we treat animals and conduct commerce. Wayne Pacelle, president and CEO of the nation’s most powerful animal protection organization, tells the story from the frontlines, in a book that speaks to both mind and heart."
+  cta-link: "Purchase the Book"
 ---
 
 {% assign intro_text = site.data.homepage.intro %}
@@ -109,27 +123,31 @@ victories:
   {% endfor %}
 </section>
 
-
+{% if page.event || page.book %}
 <section class="events" id="events">
   <div class="wrapper">
-    {% assign event_text = site.data.homepage.events %}
+    {% if page.event %}
     <div class="event">
-      <h2>{{ event_text.event-header }}</h2>
-      <p>{{ event_text.event-body }}</p>
-      <a class="cta-button" href="{{ event_text.event-link }}">{{ event_text.event-link-text }}</a>
+      <h2>{{ page.event.header }}</h2>
+      <p>{{ page.event.body }}</p>
+      <a class="cta-button" href="{{ page.event.link }}">{{ page.event.link-text }}</a>
     </div>
+    {% endif %}
 
+    {% if page.book %}
     <div class="book">
       <div class="book-header">
-        <a class="cover" href="{{ event_text.book-link-url }}"><img src="{{ event_text.book-image-url }}" alt="{{ event_text.book-image-alt }}"></a>
-        <a class="title" href="{{ event_text.book-link-url }}"><h2>{{ event_text.book-link-text }}</h2></a>
-        <p>{{ event_text.book-author }}</p>
+        <a class="cover" href="{{ page.book.url }}"><img src="{{ page.book.image-url }}" alt="{{ event_text.book-image-alt }}"></a>
+        <a class="title" href="{{ page.book.url }}"><h2>{{ page.book.link-text }}</h2></a>
+        <p>{{ page.book.author }}</p>
       </div>
       <div class="book-body">
-        <p>{{ event_text.book-blurb }}</p>
-        <a class="cta-link" href="{{ event_text.book-link-url }}">{{ event_text.book-cta-link }}</a>
+        <p>{{ page.book.blurb }}</p>
+        <a class="cta-link" href="{{ page.book.url }}">{{ page.book.cta-link }}</a>
       </div>
     </div>
   </div>
+  {% endif %}
   <div class="events-after">&nbsp;</div>
 </section>
+{% endif %}
