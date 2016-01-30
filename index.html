@@ -2,23 +2,20 @@
 layout: default
 
 victories:
-  header: "Our Impact So Far"
+  - title: "115,851"
+    text: "Animals cared for by The HSUS and affiliates this year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more"
 
-  blocks:
-    - title: "115,851"
-      text: "Animals cared for by The HSUS and affiliates this year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more"
+  - title: "58,239"
+    text: "Pets spayed or neutered as part of World Spay Day"
 
-    - title: "58,239"
-      text: "Pets spayed or neutered as part of World Spay Day"
+  - title: "2.9+ <small>MILLION</small>"
+    text: "Messages that our supporters sent to government and corporate decision-makers"
 
-    - title: "2.9+ <small>MILLION</small>"
-      text: "Messages that our supporters sent to government and corporate decision-makers"
+  - title: "139"
+    text: "State and local laws, regulations and ordinances passed to help animals"
 
-    - title: "139"
-      text: "State and local laws, regulations and ordinances passed to help animals"
-
-    - title: "1.4 <small>MILLION</small>"
-      text: "U.S. farm animals spared the misery of factory farms and slaughter plants as a result of our meat-reduction campaign"
+  - title: "1.4 <small>MILLION</small>"
+    text: "U.S. farm animals spared the misery of factory farms and slaughter plants as a result of our meat-reduction campaign"
 
 event:
     header: "Event Header"
@@ -55,8 +52,8 @@ book:
 
 <section class="victories">
   <div class="wrapper">
-    <h2>{{ page.victories.header }}</h2>
-    {% for item in page.victories.blocks %}
+    <h2>Our Impact So Far</h2>
+    {% for item in page.victories %}
     {% if item.title %}
       <div class="victory">
         <h3>{{ item.title }}</h3>

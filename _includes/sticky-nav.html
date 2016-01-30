@@ -1,18 +1,30 @@
 <nav>
   <div class="wrapper">
     <a href="#"><img src="{{ site.data.misc.small-logo-url }}" class="logo-sm" alt="Logo: {{site.title}}"></a>
-    
+
     <div class="mobile-menu" id="mobile-menu">
       <a href="#about" class="text about">About the Campaign</a>
       <a href="#program-areas" class="text program-areas">Program Areas</a>
+
+      {% if page.event %}
       <a href="#events" class="text event">Attend an Event</a>
+      {% else if page.book and page.event == 'nil' %}
+      <a href="#events" class="text event">Book</a>
+      {% endif %}
+
       <a href="#get-involved" class="text get-involved">Get Involved</a>
     </div>
 
     <div class="menu" id="menu">
       <a href="#about" class="text about">About the Campaign</a>
       <a href="#program-areas" class="text program-areas">Program Areas</a>
+
+      {% if page.event %}
       <a href="#events" class="text event">Attend an Event</a>
+      {% else if page.book and page.event == 'nil' %}
+      <a href="#events" class="text event">Book</a>
+      {% endif %}
+      
       <a href="#get-involved" class="text get-involved">Get Involved</a>
     </div>
 
