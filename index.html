@@ -123,11 +123,16 @@ book:
   {% endfor %}
 </section>
 
-{% if page.event || page.book %}
+{% if page.event or page.book %}
+  {% if page.event and page.book %}
+    {% assign columns = 'two-column' %}
+  {% else %}
+    {% assign columns = 'one-column' %}
+  {% endif %}
 <section class="events" id="events">
   <div class="wrapper">
     {% if page.event %}
-    <div class="event">
+    <div class="event {{ columns }}">
       <h2>{{ page.event.header }}</h2>
       <p>{{ page.event.body }}</p>
       <a class="cta-button" href="{{ page.event.link }}">{{ page.event.link-text }}</a>
@@ -135,7 +140,7 @@ book:
     {% endif %}
 
     {% if page.book %}
-    <div class="book">
+    <div class="book {{ columns }}">
       <div class="book-header">
         <a class="cover" href="{{ page.book.url }}"><img src="{{ page.book.image-url }}" alt="{{ event_text.book-image-alt }}"></a>
         <a class="title" href="{{ page.book.url }}"><h2>{{ page.book.link-text }}</h2></a>
