@@ -163,7 +163,7 @@ $(document).ready(function() {
 
 
   // Top of page
-  $('.logo-sm').bind('click.smoothscroll',function (e) {
+  $('.index .logo-sm').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       $('#menu').find('a').removeClass('active');
       $('html, body').stop().animate({'scrollTop': 0}, 700, 'swing');
@@ -197,7 +197,5 @@ $(document).ready(function() {
     el.find('.overlay').fadeToggle(200,"linear").end()
       .find('.youtubewrap').fadeToggle(600,"linear");
   });
-
-
 
 });
