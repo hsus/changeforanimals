@@ -1,11 +1,6 @@
 language: ruby
-# use container-based infrastructure to speed up build
-# see http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
-# cache bundle to speed up build
-# see http://docs.travis-ci.com/user/caching/#Bundler
 cache: bundler
-
 rvm:
 - 2.2.4
 script:
@@ -23,4 +18,5 @@ env:
   - secure: EHlvhcRvvYM3DTr8KsSo6I/MQwvgrZ16+CTHpJuHg4uG/wBWNllwRhwqZEnixD1cQ1hhSD2FrvaS+TXr/6RK5FQJFGcT/m7q7pBxPCJ1o/WwaF/xJLc2owRib/auEoucRHmH1Aor7iLb719x+GY2eHmsjJFx/Vi0278k35gtwEGVDIKFEkNbl+18hbgTRofytSfbIdlw+CqpFHv1781qGhZntPTKnMZHYNkB9H7sMT9PM5SI1XFXl+2pVCm7qHbm7HGIpLZ0De4h1HHbzWXBqgdRb4cp2M1wQ+ajkkQyYy9/sGdg3WCG5Bzca15nCQCf7QMAhWbF2mJ15UO6cF/GZS1Lg6hi33jeEwKTBLcODNC1SD9N2IRwMxonKxsZI0YQ+FFUU1Udg28RmI56wl97RRL3qgvxAWuua8+3InXVBELqEiGanQMC7lHItfyibUbIHcrmjbVGocQMniPGc+/UE6fZNLzRzJdYFZeKohs/pfr9dIXsM3/+LZpa+k4YfZqgcTTZOeNx69SKint4M1j6ucXZqfOsOSTrKtK2OOL5hn73XLOCq6A9Q3WWI4XGj7U5XksckVeiByCkagZph7OoGi4dSmJiPdPCNrYTVE+K9OwbNg/ugOm42WOHYD/qKRPrZdzjBx5GN0/KHdWl/F5n49b7qqoc6N1CVcJXfNYe3v4=
   
 notifications:
-  slack: thinkshout:ZZmU3KlQNoXEQiPULH9dtyB4
+  slack:
+    secure: Gt4+yJDG6eSmj97oTrLPUTGjI+8n8SqRWJE+B1Axl0Eo7hNJ7iPbHQaD1AtzMk9S7xicfh6MhR61vPpHKO8+bmTaHeacE9xRALuFitct19KDGgWOornYWPeUXEbcXr7gCx/WK3NDB7PzuHYSdy6l4kTqZLrLnVXzqwhgzRmVwK3uUv1zHUqxLJsVlV+6hBtxo+LRe4cZK7cadZPTS1G8RcXqD45BQQrGKmgWpkjk5rKqqgk8ZogAjOVEYFM7RdoR3jrmekqILu5wxw+SPoKxHI+Y5xuMmDP++WVB2FXpCEhYBZHuyUdGSh0KtumhZcQtd2mLtnNMibmGYuMJWTNlU1BW/MNa/4cPw5jpr3OcUjb3ii5gu+wKY7UKI+6I8AEy8XwDj96EFJPVnCYT72gMlTkPun1k8FmBF6kXetMcEJFqxjz5J4MuVDujwjvo0feuOdykM1MAM7L7ltp+fdd3ftYjlW/9oOV+9XIMumxWPYL38rKfQH+j/JCw8rqVJ0uWY9u/o2BIKi1ZMvR8r0VwlNGQvMDfd/O4dCvKRWivcsXIPRkRL6/xO6EYDL3qoDXeJBNQ3EBBoFT3MQyFFK3MpZmYv3Kh6FdaGQ5Us0sEVXWBmcKLjg/kH8ZriqMM7a7wslhIZ6yMASG2W9ecVY+IH/c7zZKVxUe2kELgNdL5Pio=
