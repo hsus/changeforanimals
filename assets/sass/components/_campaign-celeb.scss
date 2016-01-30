@@ -1,0 +1,208 @@
+// Component template. See helpers/_02-config.scss for actual widths.
+// Default / Mobile
+.celeb {
+  background: transparent url('../images/mobile-campaign-farm-celeb1.jpg') no-repeat top center; //quality @ 70
+  background-size: cover; 
+  display: block;
+  padding: em(50) 0;
+  text-align: center;
+  .wrapper {
+    max-width: 94%;
+    margin: 0 3%;
+  }
+  .headshot {
+    border-radius: 50%;
+  }
+  h3 {
+    margin-bottom: em(2,28);
+    font-size: em(28);
+    letter-spacing: 1px;
+  }
+  .title {
+    margin-top: 0;
+    font-size: em(18);
+  }
+  blockquote {
+    font-size: em(16);
+    font-weight: 200;
+    margin: em(32,16) 0 em(24,16) 0;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    span {
+      font-size: em(24,16);
+      line-height: 0.4;
+    }
+  }
+
+  .video {
+    position: relative;
+    svg path { 
+      @include default-transition; 
+    }
+    .play-button {
+      &:hover {
+        cursor: pointer;
+        path {
+          fill: darken($white,10%);
+        }
+      }     
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 1000;      
+    }
+
+    // Don't change the .video-container CSS below without reading:
+    // http://coolestguidesontheplanet.com/videodrome/youtube/
+    .youtubewrap {  
+      width: 98%;
+      max-width: 1024px;
+      margin: 5% auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10000;
+      display: none;
+      &:before {
+        @include default-transition;
+        background-color: rgba(255,255,255,0.9);
+        border-radius: 50%;
+        border: 1px solid $white;
+        color: $black;
+        content: "×";
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        font-size: 21px;
+        font-weight: 400;
+        height: em(20,21);
+        line-height: 0.75;
+        position: relative;
+        margin-top: em(-10);
+        margin-left: em(-20);
+        width: em(20,21);
+        z-index: 100000;
+      }
+    }
+    .video-container {
+      position:relative;
+      padding-bottom:56.25%;
+      padding-top:30px;
+      height:0;
+      overflow:hidden;
+      z-index: 10000;
+    }
+    .video-container iframe, 
+    .video-container object, 
+    .video-container embed {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+  }
+}
+
+//  Tablet
+@media all and (min-width: $tablet) {
+  .celeb {    
+    padding: em(100) 0 em(100);
+    h3 {
+      margin-bottom: em(2,28);
+      font-size: em(28);
+    }
+    .title {
+      margin-top: 0;
+      font-size: em(18);
+    }
+    blockquote {
+      font-size: em(18);
+      margin: em(32,18);
+      span {
+        font-size: em(24,18);
+      }
+    }    
+    .video {
+      .youtubewrap {  
+        width: 88%;
+      }
+      .play-button {
+        margin-top: em(32);
+      }
+    }
+  }
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+  .celeb {
+    background-image: url('../images/campaign-farm-celeb1.jpg'); //quality @ 70    
+    padding: em(110) 0 em(120);
+    .wrapper {
+      max-width: 74%;
+      margin: 0 13%;
+    }
+    h3 {
+      margin-bottom: em(2,28);
+      font-size: em(28);
+    }
+    .title {
+      margin-top: 0;
+      font-size: em(18);
+    }
+    blockquote {
+      font-size: em(18);
+      margin: em(32,18);
+      span {
+        font-size: em(24,18);
+      }
+    }
+    .video {
+      .youtubewrap {  
+        width: 80%;
+      }
+      .play-button {
+        margin-top: em(32);
+      }
+    }
+  }
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+  .celeb {
+    padding: em(150) 0 em(200);
+    .wrapper {
+      max-width: 64%;
+      margin: 0 18%;
+    }
+    h3 {
+      margin-bottom: em(2,36);
+      font-size: em(36);
+    }
+    .title {
+      margin-top: 0;
+      font-size: em(24);
+    }
+    blockquote {
+      font-size: em(22);
+      margin: em(32,22);
+      span {
+        font-size: em(24,22);
+      }
+    }
+  }
+}
+

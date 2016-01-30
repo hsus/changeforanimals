@@ -11,9 +11,11 @@ image: "/assets/images/campaign-farm1.jpg"
 icon: "/assets/images/icon-cow.svg"
 caption: "By working with major corporations and institutions, we can improve living conditions for billions of animals."
 
-celeb_image:
-celeb_video:
-celeb_quote: "THE HSUS’S FARM ANIMAL PROTECTION CAMPAIGN EPITOMIZES EFFECTIVENESS.<em> They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals<br>— Kate Mara<br>Actor,<em>Fantastic Four<em>"
+celeb_image: "/assets/images/kate-mara1.jpg"
+celeb_video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/2oKFOIRRgPg?rel=0" frameborder="0" allowfullscreen></iframe>'
+celeb_name: "Kate Mara"
+celeb_title: "Actor, <em>Fantastic Four</em>"
+celeb_quote: "The HSUS’s farm animal protection campaign epitomizes effectiveness. They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals and people alike."
 
 goals:
   goal1: "Pass <em>two major anti-confinement</em> initiatives and work with U.S. farmers and retailers to move a billion animals to higher welfare standards."
