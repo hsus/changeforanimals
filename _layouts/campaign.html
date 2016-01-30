@@ -8,7 +8,7 @@
         <a href="/"><img src="{{ site.data.misc.small-logo-url }}" class="logo-sm" alt="Logo: {{site.title}}"></a>
         
         <div class="mobile-menu" id="mobile-menu">
-          <a href="#about" class="text about">About the Campaign</a>
+          <a href="#goals" class="text about">About the Campaign</a>
           <a href="#get-involved" class="text get-involved">Get Involved</a>
           {% if page.next and page.next.categories contains "campaigns"  %}
             <a href="{{ page.next.url }}" class="next text">
@@ -26,7 +26,7 @@
         </div>
 
         <div class="menu" id="menu">
-          <a href="#about" class="text left about">About the Campaign</a>
+          <a href="#goals" class="text left about">About the Campaign</a>
           <a href="#get-involved" class="text left get-involved">Get Involved</a>
         </div>
 
@@ -68,7 +68,7 @@
           <p class="caption">{{ campaign.caption }}</p>
         </header>
 
-        <section class="goals">
+        <section class="goals" id="goals">
           <div class="wrapper">
             <h2>Goals</h2>
             {% for goal_hash in campaign.goals %}
