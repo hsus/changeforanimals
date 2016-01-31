@@ -9,7 +9,9 @@
 
         {% include outro.html %}
 
+        {% if page.body-class == 'index' %}
         {% include donors.html %}
+        {% endif %}
 
         {% include footer.html %}
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
