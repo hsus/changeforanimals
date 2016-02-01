@@ -1,7 +1,7 @@
 <section class="donors">
   <div class="wrapper">
     <h2>Acknowledging our donors<br>who are building a <em>humane society.</em></h2>
-    {% for donor in site.data.shared.donors %}
+    {% for donor in site.data.donors %}
       {% if donor.name %}
         <div class="donor">
           <a href="{{ donor_hash.url }}"><div class="name">{{ donor.name }}</div>
