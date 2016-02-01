@@ -1,55 +1,7 @@
 ---
 layout: default
 ---
-    <nav>
-      <div class="wrapper">
-        <a href="/"><img src="{{ site.data.misc.small-logo-url }}" class="logo-sm" alt="Logo: {{site.title}}"></a>
-
-        <div class="mobile-menu" id="mobile-menu">
-          <a href="#goals" class="text about">About the Campaign</a>
-          <a href="#get-involved" class="text get-involved">Get Involved</a>
-          {% if page.next and page.next.categories contains "campaigns"  %}
-            <a href="{{ page.next.url }}" class="next text">
-              <span class="post-title">{{ page.next.title }}</span>
-            </a>
-          {% elsif page.previous and page.previous.categories contains "campaigns"  %}
-            {% for campaign in site.data.campaigns %}
-              {% if forloop.first  %}
-                <a href="{{ campaign[1].url }}" class="next text">
-                  <span class="post-title">{{ campaign[1].title }}</span>
-                </a>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        </div>
-
-        <div class="menu" id="menu">
-          <a href="#goals" class="text left about">About the Campaign</a>
-          <a href="#get-involved" class="text left get-involved">Get Involved</a>
-        </div>
-
-        <div class="next-menu">
-          {% if page.next and page.next.categories contains "campaigns"  %}
-            <a href="{{ page.next.url }}" class="next text">
-              <span class="post-title">{{ page.next.title }}</span>
-            </a>
-          {% elsif page.previous and page.previous.categories contains "campaigns"  %}
-            {% for campaign in site.data.campaigns %}
-              {% if forloop.first  %}
-                <a href="{{ campaign[1].url }}" class="next text">
-                  <span class="post-title">{{ campaign[1].title }}</span>
-                </a>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        </div>
-
-        <a class="mobile-menu-icon"><div><span>Menu</span></div></a>
-      </div>
-    </nav>
-
-
-
+  {% include sticky-nav-campaign.html %}
 
         <header class="campaign-header">
           <div class="gradient">&nbsp;</div>
