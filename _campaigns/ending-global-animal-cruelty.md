@@ -7,6 +7,8 @@ campaign-layout: "three-up"
 order: 4
 # END LAYOUT DATA
 
+permalink: ending-global-animal-cruelty/
+
 financial_tagline:
   amount: $7.4 MILLION
   text: Can Do So Much

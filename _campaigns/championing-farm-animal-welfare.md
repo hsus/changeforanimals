@@ -7,6 +7,8 @@ campaign-layout: two-up second
 order: 2
 # END LAYOUT DATA
 
+permalink: championing-farm-animal-welfare/
+
 financial_tagline:
   amount: $16.3 MILLION
   text: Escalates the Fight"
