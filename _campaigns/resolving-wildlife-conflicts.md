@@ -1,9 +1,11 @@
 ---
+# LAYOUT DATA
 layout: campaign
 body-class: campaign
 active: TRUE
 campaign-layout: three-up
 order: 3
+# END LAYOUT DATA
 
 financial_tagline:
   amount: $8.2 MILLION
