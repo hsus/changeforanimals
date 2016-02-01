@@ -7,6 +7,8 @@ campaign-layout: three-up
 order: 3
 # END LAYOUT DATA
 
+permalink: resolving-wildlife-conflicts/
+
 financial_tagline:
   amount: $8.2 MILLION
   text: Leads the Way

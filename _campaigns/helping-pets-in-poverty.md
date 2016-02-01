@@ -7,6 +7,8 @@ campaign-layout: "two-up first"
 order: 1
 # END LAYOUT DATA
 
+permalink: helping-pets-in-poverty/
+
 financial_tagline:
   amount: $22.3 MILLION
   text: Makes It Possible

@@ -7,6 +7,8 @@ campaign-layout: three-up
 order: 5
 # END LAYOUT DATA
 
+permalink: advancing-science-without-suffering/
+
 financial_tagline:
   amount: $5.8 MILLION
   text: Builds Momentum
