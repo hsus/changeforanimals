@@ -76,7 +76,6 @@ layout: default
           </div>
         </section>
 
-        {% if page.celebs %}
         {% for celeb in page.celebs %}
         <section class="celeb">
           <div class="wrapper">
@@ -92,7 +91,6 @@ layout: default
           </a>
         </section>
         {% endfor %}
-        {% endif %}
 
         <section class="donor-story">
           {{ page.donor_story }}
