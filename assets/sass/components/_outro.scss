@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .outro {
-  background: transparent url('../images/mobile-outro1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/outro/mobile-outro1.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: block;
   text-align: center;
@@ -11,8 +11,8 @@
   .wrapper {
     max-width: 96%;
     margin: 0 2%;
-  }  
-  .body {      
+  }
+  .body {
     max-width: 96%;
     margin: 0 auto;
   }
@@ -47,7 +47,7 @@
       }
       &:hover.donate:after {
         left: 1px;
-      } 
+      }
     }
     &.event a {
       @include default-transition;
@@ -67,8 +67,8 @@
     .wrapper {
       max-width: 94%;
       margin: 0 3%;
-    }  
-    .body {      
+    }
+    .body {
       max-width: 96%;
       margin: 0 auto;
     }
@@ -106,14 +106,14 @@
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
-  .outro {    
-    background-image: url('../images/outro1.jpg'); //quality @ 70
+  .outro {
+    background-image: url('../images/outro/outro1.jpg'); //quality @ 70
     padding-bottom: em(52);
     .wrapper {
       max-width: 80%;
       margin: 0 10%;
-    }  
-    .body {      
+    }
+    .body {
       max-width: 96%;
       margin: 0 auto;
     }
@@ -158,7 +158,7 @@
       max-width: em(1400);
       margin: 0 auto;
     }
-    .body {      
+    .body {
       max-width: em(930);
     }
     h2 {
@@ -196,4 +196,3 @@
     }
   }
 }
-

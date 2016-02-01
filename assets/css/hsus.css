@@ -905,7 +905,7 @@ ul {
     .campaign nav a.text:hover, .campaign nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .donors {
-  background: transparent url("../images/mobile-donors1.jpg") no-repeat top center;
+  background: transparent url("../images/donors/mobile-donors1.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   min-height: 20.625em;
@@ -975,7 +975,7 @@ ul {
         font-size: 1.125em; } }
 @media all and (min-width: 45em) {
   .donors {
-    background-image: url("../images/donors1.jpg");
+    background-image: url("../images/donors/donors1.jpg");
     min-height: 34.375em; }
     .donors h2 {
       font-size: 1.75em;
@@ -1000,7 +1000,7 @@ ul {
       .donors .donor a {
         font-size: 2em; } }
 .events {
-  background: transparent url("../images/mobile-events1.jpg") no-repeat top center;
+  background: transparent url("../images/events/mobile-events1.jpg") no-repeat top center;
   background-size: cover;
   clear: both; }
   .events .wrapper {
@@ -1094,7 +1094,7 @@ ul {
             left: 1px; }
 
 .events-after {
-  background: transparent url("../images/mobile-events-after1.jpg") no-repeat top center;
+  background: transparent url("../images/events/mobile-events-after1.jpg") no-repeat top center;
   background-size: cover;
   min-height: 30em;
   position: static;
@@ -1123,7 +1123,7 @@ ul {
         font-size: 1em; } }
 @media all and (min-width: 45em) {
   .events {
-    background-image: url("../images/events1.jpg"); }
+    background-image: url("../images/events/events1.jpg"); }
     .events .wrapper {
       padding: 7.5em 0 5.625em;
       max-width: 90%;
@@ -1146,7 +1146,7 @@ ul {
         padding: 0.88889em 4.44444em; }
 
   .events-after {
-    background-image: url("../images/events-after1.jpg");
+    background-image: url("../images/events/events-after1.jpg");
     min-height: 45em;
     position: static;
     height: 85vh;
@@ -1461,7 +1461,7 @@ footer {
     .intro .more-button {
       margin-top: 3.84615em; } }
 .outro {
-  background: transparent url("../images/mobile-outro1.jpg") no-repeat top center;
+  background: transparent url("../images/outro/mobile-outro1.jpg") no-repeat top center;
   background-size: cover;
   display: block;
   text-align: center;
@@ -1544,7 +1544,7 @@ footer {
         padding: 1em 4em; } }
 @media all and (min-width: 45em) {
   .outro {
-    background-image: url("../images/outro1.jpg");
+    background-image: url("../images/outro/outro1.jpg");
     padding-bottom: 3.25em; }
     .outro .wrapper {
       max-width: 80%;

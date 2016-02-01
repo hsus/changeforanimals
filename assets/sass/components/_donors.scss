@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .donors {
-  background: transparent url('../images/mobile-donors1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/donors/mobile-donors1.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: inline-block;
   min-height: em(330);
@@ -44,18 +44,18 @@
       font-size: em(14,18);
       opacity: 0;
       @include transition(all 0.3s linear);
-      &:before {        
+      &:before {
         border-color: transparent transparent darken($white,20%) transparent;
         border-style: solid;
         border-width:  0 em(8) em(11) em(8);
         content: "";
         display: block;
         height: 0;
-        margin: em(4) auto em(8); 
+        margin: em(4) auto em(8);
         position: relative;
         top: 0;
         width: 0;
-      } 
+      }
     }
     a:hover .prompt {
       opacity: 0.7 !important;
@@ -88,7 +88,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .donors {
-    background-image: url('../images/donors1.jpg'); //quality @ 70
+    background-image: url('../images/donors/donors1.jpg'); //quality @ 70
     min-height: em(550);
     h2 {
       font-size: em(28);
@@ -113,7 +113,7 @@
     min-height: em(660);
     h2 {
       font-size: em(40);
-      margin-top: em(180,40);      
+      margin-top: em(180,40);
       em {
         font-size: em(46,40);
       }
@@ -126,4 +126,3 @@
     }
   }
 }
-
