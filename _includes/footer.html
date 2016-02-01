@@ -1,24 +1,27 @@
 <footer>
-  <a class="site-logo" href="{{ site.data.misc.hsus-url }}"><img src="{{ site.url }}{{ site.data.misc.logo-url }}" alt="{{ site.data.misc.logo-alt }}"></a>
-  <a class="int-logo" href="{{ site.data.misc.int-url }}"><img src="{{ site.data.misc.int-logo-url }}" alt="{{ site.data.misc.int-logo-alt }}"></a>
+  {% assign logo = site.data.shared.logos.logo %}
+  <a class="site-logo" href="{{ site.data.shared.hsus-url }}"><img src="{{ logo.image-url }}" alt="{{ logo.alt }}"></a>
+  {% assign int-logo = site.data.shared.logos.int %}
+  <a class="int-logo" href="{{ int-logo.url }}"><img src="{{ int-logo.image-url }}" alt="{{ int-logo.alt }}"></a>
 
-  <div class="tagline">{{ site.data.misc.footer-tagline }}</div>
+  <div class="tagline">{{ site.data.shared.footer-tagline }}</div>
 
   <div class="social">
-    <a class="twitter" href="{{ site.data.misc.social-twitter-url }}"><img class="svg" src="{{ site.data.misc.social-twitter-icon }}"alt="{{ site.data.misc.social-twitter-text }}"></a>
-    <a class="pinterest" href="{{ site.data.misc.social-pinterest-url }}"><img class="svg" src="{{ site.data.misc.social-pinterest-icon }}"alt="{{ site.data.misc.social-pinterest-text }}"></a>
-    <a class="facebook" href="{{ site.data.misc.social-facebook-url }}"><img class="svg" src="{{ site.data.misc.social-facebook-icon }}"alt="{{ site.data.misc.social-facebook-text }}"></a>
-    <a class="instagram" href="{{ site.data.misc.social-instagram-url }}"><img class="svg" src="{{ site.data.misc.social-instagram-icon }}"alt="{{ site.data.misc.social-instagram-text }}"></a>
-    <a class="youtube" href="{{ site.data.misc.social-youtube-url }}"><img class="svg" src="{{ site.data.misc.social-youtube-icon }}"alt="{{ site.data.misc.social-youtube-text }}"></a>
-    <a class="googleplus" href="{{ site.data.misc.social-googleplus-url }}"><img class="svg" src="{{ site.data.misc.social-googleplus-icon }}"alt="{{ site.data.misc.social-googleplus-text }}"></a>
-    <a class="linkedin" href="{{ site.data.misc.social-linkedin-url }}"><img class="svg" src="{{ site.data.misc.social-linkedin-icon }}"alt="{{ site.data.misc.social-linkedin-text }}"></a>
+    {% for link in site.data.shared.social-links %}
+    <a class="{{link.channel}}" href="{{ link.url }}">
+      <img class="svg" src="{{ link.icon }}" alt="{{ link.text }}">
+    </a>
+    {% endfor %}
   </div>
 
-  <div class="visit">{{ site.data.misc.visit-text }} <a href="{{ site.data.misc.visit-url }}">{{ site.data.misc.visit-link-text }}</a></div>
+  {% assign visit = site.data.shared.visit %}
+  <div class="visit">{{ visit.title }} <a href="{{ visit.url }}">{{ visit.link-text }}</a></div>
 
-  <div class="privacy-contact"><a href="{{ site.data.misc.privacy-url }}">{{ site.data.misc.privacy-text }}</a> &nbsp;|&nbsp; <a href="{{ site.data.misc.contact-url }}">{{ site.data.misc.contact-text }}</a></div>
+  {% assign privacy = site.data.shared.privacy %}
+  {% assign contact= site.data.shared.contact %}
+  <div class="privacy-contact"><a href="{{ privacy.url }}">{{ privacy.title}}</a> &nbsp;|&nbsp; <a href="{{ contact.url }}">{{ contact.title }}</a></div>
 
-  <div class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.data.misc.copyright }}</div>
+  <div class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.data.shared.copyright }}</div>
 
-  <div class="non-profit">{{ site.data.misc.non-profit-statement }}</div>
+  <div class="non-profit">{{ site.data.shared.non-profit-statement }}</div>
 </footer>
