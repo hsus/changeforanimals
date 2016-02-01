@@ -19,7 +19,7 @@
 
         <script src="{{site.baseurl}}/assets/js/hsus.js"></script>
 
-        {% if site.baseurl %}
+        {% if site.host == '127.0.0.1' %}
         <!-- Loaded only in local -->
         <script src="http://localhost:35729/livereload.js"></script>
         {% endif %}
