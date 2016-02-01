@@ -6,5 +6,5 @@ gem 'neat'
 gem 'sass', '3.4.20'
 gem 'sass-globbing'
 gem 'guard-livereload'
-gem 's3_website'
+gem 's3_website', '2.10.0'
 gem "rake", "~> 10"
