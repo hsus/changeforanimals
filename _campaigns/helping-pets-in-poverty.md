@@ -12,8 +12,8 @@ title: "Helping Pets in Poverty"
 description: |
   We’ve made great strides in providing services to underserved communities, stopping puppy mills, fighting for retail sales restrictions and working globally to manage street dogs humanely. Yet U.S. shelters still have great pets available, some communities have shockingly low spay and neuter rates and large-scale commercial dog breeders produce 2 million puppies annually, displacing shelter pets. Worldwide, 250–300 million dogs live on the street.
 
-image: "/assets/images/campaign-poverty1.jpg"
-icon: "/assets/images/icon-cat.svg"
+image: "/assets/images/campaigns/campaign-poverty1.jpg"
+icon: "/assets/images/icons/icon-cat.svg"
 caption: "Hundreds of thousands of companion animals stand to benefit from our efforts."
 
 celebs:

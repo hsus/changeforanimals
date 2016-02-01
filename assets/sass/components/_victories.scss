@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .victories .wrapper {
-  background: transparent url('../images/mobile-victories1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/victories/mobile-victories1.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   min-height: em(480);
   padding: em(40) 0 em(70);
@@ -37,7 +37,7 @@
   }
 }
 .victory-after {
-  background: transparent url('../images/mobile-victories-after1.jpg') no-repeat top center; //quality @ 20
+  background: transparent url('../images/victories/mobile-victories-after1.jpg') no-repeat top center; //quality @ 20
   background-size: cover;
   min-height: em(480);
   position: static;
@@ -48,7 +48,7 @@
   background-position: center center;
   background-attachment: fixed;
 }
-  
+
 
 //  Tablet
 @media all and (min-width: $tablet) {
@@ -67,16 +67,16 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .victories .wrapper {
-    background-image:  url('../images/victories1.jpg'); //quality @ 70
+    background-image:  url('../images/victories/victories1.jpg'); //quality @ 70
     min-height: em(720);
     padding: em(100) 0 em(70);
     .victory {
       margin: em(24) em(32);
       width: 24%;
     }
-  }  
+  }
   .victory-after {
-    background-image:  url('../images/victories-after1.jpg'); //quality @ 20
+    background-image:  url('../images/victories/victories-after1.jpg'); //quality @ 20
     min-height: em(720);
     position: static;
     height: 85vh;
@@ -122,5 +122,5 @@
     width: 100%;
     background-size: cover;
     background-position: center center;
-  } 
+  }
 }

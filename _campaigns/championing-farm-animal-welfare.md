@@ -13,12 +13,12 @@ title: Championing Farm Animal Welfare
 description: |
   In the United States, millions of breeding pigs and egg-laying hens are kept in metal cages where they are virtually immobilized for their entire lives. Demand for meat is rising internationally, and factory-farming practices are spreading to the developing world. In the U.S., we’ve worked with more than 100 major retailers and the biggest names in the food industry to remove extreme confinement practices from their supply chains, and helped more than 100 school systems nationwide go meatless on Mondays. It’s time to expand our reach abroad.
 
-image: "/assets/images/campaign-farm1.jpg"
-icon: "/assets/images/icon-cow.svg"
+image: "/assets/images/campaigns/campaign-farm1.jpg"
+icon: "/assets/images/icons/icon-cow.svg"
 caption: By working with major corporations and institutions, we can improve living conditions for billions of animals.
 
 celebs:
-  - image: "/assets/images/kate-mara1.jpg"
+  - image: "/assets/images/celebs/kate-mara1.jpg"
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/2oKFOIRRgPg?rel=0" frameborder="0" allowfullscreen></iframe>'
     name: "Kate Mara"
     title: "Actor, <em>Fantastic Four</em>"

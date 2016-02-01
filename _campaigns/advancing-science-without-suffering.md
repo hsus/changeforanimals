@@ -13,8 +13,8 @@ title: "Advancing Science Without Suffering"
 description: |
   Millions of animals are used in cosmetic and toxicity tests worldwide, despite growing recognition of flaws inherent in such tests. We’ve already partnered with Procter & Gamble to develop AltTox.org, a site dedicated to advancing non-animal methods of toxicity testing. We can build on that momentum to promote 21st-century science and speed the adoption of alternatives.
 
-image: "/assets/images/campaign-science1.jpg"
-icon: "/assets/images/icon-chimp.svg"
+image: "/assets/images/campaigns/campaign-science1.jpg"
+icon: "/assets/images/icons/icon-chimp.svg"
 caption: Science offers promising new approaches to cosmetics and toxicity testing, saving animals from torturous lives in labs.
 
 celebs:

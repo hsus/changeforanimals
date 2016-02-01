@@ -2,13 +2,13 @@ hsus-url: "//www.humanesociety.org/"
 
 logos:
   logo:
-    image-url: "/assets/images/logo.svg"
-    small-image-url: "/assets/images/mobile-logo.svg"
+    image-url: "/assets/images/logos/logo.svg"
+    small-image-url: "/assets/images/logos/mobile-logo.svg"
     alt: "Logo: The Humane Society of the United States"
 
   int:
     url: "//www.hsi.org/"
-    image-url: "/assets/images/logo-int.svg"
+    image-url: "/assets/images/logos/logo-int.svg"
     alt: "The Humane Society International"
 
 
@@ -19,31 +19,31 @@ footer-tagline: "Creating transformational change for all animals"
 social-links:
   - channel: "twitter"
     url: ""
-    icon: "/assets/images/twitter.svg"
+    icon: "/assets/images/icons/twitter.svg"
 
   - channel: "pinterest"
     url: ""
-    icon: "/assets/images/pinterest.svg"
+    icon: "/assets/images/icons/pinterest.svg"
 
   - channel: "facebook"
     url: ""
-    icon: "/assets/images/facebook.svg"
+    icon: "/assets/images/icons/facebook.svg"
 
   - channel: "instagram"
     url: ""
-    icon: "/assets/images/instagram.svg"
+    icon: "/assets/images/icons/instagram.svg"
 
   - channel: "youtube"
     url: ""
-    icon: "/assets/images/youtube.svg"
+    icon: "/assets/images/icons/youtube.svg"
 
   - channel: "googleplus"
     url: ""
-    icon: "/assets/images/googleplus1.svg"
+    icon: "/assets/images/icons/googleplus1.svg"
 
   - channel: "linkedin"
     url: ""
-    icon: "/assets/images/linkedin.svg"
+    icon: "/assets/images/icons/linkedin.svg"
 
 visit:
   title: "Visit"

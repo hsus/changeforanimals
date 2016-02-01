@@ -1,8 +1,8 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .goals {
-  background: transparent url('../images/mobile-goals1.jpg') no-repeat top center; //quality @ 70
-  background-size: cover; 
+  background: transparent url('../images/goals/mobile-goals1.jpg') no-repeat top center; //quality @ 70
+  background-size: cover;
   display: block;
   text-align: center;
   .wrapper {
@@ -65,7 +65,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .goals {
-    background-image: url('../images/goals1.jpg'); //quality @ 70    
+    background-image: url('../images/goals/goals1.jpg'); //quality @ 70
     .wrapper {
       max-width: 84%;
       margin: 0 8%;
@@ -108,4 +108,3 @@
     }
   }
 }
-

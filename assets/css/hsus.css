@@ -466,7 +466,7 @@ ul {
       .celeb blockquote span {
         font-size: 1.09091em; } }
 .goals {
-  background: transparent url("../images/mobile-goals1.jpg") no-repeat top center;
+  background: transparent url("../images/goals/mobile-goals1.jpg") no-repeat top center;
   background-size: cover;
   display: block;
   text-align: center; }
@@ -512,7 +512,7 @@ ul {
       margin-right: 12%; } }
 @media all and (min-width: 45em) {
   .goals {
-    background-image: url("../images/goals1.jpg"); }
+    background-image: url("../images/goals/goals1.jpg"); }
     .goals .wrapper {
       max-width: 84%;
       margin: 0 8%; }
@@ -541,7 +541,7 @@ ul {
     .goals .goal:nth-of-type(odd) {
       margin-right: 19%; } }
 .campaign header {
-  background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
+  background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   position: relative;
@@ -623,7 +623,7 @@ ul {
     right: 0; } }
 @media all and (min-width: 45em) {
   .campaign header {
-    background-image: url("../images/header1.1.jpg"); }
+    background-image: url("../images/headers/header1.1.jpg"); }
     .campaign header .gradient {
       width: 55%; }
     .campaign header .tagline {
@@ -643,7 +643,7 @@ ul {
       bottom: 4.375em; } }
 @media all and (min-width: 87.5em) {
   .campaign header {
-    background-image: url("../images/header1.1.jpg"); }
+    background-image: url("../images/headers/header1.1.jpg"); }
     .campaign header .gradient {
       width: 50%; }
     .campaign header .wrapper {
@@ -1321,7 +1321,7 @@ footer {
     font-size: 1.25em;
     line-height: 1.7; } }
 .index header {
-  background: transparent url("../images/mobile-header1.1.jpg") no-repeat top center;
+  background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   text-align: center;
@@ -1349,7 +1349,7 @@ footer {
     margin: 0 auto 2.8125em; } }
 @media all and (min-width: 45em) {
   .index header {
-    background-image: url("../images/header1.1.jpg"); }
+    background-image: url("../images/headers/header1.1.jpg"); }
     .index header .tagline {
       font-size: 5.25em;
       margin: 0 auto 2.85714em; } }
@@ -2059,7 +2059,7 @@ footer {
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .victories .wrapper {
-  background: transparent url("../images/mobile-victories1.jpg") no-repeat top center;
+  background: transparent url("../images/victories/mobile-victories1.jpg") no-repeat top center;
   background-size: cover;
   min-height: 30em;
   padding: 2.5em 0 4.375em;
@@ -2090,7 +2090,7 @@ footer {
     margin-top: 0.57143em; }
 
 .victory-after {
-  background: transparent url("../images/mobile-victories-after1.jpg") no-repeat top center;
+  background: transparent url("../images/victories/mobile-victories-after1.jpg") no-repeat top center;
   background-size: cover;
   min-height: 30em;
   position: static;
@@ -2111,7 +2111,7 @@ footer {
       width: 36%; } }
 @media all and (min-width: 45em) {
   .victories .wrapper {
-    background-image: url("../images/victories1.jpg");
+    background-image: url("../images/victories/victories1.jpg");
     min-height: 45em;
     padding: 6.25em 0 4.375em; }
     .victories .wrapper .victory {
@@ -2119,7 +2119,7 @@ footer {
       width: 24%; }
 
   .victory-after {
-    background-image: url("../images/victories-after1.jpg");
+    background-image: url("../images/victories/victories-after1.jpg");
     min-height: 45em;
     position: static;
     height: 85vh;

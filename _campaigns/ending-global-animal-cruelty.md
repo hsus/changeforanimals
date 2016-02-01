@@ -13,8 +13,8 @@ title: "Ending Global Animal Cruelty"
 description: |
   About 120 countries do not prohibit dogfighting. A fifth of the world’s nations lack even a basic anti-cruelty statute. Many notorious U.S. dogfighting kingpins and kennels sell dogs internationally for fights in other countries. Building on our success at making dogfighting and malicious cruelty to animals a felony in all 50 states, we’ll export this successful approach internationally.
 
-image: "/assets/images/campaign-cruelty1.jpg"
-icon: "/assets/images/icon-cruelty.svg"
+image: "/assets/images/campaigns/campaign-cruelty1.jpg"
+icon: "/assets/images/icons/icon-cruelty.svg"
 caption: "Even after the fight is over, dogfighting dogs aren’t safe. They sometimes die from their wounds or are killed if they lost the fight."
 
 celebs:

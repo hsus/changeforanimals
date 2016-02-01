@@ -1,8 +1,8 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .campaign header {
-  background: transparent url('../images/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
-  background-size: cover; 
+  background: transparent url('../images/headers/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
+  background-size: cover;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -30,7 +30,7 @@
     text-align: center;
     strong {
       font-size: em(32,24);
-    } 
+    }
   }
   .tagline {
     display: block;
@@ -38,7 +38,7 @@
     font-size: em(16);
     line-height: 1.4;
     max-width: 94%;
-    padding: 0 em(40); 
+    padding: 0 em(40);
     text-align: center;
     width: em(350);
   }
@@ -105,7 +105,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .campaign header {
-    background-image: url('../images/header1.1.jpg');
+    background-image: url('../images/headers/header1.1.jpg');
     .gradient {
       width: 55%;
     }
@@ -134,7 +134,7 @@
 //  Desktop
 @media all and (min-width: $desktop) {
   .campaign header {
-    background-image: url('../images/header1.1.jpg');
+    background-image: url('../images/headers/header1.1.jpg');
     .gradient {
       width: 50%;
     }
@@ -161,4 +161,3 @@
     }
   }
 }
-

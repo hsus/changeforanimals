@@ -13,8 +13,8 @@ title: Resolving Wildlife Conflicts
 description: |
   Wild animals have suffered too much, for too long, because of outdated, destructive andlethal “solutions” to human-wildlife conflicts. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative deer immunocontraception research projects in partnership with leading veterinary medicine schools.
 
-image: "/assets/images/campaign-wildlife1.jpg"
-icon: "/assets/images/icon-wildlife.svg"
+image: "/assets/images/campaigns/campaign-wildlife1.jpg"
+icon: "/assets/images/icons/icon-wildlife.svg"
 caption: We’re at the forefront of humane wildlife management, and we’re ready to share our knowledge.
 
 celebs:
