@@ -15,3 +15,8 @@ url: "" # the base hostname & protocol for your site
 markdown: kramdown
 
 exclude: ['Gemfile', '.gitignore', 'Gemfile.lock', 'Rakefile', 'assets/sass', 'vendor', '.travis.yml', 'Guardfile', 's3_website.yml']
+
+collections:
+  campaigns:
+    output: true
+    permalink: /:path/

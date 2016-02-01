@@ -1,8 +1,7 @@
 ---
 layout: default
-body-class: campaign
 ---
-
+{{page.next}}
     <nav>
       <div class="wrapper">
         <a href="/"><img src="{{ site.data.misc.small-logo-url }}" class="logo-sm" alt="Logo: {{site.title}}"></a>
@@ -51,50 +50,51 @@ body-class: campaign
     </nav>
 
 
-    {% for campaign_hash in site.data.campaigns %}
-      {% assign campaign = campaign_hash[1] %}
-      {% if page.slug == campaign.url %}
+
 
         <header class="campaign-header">
           <div class="gradient">&nbsp;</div>
           <div class="wrapper">
-            <p class="financial">{{ campaign.financial_tagline }}</p>
+            <p class="financial">
+              <strong>{{ page.financial_tagline.amount }}</strong><br>
+              {{page.financial_tagline.text}}
+            </p>
              <div class="tagline">{{ site.data.misc.footer-tagline }}</div>
 
-            <h2>{{ campaign.title }}</h2>
+            <h2>{{ page.title }}</h2>
 
-            <p class="description">{{ campaign.description }}</p>
+            <p class="description">{{ page.description }}</p>
           </div>
-          <p class="caption">{{ campaign.caption }}</p>
+          <p class="caption">{{ page.caption }}</p>
         </header>
 
         <section class="goals" id="goals">
           <div class="wrapper">
             <h2>Goals</h2>
-            {% for goal_hash in campaign.goals %}
-              {% assign goal = goal_hash[1] %}
+            {% for goal in page.goals %}
               <div class="goal">{{ goal }}</div>
             {% endfor %}
           </div>
         </section>
 
+        {% if page.celebs %}
+        {% for celeb in page.celebs %}
         <section class="celeb">
           <div class="wrapper">
-            <img class="headshot" src="{{ campaign.celeb_image }}" alt="Image: {{ campaign.celeb_name }}">
-            <h3>{{ campaign.celeb_name }}</h3>
-            <p class="title">{{ campaign.celeb_title }}</p>
-            <blockquote><span class="quotes left"> &ldquo;</span>{{ campaign.celeb_quote }}<span class="quotes right">&rdquo;</span></blockquote>
+            <img class="headshot" src="{{ celeb.image }}" alt="Image: {{ celeb.name }}">
+            <h3>{{ celeb.name }}</h3>
+            <p class="title">{{ celeb.title }}</p>
+            <blockquote><span class="quotes left"> &ldquo;</span>{{ celeb.quote }}<span class="quotes right">&rdquo;</span></blockquote>
           </div>
 
           <a class="video"><img class="play-button svg" src="/assets/images/play-button.svg" alt="play video">
             <div class="overlay">&nbsp;</div>
-            <div class="youtubewrap"><div class="video-container">{{ campaign.celeb_video }}</div></div>
+            <div class="youtubewrap"><div class="video-container">{{ celeb.video }}</div></div>
           </a>
         </section>
+        {% endfor %}
+        {% endif %}
 
         <section class="donor-story">
-          {{ campaign.donor_story }}
+          {{ site.campaign.donor_story }}
         </section>
-
-      {% endif %}
-    {% endfor %}
