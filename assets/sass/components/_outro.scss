@@ -39,7 +39,7 @@
       &.donate:after {
         @include default-transition;
         content: " →";
-        color: lighten($yellow,40%);
+        color: $light-gold;
         font-size: em(20);
         line-height: 1;
         position: relative;
@@ -51,10 +51,10 @@
     }
     &.event a {
       @include default-transition;
-      background-color: $yellow;
+      background-color: $gold;
       padding: em(16) em(64);
       &:hover {
-        background-color: darken($yellow,10%);
+        background-color: darken($gold,10%);
       }
     }
   }

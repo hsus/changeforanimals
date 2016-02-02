@@ -16,13 +16,13 @@
   }
   span i {
     font-style: normal;
-    color: $yellow;    
+    color: $light-gold;    
     font-family: $secondary-font;
     font-size: em(20,15);
     line-height: 1;
   }
   span.italic:after {      
-    color: $yellow;  
+    color: $light-gold;  
   }
   span.italic i {
     font-style: italic;
@@ -109,13 +109,13 @@
     }
     span i {
       font-style: normal;
-      color: $yellow;    
+      color: $light-gold;    
       font-family: $secondary-font;
       font-size: em(32,22);
       line-height: 1;
     }
     span.italic:after {      
-      color: $yellow;  
+      color: $light-gold;  
     }
     span.italic i {
       font-style: italic;

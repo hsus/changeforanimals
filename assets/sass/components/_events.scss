@@ -31,13 +31,13 @@
     }
     .cta-button {
       @include default-transition;
-      background-color: $yellow;
+      background-color: $gold;
       color: $white;
       display: inline-block;
       text-decoration: none;
       padding: em(16) em(64);
       &:hover {
-        background-color: darken($yellow,10%);
+        background-color: darken($gold,10%);
       }
     }
   }
@@ -95,7 +95,7 @@
         @include default-transition;
         &:after {
           content: " →";
-          color: lighten($yellow,40%);
+          color: $light-gold;
           font-size: em(20);
           line-height: 1;
           position: relative;

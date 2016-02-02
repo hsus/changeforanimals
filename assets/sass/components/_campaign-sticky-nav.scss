@@ -126,7 +126,7 @@
     .next-menu a {
       &:after {
         content: " →";
-        color: lighten($yellow,40%);
+        color: $light-gold;
         font-size: em(22);
         line-height: 0.7;
         position: relative;

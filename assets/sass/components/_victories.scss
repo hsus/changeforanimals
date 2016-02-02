@@ -12,27 +12,43 @@
     vertical-align: top;
     width: 80%;
   }
-  h2,h3 {
-    color: $yellow;
-    font-size: em(32);
-    font-weight: 200;
+  h2 {
+    color: $light-gray;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    font-size: em(26);
+    font-weight: 200;
+    margin-bottom: em(24,26);
+    em {
+      font-family: $secondary-font;
+      font-size: em(36,26);
+      position: relative;
+      left: -3px;
+      font-style: normal;
+      letter-spacing: -0.05em;
+      display: inline-block;
+      &::first-letter {
+        letter-spacing: -18px;
+      }
+    }
+  }
+  h3 {
+    color: $light-gold;
+    font-size: em(32);
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 0.6;
+    margin-bottom: em(20,32);
     small {
       font-size: em(16,32);
       font-weight: 400;
-      letter-spacing: none;
+      letter-spacing: 0;
     }
   }
-  h2 {
-    font-size: em(24);
-    letter-spacing: 2px;
-    margin-bottom: em(24,24);
-  }
   p {
-    color: $light-blue;
+    color: $white;
+    font-weight: 200;
     font-size: em(14);
-    letter-spacing: em(0.5);
+    letter-spacing: 1px;
     margin-top: em(8,14);
   }
 }
@@ -55,7 +71,8 @@
   .victories .wrapper {
     padding: em(40) 0 em(70);
     h2 {
-      font-size: em(26);
+      font-size: em(32);
+      margin-bottom: em(24,32);
     }
     .victory {
       margin: em(12) em(16) 0;
@@ -90,27 +107,29 @@
 //  Desktop
 @media all and (min-width: $desktop) {
   .victories .wrapper {
-    padding: em(150) em(64) em(90);
+    padding: em(150) em(64) em(110);
     .victory {
       margin: em(36) em(64);
       width: 22%;
     }
-    h2,h3 {
-      font-size: em(52);
-      letter-spacing: none;
-      small {
-        font-size: em(22,52);
-        letter-spacing: -0.02em;
+    h2 {
+      font-size: em(48);
+      margin-bottom: em(48,48);
+      em {
+        font-size: em(60,48);
+        letter-spacing: -0.05em;
       }
     }
-    h2 {
-      font-size: em(36);
-      letter-spacing: 3px;
-      margin-bottom: em(32,36);
+    h3 {
+      font-size: em(54);
+      margin-bottom: em(20,54);
+      small {
+        font-size: em(28,54);
+      }
     }
+    
     p {
       font-size: em(20);
-      letter-spacing: em(-0.05);
       margin-top: em(8,20);
     }
   }
