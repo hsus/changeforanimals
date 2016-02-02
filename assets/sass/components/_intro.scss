@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .intro {
-  background: transparent url('../images/mobile-intro1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/intro/mobile-intro2.jpg') no-repeat top center; //quality @ 70
   background-size: cover; 
   display: inline-block;
   font-size: em(15);
@@ -96,7 +96,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .intro {
-    background-image: url('../images/intro1.jpg');
+    background-image: url('../images/intro/intro2.jpg');
     font-size: em(22);
     line-height: 1.6;
     text-align: center;

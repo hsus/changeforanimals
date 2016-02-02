@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .events {
-  background: transparent url('../images/events/mobile-events1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/events/mobile-events2.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   clear: both;
   .wrapper {
@@ -156,7 +156,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .events {
-    background-image: url('../images/events/events1.jpg'); //quality @ 70
+    background-image: url('../images/events/events2.jpg'); //quality @ 70
     .wrapper {
       padding: em(120) 0 em(90);
       max-width: 90%;

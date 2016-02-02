@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .victories .wrapper {
-  background: transparent url('../images/victories/mobile-victories1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/victories/mobile-victories2.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   min-height: em(480);
   padding: em(40) 0 em(70);
@@ -67,7 +67,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .victories .wrapper {
-    background-image:  url('../images/victories/victories1.jpg'); //quality @ 70
+    background-image:  url('../images/victories/victories2.jpg'); //quality @ 70
     min-height: em(720);
     padding: em(100) 0 em(70);
     .victory {

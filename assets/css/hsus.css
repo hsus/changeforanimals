@@ -905,7 +905,7 @@ ul {
     .campaign nav a.text:hover, .campaign nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .donors {
-  background: transparent url("../images/donors/mobile-donors1.jpg") no-repeat top center;
+  background: transparent url("../images/donors/mobile-donors2.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   min-height: 20.625em;
@@ -975,7 +975,7 @@ ul {
         font-size: 1.125em; } }
 @media all and (min-width: 45em) {
   .donors {
-    background-image: url("../images/donors/donors1.jpg");
+    background-image: url("../images/donors/donors2.jpg");
     min-height: 34.375em; }
     .donors h2 {
       font-size: 1.75em;
@@ -1000,7 +1000,7 @@ ul {
       .donors .donor a {
         font-size: 2em; } }
 .events {
-  background: transparent url("../images/events/mobile-events1.jpg") no-repeat top center;
+  background: transparent url("../images/events/mobile-events2.jpg") no-repeat top center;
   background-size: cover;
   clear: both; }
   .events .wrapper {
@@ -1123,7 +1123,7 @@ ul {
         font-size: 1em; } }
 @media all and (min-width: 45em) {
   .events {
-    background-image: url("../images/events/events1.jpg"); }
+    background-image: url("../images/events/events2.jpg"); }
     .events .wrapper {
       padding: 7.5em 0 5.625em;
       max-width: 90%;
@@ -1321,7 +1321,7 @@ footer {
     font-size: 1.25em;
     line-height: 1.7; } }
 .index header {
-  background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
+  background: transparent url("../images/headers/mobile-header2.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   text-align: center;
@@ -1349,12 +1349,12 @@ footer {
     margin: 0 auto 2.8125em; } }
 @media all and (min-width: 45em) {
   .index header {
-    background-image: url("../images/headers/header1.1.jpg"); }
+    background-image: url("../images/headers/header2.jpg"); }
     .index header .tagline {
       font-size: 5.25em;
       margin: 0 auto 2.85714em; } }
 .intro {
-  background: transparent url("../images/mobile-intro1.jpg") no-repeat top center;
+  background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   font-size: 0.9375em;
@@ -1428,7 +1428,7 @@ footer {
       margin-top: 1.66667em; } }
 @media all and (min-width: 45em) {
   .intro {
-    background-image: url("../images/intro1.jpg");
+    background-image: url("../images/intro/intro2.jpg");
     font-size: 1.375em;
     line-height: 1.6;
     text-align: center;
@@ -2059,7 +2059,7 @@ footer {
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .victories .wrapper {
-  background: transparent url("../images/victories/mobile-victories1.jpg") no-repeat top center;
+  background: transparent url("../images/victories/mobile-victories2.jpg") no-repeat top center;
   background-size: cover;
   min-height: 30em;
   padding: 2.5em 0 4.375em;
@@ -2111,7 +2111,7 @@ footer {
       width: 36%; } }
 @media all and (min-width: 45em) {
   .victories .wrapper {
-    background-image: url("../images/victories/victories1.jpg");
+    background-image: url("../images/victories/victories2.jpg");
     min-height: 45em;
     padding: 6.25em 0 4.375em; }
     .victories .wrapper .victory {

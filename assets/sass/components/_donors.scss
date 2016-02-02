@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .donors {
-  background: transparent url('../images/donors/mobile-donors1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/donors/mobile-donors2.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: inline-block;
   min-height: em(330);
@@ -88,7 +88,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .donors {
-    background-image: url('../images/donors/donors1.jpg'); //quality @ 70
+    background-image: url('../images/donors/donors2.jpg'); //quality @ 70
     min-height: em(550);
     h2 {
       font-size: em(28);

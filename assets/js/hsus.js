@@ -6,7 +6,7 @@ $(document).ready(function() {
         wrapper = el.parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
-      $('#intro').css('background-image','url("/assets/images/intro1.jpg")')
+      $('#intro').css('background-image','url("/assets/images/intro/intro2.jpg")')
       wrapper.find('.readmore').text('Read More');
       $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).hide();
