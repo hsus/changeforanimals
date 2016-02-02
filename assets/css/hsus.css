@@ -1070,24 +1070,32 @@ ul {
     opacity: 0.8;
     margin: 1.40625em auto 0.78125em; }
   .events .event p {
-    opacity: 0.8;
     font-weight: 200;
     line-height: 1.5; }
   .events .event .cta-button {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     transition: all 0.3s linear;
-    background-color: #ce8e00;
     color: #fff;
     display: inline-block;
     text-decoration: none;
-    padding: 1em 4em; }
+    padding: 0;
+    font-size: 1.5em; }
+    .events .event .cta-button:after {
+      content: " →";
+      color: #d8a533;
+      font-size: 1.5625em;
+      line-height: 1;
+      position: relative;
+      top: 0.16em; }
     .events .event .cta-button:hover {
-      background-color: #9b6b00; }
+      opacity: 1; }
+      .events .event .cta-button:hover:after {
+        left: 1px; }
   .events .book {
     margin-top: 2em; }
     .events .book .book-header {
-      background-color: rgba(115, 154, 188, 0.2);
+      background-color: rgba(21, 43, 81, 0.5);
       padding: 1.125em;
       display: inline-block; }
       .events .book .book-header .cover {
@@ -1112,32 +1120,32 @@ ul {
         text-align: left;
         font-size: 0.875em; }
     .events .book .book-body {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 1.125em 1.5em;
       display: inline-block;
       text-align: left; }
       .events .book .book-body p {
         font-size: 1em;
         line-height: 1.5;
-        opacity: 0.8; }
+        margin-top: 0;
+        color: #c1d1df; }
       .events .book .book-body a {
         display: block;
-        margin-bottom: 1.125em;
+        margin-bottom: 0.375em;
         margin-top: 0.5em;
-        color: #fff;
+        color: #c1d1df;
         text-decoration: none;
         font-size: 0.9375em;
-        opacity: 0.5;
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
         transition: all 0.3s linear; }
         .events .book .book-body a:after {
           content: " →";
           color: #d8a533;
-          font-size: 1.25em;
+          font-size: 1.5625em;
           line-height: 1;
           position: relative;
-          top: 0.1em; }
+          top: 0.16em; }
         .events .book .book-body a:hover {
           opacity: 1; }
           .events .book .book-body a:hover:after {
@@ -1163,8 +1171,6 @@ ul {
     font-size: 2em;
     line-height: 1.15;
     margin: 1.40625em auto 0.78125em; }
-  .events .event .cta-button {
-    padding: 1em 2.75em; }
   .events .book {
     margin-top: 3.5em; }
     .events .book .book-header {
@@ -1178,10 +1184,17 @@ ul {
       padding: 7.5em 0 5.625em;
       max-width: 90%;
       margin: 0 5%; }
-    .events .event, .events .book {
-      width: 45%;
+    .events .event {
+      width: 42%;
       float: left;
       margin: 0; }
+    .events .book {
+      width: 48%;
+      float: left;
+      margin: 0; }
+      .events .book .book-header,
+      .events .book .book-body {
+        padding: 2em; }
     .events .event {
       margin-right: 10%; }
       .events .event p {
@@ -1192,8 +1205,7 @@ ul {
         margin: 1.78571em auto 1.07143em; }
       .events .event .cta-button {
         font-size: 1.125em;
-        margin-top: 1em;
-        padding: 0.88889em 4.44444em; }
+        margin-top: 1em; }
 
   .events-after {
     background-image: url("../images/events/events-after1.jpg");
@@ -1207,8 +1219,10 @@ ul {
 @media all and (min-width: 87.5em) {
   .events .wrapper {
     padding: 11.25em 0 8.75em;
-    max-width: 70%;
-    margin: 0 15%; }
+    width: 85em;
+    margin: 0 auto;
+    display: block;
+    overflow: auto; }
   .events .event, .events .book {
     width: 45%; }
   .events .event {
@@ -1216,19 +1230,23 @@ ul {
     .events .event p {
       font-size: 1.375em; }
     .events .event h2 {
-      font-size: 4em;
+      font-size: 3em;
       line-height: 1.2;
-      margin: 0.625em auto 0.54688em; }
+      margin: 4.16667em auto 0.72917em; }
     .events .event .cta-button {
-      font-size: 1.25em;
-      margin-top: 0.9em;
-      padding: 0.8em 4em; }
+      font-size: 1.75em;
+      margin-top: 0.64286em; }
   .events .book .book-header .title h2 {
-    font-size: 1.25em; }
-  .events .book .book-body p {
-    font-size: 1.125em; }
-  .events .book .book-body a {
-    font-size: 1em; }
+    font-size: 1.625em;
+    line-height: 1.4;
+    font-weight: 400; }
+  .events .book .book-header p {
+    color: #c1d1df;
+    font-size: 1.375em; }
+  .events .book .book-body p, .events .book .book-body a {
+    font-size: 1.375em;
+    letter-spacing: 0.03125em;
+    line-height: 1.5; }
 
   .events-after {
     min-height: 62.5em;

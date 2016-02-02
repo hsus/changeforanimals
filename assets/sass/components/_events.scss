@@ -25,26 +25,36 @@
       margin: em(45,32) auto em(25,32) ;
     }
     p {
-      opacity: 0.8;
       font-weight: 200;
       line-height: 1.5;
     }
     .cta-button {
       @include default-transition;
-      background-color: $gold;
       color: $white;
       display: inline-block;
       text-decoration: none;
-      padding: em(16) em(64);
+      padding: 0;
+      font-size: em(24);
+      &:after {
+        content: " →";
+        color: $light-gold;
+        font-size: em(25);
+        line-height: 1;
+        position: relative;
+        top: em(4,25);
+      }
       &:hover {
-        background-color: darken($gold,10%);
+        opacity: 1;
+        &:after {
+          left: 1px;
+        }
       }
     }
   }
   .book {
     margin-top: em(32);
     .book-header {
-      background-color: rgba($light-blue,0.2);
+      background-color: rgba($blue,0.5);
       padding: em(18);
       display: inline-block;
       .cover {
@@ -75,31 +85,31 @@
       }
     }
     .book-body {
-      background-color: rgba($white,0.15);
+      background-color: rgba($white,0.1);
       padding: em(18) em(24);
       display: inline-block;
       text-align: left;
       p {
         font-size: em(16);
         line-height: 1.5;
-        opacity: 0.8;
+        margin-top: 0;
+        color: $light-grey;
       }
       a {
         display: block;
-        margin-bottom: em(18);
+        margin-bottom: em(6);
         margin-top: em(8);
-        color: $white;
+        color: $light-grey;
         text-decoration: none;
         font-size: em(15);
-        opacity: 0.5;
         @include default-transition;
         &:after {
           content: " →";
           color: $light-gold;
-          font-size: em(20);
+          font-size: em(25);
           line-height: 1;
           position: relative;
-          top: em(2,20);
+          top: em(4,25);
         }
         &:hover {
           opacity: 1;
@@ -137,9 +147,6 @@
         line-height: 1.15;
         margin: em(45,32) auto em(25,32) ;
       }
-      .cta-button {
-        padding: em(16) em(44);
-      }
     }
     .book {
       margin-top: em(56);
@@ -162,10 +169,19 @@
       max-width: 90%;
       margin: 0 5%;
     }
-    .event, .book {
-      width: 45%;
+    .event {
+      width: 42%;
       float: left;
       margin: 0;
+    }
+    .book {
+      width: 48%;
+      float: left;
+      margin: 0;
+      .book-header,
+      .book-body {
+        padding: em(32);
+      }
     }
     .event {
       margin-right: 10%;
@@ -180,7 +196,6 @@
       .cta-button {
         font-size: em(18);
         margin-top: em(18,18);
-        padding: em(16,18) em(80,18);
       }
     }
   }
@@ -201,8 +216,10 @@
   .events {
     .wrapper {
       padding: em(180) 0 em(140);
-      max-width: 70%;
-      margin: 0 15%;
+      width: em(1360);
+      margin: 0 auto;
+      display: block;
+      overflow: auto;
     }
     .event, .book {
       width: 45%;
@@ -213,30 +230,34 @@
         font-size: em(22);
       }
       h2 {
-        font-size: em(64);
+        font-size: em(48);
         line-height: 1.2;
-        margin: em(40,64) auto em(35,64);
+        margin: em(200,48) auto em(35,48);
       }
       .cta-button {
-        font-size: em(20);
-        margin-top: em(18,20);
-        padding: em(16,20) em(80,20);
+        font-size: em(28);
+        margin-top: em(18,28);
       }
     }
     .book {
       .book-header {
         .title {
           h2 {
-            font-size: em(20);
+            font-size: em(26);
+            line-height: 1.4;
+            font-weight: 400;
           }
+        }
+        p {
+          color: $light-grey;
+          font-size: em(22);
         }
       }
       .book-body {
-        p {
-          font-size: em(18);
-        }
-        a {
-          font-size: em(16);
+        p,a {
+          font-size: em(22);
+          letter-spacing: em(0.5);
+          line-height: 1.5;
         }
       }
     }
