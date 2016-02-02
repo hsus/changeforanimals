@@ -666,6 +666,26 @@ ul {
 .campaign-previews {
   width: 100%;
   display: block; }
+  .campaign-previews h2.title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.125em;
+    max-width: 96%;
+    margin: 0 auto 0.88889em;
+    letter-spacing: 1px;
+    z-index: 100;
+    position: relative; }
+    .campaign-previews h2.title em {
+      display: inline-block;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      color: #d8a533;
+      font-size: 1.22222em;
+      font-style: normal;
+      letter-spacing: 0;
+      left: -1px;
+      position: relative; }
+      .campaign-previews h2.title em::first-letter {
+        letter-spacing: -10px; }
   .campaign-previews .preview {
     background-size: cover;
     width: 100%;
@@ -705,7 +725,7 @@ ul {
     .campaign-previews .preview:hover .overlay {
       transform: translateY(0); }
     .campaign-previews .preview > h3 {
-      background-image: linear-gradient(transparent, #000);
+      background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
       font-weight: 200;
       position: absolute;
       bottom: 0;
@@ -724,13 +744,33 @@ ul {
       opacity: 0; }
 
 @media all and (min-width: 45em) {
+  .campaign-previews h2.title {
+    font-size: 1.25em;
+    margin: 0 auto -1.6em; }
+    .campaign-previews h2.title em {
+      font-size: 1.4em; }
+      .campaign-previews h2.title em::first-letter {
+        letter-spacing: -10px; }
+    .campaign-previews h2.title:after {
+      -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-color: #152b51 transparent transparent transparent;
+      border-style: solid;
+      border-width: 2.0625em 2.3125em 0 2.3125em;
+      content: "";
+      display: block;
+      height: 0;
+      margin: 0.5em auto 0;
+      position: relative;
+      width: 0; }
   .campaign-previews .preview {
     width: 33.333%;
     min-height: 18.75em; }
     .campaign-previews .preview.first {
-      width: 60%; }
+      width: 50%; }
     .campaign-previews .preview.second {
-      width: 40%; }
+      width: 50%; }
     .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
       max-width: 80%; }
     .campaign-previews .preview .overlay h3 {
@@ -751,20 +791,29 @@ ul {
       padding-left: 1.5em;
       font-size: 1.125em; } }
 @media all and (min-width: 87.5em) {
+  .campaign-previews h2.title {
+    font-size: 1.625em;
+    margin: 0 auto -1.23077em; }
+    .campaign-previews h2.title em {
+      font-size: 1.30769em; }
+      .campaign-previews h2.title em::first-letter {
+        letter-spacing: -10px; }
+    .campaign-previews h2.title:after {
+      margin: 0.38462em auto 0; }
   .campaign-previews .preview {
     width: 33.333%;
     min-height: 37.8125em; }
     .campaign-previews .preview.first {
-      width: 60%; }
+      width: 50%; }
     .campaign-previews .preview.second {
-      width: 40%; }
+      width: 50%; }
     .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
       max-width: 70%; }
     .campaign-previews .preview .overlay h3 {
-      font-size: 2em;
-      margin-bottom: 0.5em; }
+      font-size: 3em;
+      margin-bottom: 0.33333em; }
     .campaign-previews .preview .overlay p {
-      font-size: 0.9375em;
+      font-size: 1.375em;
       line-height: 1.6;
       opacity: 0.7; }
     .campaign-previews .preview .overlay img {
@@ -774,8 +823,9 @@ ul {
       height: 20%;
       width: 100%;
       line-height: 6;
-      padding-left: 2.5em;
-      font-size: 1.25em; } }
+      padding-left: 2.08333em;
+      font-size: 1.5em;
+      letter-spacing: 0.03125em; } }
 .campaign nav {
   display: none;
   position: fixed;

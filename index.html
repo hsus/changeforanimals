@@ -128,6 +128,7 @@ book:
 
 {% assign campaigns = site.campaigns | sort: 'order' %}
 <section class="campaign-previews" id="program-areas">
+  <h2 class="title">How We’re Creating <em>Transformational Change</em> for Animals</h2>
   {% for campaign in campaigns %}
   <a href="{{campaign.url}}">
     <div class="preview {{campaign.campaign-layout}}" style="background-image: url('{{campaign.image}}');">
