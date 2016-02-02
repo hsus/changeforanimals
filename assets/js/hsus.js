@@ -29,12 +29,12 @@ $(document).ready(function() {
         wrapper = el.parent().parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
-      wrapper.find('.readmore').text('Read More of Wayne\'s Letter');
+      wrapper.find('.readmore').text('Read More');
       $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).hide();
       });
     } else {
-      wrapper.find('.readmore').text('Show Less of Wayne\'s Letter');
+      wrapper.find('.readmore').text('Read Less');
       $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).css('display','inline');
       });

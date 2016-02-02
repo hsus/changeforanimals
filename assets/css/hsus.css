@@ -220,17 +220,17 @@ ul {
   padding: 0;
   margin: 0; }
   ul li {
-    padding-bottom: 1em;
-    padding-left: 1.125em;
-    text-indent: -1.2em; }
+    padding-bottom: 1.125em;
+    padding-left: 1.375em;
+    letter-spacing: 0;
+    text-indent: -1.3em; }
     ul li:before {
       color: #ce8e00;
       content: "•";
-      font-size: 0.75em;
+      font-size: 0.625em;
       line-height: 0.5;
-      padding-right: 1em;
-      position: relative;
-      top: 2px; }
+      padding-right: 1.4em;
+      position: relative; }
 
 .wrapper {
   width: 100%;
@@ -1608,8 +1608,9 @@ footer {
         margin-top: 0.69231em;
         padding: 1em 5em; } }
 .president {
-  background-image: radial-gradient(circle, #20417a, #152b51);
+  background-image: linear-gradient(#20417a, #152b51);
   display: inline-block;
+  padding-bottom: 3.125em;
   padding-top: 3.125em;
   width: 100%; }
   .president .wrapper {
@@ -1617,38 +1618,35 @@ footer {
     max-width: 96%; }
   .president .letter-top {
     text-align: center; }
-    .president .letter-top p {
-      color: #fff;
-      font-size: 0.9375em;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      margin: 0;
-      opacity: 0.25;
-      text-transform: uppercase; }
     .president .letter-top h2 {
-      color: #ce8e00;
+      color: #c1d1df;
       font-size: 1.625em;
       font-weight: 200;
       letter-spacing: 0.11538em;
       margin-top: 0.46154em;
       opacity: 0.9; }
-  .president .pic {
-    display: inline-block;
-    margin: 0 10%;
-    max-width: 80%; }
-    .president .pic img {
-      width: 100%; }
-    .president .pic p {
-      font-size: 0.9375em;
+    .president .letter-top h3 {
+      color: #fff;
       font-weight: 200;
-      letter-spacing: 0.05em;
-      line-height: 1.3;
-      margin-top: 0;
-      opacity: 0.3;
-      padding-left: 0;
-      text-align: center; }
+      font-size: 1.125em;
+      letter-spacing: 1px; }
+      .president .letter-top h3 em {
+        color: #d8a533;
+        font-style: normal; }
+  .president .pic {
+    text-align: center; }
+    .president .pic .sig {
+      color: #c1d1df;
+      font-weight: 200;
+      font-size: 0.875em;
+      text-align: center;
+      margin-top: 0; }
+      .president .pic .sig img {
+        width: auto;
+        padding: 0;
+        margin: 0.25em auto 0.5em; }
   .president .body {
-    margin-top: 1em; }
+    margin-top: 2em; }
     .president .body h3 {
       font-size: 1.0625em;
       font-weight: 200;
@@ -1660,60 +1658,28 @@ footer {
       letter-spacing: 0.0625em;
       opacity: 0.75; }
     .president .body .list-top {
-      color: #ce8e00;
+      color: #d8a533;
       font-size: 1.0625em;
-      opacity: 0.9; }
-  .president .sig {
-    float: right;
-    font-size: 0.875em;
-    margin-bottom: 3.75em;
-    max-width: 45%;
-    opacity: 0.75;
-    text-align: right; }
-    .president .sig img {
-      max-width: 100%; }
+      opacity: 0.9;
+      letter-spacing: 1px; }
   .president .more-button {
     cursor: pointer;
     font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 0.875em;
-    margin-top: 2em; }
+    margin-top: 0.75em;
+    margin-left: 1.14286em; }
     .president .more-button a {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
-      color: #c1d1df;
-      font-style: italic;
+      color: #b0c5d6;
       text-decoration: none; }
-      .president .more-button a:after {
-        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        border-color: #739abc transparent transparent transparent;
-        border-style: solid;
-        border-width: 0.5em 0.375em 0 0.375em;
-        content: "";
-        display: block;
-        height: 0;
-        left: 5.9375em;
-        position: relative;
-        top: 0.375em;
-        width: 0; }
     .president .more-button:hover a {
       color: #e3eaf0; }
-      .president .more-button:hover a:after {
-        border-color: #95b3cd transparent transparent transparent;
-        top: 0.5em; }
-  .president.showmore .more-button a:after {
-    border-color: transparent transparent #739abc transparent;
-    border-width: 0 0.375em 0.5em 0.375em;
-    top: -2.0625em; }
-  .president.showmore .more-button:hover a:after {
-    border-color: transparent transparent #95b3cd transparent;
-    top: -2.25em; }
 
 @media all and (min-width: 36.25em) {
   .president {
-    background-image: radial-gradient(circle closest-side, #20417a, #152b51);
+    background-image: linear-gradient(#20417a, #152b51);
     padding-top: 3.75em; }
     .president .wrapper {
       margin: 0 2%;
@@ -1735,11 +1701,10 @@ footer {
       max-width: 25%; }
       .president .pic img {
         width: 100%; }
-      .president .pic p {
-        font-size: 0.75em;
-        margin-top: 0.5em;
-        padding-left: 0.5em;
-        text-align: left; }
+      .president .pic .sig {
+        font-size: 0.875em; }
+        .president .pic .sig img {
+          max-width: 100%; }
     .president .body {
       margin-left: 28%;
       margin-top: 1.75em; }
@@ -1748,21 +1713,14 @@ footer {
       .president .body p, .president .body ul {
         font-size: 0.9375em; }
       .president .body .list-top {
-        font-size: 1.125em; }
-    .president .sig {
-      font-size: 0.875em;
-      margin-bottom: 3.75em;
-      max-width: 45%; }
-      .president .sig img {
-        max-width: 100%; }
-    .president .more-button {
-      margin-top: 1.5em; } }
+        font-size: 1.125em; } }
 @media all and (min-width: 45em) {
   .president {
-    padding-top: 5.625em; }
+    padding-top: 5.625em;
+    padding-bottom: 3.75em; }
     .president .wrapper {
-      margin: 0 3%;
-      max-width: 94%; }
+      width: 60em;
+      margin: 0 auto; }
     .president .letter-top {
       text-align: center; }
       .president .letter-top p {
@@ -1775,12 +1733,8 @@ footer {
     .president .pic {
       padding-bottom: 10.5em;
       max-width: 25%; }
-      .president .pic img {
-        width: 100%; }
-      .president .pic p {
-        font-size: 0.875em;
-        margin-top: 0.42857em;
-        padding-left: 0.42857em; }
+      .president .pic .sig {
+        font-size: 1em; }
     .president .body {
       margin-left: 30%;
       margin-top: 2.625em; }
@@ -1789,45 +1743,39 @@ footer {
       .president .body p, .president .body ul {
         font-size: 1em; }
       .president .body .list-top {
-        font-size: 1.25em; }
-    .president .sig {
-      font-size: 1em;
-      margin-bottom: 5em; }
-    .president .more-button {
-      margin-top: 1.5em; } }
+        font-size: 1.25em; } }
 @media all and (min-width: 87.5em) {
   .president {
-    padding-top: 6.875em; }
+    padding-top: 6.875em;
+    padding-bottom: 5em; }
     .president .wrapper {
-      max-width: 84.6875em; }
+      width: 72.5em; }
     .president .letter-top {
       text-align: center; }
-      .president .letter-top p {
-        font-size: 1.0625em;
-        letter-spacing: 0.17647em; }
       .president .letter-top h2 {
         font-size: 2.625em;
         letter-spacing: 0.07143em;
         margin-top: 0.28571em; }
+      .president .letter-top h3 {
+        font-size: 1.625em;
+        max-width: 75%;
+        line-height: 1.5;
+        margin: 0 auto 2em; }
     .president .pic {
-      padding-bottom: 16.75em; }
-      .president .pic p {
-        font-size: 1.25em;
-        margin-top: 0.3em;
-        padding-left: 0.3em; }
+      padding-bottom: 16.75em;
+      margin-left: 3.125em;
+      width: 18.75em; }
+      .president .pic .sig {
+        font-size: 1em; }
     .president .body {
-      margin-left: 29.6875em;
+      margin-left: 27.1875em;
       margin-top: 2.625em; }
       .president .body h3 {
         font-size: 1.75em; }
       .president .body p, .president .body ul {
-        font-size: 1.375em; }
+        font-size: 1.5em; }
       .president .body .list-top {
-        font-size: 1.75em; }
-    .president .sig {
-      font-size: 1.125em; }
-    .president .more-button {
-      margin-top: 2em; } }
+        font-size: 1.75em; } }
 @-webkit-keyframes hsIntroStretch {
   from {
     font-size: 0; }

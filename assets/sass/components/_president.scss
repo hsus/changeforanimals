@@ -1,8 +1,9 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .president {
-  background-image: radial-gradient( circle, lighten($blue,10%), $blue );
+  background-image: linear-gradient( lighten($blue,10%), $blue );
   display: inline-block;
+  padding-bottom: em(50);
   padding-top: em(50);
   width: 100%;
   .wrapper {
@@ -11,44 +12,42 @@
   }
   .letter-top {
     text-align: center;
-    p {
-      color: $white;
-      font-size: em(15);
-      font-weight: 700;
-      letter-spacing: em(3,15);
-      margin: 0;
-      opacity: 0.25;
-      text-transform: uppercase;
-    }
     h2 {
-      color: $gold;
+      color: $light-grey;
       font-size: em(26);
       font-weight: 200;
       letter-spacing: em(3,26);
       margin-top: em(12,26); 
       opacity: 0.9;
     }
+    h3 {
+      color: $white;
+      font-weight: 200;
+      font-size: em(18);
+      letter-spacing: 1px;
+      em {
+        color: $light-gold;
+        font-style: normal;
+      }
+    }
   }
   .pic {
-    display: inline-block;
-    margin: 0 10%;
-    max-width: 80%;
-    img {
-      width: 100%;
-    }
-    p {
-      font-size: em(15);
+    text-align: center;   
+    .sig {
+      color: $light-grey;
       font-weight: 200;
-      letter-spacing: 0.05em;
-      line-height: 1.3;
+      font-size: em(14);
+      text-align: center;
       margin-top: 0;
-      opacity: 0.3;
-      padding-left: 0;
-      text-align: center
+      img {
+        width: auto;
+        padding: 0;
+        margin: em(4) auto em(8);
+      }
     }
   }
   .body {
-    margin-top: em(16);
+    margin-top: em(32);
     h3 {
       font-size: em(17);
       font-weight: 200;
@@ -62,20 +61,10 @@
       opacity: 0.75;
     }
     .list-top {
-      color: $gold;
+      color: $light-gold;
       font-size: em(17);
       opacity: 0.9;
-    }
-  }
-  .sig {
-    float: right;
-    font-size: em(14);
-    margin-bottom: em(60);
-    max-width: 45%;
-    opacity: 0.75;
-    text-align: right;
-    img {
-      max-width: 100%;
+      letter-spacing: 1px;
     }
   }
 
@@ -83,47 +72,15 @@
     cursor: pointer;    
     font-family: $secondary-font;
     font-size: em(14);
-    margin-top: em(32);
+    margin-top: em(12);
+    margin-left: em(16,14);
     a {
       @include default-transition;
-      color: $light-grey;
-      font-style: italic;
+      color: darken($light-grey,5%);
       text-decoration: none;
-      &:after {
-        @include transition(all 0.3s cubic-bezier(0.4, 0, 0.2, 1));
-        border-color: $light-blue transparent transparent transparent;
-        border-style: solid;
-        border-width: em(8) em(6) 0 em(6);
-        content: "";
-        display: block;
-        height: 0;
-        left: em(95);
-        position: relative;
-        top: em(6);
-        width: 0;
-      }      
     }
     &:hover a {
       color: lighten($light-grey, 10%);
-      &:after {
-        border-color: lighten($light-blue, 10%) transparent transparent transparent;
-        top: em(8);
-      }
-    }
-  }
-  &.showmore .more-button {
-    a {
-      &:after {
-        border-color: transparent transparent $light-blue transparent;
-        border-width: 0 em(6) em(8) em(6);
-        top: em(-33);
-      }      
-    }
-    &:hover a {
-      &:after {
-        border-color: transparent transparent lighten($light-blue, 10%) transparent;
-        top: em(-36);
-      }
     }
   }
 }
@@ -132,7 +89,7 @@
 //  Tablet
 @media all and (min-width: $tablet) {
   .president {
-    background-image: radial-gradient( circle closest-side, lighten($blue,10%), $blue );
+    background-image: linear-gradient( lighten($blue,10%), $blue );
     padding-top: em(60);
     .wrapper {
       margin: 0 2%;
@@ -159,12 +116,12 @@
       img {
         width: 100%;
       }
-      p {
-        font-size: em(12);
-        margin-top: em(6,12);
-        padding-left: em(6,12);
-        text-align: left;
-      }
+      .sig {
+        font-size: em(14);
+        img {
+          max-width: 100%;
+        }
+      }  
     }
     .body {
       margin-left: 28%;
@@ -178,18 +135,7 @@
       .list-top {
         font-size: em(18);
       }
-    }
-    .sig {
-      font-size: em(14);
-      margin-bottom: em(60);
-      max-width: 45%;
-      img {
-        max-width: 100%;
-      }
-    }    
-    .more-button {
-      margin-top: em(24);
-    }
+    } 
   }
 }
 
@@ -197,9 +143,10 @@
 @media all and (min-width: $lg-tablet) {
   .president {
     padding-top: em(90);
+    padding-bottom: em(60);
     .wrapper {
-      margin: 0 3%;
-      max-width: 94%;
+      width: em(960);
+      margin: 0 auto;
     }
     .letter-top {
       text-align: center;
@@ -216,14 +163,9 @@
     .pic {
       padding-bottom: em(168);
       max-width: 25%;
-      img {
-        width: 100%;
-      }
-      p {
-        font-size: em(14);
-        margin-top: em(6,14);
-        padding-left: em(6,14);
-      }
+      .sig {
+        font-size: em(16);
+      } 
     }
     .body {
       margin-left: 30%;
@@ -237,14 +179,7 @@
       .list-top {
         font-size: em(20);
       }
-    }
-    .sig {
-      font-size: em(16);
-      margin-bottom: em(80);
-    }    
-    .more-button {
-      margin-top: em(24);
-    }
+    } 
   }
 }
 
@@ -252,48 +187,45 @@
 @media all and (min-width: $desktop) {
   .president {
     padding-top: em(110);
+    padding-bottom: em(80);
     .wrapper {
-      max-width: em(1355);
+      width: em(1160);
     }
     .letter-top {
       text-align: center;
-      p {
-        font-size: em(17);
-        letter-spacing: em(3,17);
-      }
       h2 {
         font-size: em(42);
         letter-spacing: em(3,42);
         margin-top: em(12,42); 
       }
+      h3 {
+        font-size: em(26);
+        max-width: 75%;
+        line-height: 1.5;
+        margin: 0 auto em(52,26);
+      }
     }
     .pic {
       padding-bottom: em(268);
-      p {
-        font-size: em(20);
-        margin-top: em(6,20);
-        padding-left: em(6,20);
-      }
+      margin-left: em(50);
+      width: em(300);
+      .sig {
+        font-size: em(16);
+      } 
     }
     .body {
-      margin-left: em(475);
+      margin-left: em(435);
       margin-top: em(42);
       h3 {
         font-size: em(28);
       }
       p,ul {
-        font-size: em(22);
+        font-size: em(24);
       }
       .list-top {
         font-size: em(28);
       }
-    }
-    .sig {
-      font-size: em(18);
-    }    
-    .more-button {
-      margin-top: em(32);
-    }
+    }  
   }
 }
 

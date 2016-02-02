@@ -45,17 +45,17 @@ ul {
   padding:0;
   margin:0;
   li {
-    padding-bottom: em(16);
-    padding-left: em(18);
-    text-indent: -1.2em;
+    padding-bottom: em(18);
+    padding-left: em(22);
+    letter-spacing: 0;
+    text-indent: -1.3em;
     &:before {
       color: $gold;
       content: "•";
-      font-size: em(12);
+      font-size: em(10);
       line-height: 0.5;
-      padding-right: em(16);
+      padding-right: em(14,10);
       position: relative;
-      top: 2px;
     }
   }
 }
