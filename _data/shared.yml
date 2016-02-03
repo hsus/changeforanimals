@@ -60,17 +60,3 @@ contact:
 copyright: "The Humane Society of the United States"
 
 non-profit-statement: "The Humane Society of the United States (HSUS) is registered as a 501(c)(3) non-profit organization.<br>Contributions to The Humane Society of the United States are tax-deductible to the extent permitted by law.<br>The HSUS's tax identification number is 53-0225390."
-
-donors:
-  - name: "Don Sinex"
-    url:
-    link-prompt: "Read his story"
-  - name: "Walter Right"
-    url:
-    link-prompt: "Read his story"
-  - name: "Suzie Heart"
-    url:
-    link-prompt: "Read her story"
-  - name: "The Davidson Family"
-    url:
-    link-prompt: "Read their story"
