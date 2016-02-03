@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .outro {
-  background: transparent url('../images/outro/mobile-outro1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/outro/mobile-outro2.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: block;
   text-align: center;
@@ -35,8 +35,9 @@
     a {
       color: $white;
       text-decoration: none;
-      display: inline-block;
-      &.donate:after {
+      display: block;
+      &.donate:after,
+      &.attend:after {
         @include default-transition;
         content: " →";
         color: $light-gold;
@@ -45,16 +46,9 @@
         position: relative;
         top: em(2,20);
       }
-      &:hover.donate:after {
+      &:hover.donate:after,
+      &:hover.attend:after {
         left: 1px;
-      }
-    }
-    &.event a {
-      @include default-transition;
-      background-color: $gold;
-      padding: em(16) em(64);
-      &:hover {
-        background-color: darken($gold,10%);
       }
     }
   }
@@ -91,15 +85,6 @@
       margin-bottom: em(24);
       float: left;
       width: 50%;
-      a {
-        &.donate:after {
-          font-size: em(20);
-          top: em(2,20);
-        }
-      }
-      &.event a {
-        padding: em(16) em(64);
-      }
     }
   }
 }
@@ -107,7 +92,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .outro {
-    background-image: url('../images/outro/outro1.jpg'); //quality @ 70
+    background-image: url('../images/outro/outro2.jpg'); //quality @ 70
     padding-bottom: em(52);
     .wrapper {
       max-width: 80%;
@@ -137,15 +122,6 @@
       float: left;
       width: 50%;
       font-size: em(17);
-      a {
-        &.donate:after {
-          font-size: em(22,17);
-          top: em(2,17);
-        }
-      }
-      &.event a {
-        padding: em(16) em(64);
-      }
     }
   }
 }
@@ -162,36 +138,33 @@
       max-width: em(930);
     }
     h2 {
-      font-size: em(42);
-      line-height: 1.2;
-      margin: em(110,42) auto em(45,42) ;
+      font-size: em(60);
+      margin: em(200,60) auto em(45,60) ;
       max-width: 65%;
     }
     p {
       line-height: 1.6;
-      font-size: em(22);
+      font-size: em(26);
     }
     h3 {
-      padding: em(32,38) 0 em(56,38);
-      font-size: em(38);
       font-family: $secondary-font;
+      font-size: em(48);
+      padding: em(28,48) 0 em(36,48);
     }
     .action {
       padding-top: em(4,24);
       margin-bottom: em(24);
       float: left;
       width: 50%;
-      font-size: em(26);
+      font-size: em(32);
       line-height: 1.6;
-      a {
-        &.donate:after {
-          font-size: em(26,26);
-          top: em(2,26);
-        }
+      h4 {
+        opacity: 0.4;
+        font-size: em(20,32);
+        letter-spacing: 3px;
       }
       &.event a {
-        margin-top: em(18,26);
-        padding: em(16) em(80);
+        margin-top: em(6,32);
       }
     }
   }

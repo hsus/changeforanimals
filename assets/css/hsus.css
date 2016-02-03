@@ -1279,47 +1279,57 @@ footer {
     margin: 2.625em 0; }
     footer .social a {
       display: inline-block;
-      height: 2em;
+      height: 2.125em;
       margin-left: 1em;
       margin-right: 1em;
       position: relative;
-      width: 2em; }
+      width: 2.125em; }
     footer .social svg path {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear; }
-    footer .social .twitter:hover path {
-      fill: #55acee; }
-    footer .social .pinterest {
-      padding: 0.1875em;
-      bottom: 0.1875em; }
-      footer .social .pinterest:hover path {
-        fill: #bd081c; }
     footer .social .facebook {
       padding: 0.25em;
       bottom: 0.25em; }
       footer .social .facebook:hover path {
         fill: #3b5999; }
-    footer .social .instagram {
-      padding: 0.25em;
-      bottom: 0.25em; }
-      footer .social .instagram:hover path {
-        fill: #3f729b; }
+    footer .social .twitter:hover path {
+      fill: #55acee;
+      margin-right: 0.875em; }
     footer .social .youtube {
       padding: 0.0625em; }
       footer .social .youtube:hover path {
         fill: #cd201f; }
-    footer .social .googleplus {
-      padding: 0.25em;
-      bottom: 0.25em; }
-      footer .social .googleplus:hover path.bg {
-        fill: #dc4e41; }
-    footer .social .linkedin {
+    footer .social .instagram {
       padding: 0.25em;
       bottom: 0.25em;
-      margin-right: 0; }
+      margin-right: 1.75em; }
+      footer .social .instagram:hover path {
+        fill: #3f729b; }
+    footer .social .linkedin {
+      padding: 0.125em;
+      bottom: 0.25em;
+      margin-right: 1.375em; }
       footer .social .linkedin:hover path {
         fill: #0077b5; }
+    footer .social .pinterest {
+      padding: 0.1875em;
+      bottom: 0.1875em;
+      margin-right: 1.5em; }
+      footer .social .pinterest:hover path {
+        fill: #bd081c; }
+    footer .social .googleplus {
+      padding: 0.25em;
+      bottom: 0.25em;
+      margin-right: 1.1875em; }
+      footer .social .googleplus:hover path.bg {
+        fill: #dc4e41; }
+    footer .social .tumblr {
+      padding: 0.4375em;
+      bottom: 0.125em;
+      margin-right: 0; }
+      footer .social .tumblr:hover path {
+        fill: #36465d; }
     footer .social img, footer .social svg {
       height: auto;
       width: 100%; }
@@ -1529,7 +1539,7 @@ footer {
     .intro .more-button {
       margin-top: 3.84615em; } }
 .outro {
-  background: transparent url("../images/outro/mobile-outro1.jpg") no-repeat top center;
+  background: transparent url("../images/outro/mobile-outro2.jpg") no-repeat top center;
   background-size: cover;
   display: block;
   text-align: center;
@@ -1558,8 +1568,8 @@ footer {
     .outro .action a {
       color: #fff;
       text-decoration: none;
-      display: inline-block; }
-      .outro .action a.donate:after {
+      display: block; }
+      .outro .action a.donate:after, .outro .action a.attend:after {
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
         transition: all 0.3s linear;
@@ -1569,16 +1579,8 @@ footer {
         line-height: 1;
         position: relative;
         top: 0.1em; }
-      .outro .action a:hover.donate:after {
+      .outro .action a:hover.donate:after, .outro .action a:hover.attend:after {
         left: 1px; }
-    .outro .action.event a {
-      -webkit-transition: all 0.3s linear;
-      -moz-transition: all 0.3s linear;
-      transition: all 0.3s linear;
-      background-color: #ce8e00;
-      padding: 1em 4em; }
-      .outro .action.event a:hover {
-        background-color: #9b6b00; }
 
 @media all and (min-width: 36.25em) {
   .outro {
@@ -1604,15 +1606,10 @@ footer {
     .outro .action {
       margin-bottom: 1.5em;
       float: left;
-      width: 50%; }
-      .outro .action a.donate:after {
-        font-size: 1.25em;
-        top: 0.1em; }
-      .outro .action.event a {
-        padding: 1em 4em; } }
+      width: 50%; } }
 @media all and (min-width: 45em) {
   .outro {
-    background-image: url("../images/outro/outro1.jpg");
+    background-image: url("../images/outro/outro2.jpg");
     padding-bottom: 3.25em; }
     .outro .wrapper {
       max-width: 80%;
@@ -1636,12 +1633,7 @@ footer {
       margin-bottom: 1.5em;
       float: left;
       width: 50%;
-      font-size: 1.0625em; }
-      .outro .action a.donate:after {
-        font-size: 1.29412em;
-        top: 0.11765em; }
-      .outro .action.event a {
-        padding: 1em 4em; } }
+      font-size: 1.0625em; } }
 @media all and (min-width: 87.5em) {
   .outro {
     padding-bottom: 4.5em; }
@@ -1651,30 +1643,29 @@ footer {
     .outro .body {
       max-width: 58.125em; }
     .outro h2 {
-      font-size: 2.625em;
-      line-height: 1.2;
-      margin: 2.61905em auto 1.07143em;
+      font-size: 3.75em;
+      margin: 3.33333em auto 0.75em;
       max-width: 65%; }
     .outro p {
       line-height: 1.6;
-      font-size: 1.375em; }
+      font-size: 1.625em; }
     .outro h3 {
-      padding: 0.84211em 0 1.47368em;
-      font-size: 2.375em;
-      font-family: "MyWriteHand", "Brush Script MT", cursive; }
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 3em;
+      padding: 0.58333em 0 0.75em; }
     .outro .action {
       padding-top: 0.16667em;
       margin-bottom: 1.5em;
       float: left;
       width: 50%;
-      font-size: 1.625em;
+      font-size: 2em;
       line-height: 1.6; }
-      .outro .action a.donate:after {
-        font-size: 1em;
-        top: 0.07692em; }
+      .outro .action h4 {
+        opacity: 0.4;
+        font-size: 0.625em;
+        letter-spacing: 3px; }
       .outro .action.event a {
-        margin-top: 0.69231em;
-        padding: 1em 5em; } }
+        margin-top: 0.1875em; } }
 .president {
   background-image: linear-gradient(#20417a, #152b51);
   display: inline-block;

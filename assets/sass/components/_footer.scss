@@ -27,35 +27,38 @@ footer {
     margin: em(42) 0;
     a {
       display: inline-block;
-      height: em(32);
+      height: em(34);
       margin-left: em(16);
       margin-right: em(16);
       position: relative;
-      width: em(32);
+      width: em(34);
     }
     svg path { 
       @include default-transition; 
     }
-    .twitter { 
-      &:hover path { fill: #55acee; } 
-    }
-    .pinterest { padding: em(3); bottom: em(3); 
-      &:hover path { fill: #bd081c; } 
-    }
     .facebook { padding: em(4); bottom: em(4); 
       &:hover path { fill: #3b5999; } 
     }
-    .instagram { padding: em(4); bottom: em(4);
-      &:hover path { fill: #3f729b; } 
+    .twitter { 
+      &:hover path { fill: #55acee; margin-right: em(14); } 
     }
     .youtube { padding: em(1); 
       &:hover path { fill: #cd201f; } 
     }
-    .googleplus { padding: em(4); bottom: em(4);
+    .instagram { padding: em(4); bottom: em(4); margin-right: em(28);
+      &:hover path { fill: #3f729b; } 
+    }
+    .linkedin { padding: em(2); bottom: em(4); margin-right: em(22);
+      &:hover path { fill: #0077b5; }
+    }
+    .pinterest { padding: em(3); bottom: em(3); margin-right: em(24); 
+      &:hover path { fill: #bd081c; } 
+    }
+    .googleplus { padding: em(4); bottom: em(4);  margin-right: em(19);
       &:hover path.bg { fill: #dc4e41; } 
     }
-    .linkedin { padding: em(4); bottom: em(4); margin-right: 0;
-      &:hover path { fill: #0077b5; }
+    .tumblr { padding: em(7); bottom: em(2); margin-right: 0;
+      &:hover path { fill: #36465d; }
     }
     img,svg {
       height: auto;

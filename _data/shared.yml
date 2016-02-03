@@ -17,38 +17,37 @@ tagline: "a humane society<br/>starts with you"
 footer-tagline: "Creating transformational change for all animals"
 
 social-links:
-  - channel: "twitter"
-    url: ""
-    icon: "/assets/images/icons/twitter.svg"
-
-  - channel: "pinterest"
-    url: ""
-    icon: "/assets/images/icons/pinterest.svg"
-
   - channel: "facebook"
     url: ""
     icon: "/assets/images/icons/facebook.svg"
 
-  - channel: "instagram"
+  - channel: "twitter"
     url: ""
-    icon: "/assets/images/icons/instagram.svg"
+    icon: "/assets/images/icons/twitter.svg"
 
   - channel: "youtube"
     url: ""
     icon: "/assets/images/icons/youtube.svg"
 
+  - channel: "instagram"
+    url: ""
+    icon: "/assets/images/icons/instagram.svg"
+
+  - channel: "linkedin"
+    url: ""
+    icon: "/assets/images/icons/linkedin2.svg"
+
+  - channel: "pinterest"
+    url: ""
+    icon: "/assets/images/icons/pinterest.svg"
+
   - channel: "googleplus"
     url: ""
     icon: "/assets/images/icons/googleplus1.svg"
 
-  - channel: "linkedin"
+  - channel: "tumblr"
     url: ""
-    icon: "/assets/images/icons/linkedin.svg"
-
-visit:
-  title: "Visit"
-  url: "//www.humanesociety.org/"
-  link-text: "humanesociety.org"
+    icon: "/assets/images/icons/tumblr2.svg"
 
 privacy:
   title: "Privacy Policy"
@@ -60,7 +59,7 @@ contact:
 
 copyright: "The Humane Society of the United States"
 
-non-profit-statement: "The HSUS is registered as a 501(c)(3) non-profit organization.<br>Contributions to The Humane Society of the United States are tax-deductible to the extent permitted by law.<br>The HSUS's tax identification number is 53-0225390."
+non-profit-statement: "The Humane Society of the United States (HSUS) is registered as a 501(c)(3) non-profit organization.<br>Contributions to The Humane Society of the United States are tax-deductible to the extent permitted by law.<br>The HSUS's tax identification number is 53-0225390."
 
 donors:
   - name: "Don Sinex"
