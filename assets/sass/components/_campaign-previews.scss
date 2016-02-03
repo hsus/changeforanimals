@@ -15,7 +15,7 @@
     em {
       display: inline-block;
       font-family: $secondary-font;
-      color: $light-gold;
+      color: $blue;
       font-size: em(22,18);
       font-style: normal;
       letter-spacing: 0;
@@ -107,7 +107,7 @@
       }
       &:after {
         @include transition(all 0.3s cubic-bezier(0.4, 0, 0.2, 1));
-        border-color: $blue transparent transparent transparent;
+        border-color: $off-white transparent transparent transparent;
         border-style: solid;
         border-width: em(33) em(37) 0 em(37);
         content: "";

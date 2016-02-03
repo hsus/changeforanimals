@@ -1,7 +1,7 @@
 ---
 # LAYOUT DATA
 layout: campaign
-body-class: campaign
+body-class: campaign farm
 active: TRUE
 campaign-layout: two-up second
 order: 2
@@ -38,6 +38,10 @@ goals:
 
   - Implement <em>meat-reduction policies</em> at hundreds of institutions across the U.S., such as school  districts, hospital chains, corporate cafeterias and more.
 
-donor_story: ""
+donor_story: 
+  - title: <strong>Inspiring Others:</strong> Don Sinex’s Story
+    body: |
+     <strong>Don Sinex</strong>, a real estate developer in New York City and Vermont, inherited his compassion for all animals—and especially dogs—from his mother, and now he’s dedicated to eliminating animal cruelty. A longtime friend of The HSUS, Don has given generously to our programs to save animals from cruel situations such as puppy mills. In 2014, in partnership with Shoshi Fu and Devonwood Investors LLC, Don asked that his donation be used to customize a special vehicle for our Animal Rescue Team. In recognition of his gift, the customized truck and shelter trailer will be named Rescue Team Ranger and Rescue Team Chloe after his two beloved English springer spaniels. Don hopes that generous gifts like his will inspire others to support the lifesaving work of The HSUS.
+
 
 ---

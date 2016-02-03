@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .victories .wrapper {
-  background: transparent url('../images/victories/mobile-victories2.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/victories/mobile-victories3.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   min-height: em(480);
   padding: em(40) 0 em(70);
@@ -13,7 +13,7 @@
     width: 80%;
   }
   h2 {
-    color: $light-gray;
+    color: $blue;
     letter-spacing: 1px;
     font-size: em(26);
     font-weight: 200;
@@ -32,7 +32,7 @@
     }
   }
   h3 {
-    color: $light-gold;
+    color: $blue;
     font-size: em(32);
     font-weight: 700;
     letter-spacing: 1px;
@@ -45,7 +45,7 @@
     }
   }
   p {
-    color: $white;
+    color: $blue;
     font-weight: 200;
     font-size: em(14);
     letter-spacing: 1px;
@@ -84,7 +84,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .victories .wrapper {
-    background-image:  url('../images/victories/victories2.jpg'); //quality @ 70
+    background-image:  url('../images/victories/victories3.jpg'); //quality @ 70
     min-height: em(720);
     padding: em(100) 0 em(70);
     .victory {

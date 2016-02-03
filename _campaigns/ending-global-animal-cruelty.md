@@ -1,7 +1,7 @@
 ---
 # LAYOUT DATA
 layout: campaign
-body-class: campaign
+body-class: campaign cruelty
 active: TRUE
 campaign-layout: "three-up"
 order: 4
@@ -22,10 +22,10 @@ icon: "/assets/images/icons/icon-cruelty.svg"
 caption: "Even after the fight is over, dogfighting dogs aren’t safe. They sometimes die from their wounds or are killed if they lost the fight."
 
 celebs:
-  - image:
+  - image: /assets/images/celebs/ian-somerhalder1.jpg
     video:
     quote: |
-      <em>PROTECTING ANIMALS</em> from the worst forms of cruelty <em>IS PART OF A CIVIL SOCIETY<em>, and it’s time for every nation in the world to have that. <em>YOU...CAN MAKE IT A REALITY</em>.<br>—Ian Somerholder<br>Actor, <em>Vampire Diaries</em>
+      <em>PROTECTING ANIMALS</em> from the worst forms of cruelty <em>IS PART OF A CIVIL SOCIETY</em>, and it’s time for every nation in the world to have that. <em>YOU...CAN MAKE IT A REALITY</em>.<br>—Ian Somerholder<br>Actor, <em>Vampire Diaries</em>
 
 goals:
   - Expand our network of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems.

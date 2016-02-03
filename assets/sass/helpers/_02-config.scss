@@ -8,12 +8,12 @@
 // Note: darken/lighten used, for effect, e.g.:
 // .example:hover { color: darken($font-name, 5%); }
 
-$blue: #152b51; 
+$blue: #263f6a; 
 $light-blue: #739abc; 
 $dark-blue: #060e25;
 
 $gold: #ce8e00;
-$light-gold: #d8a533;
+$yellow: #FBCB43;
 
 $red: #EE2324;  
 
@@ -23,18 +23,18 @@ $light-grey: $light-gray;
 $medium-grey: $medium-gray;
 $black: #000;
 
-$off-white: $light-gray;
 $white: #fff;
+$off-white: #e9eaec;
 
 // fonts
 $primary-font: 'Frutiger W01',sans-serif;
 $secondary-font: 'MyWriteHand','Brush Script MT', cursive;
 
-html, body { font-family: $primary-font; font-weight: 200; font-size: 16px; color: $white; background-color: $blue; }
-h1 { color: $white; }
-a { color: $gold; }
+html, body { font-family: $primary-font; font-weight: 200; font-size: 16px; color: $blue; background-color: $off-white; }
+h1 { color: $blue; }
+a { color: $blue; }
 a:hover, a:focus { 
-  color: darken($gold, 5%);
+  color: darken($yellow, 5%);
   @include transition(color 0.3s linear,background-color 0.3s linear);
 }
 
@@ -50,7 +50,7 @@ ul {
     letter-spacing: 0;
     text-indent: -1.3em;
     &:before {
-      color: $gold;
+      color: $light-blue;
       content: "•";
       font-size: em(10);
       line-height: 0.5;

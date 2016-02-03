@@ -1,7 +1,7 @@
 ---
 # LAYOUT DATA
 layout: campaign
-body-class: campaign
+body-class: campaign science
 active: TRUE
 campaign-layout: three-up
 order: 5
@@ -25,7 +25,7 @@ celebs:
   - image:
     video:
     quote: |
-      <em>If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, <em>I BELIEVE EVERYONE WOULD LEAVE CRUELTY ON THE SHELF.</em>—Paul McCartney<br>Musician, The Beatles
+      If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, <em>I BELIEVE EVERYONE WOULD LEAVE CRUELTY ON THE SHELF.</em>—Paul McCartney<br>Musician, The Beatles
 
 goals:
   - Ban testing cosmetics on animals or enact import/ sales bans of animal-tested cosmetics in three major markets and make progress toward ending mandatory cosmetics animal testing in China.

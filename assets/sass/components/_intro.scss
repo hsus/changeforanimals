@@ -3,6 +3,7 @@
 .intro {
   background: transparent url('../images/intro/mobile-intro2.jpg') no-repeat top center; //quality @ 70
   background-size: cover; 
+  color: $white;
   display: inline-block;
   font-size: em(15);
   padding-bottom: em(30,15);
@@ -16,13 +17,13 @@
   }
   span i {
     font-style: normal;
-    color: $light-gold;    
+    color: $yellow;    
     font-family: $secondary-font;
     font-size: em(20,15);
     line-height: 1;
   }
   span.italic:after {      
-    color: $light-gold;  
+    color: $yellow;  
   }
   span.italic i {
     font-style: italic;
@@ -38,40 +39,13 @@
       color: $light-grey;
       text-decoration: none;
       font-style: italic;
-      &:after {
-        @include transition(all 0.3s cubic-bezier(0.4, 0, 0.2, 1));
-        display: block;
-        margin: 0 auto; 
-        content: "";
-        width: 0;
-        height: 0;
-        position: relative;
-        top: 0;
-        border-style: solid;
-        border-width: em(11) em(8) 0 em(8);
-        border-color: $light-blue transparent transparent transparent;
-      }      
+           
     }
     &:hover a {
       color: lighten($light-grey, 10%);
       &:after {
         top: em(3);
         border-color: lighten($light-blue, 10%) transparent transparent transparent;
-      }
-    }
-  }
-  &.showmore .more-button {
-    a {
-      &:after {
-        top: em(-43);
-        border-width: 0 em(8) em(11) em(8);
-        border-color: transparent transparent $light-blue transparent;
-      }      
-    }
-    &:hover a {
-      &:after {
-        top: em(-46);
-        border-color: transparent transparent lighten($light-blue, 10%) transparent;
       }
     }
   }
@@ -109,13 +83,13 @@
     }
     span i {
       font-style: normal;
-      color: $light-gold;    
+      color: $yellow;    
       font-family: $secondary-font;
       font-size: em(32,22);
       line-height: 1;
     }
     span.italic:after {      
-      color: $light-gold;  
+      color: $yellow;  
     }
     span.italic i {
       font-style: italic;

@@ -3,6 +3,7 @@
 .campaign header {
   background: transparent url('../images/headers/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
   background-size: cover;
+  color: $white;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -67,6 +68,10 @@
     z-index: 100;
   }
 }
+.campaign.cruelty header { background-image: url('../images/headers/mobile-header-cruelty1.jpg'); }
+.campaign.science header { background-image: url('../images/headers/mobile-header-science1.jpg'); }
+.campaign.poverty header { background-image: url('../images/headers/mobile-header-poverty1.jpg'); }
+.campaign.wildlife header { background-image: url('../images/headers/mobile-header-wildlife1.jpg'); }
 
 
 //  Tablet
@@ -107,7 +112,7 @@
   .campaign header {
     background-image: url('../images/headers/header1.1.jpg');
     .gradient {
-      width: 55%;
+      width: 75%;
     }
     .tagline {
       font-size: em(24);
@@ -129,6 +134,10 @@
       bottom: em(70);
     }
   }
+  .campaign.cruelty header { background-image: url('../images/headers/header-cruelty1.jpg'); }
+  .campaign.science header { background-image: url('../images/headers/header-science1.jpg'); }
+  .campaign.poverty header { background-image: url('../images/headers/header-poverty1.jpg'); }
+  .campaign.wildlife header { background-image: url('../images/headers/header-wildlife1.jpg'); }
 }
 
 //  Desktop
@@ -136,7 +145,7 @@
   .campaign header {
     background-image: url('../images/headers/header1.1.jpg');
     .gradient {
-      width: 50%;
+      width: 60%;
     }
     .wrapper {
       margin: 0 auto;

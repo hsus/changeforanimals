@@ -200,17 +200,17 @@ html, body {
   font-family: "Frutiger W01", sans-serif;
   font-weight: 200;
   font-size: 16px;
-  color: #fff;
-  background-color: #152b51; }
+  color: #263f6a;
+  background-color: #e9eaec; }
 
 h1 {
-  color: #fff; }
+  color: #263f6a; }
 
 a {
-  color: #ce8e00; }
+  color: #263f6a; }
 
 a:hover, a:focus {
-  color: #b57c00;
+  color: #fac42a;
   -webkit-transition: color 0.3s linear, background-color 0.3s linear;
   -moz-transition: color 0.3s linear, background-color 0.3s linear;
   transition: color 0.3s linear, background-color 0.3s linear; }
@@ -225,7 +225,7 @@ ul {
     letter-spacing: 0;
     text-indent: -1.3em; }
     ul li:before {
-      color: #ce8e00;
+      color: #739abc;
       content: "•";
       font-size: 0.625em;
       line-height: 0.5;
@@ -312,17 +312,19 @@ ul {
     visibility: hidden;
     display: none; } }
 .celeb {
-  background: transparent url("../images/campaigns/mobile-campaign-farm-celeb1.jpg") no-repeat top center;
+  background: transparent url("../images/campaigns/mobile-campaign-farm-celeb2.jpg") no-repeat top center;
   background-size: cover;
   display: block;
   padding: 3.125em 0;
-  text-align: center; }
+  text-align: center;
+  color: #fff; }
   .celeb .wrapper {
     max-width: 94%;
     margin: 0 3%; }
   .celeb .headshot {
     border-radius: 50%; }
   .celeb h3 {
+    color: #fff;
     margin-bottom: 0.07143em;
     font-size: 1.75em;
     letter-spacing: 1px; }
@@ -348,7 +350,7 @@ ul {
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
       content: " →";
-      color: #d8a533;
+      color: #FBCB43;
       font-size: 1.25em;
       line-height: 1;
       position: relative;
@@ -428,14 +430,6 @@ ul {
 .index .celeb {
   font-size: 0.75em;
   position: relative; }
-.index .shader {
-  position: absolute;
-  background-color: rgba(21, 43, 81, 0.7);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10; }
 .index .wrapper,
 .index .watch-video {
   position: relative;
@@ -463,7 +457,7 @@ ul {
       margin-top: 2em; } }
 @media all and (min-width: 45em) {
   .celeb {
-    background-image: url("../images/campaigns/campaign-farm-celeb1.jpg");
+    background-image: url("../images/campaigns/campaign-farm-celeb2.jpg");
     padding: 6.875em 0 7.5em; }
     .celeb .wrapper {
       max-width: 74%;
@@ -500,9 +494,73 @@ ul {
       margin: 1.45455em; }
       .celeb blockquote span {
         font-size: 1.09091em; } }
+.donor-story {
+  background: transparent url("../images/donors/mobile-donor-wall1.jpg") no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  width: 100%; }
+  .donor-story .wrapper {
+    max-width: 94%;
+    margin: 0 3%; }
+  .donor-story h3 {
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 1.66667em;
+    font-weight: 200;
+    color: #fff;
+    font-size: 1.5em; }
+  .donor-story p {
+    font-size: 1em;
+    max-width: 90%;
+    margin: 0 auto 1.25em;
+    line-height: 1.6;
+    font-weight: 200;
+    padding-bottom: 2.5em; }
+
+@media all and (min-width: 36.25em) {
+  .donor-story .wrapper {
+    max-width: 84%;
+    margin: 0 8%; }
+  .donor-story h3 {
+    padding-bottom: 0.35714em;
+    padding-top: 2.14286em;
+    font-size: 1.75em; }
+  .donor-story p {
+    font-size: 1em;
+    max-width: 90%;
+    padding-bottom: 3.75em; } }
+@media all and (min-width: 45em) {
+  .donor-story {
+    background-image: url("../images/donors/donor-wall1.jpg"); }
+    .donor-story .wrapper {
+      max-width: 84%;
+      margin: 0 8%; }
+    .donor-story h3 {
+      padding-bottom: 0.625em;
+      padding-top: 3.125em;
+      font-size: 2em; }
+    .donor-story p {
+      font-size: 1.125em;
+      max-width: 70%;
+      padding-bottom: 5.55556em; } }
+@media all and (min-width: 87.5em) {
+  .donor-story .wrapper {
+    max-width: 85em;
+    margin: 0 auto; }
+  .donor-story h3 {
+    padding-bottom: 1.66667em;
+    padding-top: 5em;
+    font-size: 2.25em; }
+  .donor-story p {
+    font-size: 1.5em;
+    max-width: 70%;
+    padding-bottom: 5.83333em; } }
 .goals {
   background: transparent url("../images/goals/mobile-goals1.jpg") no-repeat top center;
   background-size: cover;
+  color: #fff;
   display: block;
   text-align: center; }
   .goals .wrapper {
@@ -578,6 +636,7 @@ ul {
 .campaign header {
   background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
   background-size: cover;
+  color: #fff;
   display: inline-block;
   position: relative;
   width: 100%; }
@@ -595,7 +654,7 @@ ul {
     position: relative;
     z-index: 100; }
   .campaign header .financial {
-    background-color: #152b51;
+    background-color: #263f6a;
     display: inline-block;
     font-size: 1.5em;
     margin-top: 0;
@@ -634,6 +693,18 @@ ul {
     width: 24.375em;
     z-index: 100; }
 
+.campaign.cruelty header {
+  background-image: url("../images/headers/mobile-header-cruelty1.jpg"); }
+
+.campaign.science header {
+  background-image: url("../images/headers/mobile-header-science1.jpg"); }
+
+.campaign.poverty header {
+  background-image: url("../images/headers/mobile-header-poverty1.jpg"); }
+
+.campaign.wildlife header {
+  background-image: url("../images/headers/mobile-header-wildlife1.jpg"); }
+
 @media all and (min-width: 36.25em) {
   .campaign header .gradient {
     width: 60%; }
@@ -660,7 +731,7 @@ ul {
   .campaign header {
     background-image: url("../images/headers/header1.1.jpg"); }
     .campaign header .gradient {
-      width: 55%; }
+      width: 75%; }
     .campaign header .tagline {
       font-size: 1.5em;
       padding: 0 1.66667em;
@@ -675,12 +746,24 @@ ul {
       margin-bottom: 3.88889em;
       width: 55%; }
     .campaign header .caption {
-      bottom: 4.375em; } }
+      bottom: 4.375em; }
+
+  .campaign.cruelty header {
+    background-image: url("../images/headers/header-cruelty1.jpg"); }
+
+  .campaign.science header {
+    background-image: url("../images/headers/header-science1.jpg"); }
+
+  .campaign.poverty header {
+    background-image: url("../images/headers/header-poverty1.jpg"); }
+
+  .campaign.wildlife header {
+    background-image: url("../images/headers/header-wildlife1.jpg"); } }
 @media all and (min-width: 87.5em) {
   .campaign header {
     background-image: url("../images/headers/header1.1.jpg"); }
     .campaign header .gradient {
-      width: 50%; }
+      width: 60%; }
     .campaign header .wrapper {
       margin: 0 auto;
       max-width: 85em;
@@ -713,7 +796,7 @@ ul {
     .campaign-previews h2.title em {
       display: inline-block;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
-      color: #d8a533;
+      color: #263f6a;
       font-size: 1.22222em;
       font-style: normal;
       letter-spacing: 0;
@@ -730,7 +813,7 @@ ul {
     float: left;
     min-height: 18.75em; }
     .campaign-previews .preview .overlay {
-      background-color: rgba(21, 43, 81, 0.9);
+      background-color: rgba(38, 63, 106, 0.9);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -790,7 +873,7 @@ ul {
       -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border-color: #152b51 transparent transparent transparent;
+      border-color: #e9eaec transparent transparent transparent;
       border-style: solid;
       border-width: 2.0625em 2.3125em 0 2.3125em;
       content: "";
@@ -864,7 +947,7 @@ ul {
 .campaign nav {
   display: none;
   position: fixed;
-  background-color: #152b51;
+  background-color: #263f6a;
   text-align: right;
   width: 100%;
   z-index: 1000; }
@@ -924,7 +1007,7 @@ ul {
       .campaign nav .mobile-menu-icon.active div span:after {
         transform: rotate(-45deg) translateY(0); }
   .campaign nav .mobile-menu {
-    background-color: rgba(21, 43, 81, 0.9);
+    background-color: rgba(38, 63, 106, 0.9);
     bottom: 0;
     display: none;
     left: 0;
@@ -952,7 +1035,7 @@ ul {
   .campaign nav a.text {
     font-weight: 200;
     font-size: 0.875em;
-    border-bottom: 0.35714em solid #152b51;
+    border-bottom: 0.35714em solid #263f6a;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -965,7 +1048,7 @@ ul {
       border-bottom: 0.35714em solid #739abc; }
   .campaign nav .next-menu a:after {
     content: " →";
-    color: #d8a533;
+    color: #FBCB43;
     font-size: 1.375em;
     line-height: 0.7;
     position: relative;
@@ -985,12 +1068,12 @@ ul {
     margin-left: 5em; }
   .campaign nav a.text {
     font-size: 1.125em;
-    border-bottom: 0.27778em solid #152b51;
+    border-bottom: 0.27778em solid #263f6a;
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .campaign nav a.text:hover, .campaign nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .donors {
-  background: transparent url("../images/donors/mobile-donors2.jpg") no-repeat top center;
+  background: transparent url("../images/donors/mobile-donors3.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   min-height: 20.625em;
@@ -1003,10 +1086,10 @@ ul {
     line-height: 1.5;
     margin: 2em auto 1em;
     max-width: 90%;
-    opacity: 0.7; }
+    color: #fff; }
     .donors h2 em {
       font-family: "MyWriteHand", "Brush Script MT", cursive;
-      font-size: 1.25em;
+      font-size: 1.33333em;
       font-style: normal;
       letter-spacing: 0; }
   .donors .donor {
@@ -1020,8 +1103,6 @@ ul {
       font-size: 1.125em;
       font-weight: 400;
       text-decoration: none; }
-      .donors .donor a div {
-        opacity: 0.8; }
     .donors .donor .prompt {
       color: #cccccc;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
@@ -1060,7 +1141,7 @@ ul {
         font-size: 1.125em; } }
 @media all and (min-width: 45em) {
   .donors {
-    background-image: url("../images/donors/donors2.jpg");
+    background-image: url("../images/donors/donors3.jpg");
     min-height: 34.375em; }
     .donors h2 {
       font-size: 1.75em;
@@ -1085,7 +1166,7 @@ ul {
       .donors .donor a {
         font-size: 2em; } }
 .events {
-  background: transparent url("../images/events/mobile-events2.jpg") no-repeat top center;
+  background: transparent url("../images/events/mobile-events3.jpg") no-repeat top center;
   background-size: cover;
   clear: both; }
   .events .wrapper {
@@ -1098,13 +1179,15 @@ ul {
     width: 90%;
     margin: 0 5%; }
   .events .event h2 {
-    font-size: 2em;
-    font-weight: 200;
+    color: #c1d1df;
+    font-size: 3em;
+    font-weight: 700;
     letter-spacing: 1px;
     line-height: 1.15;
     opacity: 0.8;
-    margin: 1.40625em auto 0.78125em; }
+    margin: 0.9375em auto 0.3125em; }
   .events .event p {
+    color: #fff;
     font-weight: 200;
     line-height: 1.5; }
   .events .event .cta-button {
@@ -1118,7 +1201,7 @@ ul {
     font-size: 1.5em; }
     .events .event .cta-button:after {
       content: " →";
-      color: #d8a533;
+      color: #FBCB43;
       font-size: 1.5625em;
       line-height: 1;
       position: relative;
@@ -1130,7 +1213,7 @@ ul {
   .events .book {
     margin-top: 2em; }
     .events .book .book-header {
-      background-color: rgba(21, 43, 81, 0.5);
+      background-color: rgba(38, 63, 106, 0.8);
       padding: 1.125em;
       display: inline-block; }
       .events .book .book-header .cover {
@@ -1163,12 +1246,12 @@ ul {
         font-size: 1em;
         line-height: 1.5;
         margin-top: 0;
-        color: #c1d1df; }
+        color: #fff; }
       .events .book .book-body a {
         display: block;
         margin-bottom: 0.375em;
         margin-top: 0.5em;
-        color: #c1d1df;
+        color: #fff;
         text-decoration: none;
         font-size: 0.9375em;
         -webkit-transition: all 0.3s linear;
@@ -1176,7 +1259,7 @@ ul {
         transition: all 0.3s linear; }
         .events .book .book-body a:after {
           content: " →";
-          color: #d8a533;
+          color: #FBCB43;
           font-size: 1.5625em;
           line-height: 1;
           position: relative;
@@ -1214,7 +1297,7 @@ ul {
         font-size: 1em; } }
 @media all and (min-width: 45em) {
   .events {
-    background-image: url("../images/events/events2.jpg"); }
+    background-image: url("../images/events/events3.jpg"); }
     .events .wrapper {
       padding: 7.5em 0 5.625em;
       max-width: 90%;
@@ -1292,7 +1375,7 @@ ul {
     background-size: cover;
     background-position: center center; } }
 footer {
-  background-image: linear-gradient(#152b51, #060e25);
+  background-color: #263f6a;
   font-weight: 200;
   padding-bottom: 3.125em;
   padding-top: 4.375em;
@@ -1369,7 +1452,8 @@ footer {
       height: auto;
       width: 100%; }
   footer .privacy-contact {
-    margin-top: 1.25em; }
+    margin-top: 1.25em;
+    color: #fff; }
   footer .copyright, footer .non-profit {
     color: #c1d1df;
     font-size: 0.6875em;
@@ -1438,6 +1522,7 @@ footer {
   background-size: cover;
   display: inline-block;
   text-align: center;
+  color: #fff;
   width: 100%; }
   .index header .logo {
     display: block;
@@ -1469,6 +1554,7 @@ footer {
 .intro {
   background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
   background-size: cover;
+  color: #fff;
   display: inline-block;
   font-size: 0.9375em;
   padding-bottom: 2em;
@@ -1481,12 +1567,12 @@ footer {
     max-width: 90%; }
   .intro span i {
     font-style: normal;
-    color: #d8a533;
+    color: #FBCB43;
     font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 1.33333em;
     line-height: 1; }
   .intro span.italic:after {
-    color: #d8a533; }
+    color: #FBCB43; }
   .intro span.italic i {
     font-style: italic; }
   .intro .more-button {
@@ -1502,32 +1588,11 @@ footer {
       color: #c1d1df;
       text-decoration: none;
       font-style: italic; }
-      .intro .more-button a:after {
-        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        display: block;
-        margin: 0 auto;
-        content: "";
-        width: 0;
-        height: 0;
-        position: relative;
-        top: 0;
-        border-style: solid;
-        border-width: 0.6875em 0.5em 0 0.5em;
-        border-color: #739abc transparent transparent transparent; }
     .intro .more-button:hover a {
       color: #e3eaf0; }
       .intro .more-button:hover a:after {
         top: 0.1875em;
         border-color: #95b3cd transparent transparent transparent; }
-  .intro.showmore .more-button a:after {
-    top: -2.6875em;
-    border-width: 0 0.5em 0.6875em 0.5em;
-    border-color: transparent transparent #739abc transparent; }
-  .intro.showmore .more-button:hover a:after {
-    top: -2.875em;
-    border-color: transparent transparent #95b3cd transparent; }
 
 @media all and (min-width: 36.25em) {
   .intro {
@@ -1553,12 +1618,12 @@ footer {
       max-width: 65%; }
     .intro span i {
       font-style: normal;
-      color: #d8a533;
+      color: #FBCB43;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.45455em;
       line-height: 1; }
     .intro span.italic:after {
-      color: #d8a533; }
+      color: #FBCB43; }
     .intro span.italic i {
       font-style: italic; }
     .intro .more-button {
@@ -1574,7 +1639,7 @@ footer {
     .intro .more-button {
       margin-top: 3.84615em; } }
 .outro {
-  background: transparent url("../images/outro/mobile-outro2.jpg") no-repeat top center;
+  background: transparent url("../images/outro/mobile-outro3.jpg") no-repeat top center;
   background-size: cover;
   display: block;
   text-align: center;
@@ -1601,7 +1666,7 @@ footer {
   .outro .action {
     margin-bottom: 1.5em; }
     .outro .action a {
-      color: #fff;
+      color: #263f6a;
       text-decoration: none;
       display: block; }
       .outro .action a.donate:after, .outro .action a.attend:after {
@@ -1609,13 +1674,18 @@ footer {
         -moz-transition: all 0.3s linear;
         transition: all 0.3s linear;
         content: " →";
-        color: #d8a533;
+        color: #FBCB43;
         font-size: 1.25em;
         line-height: 1;
         position: relative;
         top: 0.1em; }
       .outro .action a:hover.donate:after, .outro .action a:hover.attend:after {
         left: 1px; }
+    .outro .action h4 {
+      opacity: 0.6;
+      font-size: 0.8em;
+      letter-spacing: 3px;
+      margin-bottom: 0.5em; }
 
 @media all and (min-width: 36.25em) {
   .outro {
@@ -1644,7 +1714,7 @@ footer {
       width: 50%; } }
 @media all and (min-width: 45em) {
   .outro {
-    background-image: url("../images/outro/outro2.jpg");
+    background-image: url("../images/outro/outro3.jpg");
     padding-bottom: 3.25em; }
     .outro .wrapper {
       max-width: 80%;
@@ -1696,13 +1766,14 @@ footer {
       font-size: 2em;
       line-height: 1.6; }
       .outro .action h4 {
-        opacity: 0.4;
+        opacity: 0.6;
         font-size: 0.625em;
-        letter-spacing: 3px; }
+        letter-spacing: 3px;
+        margin-bottom: 0.8em; }
       .outro .action.event a {
         margin-top: 0.1875em; } }
 .president {
-  background-image: linear-gradient(#20417a, #152b51);
+  background-color: #e9eaec;
   display: inline-block;
   padding-bottom: 3.125em;
   padding-top: 3.125em;
@@ -1713,24 +1784,23 @@ footer {
   .president .letter-top {
     text-align: center; }
     .president .letter-top h2 {
-      color: #c1d1df;
+      color: #263f6a;
       font-size: 1.625em;
-      font-weight: 200;
-      letter-spacing: 0.11538em;
-      margin-top: 0.46154em;
-      opacity: 0.9; }
+      font-weight: 700;
+      letter-spacing: 0.07692em;
+      margin-top: 0.46154em; }
     .president .letter-top h3 {
-      color: #fff;
+      color: #263f6a;
       font-weight: 200;
       font-size: 1.125em;
       letter-spacing: 1px; }
       .president .letter-top h3 em {
-        color: #d8a533;
+        color: #739abc;
         font-style: normal; }
   .president .pic {
     text-align: center; }
     .president .pic .sig {
-      color: #c1d1df;
+      color: #263f6a;
       font-weight: 200;
       font-size: 0.875em;
       text-align: center;
@@ -1744,36 +1814,32 @@ footer {
     .president .body h3 {
       font-size: 1.0625em;
       font-weight: 200;
-      letter-spacing: 0.0625em;
-      opacity: 0.75; }
+      letter-spacing: 0.0625em; }
     .president .body p, .president .body ul {
       font-size: 0.9375em;
       font-weight: 200;
-      letter-spacing: 0.0625em;
-      opacity: 0.75; }
+      letter-spacing: 0.0625em; }
     .president .body .list-top {
-      color: #d8a533;
       font-size: 1.0625em;
-      opacity: 0.9;
       letter-spacing: 1px; }
   .president .more-button {
     cursor: pointer;
     font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 0.875em;
-    margin-top: 0.75em;
+    margin-top: 0;
     margin-left: 1.14286em; }
     .president .more-button a {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
-      color: #b0c5d6;
+      color: #263f6a;
+      opacity: 0.8;
       text-decoration: none; }
     .president .more-button:hover a {
-      color: #e3eaf0; }
+      opacity: 1; }
 
 @media all and (min-width: 36.25em) {
   .president {
-    background-image: linear-gradient(#20417a, #152b51);
     padding-top: 3.75em; }
     .president .wrapper {
       margin: 0 2%;
@@ -1791,7 +1857,6 @@ footer {
       display: inline-block;
       float: left;
       margin: 0;
-      padding-bottom: 10.5em;
       max-width: 25%; }
       .president .pic img {
         width: 100%; }
@@ -1825,7 +1890,6 @@ footer {
         letter-spacing: 0.08824em;
         margin-top: 0.35294em; }
     .president .pic {
-      padding-bottom: 10.5em;
       max-width: 25%; }
       .president .pic .sig {
         font-size: 1em; }
@@ -1847,16 +1911,15 @@ footer {
     .president .letter-top {
       text-align: center; }
       .president .letter-top h2 {
-        font-size: 2.625em;
-        letter-spacing: 0.07143em;
-        margin-top: 0.28571em; }
+        font-size: 3em;
+        letter-spacing: 0.04167em;
+        margin-top: 0.25em; }
       .president .letter-top h3 {
         font-size: 1.625em;
         max-width: 75%;
         line-height: 1.5;
         margin: 0 auto 2em; }
     .president .pic {
-      padding-bottom: 16.75em;
       margin-left: 3.125em;
       width: 18.75em; }
       .president .pic .sig {
@@ -1869,7 +1932,10 @@ footer {
       .president .body p, .president .body ul {
         font-size: 1.5em; }
       .president .body .list-top {
-        font-size: 1.75em; } }
+        font-size: 1.75em; }
+    .president .more-button {
+      font-size: 1.625em;
+      margin-left: 1em; } }
 @-webkit-keyframes hsIntroStretch {
   from {
     font-size: 0; }
@@ -1993,7 +2059,7 @@ footer {
 .index nav {
   display: none;
   position: fixed;
-  background-color: #152b51;
+  background-color: #263f6a;
   text-align: right;
   width: 100%;
   z-index: 1000; }
@@ -2053,7 +2119,7 @@ footer {
       .index nav .mobile-menu-icon.active div span:after {
         transform: rotate(-45deg) translateY(0); }
   .index nav .mobile-menu {
-    background-color: rgba(21, 43, 81, 0.9);
+    background-color: rgba(38, 63, 106, 0.9);
     bottom: 0;
     display: none;
     left: 0;
@@ -2064,6 +2130,7 @@ footer {
     top: 4.6875em;
     z-index: 100; }
     .index nav .mobile-menu a {
+      color: #fff;
       display: block;
       text-decoration: none;
       font-size: 1.5em;
@@ -2077,7 +2144,7 @@ footer {
   .index nav a.text {
     font-weight: 200;
     font-size: 0.875em;
-    border-bottom: 0.35714em solid #152b51;
+    border-bottom: 0.35714em solid #263f6a;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -2096,12 +2163,12 @@ footer {
 @media all and (min-width: 62.5em) {
   .index nav a.text {
     font-size: 1.125em;
-    border-bottom: 0.27778em solid #152b51;
+    border-bottom: 0.27778em solid #263f6a;
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .victories .wrapper {
-  background: transparent url("../images/victories/mobile-victories2.jpg") no-repeat top center;
+  background: transparent url("../images/victories/mobile-victories3.jpg") no-repeat top center;
   background-size: cover;
   min-height: 30em;
   padding: 2.5em 0 4.375em;
@@ -2112,7 +2179,7 @@ footer {
     vertical-align: top;
     width: 80%; }
   .victories .wrapper h2 {
-    color: #c1d1df;
+    color: #263f6a;
     letter-spacing: 1px;
     font-size: 1.625em;
     font-weight: 200;
@@ -2128,7 +2195,7 @@ footer {
       .victories .wrapper h2 em::first-letter {
         letter-spacing: -18px; }
   .victories .wrapper h3 {
-    color: #d8a533;
+    color: #263f6a;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -2139,7 +2206,7 @@ footer {
       font-weight: 400;
       letter-spacing: 0; }
   .victories .wrapper p {
-    color: #fff;
+    color: #263f6a;
     font-weight: 200;
     font-size: 0.875em;
     letter-spacing: 1px;
@@ -2168,7 +2235,7 @@ footer {
       width: 36%; } }
 @media all and (min-width: 45em) {
   .victories .wrapper {
-    background-image: url("../images/victories/victories2.jpg");
+    background-image: url("../images/victories/victories3.jpg");
     min-height: 45em;
     padding: 6.25em 0 4.375em; }
     .victories .wrapper .victory {

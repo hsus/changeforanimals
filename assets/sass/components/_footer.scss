@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 footer {
-  background-image: linear-gradient( $blue, $dark-blue );
+  background-color: $blue;
   font-weight: 200;
   padding-bottom: em(50);
   padding-top: em(70);
@@ -67,6 +67,7 @@ footer {
   }
   .privacy-contact {
     margin-top: em(20);
+    color: $white;
   }
   .copyright,.non-profit {
     color: $light-gray;

@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .president {
-  background-image: linear-gradient( lighten($blue,10%), $blue );
+  background-color: $off-white;
   display: inline-block;
   padding-bottom: em(50);
   padding-top: em(50);
@@ -13,20 +13,19 @@
   .letter-top {
     text-align: center;
     h2 {
-      color: $light-grey;
+      color: $blue;
       font-size: em(26);
-      font-weight: 200;
-      letter-spacing: em(3,26);
+      font-weight: 700;
+      letter-spacing: em(2,26);
       margin-top: em(12,26); 
-      opacity: 0.9;
     }
     h3 {
-      color: $white;
+      color: $blue;
       font-weight: 200;
       font-size: em(18);
       letter-spacing: 1px;
       em {
-        color: $light-gold;
+        color: $light-blue;
         font-style: normal;
       }
     }
@@ -34,7 +33,7 @@
   .pic {
     text-align: center;   
     .sig {
-      color: $light-grey;
+      color: $blue;
       font-weight: 200;
       font-size: em(14);
       text-align: center;
@@ -52,18 +51,14 @@
       font-size: em(17);
       font-weight: 200;
       letter-spacing: em(1);
-      opacity: 0.75;
     }
     p,ul {
       font-size: em(15);
       font-weight: 200;
       letter-spacing: em(1);
-      opacity: 0.75;
     }
     .list-top {
-      color: $light-gold;
       font-size: em(17);
-      opacity: 0.9;
       letter-spacing: 1px;
     }
   }
@@ -72,15 +67,16 @@
     cursor: pointer;    
     font-family: $secondary-font;
     font-size: em(14);
-    margin-top: em(12);
+    margin-top: 0;
     margin-left: em(16,14);
     a {
       @include default-transition;
-      color: darken($light-grey,5%);
+      color: $blue;
+      opacity: 0.8;
       text-decoration: none;
     }
     &:hover a {
-      color: lighten($light-grey, 10%);
+      opacity: 1;
     }
   }
 }
@@ -89,7 +85,6 @@
 //  Tablet
 @media all and (min-width: $tablet) {
   .president {
-    background-image: linear-gradient( lighten($blue,10%), $blue );
     padding-top: em(60);
     .wrapper {
       margin: 0 2%;
@@ -111,7 +106,6 @@
       display: inline-block;
       float: left;
       margin: 0;
-      padding-bottom: em(168); 
       max-width: 25%;
       img {
         width: 100%;
@@ -161,7 +155,6 @@
       }
     }
     .pic {
-      padding-bottom: em(168);
       max-width: 25%;
       .sig {
         font-size: em(16);
@@ -194,9 +187,9 @@
     .letter-top {
       text-align: center;
       h2 {
-        font-size: em(42);
-        letter-spacing: em(3,42);
-        margin-top: em(12,42); 
+        font-size: em(48);
+        letter-spacing: em(2,48);
+        margin-top: em(12,48); 
       }
       h3 {
         font-size: em(26);
@@ -206,7 +199,6 @@
       }
     }
     .pic {
-      padding-bottom: em(268);
       margin-left: em(50);
       width: em(300);
       .sig {
@@ -225,7 +217,11 @@
       .list-top {
         font-size: em(28);
       }
-    }  
+    }
+    .more-button {
+      font-size: em(26);
+      margin-left: em(26,26);
+    }
   }
 }
 

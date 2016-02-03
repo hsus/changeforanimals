@@ -1,7 +1,7 @@
 ---
 # LAYOUT DATA
 layout: campaign
-body-class: campaign
+body-class: campaign wildlife
 active: TRUE
 campaign-layout: three-up
 order: 3

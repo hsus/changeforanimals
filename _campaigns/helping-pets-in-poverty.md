@@ -1,7 +1,7 @@
 ---
 # LAYOUT DATA
 layout: campaign
-body-class: campaign
+body-class: campaign poverty
 active: TRUE
 campaign-layout: "two-up first"
 order: 1
@@ -21,7 +21,7 @@ icon: "/assets/images/icons/icon-cat.svg"
 caption: "Hundreds of thousands of companion animals stand to benefit from our efforts."
 
 celebs:
-  - image: test
+  - image: /assets/images/celebs/chase-utley1.jpg
     name: test
     title: test
     video: test

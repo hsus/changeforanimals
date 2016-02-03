@@ -29,7 +29,7 @@ layout: default
         </section>
 
         {% for celeb in page.celebs %}
-        <section class="celeb">
+        <section class="celeb" id="video">
           <div class="wrapper">
             <img class="headshot" src="{{ celeb.image }}" alt="Image: {{ celeb.name }}">
             <h3>{{ celeb.name }}</h3>
@@ -45,5 +45,10 @@ layout: default
         {% endfor %}
 
         <section class="donor-story">
-          {{ page.donor_story }}
+          <div class="wrapper">
+            {% for donor in page.donor_story %}
+            <h3>{{ donor.title }}</h3>
+            <p>{{ donor.body }}</p>
+            {% endfor %}
+          </div>
         </section>

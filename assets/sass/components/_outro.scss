@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .outro {
-  background: transparent url('../images/outro/mobile-outro2.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/outro/mobile-outro3.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: block;
   text-align: center;
@@ -33,14 +33,14 @@
   .action {
     margin-bottom: em(24);
     a {
-      color: $white;
+      color: $blue;
       text-decoration: none;
       display: block;
       &.donate:after,
       &.attend:after {
         @include default-transition;
         content: " →";
-        color: $light-gold;
+        color: $yellow;
         font-size: em(20);
         line-height: 1;
         position: relative;
@@ -50,6 +50,12 @@
       &:hover.attend:after {
         left: 1px;
       }
+    }
+    h4 {
+      opacity: 0.6;
+      font-size: em(16,20);
+      letter-spacing: 3px;
+      margin-bottom: em(8,16)
     }
   }
 }
@@ -92,7 +98,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .outro {
-    background-image: url('../images/outro/outro2.jpg'); //quality @ 70
+    background-image: url('../images/outro/outro3.jpg'); //quality @ 70
     padding-bottom: em(52);
     .wrapper {
       max-width: 80%;
@@ -159,9 +165,10 @@
       font-size: em(32);
       line-height: 1.6;
       h4 {
-        opacity: 0.4;
+        opacity: 0.6;
         font-size: em(20,32);
         letter-spacing: 3px;
+        margin-bottom: em(16,20)
       }
       &.event a {
         margin-top: em(6,32);

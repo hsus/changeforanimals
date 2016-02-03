@@ -198,4 +198,8 @@ $(document).ready(function() {
       .find('.youtubewrap').fadeToggle(600,"linear");
   });
 
+  if(window.location.hash == '#video') {
+    $('.video').trigger("click");
+  } 
+
 });

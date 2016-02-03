@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .donors {
-  background: transparent url('../images/donors/mobile-donors2.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/donors/mobile-donors3.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: inline-block;
   min-height: em(330);
@@ -14,10 +14,10 @@
     line-height: 1.5;
     margin: em(40,20) auto em(20,20) ;
     max-width: 90%;
-    opacity: 0.7;
+    color: $white;
     em {
       font-family: $secondary-font;
-      font-size: em(30,24);
+      font-size: em(32,24);
       font-style: normal;
       letter-spacing: 0;
     }
@@ -33,9 +33,6 @@
       font-size: em(18);
       font-weight: 400;
       text-decoration: none;
-      div {
-        opacity: 0.8;
-      }
     }
     .prompt {
       // display: none;
@@ -88,7 +85,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .donors {
-    background-image: url('../images/donors/donors2.jpg'); //quality @ 70
+    background-image: url('../images/donors/donors3.jpg'); //quality @ 70
     min-height: em(550);
     h2 {
       font-size: em(28);
