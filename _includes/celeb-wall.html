@@ -1,0 +1,15 @@
+{% assign celebs = site.campaigns | sort: 'order' %}
+{% for celeb in celebs %}
+  {% if celeb.order == 2 %}
+  <section class="celeb">
+    <div class="wrapper">
+      <img class="headshot" src="{{ celeb.celebs[0].image }}" alt="Image: {{ celeb.celebs[0].name }}">
+      <h3>{{ celeb.celebs[0].name }}</h3>
+      <p class="title">{{ celeb.celebs[0].title }}</p>
+      <blockquote><span class="quotes left"> &ldquo;</span>{{ celeb.celebs[0].quote }}<span class="quotes right">&rdquo;</span></blockquote>
+    </div>
+    <a class="watch-video" href="{{ celeb.permalink }}#video?autoplay">Watch her Video</a>
+    <div class="shader">&nbsp;</div>
+  </section>
+  {% endif %}
+{% endfor %}

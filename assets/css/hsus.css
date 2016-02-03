@@ -312,7 +312,7 @@ ul {
     visibility: hidden;
     display: none; } }
 .celeb {
-  background: transparent url("../images/mobile-campaign-farm-celeb1.jpg") no-repeat top center;
+  background: transparent url("../images/campaigns/mobile-campaign-farm-celeb1.jpg") no-repeat top center;
   background-size: cover;
   display: block;
   padding: 3.125em 0;
@@ -338,6 +338,23 @@ ul {
     .celeb blockquote span {
       font-size: 1.5em;
       line-height: 0.4; }
+  .celeb a.watch-video {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 1.75em; }
+    .celeb a.watch-video:after {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      content: " →";
+      color: #d8a533;
+      font-size: 1.25em;
+      line-height: 1;
+      position: relative;
+      top: 0.1em; }
+    .celeb a.watch-video:hover:after {
+      left: 1px; }
   .celeb .video {
     position: relative; }
     .celeb .video svg path {
@@ -408,6 +425,24 @@ ul {
       width: 100%;
       height: 100%; }
 
+.index .celeb {
+  font-size: 0.75em;
+  position: relative; }
+.index .shader {
+  position: absolute;
+  background-color: rgba(21, 43, 81, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+.index .wrapper,
+.index .watch-video {
+  position: relative;
+  z-index: 100; }
+.index .headshot {
+  width: 10.83333em; }
+
 @media all and (min-width: 36.25em) {
   .celeb {
     padding: 6.25em 0 6.25em; }
@@ -428,7 +463,7 @@ ul {
       margin-top: 2em; } }
 @media all and (min-width: 45em) {
   .celeb {
-    background-image: url("../images/campaign-farm-celeb1.jpg");
+    background-image: url("../images/campaigns/campaign-farm-celeb1.jpg");
     padding: 6.875em 0 7.5em; }
     .celeb .wrapper {
       max-width: 74%;

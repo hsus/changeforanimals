@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .celeb {
-  background: transparent url('../images/mobile-campaign-farm-celeb1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/campaigns/mobile-campaign-farm-celeb1.jpg') no-repeat top center; //quality @ 70
   background-size: cover; 
   display: block;
   padding: em(50) 0;
@@ -33,7 +33,24 @@
       line-height: 0.4;
     }
   }
-
+  a.watch-video {
+    color: $white;
+    text-decoration: none;
+    display: block;
+    font-size: em(28);
+    &:after {
+      @include default-transition;
+      content: " →";
+      color: $light-gold;
+      font-size: em(20);
+      line-height: 1;
+      position: relative;
+      top: em(2,20);
+    }
+    &:hover:after {
+      left: 1px;
+    }
+  }
   .video {
     position: relative;
     svg path { 
@@ -114,6 +131,29 @@
     }
   }
 }
+.index {
+  .celeb {
+    font-size: em(12);
+    position: relative;
+  }
+  .shader {
+    position: absolute;    
+    background-color: rgba($blue,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .wrapper,
+  .watch-video {
+    position: relative;
+    z-index: 100;
+  }
+  .headshot {
+    width: em(130,12);
+  }
+}
 
 //  Tablet
 @media all and (min-width: $tablet) {
@@ -148,7 +188,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .celeb {
-    background-image: url('../images/campaign-farm-celeb1.jpg'); //quality @ 70    
+    background-image: url('../images/campaigns/campaign-farm-celeb1.jpg'); //quality @ 70    
     padding: em(110) 0 em(120);
     .wrapper {
       max-width: 74%;
