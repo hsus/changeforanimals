@@ -641,7 +641,6 @@ ul {
   color: #fff;
   display: inline-block;
   position: relative;
-  position: static;
   width: 100%; }
   .campaign header .gradient {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
@@ -1282,7 +1281,7 @@ ul {
   height: 80vh;
   min-height: 80vh;
   min-height: 30em;
-  position: static;
+  position: relative;
   width: 100%; }
 
 @media all and (min-width: 36.25em) {
@@ -1529,7 +1528,7 @@ footer {
   color: #fff;
   display: inline-block;
   min-height: 80vh;
-  position: static;
+  position: relative;
   text-align: center;
   width: 100%; }
   .index header .logo {
@@ -1838,7 +1837,8 @@ footer {
       transition: all 0.3s linear;
       color: #263f6a;
       opacity: 0.8;
-      text-decoration: none; }
+      text-decoration: none;
+      padding-top: 0.3125em; }
     .president .more-button:hover a {
       opacity: 1; }
 
@@ -2014,12 +2014,12 @@ footer {
   from {
     opacity: 0; }
   to {
-    opacity: 0.75; } }
+    opacity: 1; } }
 @keyframes hsPresFadeIn {
   from {
     opacity: 0; }
   to {
-    opacity: 0.75; } }
+    opacity: 1; } }
 @-webkit-keyframes hsPresShrink {
   from {
     font-size: auto; }
@@ -2032,12 +2032,12 @@ footer {
     font-size: 0; } }
 @-webkit-keyframes hsPresFadeOut {
   from {
-    opacity: 0.75; }
+    opacity: 1; }
   to {
     opacity: 0; } }
 @keyframes hsPresFadeOut {
   from {
-    opacity: 0.75; }
+    opacity: 1; }
   to {
     opacity: 0; } }
 .president.showless .more {
@@ -2059,6 +2059,8 @@ footer {
 .president.showmore .post:after,
 .president.showmore .period:after {
   content: ""; }
+.president.showmore .more-button {
+  margin-top: 1.5em; }
 
 .index nav {
   display: none;
@@ -2171,24 +2173,27 @@ footer {
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
-.victories .wrapper {
+.victories {
   background: transparent url("../images/victories/mobile-victories3.jpg") no-repeat top center;
   background-size: cover;
   min-height: 30em;
-  padding: 2.5em 0 4.375em;
+  padding: 2.5em 0 0;
   text-align: center; }
-  .victories .wrapper .victory {
+  .victories .wrapper {
+    max-width: 96%;
+    margin: 0 auto; }
+  .victories .victory {
     display: inline-block;
     margin: 0;
     vertical-align: top;
     width: 80%; }
-  .victories .wrapper h2 {
+  .victories h2 {
     color: #263f6a;
     font-size: 1.625em;
     font-weight: 200;
     letter-spacing: 1px;
     margin-bottom: 0.92308em; }
-    .victories .wrapper h2 em {
+    .victories h2 em {
       display: inline-block;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.38462em;
@@ -2196,20 +2201,20 @@ footer {
       left: -3px;
       letter-spacing: -0.05em;
       position: relative; }
-      .victories .wrapper h2 em::first-letter {
-        letter-spacing: -18px; }
-  .victories .wrapper h3 {
+      .victories h2 em::first-letter {
+        letter-spacing: -10px; }
+  .victories h3 {
     color: #263f6a;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 0.6;
     margin-bottom: 0.625em; }
-    .victories .wrapper h3 small {
+    .victories h3 small {
       font-size: 0.5em;
       font-weight: 400;
       letter-spacing: 0; }
-  .victories .wrapper p {
+  .victories p {
     color: #263f6a;
     font-size: 0.875em;
     font-weight: 200;
@@ -2223,8 +2228,7 @@ footer {
   background-size: cover;
   height: 80vh;
   min-height: 80vh;
-  min-height: 30em;
-  position: static;
+  position: relative;
   width: 100%; }
 
 @media all and (min-width: 36.25em) {
@@ -2237,11 +2241,14 @@ footer {
       margin: 0.75em 1em 0;
       width: 36%; } }
 @media all and (min-width: 45em) {
-  .victories .wrapper {
+  .victories {
     background-image: url("../images/victories/victories3.jpg");
     min-height: 45em;
-    padding: 6.25em 0 4.375em; }
-    .victories .wrapper .victory {
+    padding: 6.25em 0 0; }
+    .victories .wrapper {
+      max-width: 96%;
+      margin: 0 auto; }
+    .victories .victory {
       margin: 1.5em 2em;
       width: 24%; }
 
@@ -2251,7 +2258,6 @@ footer {
     background-size: cover;
     height: 85vh;
     min-height: 85vh;
-    min-height: 45em;
     position: static;
     width: 100%; } }
 @media all and (min-width: 87.5em) {
@@ -2280,7 +2286,6 @@ footer {
     background-size: cover;
     height: 90vh;
     min-height: 90vh;
-    min-height: 62.5em;
     position: static;
     width: 100%; } }
 
