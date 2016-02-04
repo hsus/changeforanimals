@@ -17,12 +17,12 @@
       font-size: em(26);
       font-weight: 700;
       letter-spacing: em(2,26);
-      margin-top: em(12,26); 
+      margin-top: em(12,26);
     }
     h3 {
       color: $blue;
-      font-weight: 200;
       font-size: em(18);
+      font-weight: 200;
       letter-spacing: 1px;
       em {
         color: $light-blue;
@@ -31,17 +31,17 @@
     }
   }
   .pic {
-    text-align: center;   
+    text-align: center;
     .sig {
       color: $blue;
-      font-weight: 200;
       font-size: em(14);
-      text-align: center;
+      font-weight: 200;
       margin-top: 0;
+      text-align: center;
       img {
-        width: auto;
-        padding: 0;
         margin: em(4) auto em(8);
+        padding: 0;
+        width: auto;
       }
     }
   }
@@ -64,11 +64,11 @@
   }
 
   .more-button {
-    cursor: pointer;    
+    cursor: pointer;
     font-family: $secondary-font;
     font-size: em(14);
-    margin-top: 0;
     margin-left: em(16,14);
+    margin-top: 0;
     a {
       @include default-transition;
       color: $blue;
@@ -99,7 +99,7 @@
       h2 {
         font-size: em(28);
         letter-spacing: em(3,28);
-        margin-top: em(12,28); 
+        margin-top: em(12,28);
       }
     }
     .pic {
@@ -115,7 +115,7 @@
         img {
           max-width: 100%;
         }
-      }  
+      }
     }
     .body {
       margin-left: 28%;
@@ -129,18 +129,18 @@
       .list-top {
         font-size: em(18);
       }
-    } 
+    }
   }
 }
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .president {
-    padding-top: em(90);
     padding-bottom: em(60);
+    padding-top: em(90);
     .wrapper {
-      width: em(960);
       margin: 0 auto;
+      width: em(960);
     }
     .letter-top {
       text-align: center;
@@ -151,14 +151,14 @@
       h2 {
         font-size: em(34);
         letter-spacing: em(3,34);
-        margin-top: em(12,34); 
+        margin-top: em(12,34);
       }
     }
     .pic {
       max-width: 25%;
       .sig {
         font-size: em(16);
-      } 
+      }
     }
     .body {
       margin-left: 30%;
@@ -172,15 +172,15 @@
       .list-top {
         font-size: em(20);
       }
-    } 
+    }
   }
 }
 
 //  Desktop
 @media all and (min-width: $desktop) {
   .president {
-    padding-top: em(110);
     padding-bottom: em(80);
+    padding-top: em(110);
     .wrapper {
       width: em(1160);
     }
@@ -189,13 +189,13 @@
       h2 {
         font-size: em(48);
         letter-spacing: em(2,48);
-        margin-top: em(12,48); 
+        margin-top: em(12,48);
       }
       h3 {
         font-size: em(26);
-        max-width: 75%;
         line-height: 1.5;
         margin: 0 auto em(52,26);
+        max-width: 75%;
       }
     }
     .pic {
@@ -203,7 +203,7 @@
       width: em(300);
       .sig {
         font-size: em(16);
-      } 
+      }
     }
     .body {
       margin-left: em(435);

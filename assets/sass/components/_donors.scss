@@ -8,13 +8,13 @@
   text-align: center;
   width: 100%;
   h2 {
+    color: $white;
     font-size: em(20);
     font-weight: 200;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: em(40,20) auto em(20,20) ;
     max-width: 90%;
-    color: $white;
     em {
       font-family: $secondary-font;
       font-size: em(32,24);

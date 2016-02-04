@@ -2,7 +2,7 @@
 // Default / Mobile
 .intro {
   background: transparent url('../images/intro/mobile-intro2.jpg') no-repeat top center; //quality @ 70
-  background-size: cover; 
+  background-size: cover;
   color: $white;
   display: inline-block;
   font-size: em(15);
@@ -16,30 +16,30 @@
     max-width: 90%;
   }
   span i {
-    font-style: normal;
-    color: $yellow;    
+    color: $yellow;
     font-family: $secondary-font;
     font-size: em(20,15);
+    font-style: normal;
     line-height: 1;
   }
   .more-button {
     cursor: pointer;
-    margin: em(30,15) auto 0;
-    width: em(150);
     font-family: $secondary-font;
     font-size: em(14);
+    margin: em(30,15) auto 0;
+    width: em(150);
     a {
       @include default-transition;
       color: $light-grey;
-      text-decoration: none;
       font-style: italic;
-           
+      text-decoration: none;
+
     }
     &:hover a {
       color: lighten($light-grey, 10%);
       &:after {
-        top: em(3);
         border-color: lighten($light-blue, 10%) transparent transparent transparent;
+        top: em(3);
       }
     }
   }
@@ -58,7 +58,7 @@
     .more-button {
       margin-top: em(30,18);
     }
-  }  
+  }
 }
 
 //  Large Tablet
@@ -67,23 +67,23 @@
     background-image: url('../images/intro/intro2.jpg');
     font-size: em(22);
     line-height: 1.6;
-    text-align: center;
-    width: 100%;
     padding-bottom: em(60,22);
     padding-top: em(120,22);
+    text-align: center;
+    width: 100%;
     .wrapper {
       margin: 0 auto;
       max-width: 65%;
     }
     span i {
-      font-style: normal;
-      color: $yellow;    
+      color: $yellow;
       font-family: $secondary-font;
       font-size: em(32,22);
+      font-style: normal;
       line-height: 1;
     }
-    span.italic:after {      
-      color: $yellow;  
+    span.italic:after {
+      color: $yellow;
     }
     span.italic i {
       font-style: italic;
@@ -107,6 +107,6 @@
     .more-button {
       margin-top: em(100,26);
     }
-  }  
+  }
 }
 

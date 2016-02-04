@@ -15,18 +15,18 @@
 
   &.showless {
     .more {
-      display: none;      
+      display: none;
       -webkit-animation:
         hsIntroShrink 0.6s ease-in 0s 1 normal forwards running,
-        hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running; 
+        hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running;
       animation:
-        hsIntroShrink 0.6s ease-in 0s 1 normal forwards running, 
-        hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running; 
+        hsIntroShrink 0.6s ease-in 0s 1 normal forwards running,
+        hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running;
     }
-    .pre:before,    
+    .pre:before,
     .post:after {
       content: "...";
-    } 
+    }
     .period:after {
       content: ".";
     }
@@ -37,12 +37,12 @@
     }
     .more {
       opacity: 0;
-      -webkit-animation: 
+      -webkit-animation:
         hsIntroStretch 0.3s ease-out 0s 1 normal forwards running,
         hsIntroFadeIn 0.3s ease-out 0.3s 1 normal forwards running;
       animation:
         hsIntroStretch 0.3s ease-out 0s 1 normal forwards running,
-        hsIntroFadeIn 0.3s ease-out 0.3s 1 normal forwards running; 
+        hsIntroFadeIn 0.3s ease-out 0.3s 1 normal forwards running;
     }
     .pre:before,
     .post:after,
@@ -55,7 +55,7 @@
 // Default / Mobile
 .president {
 
-  @-webkit-keyframes hsPresStretch { from { font-size:0;} to { font-size:auto; } }
+  @-webkit-keyframes hsPresStretch { from { font-size:0; } to { font-size:auto; } }
   @keyframes hsPresStretch { from { font-size:0; } to { font-size:auto; } }
 
   @-webkit-keyframes hsPresFadeIn { from { opacity:0; } to { opacity:0.75; } }
@@ -69,18 +69,18 @@
 
   &.showless {
     .more {
-      display: none;      
+      display: none;
       -webkit-animation:
         hsPresShrink 0.6s ease-in 0s 1 normal forwards running,
-        hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running; 
+        hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running;
       animation:
-        hsPresShrink 0.6s ease-in 0s 1 normal forwards running, 
-        hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running; 
+        hsPresShrink 0.6s ease-in 0s 1 normal forwards running,
+        hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running;
     }
-    .pre:before,    
+    .pre:before,
     .post:after {
       content: "...";
-    } 
+    }
     .period:after {
       content: ".";
     }
@@ -91,12 +91,12 @@
     }
     .more {
       opacity: 0;
-      -webkit-animation: 
+      -webkit-animation:
         hsPresStretch 0.3s ease-out 0s 1 normal forwards running,
         hsPresFadeIn 0.3s ease-out 0.3s 1 normal forwards running;
       animation:
         hsPresStretch 0.3s ease-out 0s 1 normal forwards running,
-        hsPresFadeIn 0.3s ease-out 0.3s 1 normal forwards running; 
+        hsPresFadeIn 0.3s ease-out 0.3s 1 normal forwards running;
     }
     .pre:before,
     .post:after,

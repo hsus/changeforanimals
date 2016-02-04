@@ -8,23 +8,23 @@
   text-align: center;
   width: 100%;
   .wrapper {
-    max-width: 94%;
     margin: 0 3%;
+    max-width: 94%;
   }
   h3 {
+    color: $white;
+    font-size: em(24);
+    font-weight: 200;
     margin-top: 0;
     padding-bottom: 0;
     padding-top: em(40,24);
-    font-weight: 200;
-    color: $white;
-    font-size: em(24);
   }
   p {
     font-size: em(16);
-    max-width: 90%;
-    margin: 0 auto em(20);
-    line-height: 1.6;
     font-weight: 200;
+    line-height: 1.6;
+    margin: 0 auto em(20);
+    max-width: 90%;
     padding-bottom: em(40,16);
   }
 }
@@ -34,19 +34,19 @@
 @media all and (min-width: $tablet) {
   .donor-story {
     .wrapper {
-      max-width: 84%;
       margin: 0 8%;
+      max-width: 84%;
     }
     h3 {
+      font-size: em(28);
       padding-bottom: em(10,28);
       padding-top: em(60,28);
-      font-size: em(28);
-    }    
+    }
     p {
       font-size: em(16);
       max-width: 90%;
       padding-bottom: em(60,16);
-    }    
+    }
   }
 }
 
@@ -55,14 +55,14 @@
   .donor-story {
     background-image: url('../images/donors/donor-wall1.jpg'); //quality @ 70
     .wrapper {
-      max-width: 84%;
       margin: 0 8%;
+      max-width: 84%;
     }
     h3 {
+      font-size: em(32);
       padding-bottom: em(20,32);
       padding-top: em(100,32);
-      font-size: em(32);
-    }    
+    }
     p {
       font-size: em(18);
       max-width: 70%;
@@ -75,14 +75,14 @@
 @media all and (min-width: $desktop) {
   .donor-story {
     .wrapper {
-      max-width: em(1360);
       margin: 0 auto;
+      max-width: em(1360);
     }
     h3 {
+      font-size: em(36);
       padding-bottom: em(60,36);
       padding-top: em(180,36);
-      font-size: em(36);
-    }        
+    }
     p {
       font-size: em(24);
       max-width: 70%;

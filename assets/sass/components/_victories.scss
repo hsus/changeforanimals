@@ -14,18 +14,18 @@
   }
   h2 {
     color: $blue;
-    letter-spacing: 1px;
     font-size: em(26);
     font-weight: 200;
+    letter-spacing: 1px;
     margin-bottom: em(24,26);
     em {
+      display: inline-block;
       font-family: $secondary-font;
       font-size: em(36,26);
-      position: relative;
-      left: -3px;
       font-style: normal;
+      left: -3px;
       letter-spacing: -0.05em;
-      display: inline-block;
+      position: relative;
       &::first-letter {
         letter-spacing: -18px;
       }
@@ -46,8 +46,8 @@
   }
   p {
     color: $blue;
-    font-weight: 200;
     font-size: em(14);
+    font-weight: 200;
     letter-spacing: 1px;
     margin-top: em(8,14);
   }
@@ -93,13 +93,13 @@
   }
   .victory-after {
     background-image:  url('../images/victories/victories-after1.jpg'); //quality @ 20
-    min-height: em(720);
-    position: static;
+    background-position: center center;
+    background-size: cover;
     height: 85vh;
     min-height: 85vh;
+    min-height: em(720);
+    position: static;
     width: 100%;
-    background-size: cover;
-    background-position: center center;
   }
 }
 
@@ -126,19 +126,19 @@
         font-size: em(28,54);
       }
     }
-    
+
     p {
       font-size: em(20);
       margin-top: em(8,20);
     }
   }
   .victory-after {
-    min-height: em(1000);
-    position: static;
+    background-position: center center;
+    background-size: cover;
     height: 90vh;
     min-height: 90vh;
+    min-height: em(1000);
+    position: static;
     width: 100%;
-    background-size: cover;
-    background-position: center center;
   }
 }

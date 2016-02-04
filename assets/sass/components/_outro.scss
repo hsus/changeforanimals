@@ -4,17 +4,17 @@
   background: transparent url('../images/outro/mobile-outro3.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: block;
-  text-align: center;
-  width: 100%;
   overflow: hidden;
   padding-bottom: em(16);
+  text-align: center;
+  width: 100%;
   .wrapper {
-    max-width: 96%;
     margin: 0 2%;
+    max-width: 96%;
   }
   .body {
-    max-width: 96%;
     margin: 0 auto;
+    max-width: 96%;
   }
   h2 {
     font-size: em(32);
@@ -34,13 +34,13 @@
     margin-bottom: em(24);
     a {
       color: $blue;
-      text-decoration: none;
       display: block;
+      text-decoration: none;
       &.donate:after,
       &.attend:after {
         @include default-transition;
-        content: " →";
         color: $yellow;
+        content: " →";
         font-size: em(20);
         line-height: 1;
         position: relative;
@@ -52,10 +52,10 @@
       }
     }
     h4 {
-      opacity: 0.6;
       font-size: em(16,20);
       letter-spacing: 3px;
-      margin-bottom: em(8,16)
+      margin-bottom: em(8,16);
+      opacity: 0.6;
     }
   }
 }
@@ -65,31 +65,31 @@
   .outro {
     padding-bottom: em(24);
     .wrapper {
-      max-width: 94%;
       margin: 0 3%;
+      max-width: 94%;
     }
     .body {
-      max-width: 96%;
       margin: 0 auto;
+      max-width: 96%;
     }
     h2 {
       font-size: em(32);
       line-height: 1.15;
-      margin: em(45,32) auto em(25,32) ;
+      margin: em(45,32) auto em(25,32);
       max-width: 84%;
     }
     p {
-      line-height: 1.4;
       font-size: em(17);
+      line-height: 1.4;
     }
     h3 {
-      padding: em(16,26) 0 em(32,26);
-      font-size: em(26);
       font-family: $secondary-font;
+      font-size: em(26);
+      padding: em(16,26) 0 em(32,26);
     }
     .action {
-      margin-bottom: em(24);
       float: left;
+      margin-bottom: em(24);
       width: 50%;
     }
   }
@@ -101,12 +101,12 @@
     background-image: url('../images/outro/outro3.jpg'); //quality @ 70
     padding-bottom: em(52);
     .wrapper {
-      max-width: 80%;
       margin: 0 10%;
+      max-width: 80%;
     }
     .body {
-      max-width: 96%;
       margin: 0 auto;
+      max-width: 96%;
     }
     h2 {
       font-size: em(42);
@@ -115,19 +115,19 @@
       max-width: 75%;
     }
     p {
-      line-height: 1.4;
       font-size: em(18);
+      line-height: 1.4;
     }
     h3 {
-      padding: em(16,32) 0 em(32,32);
-      font-size: em(32);
       font-family: $secondary-font;
+      font-size: em(32);
+      padding: em(16,32) 0 em(32,32);
     }
     .action {
-      margin-bottom: em(24);
       float: left;
-      width: 50%;
       font-size: em(17);
+      margin-bottom: em(24);
+      width: 50%;
     }
   }
 }
@@ -137,8 +137,8 @@
   .outro {
     padding-bottom: em(72);
     .wrapper {
-      max-width: em(1400);
       margin: 0 auto;
+      max-width: em(1400);
     }
     .body {
       max-width: em(930);
@@ -149,8 +149,8 @@
       max-width: 65%;
     }
     p {
-      line-height: 1.6;
       font-size: em(26);
+      line-height: 1.6;
     }
     h3 {
       font-family: $secondary-font;
@@ -158,17 +158,17 @@
       padding: em(28,48) 0 em(36,48);
     }
     .action {
-      padding-top: em(4,24);
-      margin-bottom: em(24);
       float: left;
-      width: 50%;
       font-size: em(32);
       line-height: 1.6;
+      margin-bottom: em(24);
+      padding-top: em(4,24);
+      width: 50%;
       h4 {
-        opacity: 0.6;
         font-size: em(20,32);
         letter-spacing: 3px;
-        margin-bottom: em(16,20)
+        margin-bottom: em(16,20);
+        opacity: 0.6;
       }
       &.event a {
         margin-top: em(6,32);
