@@ -6,9 +6,9 @@
   color: $white;
   display: inline-block;
   font-size: em(15);
+  line-height: 1.6;
   padding-bottom: em(30,15);
   padding-top: em(50,15);
-  line-height: 1.6;
   text-align: center;
   width: 100%;
   .wrapper {
@@ -21,12 +21,6 @@
     font-family: $secondary-font;
     font-size: em(20,15);
     line-height: 1;
-  }
-  span.italic:after {      
-    color: $yellow;  
-  }
-  span.italic i {
-    font-style: italic;
   }
   .more-button {
     cursor: pointer;

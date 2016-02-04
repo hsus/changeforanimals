@@ -635,10 +635,13 @@ ul {
       margin-right: 19%; } }
 .campaign header {
   background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   color: #fff;
   display: inline-block;
   position: relative;
+  position: static;
   width: 100%; }
   .campaign header .gradient {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
@@ -783,7 +786,8 @@ ul {
       width: 50%; } }
 .campaign-previews {
   width: 100%;
-  display: block; }
+  display: block;
+  overflow: auto; }
   .campaign-previews h2.title {
     text-align: center;
     font-weight: 200;
@@ -1019,9 +1023,11 @@ ul {
     z-index: 100; }
     .campaign nav .mobile-menu a {
       display: block;
+      color: #fff;
       text-decoration: none;
       font-size: 1.5em;
-      line-height: 2.5; }
+      line-height: 1.2;
+      padding: 0.66667em; }
   .campaign nav .menu,
   .campaign nav .next-menu {
     display: none; }
@@ -1519,10 +1525,15 @@ footer {
     line-height: 1.7; } }
 .index header {
   background: transparent url("../images/headers/mobile-header2.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
-  display: inline-block;
-  text-align: center;
   color: #fff;
+  display: inline-block;
+  min-height: 80vh;
+  position: static;
+  text-align: center;
+  width: 100%;
   width: 100%; }
   .index header .logo {
     display: block;
@@ -1557,9 +1568,9 @@ footer {
   color: #fff;
   display: inline-block;
   font-size: 0.9375em;
+  line-height: 1.6;
   padding-bottom: 2em;
   padding-top: 3.33333em;
-  line-height: 1.6;
   text-align: center;
   width: 100%; }
   .intro .wrapper {
@@ -1571,10 +1582,6 @@ footer {
     font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 1.33333em;
     line-height: 1; }
-  .intro span.italic:after {
-    color: #FBCB43; }
-  .intro span.italic i {
-    font-style: italic; }
   .intro .more-button {
     cursor: pointer;
     margin: 2em auto 0;
@@ -2214,15 +2221,14 @@ footer {
 
 .victory-after {
   background: transparent url("../images/victories/mobile-victories-after1.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
-  min-height: 30em;
-  position: static;
   height: 80vh;
   min-height: 80vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
+  min-height: 30em;
+  position: static;
+  width: 100%; }
 
 @media all and (min-width: 36.25em) {
   .victories .wrapper {

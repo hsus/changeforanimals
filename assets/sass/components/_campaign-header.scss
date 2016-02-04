@@ -2,10 +2,13 @@
 // Default / Mobile
 .campaign header {
   background: transparent url('../images/headers/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   color: $white;
   display: inline-block;
   position: relative;
+  position: static;
   width: 100%;
   .gradient {
     background-image: linear-gradient( to right, rgba(0,0,0,0.8), transparent );

@@ -108,6 +108,78 @@ $(document).ready(function() {
       }
     });
 
+    $('#about').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > -50 ) {
+        $('#menu .about').addClass('active');
+      } else {        
+        $('#menu .about').removeClass('active');
+      }
+    });
+
+    $('#program-areas').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .program-areas').addClass('active');
+      } else {        
+        $('#menu .program-areas').removeClass('active');
+      }
+    });
+
+    $('#events').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .event').addClass('active');
+      } else {        
+        $('#menu .event').removeClass('active');
+      }
+    });
+
+    $('#get-involved').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .get-involved').addClass('active');
+      } else {        
+        $('#menu .get-involved').removeClass('active');
+      }
+    });
+
+    $('#get-involved').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .get-involved').addClass('active');
+      } else {        
+        $('#menu .get-involved').removeClass('active');
+      }
+    });
+
+    $('#goals').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .about').addClass('active');
+      } else {        
+        $('#menu .about').removeClass('active');
+      }
+    });
+
   });
 
   // Show/Hide mobile menu

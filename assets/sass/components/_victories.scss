@@ -54,15 +54,14 @@
 }
 .victory-after {
   background: transparent url('../images/victories/mobile-victories-after1.jpg') no-repeat top center; //quality @ 20
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
-  min-height: em(480);
-  position: static;
   height: 80vh;
   min-height: 80vh;
+  min-height: em(480);
+  position: static;
   width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 
