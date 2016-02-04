@@ -11,7 +11,7 @@ permalink: championing-farm-animal-welfare/
 
 financial_tagline:
   amount: $16.3 MILLION
-  text: Escalates the Fight"
+  text: Escalates the Fight
 
 title: Championing Farm Animal Welfare
 description: |
