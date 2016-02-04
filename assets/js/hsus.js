@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+  function is_touch_device() {
+    return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+  }
+
+  if (is_touch_device()) { 
+    $('.victory-after,.campaign header,.events-after,.index header').css('background-attachment','scroll');
+  };
+
   // This function works with sass/components/read-more.scss
   $('#intro .readmore').click(function() {
     var el = $(this),
@@ -8,19 +18,23 @@ $(document).ready(function() {
     if (wrapper.hasClass('showmore')) {
       $('#intro').css('background-image','url("/assets/images/intro/intro2.jpg")')
       wrapper.find('.readmore').text('Read More');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).hide();
-      });
+      });      
+      if (is_touch_device()) { wrapper.find('.more').hide(); };
+      wrapper.toggleClass('showmore showless');
     } else {
       $('#intro').css('background-image','radial-gradient(circle closest-side, #20417a, #152b51)')
       wrapper.find('.readmore').text('Read Less');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).css('display','inline');
       });
+      if (is_touch_device()) { wrapper.find('.more').show().animate({opacity: 1},300);};
+      wrapper.toggleClass('showmore showless');
     };
-
-    wrapper.toggleClass('showmore showless');
-    wrapper.find('.more').css('display','inline');
+    if (!is_touch_device()) { 
+      wrapper.find('.more').css('display','inline');
+    };
   });
 
   // This function works with sass/components/read-more.scss
@@ -30,20 +44,23 @@ $(document).ready(function() {
 
     if (wrapper.hasClass('showmore')) {
       wrapper.find('.readmore').text('Read More');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).hide();
       });
+      if (is_touch_device()) { wrapper.find('.more').hide(); };
+      wrapper.toggleClass('showmore showless');
     } else {
       wrapper.find('.readmore').text('Read Less');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).css('display','inline');
       });
+      if (is_touch_device()) { wrapper.find('.more').show().animate({opacity: 1},300);};
+      wrapper.toggleClass('showmore showless');
     };
-
-    wrapper.toggleClass('showmore showless');
-    wrapper.find('.more').css('display','inline');
+    if (!is_touch_device()) { 
+      wrapper.find('.more').css('display','inline');
+    };
   });
-
 
   // Sticky nav
   $(window).on('scroll', function() {
@@ -55,12 +72,6 @@ $(document).ready(function() {
       $('nav').fadeIn();
     } else {
       $('nav').fadeOut();
-    }
-
-    function is_touch_device() {
-     return (('ontouchstart' in window)
-          || (navigator.MaxTouchPoints > 0)
-          || (navigator.msMaxTouchPoints > 0));
     }
 
     // Get viewport height and set trigger point

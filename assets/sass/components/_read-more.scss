@@ -58,14 +58,14 @@
   @-webkit-keyframes hsPresStretch { from { font-size:0; } to { font-size:auto; } }
   @keyframes hsPresStretch { from { font-size:0; } to { font-size:auto; } }
 
-  @-webkit-keyframes hsPresFadeIn { from { opacity:0; } to { opacity:0.75; } }
-  @keyframes hsPresFadeIn { from { opacity:0; } to { opacity:0.75; } }
+  @-webkit-keyframes hsPresFadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes hsPresFadeIn { from { opacity:0; } to { opacity:1; } }
 
   @-webkit-keyframes hsPresShrink { from { font-size:auto;} to { font-size:0; } }
   @keyframes hsPresShrink { from { font-size:auto; } to { font-size:0; } }
 
-  @-webkit-keyframes hsPresFadeOut { from { opacity:0.75; } to { opacity:0; } }
-  @keyframes hsPresFadeOut { from { opacity:0.75; } to { opacity:0; } }
+  @-webkit-keyframes hsPresFadeOut { from { opacity:1; } to { opacity:0; } }
+  @keyframes hsPresFadeOut { from { opacity:1; } to { opacity:0; } }
 
   &.showless {
     .more {
@@ -102,6 +102,9 @@
     .post:after,
     .period:after {
       content: "";
+    }
+    .more-button {
+      margin-top: em(24);
     }
   }
 }

@@ -1,11 +1,15 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
-.victories .wrapper {
+.victories {
   background: transparent url('../images/victories/mobile-victories3.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   min-height: em(480);
-  padding: em(40) 0 em(70);
+  padding: em(40) 0 0;
   text-align: center;
+  .wrapper {
+    max-width: 96%;
+    margin: 0 auto;
+  }
   .victory {
     display: inline-block;
     margin: 0;
@@ -27,7 +31,7 @@
       letter-spacing: -0.05em;
       position: relative;
       &::first-letter {
-        letter-spacing: -18px;
+        letter-spacing: -10px;
       }
     }
   }
@@ -59,8 +63,7 @@
   background-size: cover;
   height: 80vh;
   min-height: 80vh;
-  min-height: em(480);
-  position: static;
+  position: relative;
   width: 100%;
 }
 
@@ -82,10 +85,14 @@
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
-  .victories .wrapper {
-    background-image:  url('../images/victories/victories3.jpg'); //quality @ 70
+  .victories {
+    background-image: url('../images/victories/victories3.jpg'); //quality @ 70
     min-height: em(720);
-    padding: em(100) 0 em(70);
+    padding: em(100) 0 0;
+    .wrapper {
+      max-width: 96%;
+      margin: 0 auto;
+    }
     .victory {
       margin: em(24) em(32);
       width: 24%;
@@ -97,7 +104,6 @@
     background-size: cover;
     height: 85vh;
     min-height: 85vh;
-    min-height: em(720);
     position: static;
     width: 100%;
   }
@@ -137,7 +143,6 @@
     background-size: cover;
     height: 90vh;
     min-height: 90vh;
-    min-height: em(1000);
     position: static;
     width: 100%;
   }
