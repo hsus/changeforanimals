@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .campaign header {
-  background: transparent url('../images/headers/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
+  background: transparent url('../images/headers/mobile-header-farm1.jpg') no-repeat top center; //quality @ 20
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -69,11 +69,6 @@
     z-index: 100;
   }
 }
-.campaign.cruelty header { background-image: url('../images/headers/mobile-header-cruelty1.jpg'); }
-.campaign.science header { background-image: url('../images/headers/mobile-header-science1.jpg'); }
-.campaign.poverty header { background-image: url('../images/headers/mobile-header-poverty1.jpg'); }
-.campaign.wildlife header { background-image: url('../images/headers/mobile-header-wildlife1.jpg'); }
-
 
 //  Tablet
 @media all and (min-width: $tablet) {
@@ -111,7 +106,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .campaign header {
-    background-image: url('../images/headers/header1.1.jpg');
+    background-image: url('../images/headers/header-farm1.jpg');
     .gradient {
       width: 75%;
     }
@@ -135,10 +130,6 @@
       bottom: em(70);
     }
   }
-  .campaign.cruelty header { background-image: url('../images/headers/header-cruelty1.jpg'); }
-  .campaign.science header { background-image: url('../images/headers/header-science1.jpg'); }
-  .campaign.poverty header { background-image: url('../images/headers/header-poverty1.jpg'); }
-  .campaign.wildlife header { background-image: url('../images/headers/header-wildlife1.jpg'); }
 }
 
 //  Desktop

@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .celeb {
-  background: transparent url('../images/campaigns/mobile-campaign-farm-celeb2.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/celebs/mobile-farm2.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   color: $white;
   display: block;
@@ -181,7 +181,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .celeb {
-    background-image: url('../images/campaigns/campaign-farm-celeb2.jpg'); //quality @ 70
+    background-image: url('../images/celebs/farm2.jpg'); //quality @ 70
     padding: em(110) 0 em(120);
     .wrapper {
       margin: 0 13%;

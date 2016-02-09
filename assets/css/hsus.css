@@ -312,7 +312,7 @@ ul {
     visibility: hidden;
     display: none; } }
 .celeb {
-  background: transparent url("../images/campaigns/mobile-campaign-farm-celeb2.jpg") no-repeat top center;
+  background: transparent url("../images/celebs/mobile-farm2.jpg") no-repeat top center;
   background-size: cover;
   color: #fff;
   display: block;
@@ -457,7 +457,7 @@ ul {
       margin-top: 2em; } }
 @media all and (min-width: 45em) {
   .celeb {
-    background-image: url("../images/campaigns/campaign-farm-celeb2.jpg");
+    background-image: url("../images/celebs/farm2.jpg");
     padding: 6.875em 0 7.5em; }
     .celeb .wrapper {
       margin: 0 13%;
@@ -504,14 +504,18 @@ ul {
   .donor-story .wrapper {
     margin: 0 3%;
     max-width: 94%; }
+  .donor-story .headshot {
+    border-radius: 50%;
+    margin-top: 1.25em; }
   .donor-story h3 {
-    color: #fff;
+    color: #263f6a;
     font-size: 1.5em;
     font-weight: 200;
     margin-top: 0;
     padding-bottom: 0;
     padding-top: 1.66667em; }
   .donor-story p {
+    color: #263f6a;
     font-size: 1em;
     font-weight: 200;
     line-height: 1.6;
@@ -523,10 +527,12 @@ ul {
   .donor-story .wrapper {
     margin: 0 8%;
     max-width: 84%; }
+  .donor-story .headshot {
+    margin-top: 2.5em; }
   .donor-story h3 {
     font-size: 1.75em;
     padding-bottom: 0.35714em;
-    padding-top: 2.14286em; }
+    padding-top: 0.71429em; }
   .donor-story p {
     font-size: 1em;
     max-width: 90%;
@@ -537,10 +543,12 @@ ul {
     .donor-story .wrapper {
       margin: 0 8%;
       max-width: 84%; }
+    .donor-story .headshot {
+      margin-top: 5em; }
     .donor-story h3 {
       font-size: 2em;
       padding-bottom: 0.625em;
-      padding-top: 3.125em; }
+      padding-top: 0.625em; }
     .donor-story p {
       font-size: 1.125em;
       max-width: 70%;
@@ -549,10 +557,12 @@ ul {
   .donor-story .wrapper {
     margin: 0 auto;
     max-width: 85em; }
+  .donor-story .headshot {
+    margin-top: 10em; }
   .donor-story h3 {
     font-size: 2.25em;
     padding-bottom: 1.66667em;
-    padding-top: 5em; }
+    padding-top: 0.55556em; }
   .donor-story p {
     font-size: 1.5em;
     max-width: 70%;
@@ -634,7 +644,7 @@ ul {
     .goals .goal:nth-of-type(odd) {
       margin-right: 19%; } }
 .campaign header {
-  background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
+  background: transparent url("../images/headers/mobile-header-farm1.jpg") no-repeat top center;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -694,18 +704,6 @@ ul {
     width: 24.375em;
     z-index: 100; }
 
-.campaign.cruelty header {
-  background-image: url("../images/headers/mobile-header-cruelty1.jpg"); }
-
-.campaign.science header {
-  background-image: url("../images/headers/mobile-header-science1.jpg"); }
-
-.campaign.poverty header {
-  background-image: url("../images/headers/mobile-header-poverty1.jpg"); }
-
-.campaign.wildlife header {
-  background-image: url("../images/headers/mobile-header-wildlife1.jpg"); }
-
 @media all and (min-width: 36.25em) {
   .campaign header .gradient {
     width: 60%; }
@@ -730,7 +728,7 @@ ul {
     right: 0; } }
 @media all and (min-width: 45em) {
   .campaign header {
-    background-image: url("../images/headers/header1.1.jpg"); }
+    background-image: url("../images/headers/header-farm1.jpg"); }
     .campaign header .gradient {
       width: 75%; }
     .campaign header .tagline {
@@ -747,19 +745,7 @@ ul {
       margin-bottom: 3.88889em;
       width: 55%; }
     .campaign header .caption {
-      bottom: 4.375em; }
-
-  .campaign.cruelty header {
-    background-image: url("../images/headers/header-cruelty1.jpg"); }
-
-  .campaign.science header {
-    background-image: url("../images/headers/header-science1.jpg"); }
-
-  .campaign.poverty header {
-    background-image: url("../images/headers/header-poverty1.jpg"); }
-
-  .campaign.wildlife header {
-    background-image: url("../images/headers/header-wildlife1.jpg"); } }
+      bottom: 4.375em; } }
 @media all and (min-width: 87.5em) {
   .campaign header {
     background-image: url("../images/headers/header1.1.jpg"); }

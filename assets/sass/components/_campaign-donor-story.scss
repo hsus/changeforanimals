@@ -10,9 +10,13 @@
   .wrapper {
     margin: 0 3%;
     max-width: 94%;
+  }  
+  .headshot {
+    border-radius: 50%;
+    margin-top: em(20);
   }
   h3 {
-    color: $white;
+    color: $blue;
     font-size: em(24);
     font-weight: 200;
     margin-top: 0;
@@ -20,6 +24,7 @@
     padding-top: em(40,24);
   }
   p {
+    color: $blue;
     font-size: em(16);
     font-weight: 200;
     line-height: 1.6;
@@ -37,10 +42,13 @@
       margin: 0 8%;
       max-width: 84%;
     }
+    .headshot {      
+      margin-top: em(40);
+    }
     h3 {
       font-size: em(28);
       padding-bottom: em(10,28);
-      padding-top: em(60,28);
+      padding-top: em(20,28);
     }
     p {
       font-size: em(16);
@@ -58,10 +66,13 @@
       margin: 0 8%;
       max-width: 84%;
     }
+    .headshot {      
+      margin-top: em(80);
+    }
     h3 {
       font-size: em(32);
       padding-bottom: em(20,32);
-      padding-top: em(100,32);
+      padding-top: em(20,32);
     }
     p {
       font-size: em(18);
@@ -78,10 +89,13 @@
       margin: 0 auto;
       max-width: em(1360);
     }
+    .headshot {      
+      margin-top: em(160);
+    }
     h3 {
       font-size: em(36);
       padding-bottom: em(60,36);
-      padding-top: em(180,36);
+      padding-top: em(20,36);
     }
     p {
       font-size: em(24);
