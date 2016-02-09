@@ -52,7 +52,6 @@ celebs:
     quote: "<em>THE HUMANE SOCIETY OF THE UNITED STATES IS LEADING THE CHARGE IN THE WAY WE MANAGE WILDLIFE</em> through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
 
 
-
 donor_story: 
   - background: /assets/images/donors/donor-story-wildlife1.jpg
     mobile-background: /assets/images/donors/mobile-donor-story-wildlife1.jpg

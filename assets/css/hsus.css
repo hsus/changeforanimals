@@ -383,7 +383,7 @@ ul {
       bottom: 0;
       display: none;
       left: 0;
-      margin: 5% auto;
+      margin: 100px auto 0;
       max-width: 1024px;
       position: fixed;
       right: 0;
@@ -426,16 +426,6 @@ ul {
       position: absolute;
       top: 0;
       width: 100%; }
-
-.index .celeb {
-  font-size: 0.75em;
-  position: relative; }
-.index .wrapper,
-.index .watch-video {
-  position: relative;
-  z-index: 100; }
-.index .headshot {
-  width: 10.83333em; }
 
 @media all and (min-width: 36.25em) {
   .celeb {
@@ -1062,6 +1052,94 @@ ul {
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .campaign nav a.text:hover, .campaign nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
+.index .celeb {
+  background: transparent url("/assets/images/celebs/mobile-celeb-farm1.jpg") no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  width: 100%; }
+  .index .celeb .wrapper {
+    text-align: center;
+    max-width: 96%;
+    margin: 0 auto; }
+  .index .celeb .single {
+    margin-bottom: 1em; }
+  .index .celeb .headshots .headshot {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    width: 7.5em; }
+    .index .celeb .headshots .headshot:hover {
+      opacity: 1;
+      cursor: pointer; }
+  .index .celeb .headshots h3 {
+    margin-top: 0;
+    font-size: 1.125em;
+    line-height: 1.2; }
+  .index .celeb .headshots p {
+    font-size: 1em;
+    line-height: 1.4; }
+  .index .celeb .hide {
+    display: none; }
+  .index .celeb a.video {
+    color: #fff;
+    font-size: 1.125em;
+    cursor: pointer; }
+
+@media all and (min-width: 45em) {
+  .index .celeb {
+    background-image: url("/assets/images/celebs/celeb-farm1.jpg");
+    line-height: 1.6;
+    padding-bottom: 2.5em;
+    padding-top: 5em;
+    text-align: center;
+    width: 100%;
+    min-height: 37.5em; }
+    .index .celeb .wrapper {
+      position: relative; }
+    .index .celeb .single {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      margin-top: 2.5em;
+      display: inline-block;
+      max-width: 9.375em;
+      width: 13%;
+      vertical-align: top; }
+      .index .celeb .single .headshots .headshot {
+        opacity: 0.6;
+        width: 80%; }
+        .index .celeb .single .headshots .headshot:hover {
+          opacity: 1;
+          cursor: pointer; }
+      .index .celeb .single .headshots h3 {
+        font-size: 1em; }
+      .index .celeb .single .headshots p {
+        font-size: 0.875em; }
+      .index .celeb .single .info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15.625em;
+        margin: 0 auto;
+        max-width: 80%; }
+      .index .celeb .single.active {
+        margin-top: 0; }
+        .index .celeb .single.active .headimg {
+          opacity: 1; } }
+@media all and (min-width: 87.5em) {
+  .index .celeb {
+    padding-bottom: 3.75em;
+    padding-top: 6.875em;
+    min-height: 43.75em; }
+    .index .celeb .single .headshots h3 {
+      font-size: 1.125em; }
+    .index .celeb .single .headshots p {
+      font-size: 1em; }
+    .index .celeb .single .info {
+      top: 16.5625em;
+      max-width: 50%; } }
 .donors {
   background: transparent url("../images/donors/mobile-donors3.jpg") no-repeat top center;
   background-size: cover;
@@ -1566,7 +1644,6 @@ footer {
     line-height: 1; }
   .intro .more-button {
     cursor: pointer;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 0.875em;
     margin: 2em auto 0;
     width: 9.375em; }
@@ -1575,13 +1652,29 @@ footer {
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
       color: #c1d1df;
-      font-style: italic;
       text-decoration: none; }
+      .intro .more-button a:after {
+        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-color: transparent transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.5625em 0.6875em 0 0.6875em;
+        content: "";
+        display: block;
+        height: 0;
+        margin: 0.5em auto 0;
+        position: relative;
+        width: 0; }
     .intro .more-button:hover a {
       color: #e3eaf0; }
       .intro .more-button:hover a:after {
-        border-color: #95b3cd transparent transparent transparent;
-        top: 0.1875em; }
+        border-color: #95b3cd transparent transparent transparent; }
+  .intro.showmore .more-button a:after {
+    border-width: 0 0.6875em 0.5625em 0.6875em;
+    top: -3.125em; }
+  .intro.showmore .more-button:hover a:after {
+    border-color: transparent transparent #95b3cd transparent; }
 
 @media all and (min-width: 36.25em) {
   .intro {
@@ -1810,10 +1903,10 @@ footer {
       letter-spacing: 0.0625em; }
     .president .body .list-top {
       font-size: 1.0625em;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      font-weight: 700; }
   .president .more-button {
     cursor: pointer;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 0.875em;
     margin-left: 1.14286em;
     margin-top: 0; }
@@ -1824,9 +1917,32 @@ footer {
       color: #263f6a;
       opacity: 0.8;
       text-decoration: none;
-      padding-top: 0.3125em; }
+      padding-top: 0.3125em;
+      position: relative; }
+      .president .more-button a:after {
+        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-color: transparent transparent transparent transparent;
+        border-style: solid;
+        border-width: 0.5625em 0.6875em 0 0.6875em;
+        content: "";
+        display: block;
+        height: 0;
+        margin: 0;
+        position: absolute;
+        width: 0;
+        left: 1.9em;
+        top: 1.75em; }
     .president .more-button:hover a {
       opacity: 1; }
+      .president .more-button:hover a:after {
+        border-color: #95b3cd transparent transparent transparent; }
+  .president.showmore .more-button a:after {
+    border-width: 0 0.6875em 0.5625em 0.6875em;
+    top: -0.625em; }
+  .president.showmore .more-button:hover a:after {
+    border-color: transparent transparent #95b3cd transparent; }
 
 @media all and (min-width: 36.25em) {
   .president {
@@ -1845,7 +1961,7 @@ footer {
         margin-top: 0.42857em; }
     .president .pic {
       display: inline-block;
-      float: left;
+      float: right;
       margin: 0;
       max-width: 25%; }
       .president .pic img {
@@ -1855,7 +1971,6 @@ footer {
         .president .pic .sig img {
           max-width: 100%; }
     .president .body {
-      margin-left: 28%;
       margin-top: 1.75em; }
       .president .body h3 {
         font-size: 1.125em; }
@@ -1884,7 +1999,6 @@ footer {
       .president .pic .sig {
         font-size: 1em; }
     .president .body {
-      margin-left: 30%;
       margin-top: 2.625em; }
       .president .body h3 {
         font-size: 1.25em; }
@@ -1915,7 +2029,6 @@ footer {
       .president .pic .sig {
         font-size: 1em; }
     .president .body {
-      margin-left: 27.1875em;
       margin-top: 2.625em; }
       .president .body h3 {
         font-size: 1.75em; }
@@ -1925,7 +2038,7 @@ footer {
         font-size: 1.75em; }
     .president .more-button {
       font-size: 1.625em;
-      margin-left: 1em; } }
+      margin-left: 1.38462em; } }
 @-webkit-keyframes hsIntroStretch {
   from {
     font-size: 0; }

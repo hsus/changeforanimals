@@ -44,6 +44,7 @@ celebs:
     name: Sir Paul McCartney
     title: Muscian, <em>The Beatles</em>
     video: ''
+    video-cta: 
     quote: |
       If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, <em>I BELIEVE EVERYONE WOULD LEAVE CRUELTY ON THE SHELF.</em>
 
@@ -54,6 +55,7 @@ celebs:
     name: Wayne Pacelle
     title: President and CEO, The Humane Society of the United States
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/vAgQREBFkL4?rel=0" frameborder="0" allowfullscreen></iframe>'
+    video-cta: "Watch Wayne's Video"
     quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat."
 
 

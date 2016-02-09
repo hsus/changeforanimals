@@ -24,24 +24,39 @@
   }
   .more-button {
     cursor: pointer;
-    font-family: $secondary-font;
     font-size: em(14);
     margin: em(30,15) auto 0;
     width: em(150);
     a {
       @include default-transition;
       color: $light-grey;
-      font-style: italic;
       text-decoration: none;
-
-    }
-    &:hover a {
-      color: lighten($light-grey, 10%);
       &:after {
-        border-color: lighten($light-blue, 10%) transparent transparent transparent;
-        top: em(3);
+        @include transition(all 0.3s cubic-bezier(0.4, 0, 0.2, 1));
+        border-color: transparent transparent transparent transparent;
+        border-style: solid;
+        border-width: em(9) em(11) 0 em(11);
+        content: "";
+        display: block;
+        height: 0;
+        margin: em(10,20) auto 0;
+        position: relative;
+        width: 0;
       }
     }
+    &:hover a {
+      color: lighten($light-grey, 10%);      
+      &:after {
+        border-color: lighten($light-blue, 10%) transparent transparent transparent;
+      }
+    }
+  }
+  &.showmore .more-button a:after {
+    border-width:  0 em(11) em(9) em(11);
+    top: em(-50);
+  }
+  &.showmore .more-button:hover a:after {
+    border-color: transparent transparent lighten($light-blue, 10%) transparent;
   }
 }
 

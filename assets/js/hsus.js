@@ -281,8 +281,12 @@ $(document).ready(function() {
       .find('.youtubewrap').fadeToggle(600,"linear");
   });
 
-  if(window.location.hash == '#video') {
-    $('.video').trigger("click");
-  } 
+  // Celeb Wall 
+  $('.headshot').click(function() {
+    var el = $(this),
+        celeb = el.parent().parent();
+    celeb.siblings().removeClass('active').find('.hide').hide();
+    celeb.toggleClass('active').find('.hide').fadeToggle();
+  });
 
 });

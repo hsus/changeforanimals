@@ -1,14 +1,26 @@
-{% assign celebs = site.campaigns | sort: 'order' %}
-{% for celeb in celebs %}
-  {% if celeb.order == 2 %}
+{% assign campaigns = site.campaigns | sort: 'order' %}
   <section class="celeb">
     <div class="wrapper">
-      <img class="headshot" src="{{ celeb.celebs[0].image }}" alt="Image: {{ celeb.celebs[0].name }}">
-      <h3>{{ celeb.celebs[0].name }}</h3>
-      <p class="title">{{ celeb.celebs[0].title }}</p>
-      <blockquote><span class="quotes left"> &ldquo;</span>{{ celeb.celebs[0].quote }}<span class="quotes right">&rdquo;</span></blockquote>
+      <h2>Voices for Animals</h2>
+      {% for campaign in campaigns %}
+      {% for celeb in campaign.celebs %}
+      <div class="single">
+        <div class="headshots">
+          <img class="headshot" src="{{ celeb.image }}" alt="Image: {{ celeb.name }}">
+          <h3 class="hide">{{ celeb.name }}</h3>
+          <p class="title hide">{{ celeb.title }}</p>
+        </div>
+        <div class="info hide">
+          <blockquote><span class="quotes left"> &ldquo;</span>{{ celeb.quote }}<span class="quotes right">&rdquo;</span></blockquote>
+          {% if celeb.video contains 'iframe' %}
+          <a class="video">{{ celeb.video-cta }}
+            <div class="overlay">&nbsp;</div>
+            <div class="youtubewrap"><div class="video-container">{{ celeb.video }}</div></div>
+          </a>
+          {% endif %}
+        </div>
+      </div>  
+      {% endfor %}
+      {% endfor %}
     </div>
-    <a class="watch-video" href="{{ celeb.permalink }}#video">Watch her Video</a>
   </section>
-  {% endif %}
-{% endfor %}

@@ -86,7 +86,7 @@
       bottom: 0;
       display: none;
       left: 0;
-      margin: 5% auto;
+      margin: 100px auto 0;
       max-width: 1024px;
       position: fixed;
       right: 0;
@@ -131,20 +131,6 @@
       top:0;
       width:100%;
     }
-  }
-}
-.index {
-  .celeb {
-    font-size: em(12);
-    position: relative;
-  }
-  .wrapper,
-  .watch-video {
-    position: relative;
-    z-index: 100;
-  }
-  .headshot {
-    width: em(130,12);
   }
 }
 

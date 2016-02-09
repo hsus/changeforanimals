@@ -32,7 +32,8 @@ celebs:
     image: /assets/images/celebs/chase-utley1.jpg
     name: Chase Utley
     title: Major League Baseball Player
-    video: test
+    video: ''
+    video-cta: "Watch Chase's Video"
     quote: "There are an <em>ESTIMATED 23 MILLION DOGS AND CATS LIVING IN POVERTY</em> with their loving families in the U.S., but without access to critical care and services. 80 percent of these pets have never seen a veterinarian, and 91 percent are not spayed or neutered. <em>THE HSUS IS WORKING TO CLOSE THESE GAP</em>s -- bringing critical life-saving services to pets and the families who love them."
 
 goal_layout:
