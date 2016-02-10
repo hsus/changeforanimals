@@ -57,7 +57,7 @@ celebs:
     video-cta: "Watch John's Video"
     name: "John Salley"
     title: "Retired NBA Basketball Player"
-    quote: "Join HSUS to take a stand against Farm Animal cruelty."
+    quote: "All animals deserve protection from cruelty. It's time they had a voice."
 
 
 donor_story: 

@@ -499,11 +499,11 @@ ul {
     margin-top: 1.25em; }
   .donor-story h3 {
     color: #263f6a;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 200;
     margin-top: 0;
     padding-bottom: 0;
-    padding-top: 1.66667em; }
+    padding-top: 0.83333em; }
   .donor-story p {
     color: #263f6a;
     font-size: 1em;
@@ -521,7 +521,6 @@ ul {
     margin-top: 2.5em; }
   .donor-story h3 {
     font-size: 1.75em;
-    padding-bottom: 0.35714em;
     padding-top: 0.71429em; }
   .donor-story p {
     font-size: 1em;
@@ -537,8 +536,7 @@ ul {
       margin-top: 5em; }
     .donor-story h3 {
       font-size: 2em;
-      padding-bottom: 0.625em;
-      padding-top: 0.625em; }
+      padding-top: 0.75em; }
     .donor-story p {
       font-size: 1.125em;
       max-width: 70%;
@@ -550,12 +548,11 @@ ul {
   .donor-story .headshot {
     margin-top: 10em; }
   .donor-story h3 {
-    font-size: 2.25em;
-    padding-bottom: 1.66667em;
-    padding-top: 0.55556em; }
+    font-size: 3em;
+    padding-top: 0.58333em; }
   .donor-story p {
     font-size: 1.5em;
-    max-width: 70%;
+    max-width: 80%;
     padding-bottom: 5.83333em; } }
 .goals {
   background: transparent url("../images/goals/mobile-goals1.jpg") no-repeat top center;
@@ -567,9 +564,9 @@ ul {
     margin: 0 3%;
     max-width: 94%; }
   .goals h2 {
-    color: #ce8e00;
+    color: #fff;
     font-size: 1.5em;
-    font-weight: 200;
+    font-weight: 700;
     margin-top: 0;
     padding-bottom: 0;
     padding-top: 1.66667em; }
@@ -586,8 +583,9 @@ ul {
       .goals .goal:nth-of-type(odd):last-child {
         margin-right: 0; }
     .goals .goal em {
-      color: #ce8e00;
-      font-style: normal; }
+      color: #FBCB43;
+      font-style: normal;
+      font-weight: 400; }
 
 @media all and (min-width: 36.25em) {
   .goals .wrapper {
@@ -624,12 +622,12 @@ ul {
     margin: 0 auto;
     max-width: 85em; }
   .goals h2 {
-    font-size: 2.25em;
-    padding-bottom: 1.66667em;
-    padding-top: 5em; }
+    font-size: 3em;
+    padding-bottom: 1.25em;
+    padding-top: 3.75em; }
   .goals .goal {
-    font-size: 1.375em;
-    margin-bottom: 4.54545em;
+    font-size: 1.625em;
+    margin-bottom: 3.84615em;
     width: 37%; }
     .goals .goal:nth-of-type(odd) {
       margin-right: 19%; } }
@@ -740,7 +738,7 @@ ul {
   .campaign header {
     background-image: url("../images/headers/header1.1.jpg"); }
     .campaign header .gradient {
-      width: 60%; }
+      width: 80%; }
     .campaign header .wrapper {
       margin: 0 auto;
       max-width: 85em;
@@ -753,7 +751,7 @@ ul {
       font-size: 4.5em;
       margin-bottom: 0.33333em;
       margin-top: 0.66667em;
-      max-width: 6.94444em; }
+      max-width: 8.33333em; }
     .campaign header .description {
       font-size: 1.5em;
       margin-bottom: 2.91667em;
@@ -1236,26 +1234,33 @@ ul {
       .donors .donor a {
         font-size: 2em; } }
 .events {
-  background: transparent url("../images/events/mobile-events3.jpg") no-repeat top center;
-  background-size: cover;
   clear: both; }
   .events .wrapper {
+    background: transparent url("../images/events/mobile-events3.jpg") no-repeat top center;
+    background-size: cover;
     display: inline-block;
-    margin: 0 3%;
-    max-width: 94%;
     padding: 1.875em 0 4.375em;
     text-align: center; }
+  .events .inner {
+    margin: 0 auto;
+    max-width: 94%; }
   .events .event, .events .book {
     margin: 0 5%;
     width: 90%; }
-  .events .event h2 {
-    color: #c1d1df;
-    font-size: 3em;
+  .events h2 {
+    color: #fff;
+    font-size: 1.75em;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 1.15;
-    margin: 0.9375em auto 0.3125em;
-    opacity: 0.8; }
+    margin: 0 auto 1.28571em; }
+  .events .event h3 {
+    color: #FBCB43;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    margin: 0.5em auto 0.625em; }
   .events .event p {
     color: #fff;
     font-weight: 200;
@@ -1283,34 +1288,36 @@ ul {
   .events .book {
     margin-top: 2em; }
     .events .book .book-header {
-      background-color: rgba(38, 63, 106, 0.8);
+      border-bottom: 1px solid #739abc;
       display: inline-block;
-      padding: 1.125em; }
+      margin: 0.5625em;
+      padding-bottom: 0.5625em; }
       .events .book .book-header .cover {
         float: left;
         margin-right: 5%;
+        width: 7.5em;
         max-width: 30%; }
         .events .book .book-header .cover img {
           width: 100%; }
       .events .book .book-header .title {
-        color: #fff;
+        color: #FBCB43;
         line-height: 1.3;
         max-width: 60%;
         text-decoration: none; }
-        .events .book .book-header .title h2 {
-          font-size: 0.875em;
-          font-weight: 200;
+        .events .book .book-header .title h3 {
+          font-size: 1.125em;
+          font-weight: 400;
           margin: 0;
           text-align: left; }
       .events .book .book-header p {
+        color: #fff;
         font-size: 0.875em;
         margin: 0.5em 0 0 0;
         padding: 0;
         text-align: left; }
     .events .book .book-body {
-      background-color: rgba(255, 255, 255, 0.1);
       display: inline-block;
-      padding: 1.125em 1.5em;
+      margin: 1.125em 1.5em;
       text-align: left; }
       .events .book .book-body p {
         color: #fff;
@@ -1350,48 +1357,63 @@ ul {
   width: 100%; }
 
 @media all and (min-width: 36.25em) {
+  .events h2 {
+    font-size: 2em;
+    margin: 0 auto 1.125em; }
   .events .event, .events .book {
     margin: 0 15%;
     width: 70%; }
-  .events .event h2 {
-    font-size: 2em;
-    line-height: 1.15;
-    margin: 1.40625em auto 0.78125em; }
+  .events .event {
+    text-align: left; }
+    .events .event h3 {
+      font-size: 2em;
+      line-height: 1.15;
+      margin: 0.375em auto 0.78125em; }
   .events .book {
     margin-top: 3.5em; }
     .events .book .book-header {
-      padding: 1.5em; }
+      margin: 0.75em;
+      padding-bottom: 0.75em; }
       .events .book .book-header p {
         font-size: 1em; } }
 @media all and (min-width: 45em) {
-  .events {
-    background-image: url("../images/events/events3.jpg"); }
-    .events .wrapper {
-      margin: 0 5%;
-      max-width: 90%;
-      padding: 7.5em 0 5.625em; }
-    .events .event {
-      float: left;
-      margin: 0;
-      width: 42%; }
-    .events .book {
-      float: left;
-      margin: 0;
-      width: 48%; }
-      .events .book .book-header,
-      .events .book .book-body {
-        padding: 2em; }
-    .events .event {
-      margin-right: 10%; }
-      .events .event p {
-        font-size: 1.0625em; }
-      .events .event h2 {
-        font-size: 2.625em;
-        line-height: 1.2;
-        margin: 1.78571em auto 1.07143em; }
-      .events .event .cta-button {
-        font-size: 1.125em;
-        margin-top: 1em; }
+  .events .wrapper {
+    background-image: url("../images/events/events3.jpg");
+    padding: 7.5em 0 5.625em; }
+  .events .inner {
+    max-width: 90%; }
+  .events h2 {
+    font-size: 2.25em;
+    margin: 0 auto 1em; }
+  .events .event {
+    float: left;
+    margin: 0;
+    width: 42%; }
+  .events .book {
+    float: left;
+    margin: 0;
+    width: 48%; }
+    .events .book .book-header .title h3 {
+      font-size: 1.125em; }
+    .events .book .book-header p {
+      font-size: 1.125em; }
+    .events .book .book-body a {
+      font-size: 1.375em; }
+    .events .book .book-header,
+    .events .book .book-body {
+      margin: 1em;
+      padding-bottom: 2em; }
+  .events .event {
+    margin-right: 10%; }
+    .events .event p {
+      font-size: 1.125em; }
+    .events .event h3 {
+      font-size: 2em;
+      line-height: 1.2;
+      margin: 0.375em auto 1.40625em; }
+    .events .event .cta-button {
+      font-size: 1.375em;
+      margin-top: 0.81818em; }
 
   .events-after {
     background-image: url("../images/events/events-after1.jpg");
@@ -1404,34 +1426,39 @@ ul {
 @media all and (min-width: 87.5em) {
   .events .wrapper {
     display: block;
-    margin: 0 auto;
     overflow: auto;
-    padding: 11.25em 0 8.75em;
+    padding: 9.375em 0 8.75em; }
+  .events .inner {
+    max-width: 90%;
     width: 85em; }
+  .events h2 {
+    font-size: 3em;
+    margin: 0 auto 1.5em; }
   .events .event, .events .book {
-    width: 45%; }
+    width: 42%; }
   .events .event {
     margin-right: 10%; }
     .events .event p {
       font-size: 1.375em; }
-    .events .event h2 {
-      font-size: 3em;
+    .events .event h3 {
+      font-size: 2.625em;
       line-height: 1.2;
-      margin: 4.16667em auto 0.72917em; }
+      margin: 0.28571em auto 0.83333em; }
     .events .event .cta-button {
       font-size: 1.75em;
       margin-top: 0.64286em; }
-  .events .book .book-header .title h2 {
+  .events .book .book-header .title h3 {
     font-size: 1.625em;
     font-weight: 400;
     line-height: 1.4; }
   .events .book .book-header p {
-    color: #c1d1df;
     font-size: 1.375em; }
   .events .book .book-body p, .events .book .book-body a {
     font-size: 1.375em;
     letter-spacing: 0.03125em;
     line-height: 1.5; }
+  .events .book .book-body a {
+    font-size: 1.75em; }
 
   .events-after {
     background-position: center center;

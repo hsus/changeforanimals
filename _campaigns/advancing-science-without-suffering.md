@@ -31,9 +31,10 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-science1.jpg
 
 goals:
-  - Ban testing cosmetics on animals or enact import/ sales bans of animal-tested cosmetics in three major markets and make progress toward ending mandatory cosmetics animal testing in China.
-  - Promote the adoption of animal-testing alternatives in international industry regulations.
-  - Accelerate the development of next-generation animal-testing alternatives by steering public and private funding toward non-animal technologies.
+  - <em>Ban testing cosmetics on animals</em> or enact import/ sales bans of animal-tested cosmetics in three major markets and make progress toward ending mandatory cosmetics animal testing in China.
+  - Accelerate the development of next-generation animal-testing alternatives by steering public and private funding toward <em>non-animal technologies</em>.
+  - Promote the adoption of <em>animal-testing alternatives</em> in international industry regulations.
+  
 
 
 celebs:
@@ -42,7 +43,7 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-science1.jpg
     image: /assets/images/celebs/sir-paul.jpg
     name: Sir Paul McCartney
-    title: Muscian, <em>The Beatles</em>
+    title: Muscian
     video: ''
     video-cta: 
     quote: |
@@ -56,12 +57,12 @@ celebs:
     title: President and CEO, The Humane Society of the United States
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/vAgQREBFkL4?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Wayne's Video"
-    quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat."
+    quote: "Rabbits, guinea pigs, mice and rats are all routinely used in tests designed to determine the degree to which a substance can harm them. The tests are unreliable and the actual consumer protections are overstated."
 
 
 donor_story: 
-  - background: /assets/images/donors/donor-story-farm1.jpg
-    mobile-background: /assets/images/donors/mobile-donor-story-farm1.jpg
+  - background: /assets/images/donors/donor-story-science1.jpg
+    mobile-background: /assets/images/donors/mobile-donor-story-science1.jpg
     image: /assets/images/donors/donor-story1.jpg
     title: <strong>Inspiring Others:</strong> Don Sinex’s Story
     body: |

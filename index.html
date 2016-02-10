@@ -6,7 +6,7 @@ body-class: index
 
 victories:
   - title: "80%"
-    text: "<strong>Drop in euthanasia rates</strong><br>since the 1970s after working in collaboration with shelters and rescue groups"
+    text: "<strong>Drop in euthanasia rates</strong><br>since the 1970s after working in collaboration with shelters and rescue groups to increase spay/neuter"
   - title: "171,476"
     text: <strong>Animals cared for by The HSUS</strong><br>and affiliates in the past calendar year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more
   - title: "1,000+"
@@ -17,14 +17,14 @@ victories:
     text: "<strong>Major corporations that have</strong><br>pledged to go cage-free or gestation-crate-free in their supply chains"
 
 event:
-    header: "Join Us"
+    header: "We’re Coming to You"
     body: |
       The Humane Society of the United States is coming to a city near you! We’re hosting exclusive gatherings to talk to animal advocates like you about how you can make a difference.
     url:
     link-text: "Attend an Event"
 
 book:
-  image-url: "/assets/images/book/book-cover1.jpg"
+  image-url: "/assets/images/book/book-cover2.jpg"
   image-alt: "Book Cover: The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals By Wayne Pacelle"
   url: "http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy"
   link-text: "The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals"
@@ -150,24 +150,27 @@ book:
   {% endif %}
 <section class="events" id="events">
   <div class="wrapper">
-    {% if page.event %}
-    <div class="event {{ columns }}">
-      <h2>{{ page.event.header }}</h2>
-      <p>{{ page.event.body }}</p>
-      <a class="cta-button" href="{{ page.event.link }}">{{ page.event.link-text }}</a>
-    </div>
-    {% endif %}
-
-    {% if page.book %}
-    <div class="book {{ columns }}">
-      <div class="book-header">
-        <a class="cover" href="{{ page.book.url }}"><img src="{{ page.book.image-url }}" alt="{{ event_text.book-image-alt }}"></a>
-        <a class="title" href="{{ page.book.url }}"><h2>{{ page.book.link-text }}</h2></a>
-        <p>{{ page.book.author }}</p>
+    <div class="inner">
+      <h2>Connect With Us</h2>
+      {% if page.event %}
+      <div class="event {{ columns }}">
+        <h3>{{ page.event.header }}</h3>
+        <p>{{ page.event.body }}</p>
+        <a class="cta-button" href="{{ page.event.link }}">{{ page.event.link-text }}</a>
       </div>
-      <div class="book-body">
-        <p>{{ page.book.blurb }}</p>
-        <a class="cta-link" href="{{ page.book.url }}">{{ page.book.cta-link }}</a>
+      {% endif %}
+
+      {% if page.book %}
+      <div class="book {{ columns }}">
+        <div class="book-header">
+          <a class="cover" href="{{ page.book.url }}"><img src="{{ page.book.image-url }}" alt="{{ event_text.book-image-alt }}"></a>
+          <a class="title" href="{{ page.book.url }}"><h3>{{ page.book.link-text }}</h3></a>
+          <p>{{ page.book.author }}</p>
+        </div>
+        <div class="book-body">
+          <p>{{ page.book.blurb }}</p>
+          <a class="cta-link" href="{{ page.book.url }}">{{ page.book.cta-link }}</a>
+        </div>
       </div>
     </div>
   </div>

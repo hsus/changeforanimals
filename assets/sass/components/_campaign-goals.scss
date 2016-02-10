@@ -11,9 +11,9 @@
     max-width: 94%;
   }
   h2 {
-    color: $gold;
+    color: $white;
     font-size: em(24);
-    font-weight: 200;
+    font-weight: 700;
     margin-top: 0;
     padding-bottom: 0;
     padding-top: em(40,24);
@@ -33,8 +33,9 @@
       }
     }
     em {
-      color: $gold;
+      color: $yellow;
       font-style: normal;
+      font-weight: 400;
     }
   }
 }
@@ -95,13 +96,13 @@
       max-width: em(1360);
     }
     h2 {
-      font-size: em(36);
-      padding-bottom: em(60,36);
-      padding-top: em(180,36);
+      font-size: em(48);
+      padding-bottom: em(60,48);
+      padding-top: em(180,48);
     }
     .goal {
-      font-size: em(22);
-      margin-bottom: em(100,22);
+      font-size: em(26);
+      margin-bottom: em(100,26);
       width: 37%;
       &:nth-of-type(odd) {
         margin-right: 19%;

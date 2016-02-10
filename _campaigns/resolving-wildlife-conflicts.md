@@ -15,7 +15,7 @@ financial_tagline:
 
 title: Resolving Wildlife Conflicts
 description: |
-  Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to human-wildlife conflicts. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative deer immunocontraception research projects in partnership with leading veterinary medicine schools.
+  Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to human-wildlife conflicts. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative immunocontraception research projects in partnership with leading veterinary medicine schools.
 
 header:
   - background: /assets/images/headers/header-wildlife1.jpg
@@ -30,15 +30,13 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-wildlife1.jpg
 
 goals:
-  - <em>Establish principles and training</em> through the Humane Wildlife Control Association.
+  - <em>Decrease the trade</em> for shark fins, ivory, rhino horns and pangolins.
 
-  - <em>Help four wildlife rehabilitation centers</em>, animal control facilities or shelters reduce wild animal intake and train 300 local groups on urban wildlife conflicts annually.
+  - Decrease trophy hunting of <em>large carnivores in the US</em> in five states and decrease the import of lion, leopard, elephant, hippo and giraffe trophies to the US.
 
-  - Register long-acting ZonaStat-H and PZP immunocontraception in <em>10 states</em>.
+  - Expand <em>wildlife fertility control</em> to manage 10% of the wild horse and burro population (5,000 horses and 1,000 burros would have received treatment) and to manage white-tailed deer in five urban communities.
 
-  - <em>Pass four state laws</em> requiring consideration of non-lethal methods, implement 10 humane management community plans and replace five lethal programs with fertility control.
-
-  - <em>Treat 5,000 wild mares</em> with ZonaStat-H immunocontraceptive and reduce the number of government-held wild horses and burros by helping find them homes.
+  - Expand the <em>Wild Neighbors program</em>, in which 25 communities will adopt innovative, non-lethal methods to manage their urban wildlife conflicts.
 
 
 celebs:

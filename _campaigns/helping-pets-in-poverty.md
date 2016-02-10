@@ -15,7 +15,7 @@ financial_tagline:
   
 title: "Helping Pets in Poverty"
 description: |
-  We’ve made great strides in providing services to underserved communities, stopping puppy mills, fighting for retail sales restrictions and working globally to manage street dogs humanely. Yet U.S. shelters still have great pets available, some communities have shockingly low spay and neuter rates and large-scale commercial dog breeders produce 2 million puppies annually, displacing shelter pets. Worldwide, 250–300 million dogs live on the street.
+  We’ve made great strides in providing services to underserved communities, stopping puppy mills, fighting for retail sales restrictions and working globally to manage street dogs humanely. Yet U.S. shelters still euthanize 2.8 million animals per year, some communities have shockingly low spay and neuter rates, and large-scale commercial dog breeders produce 2 million puppies annually, displacing shelter pets. Worldwide, 250–300 million dogs live on the street.
 
 header:
   - background: /assets/images/headers/header-poverty1.jpg
@@ -41,9 +41,9 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-poverty1.jpg
 
 goals:
-  - "Work through the finance sector to <em>move 100 million animals out of extreme confinement</em> in Central Asia and stem the introduction of such systems in Sub-Saharan Africa."
+  - "Reduce by 200,000 the number of <em>puppies produced by puppy mills</em> by strengthening animal welfare standards, restricting retail sales of puppy mill dogs and persuading pet stores to promote adoption of homeless animals."
   - "Extend our <em>international street dog initiative</em> to vaccinate and sterilize more than a million street dogs—and convince more governments to stop culls."
-  - "Expand our enormously successful <em>Pets for Life</em> mentorship program, helping 200,000 animals in five years."
+  - "Expand our <em>Pets for Life</em> program, which helps local shelters and rescues reach underserved communities, providing care to 200,000 animals in the next five years."
 
 donor_story:
   - background: /assets/images/donors/donor-story-poverty1.jpg
