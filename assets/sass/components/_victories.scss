@@ -1,14 +1,14 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .victories {
-  background: transparent url('../images/victories/mobile-victories3.jpg') no-repeat top center; //quality @ 70
-  background-size: cover;
   min-height: em(480);
-  padding: em(40) 0 0;
   text-align: center;
   .wrapper {
-    max-width: 96%;
+    background: transparent url('../images/victories/mobile-victories4.jpg') no-repeat top center; //quality @ 70
+    background-size: cover;    
+    max-width: 100%;
     margin: 0 auto;
+    padding: 4%;
   }
   .victory {
     display: inline-block;
@@ -19,10 +19,11 @@
   h2 {
     color: $blue;
     font-size: em(26);
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: em(24,26);
     em {
+      color: $bright-blue;
       display: inline-block;
       font-family: $secondary-font;
       font-size: em(36,26);
@@ -36,7 +37,7 @@
     }
   }
   h3 {
-    color: $blue;
+    color: $bright-blue;
     font-size: em(32);
     font-weight: 700;
     letter-spacing: 1px;
@@ -57,7 +58,7 @@
   }
 }
 .victory-after {
-  background: transparent url('../images/victories/mobile-victories-after1.jpg') no-repeat top center; //quality @ 20
+  background: transparent url('../images/victories/mobile-victories-after2.jpg') no-repeat top center; //quality @ 25
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -86,20 +87,18 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .victories {
-    background-image: url('../images/victories/victories3.jpg'); //quality @ 70
     min-height: em(720);
-    padding: em(100) 0 0;
     .wrapper {
-      max-width: 96%;
-      margin: 0 auto;
+      background-image: url('../images/victories/victories4.jpg'); //quality @ 70
     }
     .victory {
-      margin: em(24) em(32);
-      width: 24%;
+      margin: em(24) em(32) em(16);
+      width: 28%;
+      max-width: em(350);
     }
   }
   .victory-after {
-    background-image:  url('../images/victories/victories-after1.jpg'); //quality @ 20
+    background-image:  url('../images/victories/victories-after2.jpg'); //quality @ 25
     background-position: center center;
     background-size: cover;
     height: 85vh;
@@ -112,30 +111,30 @@
 //  Desktop
 @media all and (min-width: $desktop) {
   .victories .wrapper {
-    padding: em(150) em(64) em(110);
+    padding: em(110) 0 em(72);
     .victory {
-      margin: em(36) em(64);
-      width: 22%;
+      margin: em(24) em(32) em(16);
+      width: 28%;
+      max-width: em(400);
     }
     h2 {
       font-size: em(48);
-      margin-bottom: em(48,48);
+      margin-bottom: em(24,48);
       em {
         font-size: em(60,48);
         letter-spacing: -0.05em;
       }
     }
     h3 {
-      font-size: em(54);
+      font-size: em(60);
       margin-bottom: em(20,54);
       small {
         font-size: em(28,54);
       }
     }
-
     p {
-      font-size: em(20);
-      margin-top: em(8,20);
+      font-size: em(24);
+      margin-top: em(8,24);
     }
   }
   .victory-after {

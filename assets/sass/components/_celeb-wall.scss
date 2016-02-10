@@ -1,7 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .index .celeb {
-  background: transparent url('/assets/images/celebs/mobile-celeb-farm1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('/assets/images/celebs/mobile-celeb-wall1.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   color: $white;
   display: inline-block;
@@ -12,28 +12,38 @@
     max-width: 96%;
     margin: 0 auto;
   }
+  h2 {
+    color: $light-gray;
+  }
   .single {
     margin-bottom: em(16);
-  }
-  .headshots {
-    .headshot {
-      @include default-transition;      
-      width: em(120);
-      &:hover {
-       opacity: 1;
-       cursor: pointer;
+    .headshots {
+      .headshot {
+        @include default-transition;      
+        width: em(120);
+        &:hover {
+         opacity: 1;
+         cursor: pointer;
+        }
+      }
+      h3 {
+        margin-top: 0;
+        font-size: em(18);
+        line-height: 1.2;
+      }
+      p {
+        font-size: em(16);
+        line-height: 1.4;
       }
     }
-    h3 {
+    &.active {
       margin-top: 0;
-      font-size: em(18);
-      line-height: 1.2;
-    }
-    p {
-      font-size: em(16);
-      line-height: 1.4;
+      .headshots .headshot {
+        opacity: 1;
+      }
     }
   }
+
   .hide {
     display: none;
   }
@@ -53,7 +63,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .index .celeb {
-    background-image: url('/assets/images/celebs/celeb-farm1.jpg');
+    background-image: url('/assets/images/celebs/celeb-wall1.jpg');
     line-height: 1.6;
     padding-bottom: em(40);
     padding-top: em(80);
@@ -93,12 +103,6 @@
         top: em(250);
         margin: 0 auto;
         max-width: 80%;
-      }
-      &.active {
-        margin-top: 0;
-        .headimg {
-          opacity: 1;
-        }
       }
     }
   }

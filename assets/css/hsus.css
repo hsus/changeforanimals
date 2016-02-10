@@ -1053,7 +1053,7 @@ ul {
     .campaign nav a.text:hover, .campaign nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .index .celeb {
-  background: transparent url("/assets/images/celebs/mobile-celeb-farm1.jpg") no-repeat top center;
+  background: transparent url("/assets/images/celebs/mobile-celeb-wall1.jpg") no-repeat top center;
   background-size: cover;
   color: #fff;
   display: inline-block;
@@ -1063,23 +1063,29 @@ ul {
     text-align: center;
     max-width: 96%;
     margin: 0 auto; }
+  .index .celeb h2 {
+    color: #c1d1df; }
   .index .celeb .single {
     margin-bottom: 1em; }
-  .index .celeb .headshots .headshot {
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    width: 7.5em; }
-    .index .celeb .headshots .headshot:hover {
-      opacity: 1;
-      cursor: pointer; }
-  .index .celeb .headshots h3 {
-    margin-top: 0;
-    font-size: 1.125em;
-    line-height: 1.2; }
-  .index .celeb .headshots p {
-    font-size: 1em;
-    line-height: 1.4; }
+    .index .celeb .single .headshots .headshot {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      width: 7.5em; }
+      .index .celeb .single .headshots .headshot:hover {
+        opacity: 1;
+        cursor: pointer; }
+    .index .celeb .single .headshots h3 {
+      margin-top: 0;
+      font-size: 1.125em;
+      line-height: 1.2; }
+    .index .celeb .single .headshots p {
+      font-size: 1em;
+      line-height: 1.4; }
+    .index .celeb .single.active {
+      margin-top: 0; }
+      .index .celeb .single.active .headshots .headshot {
+        opacity: 1; }
   .index .celeb .hide {
     display: none; }
   .index .celeb a.video {
@@ -1089,7 +1095,7 @@ ul {
 
 @media all and (min-width: 45em) {
   .index .celeb {
-    background-image: url("/assets/images/celebs/celeb-farm1.jpg");
+    background-image: url("/assets/images/celebs/celeb-wall1.jpg");
     line-height: 1.6;
     padding-bottom: 2.5em;
     padding-top: 5em;
@@ -1123,11 +1129,7 @@ ul {
         right: 0;
         top: 15.625em;
         margin: 0 auto;
-        max-width: 80%; }
-      .index .celeb .single.active {
-        margin-top: 0; }
-        .index .celeb .single.active .headimg {
-          opacity: 1; } }
+        max-width: 80%; } }
 @media all and (min-width: 87.5em) {
   .index .celeb {
     padding-bottom: 3.75em;
@@ -1344,7 +1346,6 @@ ul {
   background-size: cover;
   height: 80vh;
   min-height: 80vh;
-  min-height: 30em;
   position: relative;
   width: 100%; }
 
@@ -1398,7 +1399,6 @@ ul {
     background-size: cover;
     height: 85vh;
     min-height: 85vh;
-    min-height: 45em;
     position: static;
     width: 100%; } }
 @media all and (min-width: 87.5em) {
@@ -1438,7 +1438,6 @@ ul {
     background-size: cover;
     height: 90vh;
     min-height: 90vh;
-    min-height: 62.5em;
     position: static;
     width: 100%; } }
 footer {
@@ -1755,19 +1754,18 @@ footer {
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
         transition: all 0.3s linear;
-        color: #FBCB43;
+        color: #3e7fb7;
         content: " →";
-        font-size: 1.25em;
-        line-height: 1;
+        font-size: 1.5em;
+        line-height: 0.7;
         position: relative;
-        top: 0.1em; }
+        top: 0.125em; }
       .outro .action a:hover.donate:after, .outro .action a:hover.attend:after {
         left: 1px; }
     .outro .action h4 {
       font-size: 0.8em;
-      letter-spacing: 3px;
-      margin-bottom: 0.5em;
-      opacity: 0.6; }
+      letter-spacing: 1px;
+      margin-bottom: 0.5em; }
 
 @media all and (min-width: 36.25em) {
   .outro {
@@ -1791,9 +1789,10 @@ footer {
       font-size: 1.625em;
       padding: 0.61538em 0 1.23077em; }
     .outro .action {
-      float: left;
+      display: inline-block;
       margin-bottom: 1.5em;
-      width: 50%; } }
+      width: 32%;
+      vertical-align: top; } }
 @media all and (min-width: 45em) {
   .outro {
     background-image: url("../images/outro/outro3.jpg");
@@ -1817,10 +1816,8 @@ footer {
       font-size: 2em;
       padding: 0.5em 0 1em; }
     .outro .action {
-      float: left;
       font-size: 1.0625em;
-      margin-bottom: 1.5em;
-      width: 50%; } }
+      margin-bottom: 1.5em; } }
 @media all and (min-width: 87.5em) {
   .outro {
     padding-bottom: 4.5em; }
@@ -1839,21 +1836,15 @@ footer {
     .outro h3 {
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 3em;
-      padding: 0.58333em 0 0.75em; }
+      padding: 0; }
     .outro .action {
-      float: left;
-      font-size: 2em;
+      font-size: 1.75em;
       line-height: 1.6;
-      margin-bottom: 1.5em;
-      padding-top: 0.16667em;
-      width: 50%; }
+      margin-bottom: 0.5em;
+      padding-top: 0.16667em; }
       .outro .action h4 {
-        font-size: 0.625em;
-        letter-spacing: 3px;
-        margin-bottom: 0.8em;
-        opacity: 0.6; }
-      .outro .action.event a {
-        margin-top: 0.1875em; } }
+        font-size: 1.14286em;
+        margin-bottom: 0.07143em; } }
 .president {
   background-color: #e9eaec;
   display: inline-block;
@@ -1878,7 +1869,9 @@ footer {
       letter-spacing: 1px; }
       .president .letter-top h3 em {
         color: #739abc;
-        font-style: normal; }
+        font-style: normal;
+        font-family: "MyWriteHand", "Brush Script MT", cursive;
+        font-size: 1.33333em; }
   .president .pic {
     text-align: center; }
     .president .pic .sig {
@@ -2273,14 +2266,14 @@ footer {
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
 .victories {
-  background: transparent url("../images/victories/mobile-victories3.jpg") no-repeat top center;
-  background-size: cover;
   min-height: 30em;
-  padding: 2.5em 0 0;
   text-align: center; }
   .victories .wrapper {
-    max-width: 96%;
-    margin: 0 auto; }
+    background: transparent url("../images/victories/mobile-victories4.jpg") no-repeat top center;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4%; }
   .victories .victory {
     display: inline-block;
     margin: 0;
@@ -2289,10 +2282,11 @@ footer {
   .victories h2 {
     color: #263f6a;
     font-size: 1.625em;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 0.92308em; }
     .victories h2 em {
+      color: #3e7fb7;
       display: inline-block;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.38462em;
@@ -2303,7 +2297,7 @@ footer {
       .victories h2 em::first-letter {
         letter-spacing: -10px; }
   .victories h3 {
-    color: #263f6a;
+    color: #3e7fb7;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -2321,7 +2315,7 @@ footer {
     margin-top: 0.57143em; }
 
 .victory-after {
-  background: transparent url("../images/victories/mobile-victories-after1.jpg") no-repeat top center;
+  background: transparent url("../images/victories/mobile-victories-after2.jpg") no-repeat top center;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -2341,18 +2335,16 @@ footer {
       width: 36%; } }
 @media all and (min-width: 45em) {
   .victories {
-    background-image: url("../images/victories/victories3.jpg");
-    min-height: 45em;
-    padding: 6.25em 0 0; }
+    min-height: 45em; }
     .victories .wrapper {
-      max-width: 96%;
-      margin: 0 auto; }
+      background-image: url("../images/victories/victories4.jpg"); }
     .victories .victory {
-      margin: 1.5em 2em;
-      width: 24%; }
+      margin: 1.5em 2em 1em;
+      width: 28%;
+      max-width: 21.875em; }
 
   .victory-after {
-    background-image: url("../images/victories/victories-after1.jpg");
+    background-image: url("../images/victories/victories-after2.jpg");
     background-position: center center;
     background-size: cover;
     height: 85vh;
@@ -2361,24 +2353,25 @@ footer {
     width: 100%; } }
 @media all and (min-width: 87.5em) {
   .victories .wrapper {
-    padding: 9.375em 4em 6.875em; }
+    padding: 6.875em 0 4.5em; }
     .victories .wrapper .victory {
-      margin: 2.25em 4em;
-      width: 22%; }
+      margin: 1.5em 2em 1em;
+      width: 28%;
+      max-width: 25em; }
     .victories .wrapper h2 {
       font-size: 3em;
-      margin-bottom: 1em; }
+      margin-bottom: 0.5em; }
       .victories .wrapper h2 em {
         font-size: 1.25em;
         letter-spacing: -0.05em; }
     .victories .wrapper h3 {
-      font-size: 3.375em;
+      font-size: 3.75em;
       margin-bottom: 0.37037em; }
       .victories .wrapper h3 small {
         font-size: 0.51852em; }
     .victories .wrapper p {
-      font-size: 1.25em;
-      margin-top: 0.4em; }
+      font-size: 1.5em;
+      margin-top: 0.33333em; }
 
   .victory-after {
     background-position: center center;

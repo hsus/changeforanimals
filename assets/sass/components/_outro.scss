@@ -39,12 +39,12 @@
       &.donate:after,
       &.attend:after {
         @include default-transition;
-        color: $yellow;
+        color: $bright-blue;
         content: " →";
-        font-size: em(20);
-        line-height: 1;
+        font-size: em(24);
+        line-height: 0.7;
         position: relative;
-        top: em(2,20);
+        top: em(2);
       }
       &:hover.donate:after,
       &:hover.attend:after {
@@ -53,9 +53,8 @@
     }
     h4 {
       font-size: em(16,20);
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       margin-bottom: em(8,16);
-      opacity: 0.6;
     }
   }
 }
@@ -88,9 +87,10 @@
       padding: em(16,26) 0 em(32,26);
     }
     .action {
-      float: left;
+      display: inline-block;
       margin-bottom: em(24);
-      width: 50%;
+      width: 32%;
+      vertical-align: top;
     }
   }
 }
@@ -124,10 +124,8 @@
       padding: em(16,32) 0 em(32,32);
     }
     .action {
-      float: left;
       font-size: em(17);
       margin-bottom: em(24);
-      width: 50%;
     }
   }
 }
@@ -155,23 +153,16 @@
     h3 {
       font-family: $secondary-font;
       font-size: em(48);
-      padding: em(28,48) 0 em(36,48);
+      padding: 0;
     }
     .action {
-      float: left;
-      font-size: em(32);
+      font-size: em(28);
       line-height: 1.6;
-      margin-bottom: em(24);
+      margin-bottom: em(12,24);
       padding-top: em(4,24);
-      width: 50%;
       h4 {
-        font-size: em(20,32);
-        letter-spacing: 3px;
-        margin-bottom: em(16,20);
-        opacity: 0.6;
-      }
-      &.event a {
-        margin-top: em(6,32);
+        font-size: em(32,28);
+        margin-bottom: em(2,28);
       }
     }
   }

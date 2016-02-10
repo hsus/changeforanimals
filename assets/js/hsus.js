@@ -282,6 +282,7 @@ $(document).ready(function() {
   });
 
   // Celeb Wall 
+  $('.celeb .single').first().addClass('active').find('.hide').show();
   $('.headshot').click(function() {
     var el = $(this),
         celeb = el.parent().parent();

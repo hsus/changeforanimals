@@ -27,6 +27,8 @@
       em {
         color: $light-blue;
         font-style: normal;
+        font-family: $secondary-font;
+        font-size: em(24,18)
       }
     }
   }
