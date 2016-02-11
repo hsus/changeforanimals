@@ -34,7 +34,7 @@ goals:
   - <em>Ban testing cosmetics on animals</em> or enact import/ sales bans of animal-tested cosmetics in three major markets and make progress toward ending mandatory cosmetics animal testing in China.
   - Accelerate the development of next-generation animal-testing alternatives by steering public and private funding toward <em>non-animal technologies</em>.
   - Promote the adoption of <em>animal-testing alternatives</em> in international industry regulations.
-  
+
 
 
 celebs:
@@ -43,9 +43,9 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-science1.jpg
     image: /assets/images/celebs/sir-paul.jpg
     name: Sir Paul McCartney
-    title: Muscian
+    title: Musician
     video: ''
-    video-cta: 
+    video-cta:
     quote: |
       If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, <em>I BELIEVE EVERYONE WOULD LEAVE CRUELTY ON THE SHELF.</em>
 
@@ -60,7 +60,7 @@ celebs:
     quote: "Rabbits, guinea pigs, mice and rats are all routinely used in tests designed to determine the degree to which a substance can harm them. The tests are unreliable and the actual consumer protections are overstated."
 
 
-donor_story: 
+donor_story:
   - background: /assets/images/donors/donor-story-science1.jpg
     mobile-background: /assets/images/donors/mobile-donor-story-science1.jpg
     image: /assets/images/donors/donor-story1.jpg
