@@ -18,35 +18,35 @@ footer-tagline: "Creating transformational change for all animals"
 
 social-links:
   - channel: "facebook"
-    url: ""
+    url: "https://www.facebook.com/humanesociety"
     icon: "/assets/images/icons/facebook.svg"
 
   - channel: "twitter"
-    url: ""
+    url: "http://twitter.com/HumaneSociety"
     icon: "/assets/images/icons/twitter.svg"
 
   - channel: "youtube"
-    url: ""
+    url: "http://www.youtube.com/user/hsus"
     icon: "/assets/images/icons/youtube.svg"
 
   - channel: "instagram"
-    url: ""
+    url: "http://www.instagram.com/humanesociety"
     icon: "/assets/images/icons/instagram.svg"
 
   - channel: "linkedin"
-    url: ""
+    url: "http://www.linkedin.com/company/the-humane-society-of-the-united-states"
     icon: "/assets/images/icons/linkedin2.svg"
 
   - channel: "pinterest"
-    url: ""
+    url: "http://pinterest.com/humanesociety/"
     icon: "/assets/images/icons/pinterest.svg"
 
   - channel: "googleplus"
-    url: ""
+    url: "https://plus.google.com/+hsus/posts"
     icon: "/assets/images/icons/googleplus1.svg"
 
   - channel: "tumblr"
-    url: ""
+    url: "http://humanesociety.tumblr.com/"
     icon: "/assets/images/icons/tumblr2.svg"
 
 privacy:
