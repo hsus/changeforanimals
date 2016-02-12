@@ -2317,6 +2317,7 @@ footer {
     .victories h2 em {
       color: #3e7fb7;
       display: inline-block;
+      display: -moz-inline-stack;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.38462em;
       font-style: normal;
@@ -2393,6 +2394,8 @@ footer {
       .victories .wrapper h2 em {
         font-size: 1.25em;
         letter-spacing: -0.05em; }
+        .victories .wrapper h2 em::first-letter {
+          letter-spacing: -15px; }
     .victories .wrapper h3 {
       font-size: 3.75em;
       margin-bottom: 0.37037em; }
