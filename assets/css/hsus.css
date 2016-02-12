@@ -1536,14 +1536,16 @@ footer {
       footer .social .googleplus:hover path.bg {
         fill: #dc4e41; }
     footer .social .tumblr {
-      padding: 0.4375em;
+      padding: 0.3125em;
       bottom: 0.125em;
       margin-right: 0; }
       footer .social .tumblr:hover path {
         fill: #36465d; }
     footer .social img, footer .social svg {
       height: auto;
-      width: 100%; }
+      width: auto;
+      max-height: 100%;
+      max-width: 100%; }
   footer .privacy-contact {
     margin-top: 1.25em;
     color: #fff; }
