@@ -1,4 +1,4 @@
-hsus-url: "//www.humanesociety.org/"
+hsus-url: "//www.humanesociety.org/?credit=web_phil_changinglives"
 
 logos:
   logo:
@@ -9,7 +9,7 @@ logos:
   int:
     url: "//www.hsi.org/"
     image-url: "/assets/images/logos/logo-int.svg"
-    alt: "The Humane Society International"
+    alt: "Humane Society International"
 
 
 tagline: "a humane society<br/>starts with you"
@@ -51,11 +51,11 @@ social-links:
 
 privacy:
   title: "Privacy Policy"
-  url: ""
+  url: "http://www.humanesociety.org/privacy.html?credit=web_phil_changinglives"
 
 contact:
   title: "Contact Us"
-  url: ""
+  url: "mailto:changinglives@humanesociety.org"
 
 copyright: "The Humane Society of the United States"
 

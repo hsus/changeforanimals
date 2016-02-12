@@ -20,13 +20,13 @@ event:
     header: "We’re Coming to You"
     body: |
       The Humane Society of the United States is coming to a city near you! We’re hosting exclusive gatherings to talk to animal advocates like you about how you can make a difference.
-    url:
+    url: "https://secure.humanesociety.org/site/SPageServer?pagename=humane_startswithyou&s_src=web_phil_changinglives"
     link-text: "Attend an Event"
 
 book:
-  image-url: "/assets/images/book/book-cover2.jpg"
+  image-url: "/assets/images/book/humane-economy-wayne-pacelle-179x270.jpg"
   image-alt: "Book Cover: The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals By Wayne Pacelle"
-  url: "http://www.humanesociety.org/about/events/humane-economy/?credit=web_vanity_humane-economy"
+  url: "http://www.humanesociety.org/about/events/humane-economy/?credit=web_phil_changinglives"
   link-text: "The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals"
   author: "By Wayne Pacelle"
   blurb: "<em>The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals</em> describes a revolution in American business and public policy that is changing forever how we treat animals and conduct commerce. Wayne Pacelle, president and CEO of the nation’s most powerful animal protection organization, tells the story from the frontlines, in a book that speaks to both mind and heart."
@@ -46,6 +46,9 @@ book:
     - name: "The Davidson Family"
       url:
       link-prompt: "Read their story"
+
+donate:
+  url: "https://secure.humanesociety.org/site/Donation2?df_id=17520&17520.donation=form1&s_src=web_phil_changinglives"
 
 ---
 
@@ -156,7 +159,7 @@ book:
       <div class="event {{ columns }}">
         <h3>{{ page.event.header }}</h3>
         <p>{{ page.event.body }}</p>
-        <a class="cta-button" href="{{ page.event.link }}">{{ page.event.link-text }}</a>
+        <a class="cta-button" href="{{ page.event.url }}">{{ page.event.link-text }}</a>
       </div>
       {% endif %}
 
