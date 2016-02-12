@@ -23,6 +23,7 @@
     display: block;
     font-family: "MyWriteHand";
     font-size: em(36);
+    letter-spacing: em(-5,36);
     font-style: normal;
     font-weight: normal;
     line-height: 1.1;
@@ -39,6 +40,7 @@
     }
     .tagline {
       font-size: em(64);
+      letter-spacing: em(-5,64);
       margin: 0 auto em(180,64);
     }
   }
@@ -50,6 +52,7 @@
     background-image: url('../images/headers/header2.jpg');
     .tagline {
       font-size: em(84);
+      letter-spacing: em(-5,84);
       margin: 0 auto em(240,84);
     }
   }
