@@ -30,11 +30,11 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-cruelty1.jpg
 
 goals:
-  - Expand our network of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems.
+  - <em>Expand our network</em> of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems.
 
-  - Ban dogfighting in 10 countries and reduce dogfighting by 15 percent in Costa Rica and the Philippines, as measured by raids, arrests and dogfighting rings dismantled.
+  - Ban dogfighting in 10 countries and <em>reduce dogfighting by 15 percent</em> in Costa Rica and the Philippines, as measured by raids, arrests and dogfighting rings dismantled.
 
-  - Dismantle 30 of the largest organized dogfighting networks in the United States.
+  - Dismantle 30 of the largest organized <em>dogfighting networks</em> in the United States.
 
 celebs:
   - class: celeb1
@@ -45,8 +45,7 @@ celebs:
     title: Actor, <em>Vampire Diaries</em>
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/v57boTG4HEk?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Ian's Video"
-    quote: |
-      <em>PROTECTING ANIMALS</em> from the worst forms of cruelty <em>IS PART OF A CIVIL SOCIETY</em>, and it’s time for every nation in the world to have that. <em>YOU...CAN MAKE IT A REALITY</em>.
+    quote: "Protecting animals from the worst forms of cruelty is part of a civil society, and it’s time for every nation in the world to have that. You...can make it a reality."
 
 donor_story: 
   - background: /assets/images/donors/donor-story-farm1.jpg
