@@ -1,0 +1,133 @@
+// Component template. See helpers/_02-config.scss for actual widths.
+// Default / Mobile
+.index .celeb {
+  background: transparent url('/assets/images/celebs/mobile-celeb-wall1.jpg') no-repeat top center; //quality @ 70
+  background-size: cover;
+  color: $white;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  .wrapper {
+    text-align: center;
+    max-width: 96%;
+    margin: 0 auto;
+  }
+  h2 {
+    color: $light-gray;
+  }
+  .single {
+    margin-bottom: em(16);
+    .headshots {
+      .headshot {
+        @include default-transition;      
+        width: em(120);
+        &:hover {
+         opacity: 1;
+         cursor: pointer;
+        }
+      }
+      h3 {
+        margin-top: 0;
+        font-size: em(18);
+        line-height: 1.2;
+      }
+      p {
+        font-size: em(16);
+        line-height: 1.4;
+      }
+    }
+    &.active {
+      margin-top: 0;
+      .headshots .headshot {
+        opacity: 1;
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+  a.video {
+    color: $white;
+    font-size: em(18);
+    cursor: pointer;
+  }
+}
+
+//  Tablet
+@media all and (min-width: $tablet) {
+  .index .celeb {
+  }
+}
+
+//  Large Tablet
+@media all and (min-width: $lg-tablet) {
+  .index .celeb {
+    background-image: url('/assets/images/celebs/celeb-wall1.jpg');
+    line-height: 1.6;
+    padding-bottom: em(40);
+    padding-top: em(80);
+    text-align: center;
+    width: 100%;
+    min-height: em(600);
+    .wrapper {
+      position: relative;
+    }
+    .single {
+      @include default-transition;
+      margin-top: em(40);
+      display: inline-block;      
+      max-width: em(150);
+      width: 13%;
+      vertical-align: top;
+      .headshots {
+        .headshot {          
+          opacity: 0.6;
+          width: 80%;
+          &:hover {
+           opacity: 1;
+           cursor: pointer;
+          }
+        }
+        h3 {
+          font-size: em(16);
+        }
+        p {
+          font-size: em(14);
+        }
+      }
+      .info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: em(250);
+        margin: 0 auto;
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+//  Desktop
+@media all and (min-width: $desktop) {
+  .index .celeb {
+    padding-bottom: em(60);
+    padding-top: em(110);
+    min-height: em(700);
+    .single {
+      .headshots {
+        h3 {
+          font-size: em(18);
+        }
+        p {
+          font-size: em(16);
+        }
+      }
+      .info {
+        top: em(265);
+        max-width: 50%;
+      }
+    }
+  }
+}
+

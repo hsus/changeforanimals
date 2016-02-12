@@ -8,10 +8,14 @@
 // Note: darken/lighten used, for effect, e.g.:
 // .example:hover { color: darken($font-name, 5%); }
 
-$blue: #152b51; 
+$blue: #263f6a; 
+$bright-blue: #3e7fb7;
 $light-blue: #739abc; 
 $dark-blue: #060e25;
-$yellow: #ce8e00;  
+
+$gold: #ce8e00;
+$yellow: #FBCB43;
+
 $red: #EE2324;  
 
 $light-gray: #c1d1df;
@@ -20,16 +24,16 @@ $light-grey: $light-gray;
 $medium-grey: $medium-gray;
 $black: #000;
 
-$off-white: $light-gray;
 $white: #fff;
+$off-white: #e9eaec;
 
 // fonts
 $primary-font: 'Frutiger W01',sans-serif;
 $secondary-font: 'MyWriteHand','Brush Script MT', cursive;
 
-html, body { font-family: $primary-font; font-weight: 200; font-size: 16px; color: $white; background-color: $blue; }
-h1 { color: $white; }
-a { color: $yellow; }
+html, body { font-family: $primary-font; font-weight: 200; font-size: 16px; color: $blue; background-color: $off-white; }
+h1 { color: $blue; }
+a { color: $blue; }
 a:hover, a:focus { 
   color: darken($yellow, 5%);
   @include transition(color 0.3s linear,background-color 0.3s linear);
@@ -42,17 +46,17 @@ ul {
   padding:0;
   margin:0;
   li {
-    padding-bottom: em(16);
-    padding-left: em(18);
-    text-indent: -1.2em;
+    padding-bottom: em(18);
+    padding-left: em(22);
+    letter-spacing: 0;
+    text-indent: -1.3em;
     &:before {
-      color: $yellow;
+      color: $light-blue;
       content: "•";
-      font-size: em(12);
+      font-size: em(10);
       line-height: 0.5;
-      padding-right: em(16);
+      padding-right: em(14,10);
       position: relative;
-      top: 2px;
     }
   }
 }

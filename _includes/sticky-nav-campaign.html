@@ -4,13 +4,23 @@
 
     <div class="mobile-menu" id="mobile-menu">
       <a href="#goals" class="text about">About the Campaign</a>
-      <a href="#get-involved" class="text get-involved">Get Involved</a>
+      <a href="#get-involved" class="text get-involved">Get Involved</a>      
+      {% assign next = page.order | times: 1 | plus: 1 %}
       {% for c in site.campaigns %}
-      {% if c.order == page.order + 1 %}
-      <a href="{{ c.url}}" class="next text">
-          <span class="post-title">{{ c.title }}</span>
-      </a>
-      {% endif %}
+        {% if c.order == next %}
+        <a href="{{ c.url}}" class="next text">
+            <span class="post-title">{{ c.title }}</span>
+        </a>
+        {% elsif c.order == 5 and page.order == 5  %}
+          {% for f in site.campaigns %}
+            {% if f.order == 1 %}
+              {% assign start = f %}
+            {% endif %}
+          {% endfor %}
+          <a href="{{ start.url }}" class="next text">
+              <span class="post-title">{{ start.title }}</span>
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
 
@@ -20,13 +30,21 @@
     </div>
 
     <div class="next-menu">
-      {% assign next = page.order | times: 1 | plus: 1 %}
       {% for c in site.campaigns %}
-      {% if c.order == next %}
-        <a href="{{ c.url }}" class="next text">
-            <span class="post-title">{{ c.title }}</span>
-        </a>
-      {% endif %}
+        {% if c.order == next %}
+          <a href="{{ c.url }}" class="next text">
+              <span class="post-title">{{ c.title }}</span>
+          </a>
+        {% elsif c.order == 5 and page.order == 5  %}
+          {% for f in site.campaigns %}
+            {% if f.order == 1 %}
+              {% assign start = f %}
+            {% endif %}
+          {% endfor %}
+          <a href="{{ start.url }}" class="next text">
+              <span class="post-title">{{ start.title }}</span>
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
 

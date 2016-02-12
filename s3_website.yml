@@ -6,11 +6,11 @@ s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 
 # Amazon s3 bucket name.
-s3_bucket: changinglives.humanesociety.org
+s3_bucket: production.changinglives.humanesociety.org
 
-# # Cloudfront settings
-# cloudfront_distribution_id: E1XYTMSM5HGUOM
-# cloudfront_invalidate_root: I1E6YR2RGK9NP4
+# Cloudfront settings
+cloudfront_distribution_id: E1XYTMSM5HGUOM
+cloudfront_invalidate_root: true
 
 # Concurrency level for uploads. Decrease if errors are occurring.
 concurrency_level: 5
@@ -26,5 +26,5 @@ gzip:
 # Set browser caching.
 max_age:
   "assets/*": 6000
-  "assets/stylesheets/*": 300
+  "assets/css/*": 300
   "*": 300

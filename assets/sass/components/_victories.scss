@@ -1,52 +1,71 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
-.victories .wrapper {
-  background: transparent url('../images/victories/mobile-victories1.jpg') no-repeat top center; //quality @ 70
-  background-size: cover;
+.victories {
   min-height: em(480);
-  padding: em(40) 0 em(70);
   text-align: center;
+  .wrapper {
+    background: transparent url('../images/victories/mobile-victories4.jpg') no-repeat top center; //quality @ 70
+    background-size: cover;    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4%;
+  }
   .victory {
     display: inline-block;
     margin: 0;
     vertical-align: top;
     width: 80%;
   }
-  h2,h3 {
-    color: $yellow;
-    font-size: em(32);
-    font-weight: 200;
+  h2 {
+    color: $blue;
+    font-size: em(26);
+    font-weight: 400;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    margin-bottom: em(24,26);
+    em {
+      color: $bright-blue;
+      display: inline-block;
+      font-family: $secondary-font;
+      font-size: em(36,26);
+      font-style: normal;
+      left: -3px;
+      letter-spacing: -0.05em;
+      position: relative;
+      &::first-letter {
+        letter-spacing: -10px;
+      }
+    }
+  }
+  h3 {
+    color: $bright-blue;
+    font-size: em(32);
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 0.6;
+    margin-bottom: em(20,32);
     small {
       font-size: em(16,32);
       font-weight: 400;
-      letter-spacing: none;
+      letter-spacing: 0;
     }
   }
-  h2 {
-    font-size: em(24);
-    letter-spacing: 2px;
-    margin-bottom: em(24,24);
-  }
   p {
-    color: $light-blue;
+    color: $blue;
     font-size: em(14);
-    letter-spacing: em(0.5);
+    font-weight: 200;
+    letter-spacing: 1px;
     margin-top: em(8,14);
   }
 }
 .victory-after {
-  background: transparent url('../images/victories/mobile-victories-after1.jpg') no-repeat top center; //quality @ 20
+  background: transparent url('../images/victories/mobile-victories-after2.jpg') no-repeat top center; //quality @ 25
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
-  min-height: em(480);
-  position: static;
   height: 80vh;
   min-height: 80vh;
+  position: relative;
   width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 
@@ -55,7 +74,8 @@
   .victories .wrapper {
     padding: em(40) 0 em(70);
     h2 {
-      font-size: em(26);
+      font-size: em(32);
+      margin-bottom: em(24,32);
     }
     .victory {
       margin: em(12) em(16) 0;
@@ -66,61 +86,63 @@
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
-  .victories .wrapper {
-    background-image:  url('../images/victories/victories1.jpg'); //quality @ 70
+  .victories {
     min-height: em(720);
-    padding: em(100) 0 em(70);
+    .wrapper {
+      background-image: url('../images/victories/victories4.jpg'); //quality @ 70
+    }
     .victory {
-      margin: em(24) em(32);
-      width: 24%;
+      margin: em(24) em(32) em(16);
+      width: 28%;
+      max-width: em(350);
     }
   }
   .victory-after {
-    background-image:  url('../images/victories/victories-after1.jpg'); //quality @ 20
-    min-height: em(720);
-    position: static;
+    background-image:  url('../images/victories/victories-after2.jpg'); //quality @ 25
+    background-position: center center;
+    background-size: cover;
     height: 85vh;
     min-height: 85vh;
+    position: static;
     width: 100%;
-    background-size: cover;
-    background-position: center center;
   }
 }
 
 //  Desktop
 @media all and (min-width: $desktop) {
   .victories .wrapper {
-    padding: em(150) em(64) em(90);
+    padding: em(110) 0 em(72);
     .victory {
-      margin: em(36) em(64);
-      width: 22%;
-    }
-    h2,h3 {
-      font-size: em(52);
-      letter-spacing: none;
-      small {
-        font-size: em(22,52);
-        letter-spacing: -0.02em;
-      }
+      margin: em(24) em(32) em(16);
+      width: 28%;
+      max-width: em(400);
     }
     h2 {
-      font-size: em(36);
-      letter-spacing: 3px;
-      margin-bottom: em(32,36);
+      font-size: em(48);
+      margin-bottom: em(24,48);
+      em {
+        font-size: em(60,48);
+        letter-spacing: -0.05em;
+      }
+    }
+    h3 {
+      font-size: em(60);
+      margin-bottom: em(20,54);
+      small {
+        font-size: em(28,54);
+      }
     }
     p {
-      font-size: em(20);
-      letter-spacing: em(-0.05);
-      margin-top: em(8,20);
+      font-size: em(24);
+      margin-top: em(8,24);
     }
   }
   .victory-after {
-    min-height: em(1000);
-    position: static;
+    background-position: center center;
+    background-size: cover;
     height: 90vh;
     min-height: 90vh;
+    position: static;
     width: 100%;
-    background-size: cover;
-    background-position: center center;
   }
 }

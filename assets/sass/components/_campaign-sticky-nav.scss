@@ -1,29 +1,28 @@
 // Default / Mobile
 .campaign nav {
+  background-color: $blue;
   display: none;
   position: fixed;
-  background-color: $blue;
   text-align: right;
   width: 100%;
   z-index: 1000;
   .logo-sm {
+    float: left;
+    height: auto;
+    max-width: 70%;
     padding: em(20) 0 em(18) em(18);
     width: em(265);
-    max-width: 70%;
-    height: auto;
-    float: left;
   }
-  
   .mobile-menu-icon {
     @include default-transition;
     cursor: pointer;
     display: inline-block;
     float: right;
     height: em(75);
+    margin-right: em(16);
     position: relative;
     text-indent: -9999px;
     width: em(75);
-    margin-right: em(16);
     div {
       height: 100%;
       position: relative;
@@ -64,8 +63,8 @@
         &:before,
         &:after {
           background: $white;
-          transition: transform 0.3s;
           transform: rotate(45deg) translateY(0);
+          transition: transform 0.3s;
         }
         &:after {
           transform: rotate(-45deg) translateY(0) ;
@@ -85,17 +84,18 @@
     top: em(75);
     z-index: 100;
     a {
+      color: $white;
       display: block;
-      text-decoration: none;
       font-size: em(24);
-      line-height: 2.5;
+      line-height: 1.2;
+      padding: em(16,24);
+      text-decoration: none;
     }
   }
   .menu,
   .next-menu {
     display: none;
   }
-
 }
 
 //  Large Tablet
@@ -109,32 +109,32 @@
       margin-left: em(50);
     }
     a.text {
-      font-weight: 200;
-      font-size: em(14);
+      @include default-transition;
       border-bottom: em(5,14) solid $blue;
-      display: inline-block;
-      text-decoration: none;
       color: $white;
+      display: inline-block;
+      font-size: em(14);
+      font-weight: 200;
       letter-spacing: 1px;
       padding: em(30,14) em(7,14) em(22,14) em(7,14);
-      @include default-transition;
+      text-decoration: none;
       &:hover,
       &.active {
-        border-bottom: em(5,14) solid $light-blue; 
+        border-bottom: em(5,14) solid $light-blue;
       }
     }
     .next-menu a {
       &:after {
+        color: $yellow;
         content: " →";
-        color: lighten($yellow,40%);
         font-size: em(22);
         line-height: 0.7;
         position: relative;
         top: em(3,22);
       }
-      &:hover {          
+      &:hover {
         opacity: 1;
-        &:after {            
+        &:after {
           left: 1px;
         }
       }
@@ -153,17 +153,16 @@
 //  Desktop
 @media all and (min-width: em(1160)) {
   .campaign nav {
-
     .menu {
       margin-left: em(80);
     }
     a.text {
-      font-size: em(18);
       border-bottom: em(5,18) solid $blue;
+      font-size: em(18);
       padding: em(28,18) em(14,18) em(19,18) em(14,18);
       &:hover,
       &.active {
-        border-bottom: em(5,18) solid $light-blue; 
+        border-bottom: em(5,18) solid $light-blue;
       }
     }
   }

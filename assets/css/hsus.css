@@ -200,17 +200,17 @@ html, body {
   font-family: "Frutiger W01", sans-serif;
   font-weight: 200;
   font-size: 16px;
-  color: #fff;
-  background-color: #152b51; }
+  color: #263f6a;
+  background-color: #e9eaec; }
 
 h1 {
-  color: #fff; }
+  color: #263f6a; }
 
 a {
-  color: #ce8e00; }
+  color: #263f6a; }
 
 a:hover, a:focus {
-  color: #b57c00;
+  color: #fac42a;
   -webkit-transition: color 0.3s linear, background-color 0.3s linear;
   -moz-transition: color 0.3s linear, background-color 0.3s linear;
   transition: color 0.3s linear, background-color 0.3s linear; }
@@ -220,17 +220,17 @@ ul {
   padding: 0;
   margin: 0; }
   ul li {
-    padding-bottom: 1em;
-    padding-left: 1.125em;
-    text-indent: -1.2em; }
+    padding-bottom: 1.125em;
+    padding-left: 1.375em;
+    letter-spacing: 0;
+    text-indent: -1.3em; }
     ul li:before {
-      color: #ce8e00;
+      color: #739abc;
       content: "•";
-      font-size: 0.75em;
+      font-size: 0.625em;
       line-height: 0.5;
-      padding-right: 1em;
-      position: relative;
-      top: 2px; }
+      padding-right: 1.4em;
+      position: relative; }
 
 .wrapper {
   width: 100%;
@@ -312,32 +312,51 @@ ul {
     visibility: hidden;
     display: none; } }
 .celeb {
-  background: transparent url("../images/mobile-campaign-farm-celeb1.jpg") no-repeat top center;
+  background: transparent url("../images/celebs/mobile-farm2.jpg") no-repeat top center;
   background-size: cover;
+  color: #fff;
   display: block;
   padding: 3.125em 0;
   text-align: center; }
   .celeb .wrapper {
-    max-width: 94%;
-    margin: 0 3%; }
+    margin: 0 3%;
+    max-width: 94%; }
   .celeb .headshot {
     border-radius: 50%; }
   .celeb h3 {
-    margin-bottom: 0.07143em;
+    color: #fff;
     font-size: 1.75em;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-bottom: 0.07143em; }
   .celeb .title {
-    margin-top: 0;
-    font-size: 1.125em; }
+    font-size: 1.125em;
+    margin-top: 0; }
   .celeb blockquote {
     font-size: 1em;
     font-weight: 200;
-    margin: 2em 0 1.5em 0;
     letter-spacing: 1px;
-    line-height: 1.4; }
+    line-height: 1.4;
+    margin: 2em 0 1.5em 0; }
     .celeb blockquote span {
       font-size: 1.5em;
       line-height: 0.4; }
+  .celeb a.watch-video {
+    color: #fff;
+    display: block;
+    font-size: 1.75em;
+    text-decoration: none; }
+    .celeb a.watch-video:after {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      color: #FBCB43;
+      content: " →";
+      font-size: 1.25em;
+      line-height: 1;
+      position: relative;
+      top: 0.1em; }
+    .celeb a.watch-video:hover:after {
+      left: 1px; }
   .celeb .video {
     position: relative; }
     .celeb .video svg path {
@@ -349,28 +368,28 @@ ul {
       .celeb .video .play-button:hover path {
         fill: #e6e6e6; }
     .celeb .video .overlay {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      display: block;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: none;
       background-color: rgba(0, 0, 0, 0.7);
+      bottom: 0;
+      display: block;
+      display: none;
+      height: 100%;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
       z-index: 1000; }
     .celeb .video .youtubewrap {
-      width: 98%;
-      max-width: 1024px;
-      margin: 5% auto;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
       bottom: 0;
-      z-index: 10000;
-      display: none; }
+      display: none;
+      left: 0;
+      margin: 100px auto 0;
+      max-width: 1024px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 98%;
+      z-index: 10000; }
       .celeb .video .youtubewrap:before {
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
@@ -387,36 +406,36 @@ ul {
         font-weight: 400;
         height: 0.95238em;
         line-height: 0.75;
-        position: relative;
-        margin-top: -0.625em;
         margin-left: -1.25em;
+        margin-top: -0.625em;
+        position: relative;
         width: 0.95238em;
         z-index: 100000; }
     .celeb .video .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: 30px;
       height: 0;
       overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      position: relative;
       z-index: 10000; }
     .celeb .video .video-container iframe,
     .celeb .video .video-container object,
     .celeb .video .video-container embed {
+      height: 100%;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
+      width: 100%; }
 
 @media all and (min-width: 36.25em) {
   .celeb {
     padding: 6.25em 0 6.25em; }
     .celeb h3 {
-      margin-bottom: 0.07143em;
-      font-size: 1.75em; }
+      font-size: 1.75em;
+      margin-bottom: 0.07143em; }
     .celeb .title {
-      margin-top: 0;
-      font-size: 1.125em; }
+      font-size: 1.125em;
+      margin-top: 0; }
     .celeb blockquote {
       font-size: 1.125em;
       margin: 1.77778em; }
@@ -428,17 +447,17 @@ ul {
       margin-top: 2em; } }
 @media all and (min-width: 45em) {
   .celeb {
-    background-image: url("../images/campaign-farm-celeb1.jpg");
+    background-image: url("../images/celebs/farm2.jpg");
     padding: 6.875em 0 7.5em; }
     .celeb .wrapper {
-      max-width: 74%;
-      margin: 0 13%; }
+      margin: 0 13%;
+      max-width: 74%; }
     .celeb h3 {
-      margin-bottom: 0.07143em;
-      font-size: 1.75em; }
+      font-size: 1.75em;
+      margin-bottom: 0.07143em; }
     .celeb .title {
-      margin-top: 0;
-      font-size: 1.125em; }
+      font-size: 1.125em;
+      margin-top: 0; }
     .celeb blockquote {
       font-size: 1.125em;
       margin: 1.77778em; }
@@ -452,97 +471,172 @@ ul {
   .celeb {
     padding: 9.375em 0 12.5em; }
     .celeb .wrapper {
-      max-width: 64%;
-      margin: 0 18%; }
+      margin: 0 18%;
+      max-width: 64%; }
     .celeb h3 {
-      margin-bottom: 0.05556em;
-      font-size: 2.25em; }
+      font-size: 2.25em;
+      margin-bottom: 0.05556em; }
     .celeb .title {
-      margin-top: 0;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      margin-top: 0; }
     .celeb blockquote {
       font-size: 1.375em;
       margin: 1.45455em; }
       .celeb blockquote span {
         font-size: 1.09091em; } }
+.donor-story {
+  background: transparent url("../images/donors/mobile-donor-wall1.jpg") no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  width: 100%; }
+  .donor-story .wrapper {
+    margin: 0 3%;
+    max-width: 94%; }
+  .donor-story .headshot {
+    border-radius: 50%;
+    margin-top: 1.25em; }
+  .donor-story h3 {
+    color: #263f6a;
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0.83333em; }
+  .donor-story p {
+    color: #263f6a;
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.6;
+    margin: 0 auto 1.25em;
+    max-width: 90%;
+    padding-bottom: 2.5em; }
+
+@media all and (min-width: 36.25em) {
+  .donor-story .wrapper {
+    margin: 0 8%;
+    max-width: 84%; }
+  .donor-story .headshot {
+    margin-top: 2.5em; }
+  .donor-story h3 {
+    font-size: 1.75em;
+    padding-top: 0.71429em; }
+  .donor-story p {
+    font-size: 1em;
+    max-width: 90%;
+    padding-bottom: 3.75em; } }
+@media all and (min-width: 45em) {
+  .donor-story {
+    background-image: url("../images/donors/donor-wall1.jpg"); }
+    .donor-story .wrapper {
+      margin: 0 8%;
+      max-width: 84%; }
+    .donor-story .headshot {
+      margin-top: 5em; }
+    .donor-story h3 {
+      font-size: 2em;
+      padding-top: 0.75em; }
+    .donor-story p {
+      font-size: 1.125em;
+      max-width: 70%;
+      padding-bottom: 5.55556em; } }
+@media all and (min-width: 87.5em) {
+  .donor-story .wrapper {
+    margin: 0 auto;
+    max-width: 85em; }
+  .donor-story .headshot {
+    margin-top: 10em; }
+  .donor-story h3 {
+    font-size: 3em;
+    padding-top: 0.58333em; }
+  .donor-story p {
+    font-size: 1.5em;
+    max-width: 80%;
+    padding-bottom: 5.83333em; } }
 .goals {
   background: transparent url("../images/goals/mobile-goals1.jpg") no-repeat top center;
   background-size: cover;
+  color: #fff;
   display: block;
   text-align: center; }
   .goals .wrapper {
-    max-width: 94%;
-    margin: 0 3%; }
+    margin: 0 3%;
+    max-width: 94%; }
   .goals h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
     margin-top: 0;
     padding-bottom: 0;
-    padding-top: 1.66667em;
-    font-weight: 200;
-    color: #ce8e00;
-    font-size: 1.5em; }
+    padding-top: 1.66667em; }
   .goals .goal {
     display: inline-block;
-    width: 80%;
-    font-weight: 200;
     font-size: 1em;
+    font-weight: 200;
     line-height: 1.5;
+    margin-bottom: 2.5em;
     vertical-align: top;
-    margin-bottom: 2.5em; }
+    width: 80%; }
     .goals .goal:nth-of-type(odd) {
       margin-right: 0%; }
       .goals .goal:nth-of-type(odd):last-child {
         margin-right: 0; }
     .goals .goal em {
+      color: #FBCB43;
       font-style: normal;
-      color: #ce8e00; }
+      font-weight: 400; }
 
 @media all and (min-width: 36.25em) {
   .goals .wrapper {
-    max-width: 84%;
-    margin: 0 8%; }
+    margin: 0 8%;
+    max-width: 84%; }
   .goals h2 {
+    font-size: 1.75em;
     padding-bottom: 0.35714em;
-    padding-top: 2.14286em;
-    font-size: 1.75em; }
+    padding-top: 2.14286em; }
   .goals .goal {
-    width: 43%;
     font-size: 1em;
-    margin-bottom: 3.75em; }
+    margin-bottom: 3.75em;
+    width: 43%; }
     .goals .goal:nth-of-type(odd) {
       margin-right: 12%; } }
 @media all and (min-width: 45em) {
   .goals {
     background-image: url("../images/goals/goals1.jpg"); }
     .goals .wrapper {
-      max-width: 84%;
-      margin: 0 8%; }
+      margin: 0 8%;
+      max-width: 84%; }
     .goals h2 {
+      font-size: 2em;
       padding-bottom: 0.625em;
-      padding-top: 3.125em;
-      font-size: 2em; }
+      padding-top: 3.125em; }
     .goals .goal {
-      width: 38%;
       font-size: 1.0625em;
-      margin-bottom: 4.70588em; }
+      margin-bottom: 4.70588em;
+      width: 38%; }
       .goals .goal:nth-of-type(odd) {
         margin-right: 17%; } }
 @media all and (min-width: 87.5em) {
   .goals .wrapper {
-    max-width: 85em;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 85em; }
   .goals h2 {
-    padding-bottom: 1.66667em;
-    padding-top: 5em;
-    font-size: 2.25em; }
+    font-size: 3em;
+    padding-bottom: 1.25em;
+    padding-top: 3.75em; }
   .goals .goal {
-    width: 37%;
-    font-size: 1.375em;
-    margin-bottom: 4.54545em; }
+    font-size: 1.625em;
+    margin-bottom: 3.84615em;
+    width: 37%; }
     .goals .goal:nth-of-type(odd) {
       margin-right: 19%; } }
 .campaign header {
-  background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
+  background: transparent url("../images/headers/mobile-header-farm1.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
+  color: #fff;
   display: inline-block;
   position: relative;
   width: 100%; }
@@ -560,7 +654,7 @@ ul {
     position: relative;
     z-index: 100; }
   .campaign header .financial {
-    background-color: #152b51;
+    background-color: #263f6a;
     display: inline-block;
     font-size: 1.5em;
     margin-top: 0;
@@ -581,8 +675,7 @@ ul {
     font-size: 2em;
     margin-bottom: 0.875em;
     margin-top: 0.75em;
-    max-width: 100%;
-    max-width: 15.625em; }
+    max-width: 100%; }
   .campaign header .description {
     font-size: 1em;
     line-height: 1.5;
@@ -623,9 +716,9 @@ ul {
     right: 0; } }
 @media all and (min-width: 45em) {
   .campaign header {
-    background-image: url("../images/headers/header1.1.jpg"); }
+    background-image: url("../images/headers/header-farm1.jpg"); }
     .campaign header .gradient {
-      width: 55%; }
+      width: 75%; }
     .campaign header .tagline {
       font-size: 1.5em;
       padding: 0 1.66667em;
@@ -645,7 +738,7 @@ ul {
   .campaign header {
     background-image: url("../images/headers/header1.1.jpg"); }
     .campaign header .gradient {
-      width: 50%; }
+      width: 80%; }
     .campaign header .wrapper {
       margin: 0 auto;
       max-width: 85em;
@@ -658,30 +751,51 @@ ul {
       font-size: 4.5em;
       margin-bottom: 0.33333em;
       margin-top: 0.66667em;
-      max-width: 6.94444em; }
+      max-width: 8.33333em; }
     .campaign header .description {
       font-size: 1.5em;
       margin-bottom: 2.91667em;
       width: 50%; } }
 .campaign-previews {
-  width: 100%;
-  display: block; }
+  display: block;
+  overflow: auto;
+  width: 100%; }
+  .campaign-previews h2.title {
+    font-size: 1.125em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 0 auto 0.88889em;
+    max-width: 96%;
+    position: relative;
+    text-align: center;
+    z-index: 100; }
+    .campaign-previews h2.title em {
+      color: #263f6a;
+      display: inline-block;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 1.22222em;
+      font-style: normal;
+      left: -1px;
+      letter-spacing: 0;
+      position: relative; }
+      .campaign-previews h2.title em::first-letter {
+        letter-spacing: -10px; }
   .campaign-previews .preview {
     background-size: cover;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
     display: block;
     float: left;
-    min-height: 18.75em; }
+    min-height: 18.75em;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
     .campaign-previews .preview .overlay {
-      background-color: rgba(21, 43, 81, 0.9);
-      width: 100%;
+      background-color: rgba(38, 63, 106, 0.9);
       height: 100%;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
       transform: translateY(100%);
+      width: 100%;
       -webkit-transition: all 0.5s ease-out;
       -moz-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
@@ -689,8 +803,8 @@ ul {
       .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
         color: white;
         font-weight: 200;
-        max-width: 90%;
-        margin: 0 auto; }
+        margin: 0 auto;
+        max-width: 90%; }
       .campaign-previews .preview .overlay h3 {
         font-size: 1.5em;
         margin-bottom: 0.66667em; }
@@ -699,38 +813,58 @@ ul {
         line-height: 1.6;
         opacity: 0.7; }
       .campaign-previews .preview .overlay img {
-        width: 20%;
         height: auto;
-        margin: 1.875em 0 1.25em; }
+        margin: 1.875em 0 1.25em;
+        width: 20%; }
     .campaign-previews .preview:hover .overlay {
       transform: translateY(0); }
     .campaign-previews .preview > h3 {
-      background-image: linear-gradient(transparent, #000);
-      font-weight: 200;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 50%;
-      margin: 0;
-      width: 100%;
-      line-height: 12;
-      color: #fff;
-      text-align: center;
-      font-size: 1em;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
+      transition: all 0.3s linear;
+      background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+      bottom: 0;
+      color: #fff;
+      font-size: 1em;
+      font-weight: 200;
+      height: 50%;
+      left: 0;
+      line-height: 12;
+      margin: 0;
+      position: absolute;
+      text-align: center;
+      width: 100%; }
     .campaign-previews .preview:hover > h3 {
       opacity: 0; }
 
 @media all and (min-width: 45em) {
+  .campaign-previews h2.title {
+    font-size: 1.25em;
+    margin: 0 auto -1.6em; }
+    .campaign-previews h2.title em {
+      font-size: 1.4em; }
+      .campaign-previews h2.title em::first-letter {
+        letter-spacing: -10px; }
+    .campaign-previews h2.title:after {
+      -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-color: #e9eaec transparent transparent transparent;
+      border-style: solid;
+      border-width: 2.0625em 2.3125em 0 2.3125em;
+      content: "";
+      display: block;
+      height: 0;
+      margin: 0.5em auto 0;
+      position: relative;
+      width: 0; }
   .campaign-previews .preview {
-    width: 33.333%;
-    min-height: 18.75em; }
+    min-height: 18.75em;
+    width: 33.333%; }
     .campaign-previews .preview.first {
-      width: 60%; }
+      width: 50%; }
     .campaign-previews .preview.second {
-      width: 40%; }
+      width: 50%; }
     .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
       max-width: 80%; }
     .campaign-previews .preview .overlay h3 {
@@ -741,54 +875,64 @@ ul {
       line-height: 1.6;
       opacity: 0.7; }
     .campaign-previews .preview .overlay img {
-      width: 15%;
-      margin: 2em 0 1em; }
+      margin: 2em 0 1em;
+      width: 15%; }
     .campaign-previews .preview > h3 {
+      font-size: 1.125em;
       height: 20%;
-      text-align: left;
-      width: 100%;
       line-height: 3;
       padding-left: 1.5em;
-      font-size: 1.125em; } }
+      text-align: left;
+      width: 100%; } }
 @media all and (min-width: 87.5em) {
+  .campaign-previews h2.title {
+    font-size: 1.625em;
+    margin: 0 auto -1.23077em; }
+    .campaign-previews h2.title em {
+      font-size: 1.30769em; }
+      .campaign-previews h2.title em::first-letter {
+        letter-spacing: -10px; }
+    .campaign-previews h2.title:after {
+      margin: 0.38462em auto 0; }
   .campaign-previews .preview {
-    width: 33.333%;
-    min-height: 37.8125em; }
+    min-height: 37.8125em;
+    width: 33.333%; }
     .campaign-previews .preview.first {
-      width: 60%; }
+      width: 50%; }
     .campaign-previews .preview.second {
-      width: 40%; }
+      width: 50%; }
     .campaign-previews .preview .overlay h3, .campaign-previews .preview .overlay p {
       max-width: 70%; }
     .campaign-previews .preview .overlay h3 {
-      font-size: 2em;
-      margin-bottom: 0.5em; }
+      font-size: 3em;
+      margin-bottom: 0.33333em; }
     .campaign-previews .preview .overlay p {
-      font-size: 0.9375em;
+      font-size: 1.375em;
       line-height: 1.6;
       opacity: 0.7; }
     .campaign-previews .preview .overlay img {
-      width: 15%;
-      margin: 6.875em 0 3.4375em; }
+      margin: 6.875em 0 3.4375em;
+      width: 15%; }
     .campaign-previews .preview > h3 {
+      font-size: 1.5em;
       height: 20%;
-      width: 100%;
+      letter-spacing: 0.03125em;
       line-height: 6;
-      padding-left: 2.5em;
-      font-size: 1.25em; } }
+      padding-left: 2.08333em;
+      width: 100%; } }
 .campaign nav {
+  background-color: #263f6a;
   display: none;
   position: fixed;
-  background-color: #152b51;
   text-align: right;
   width: 100%;
   z-index: 1000; }
   .campaign nav .logo-sm {
-    padding: 1.25em 0 1.125em 1.125em;
-    width: 16.5625em;
-    max-width: 70%;
+    float: left;
     height: auto;
-    float: left; }
+    max-width: 70%;
+    padding: 1.25em 0 1.125em 1.125em;
+    width: 16.5625em; }
   .campaign nav .mobile-menu-icon {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -797,10 +941,10 @@ ul {
     display: inline-block;
     float: right;
     height: 4.6875em;
+    margin-right: 1em;
     position: relative;
     text-indent: -9999px;
-    width: 4.6875em;
-    margin-right: 1em; }
+    width: 4.6875em; }
     .campaign nav .mobile-menu-icon div {
       height: 100%;
       position: relative;
@@ -834,12 +978,12 @@ ul {
       background-color: transparent; }
       .campaign nav .mobile-menu-icon.active div span:before, .campaign nav .mobile-menu-icon.active div span:after {
         background: #fff;
-        transition: transform 0.3s;
-        transform: rotate(45deg) translateY(0); }
+        transform: rotate(45deg) translateY(0);
+        transition: transform 0.3s; }
       .campaign nav .mobile-menu-icon.active div span:after {
         transform: rotate(-45deg) translateY(0); }
   .campaign nav .mobile-menu {
-    background-color: rgba(21, 43, 81, 0.9);
+    background-color: rgba(38, 63, 106, 0.9);
     bottom: 0;
     display: none;
     left: 0;
@@ -850,10 +994,12 @@ ul {
     top: 4.6875em;
     z-index: 100; }
     .campaign nav .mobile-menu a {
+      color: #fff;
       display: block;
-      text-decoration: none;
       font-size: 1.5em;
-      line-height: 2.5; }
+      line-height: 1.2;
+      padding: 0.66667em;
+      text-decoration: none; }
   .campaign nav .menu,
   .campaign nav .next-menu {
     display: none; }
@@ -865,22 +1011,22 @@ ul {
     float: left;
     margin-left: 3.125em; }
   .campaign nav a.text {
-    font-weight: 200;
-    font-size: 0.875em;
-    border-bottom: 0.35714em solid #152b51;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 2.14286em 0.5em 1.57143em 0.5em;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
+    transition: all 0.3s linear;
+    border-bottom: 0.35714em solid #263f6a;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 2.14286em 0.5em 1.57143em 0.5em;
+    text-decoration: none; }
     .campaign nav a.text:hover, .campaign nav a.text.active {
       border-bottom: 0.35714em solid #739abc; }
   .campaign nav .next-menu a:after {
+    color: #FBCB43;
     content: " →";
-    color: #ffe09b;
     font-size: 1.375em;
     line-height: 0.7;
     position: relative;
@@ -899,29 +1045,119 @@ ul {
   .campaign nav .menu {
     margin-left: 5em; }
   .campaign nav a.text {
+    border-bottom: 0.27778em solid #263f6a;
     font-size: 1.125em;
-    border-bottom: 0.27778em solid #152b51;
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .campaign nav a.text:hover, .campaign nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
+.index .celeb {
+  background: transparent url("/assets/images/celebs/mobile-celeb-wall1.jpg") no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  width: 100%; }
+  .index .celeb .wrapper {
+    text-align: center;
+    max-width: 96%;
+    margin: 0 auto; }
+  .index .celeb h2 {
+    color: #c1d1df; }
+  .index .celeb .single {
+    margin-bottom: 1em; }
+    .index .celeb .single .headshots .headshot {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      width: 7.5em; }
+      .index .celeb .single .headshots .headshot:hover {
+        opacity: 1;
+        cursor: pointer; }
+    .index .celeb .single .headshots h3 {
+      margin-top: 0;
+      font-size: 1.125em;
+      line-height: 1.2; }
+    .index .celeb .single .headshots p {
+      font-size: 1em;
+      line-height: 1.4; }
+    .index .celeb .single.active {
+      margin-top: 0; }
+      .index .celeb .single.active .headshots .headshot {
+        opacity: 1; }
+  .index .celeb .hide {
+    display: none; }
+  .index .celeb a.video {
+    color: #fff;
+    font-size: 1.125em;
+    cursor: pointer; }
+
+@media all and (min-width: 45em) {
+  .index .celeb {
+    background-image: url("/assets/images/celebs/celeb-wall1.jpg");
+    line-height: 1.6;
+    padding-bottom: 2.5em;
+    padding-top: 5em;
+    text-align: center;
+    width: 100%;
+    min-height: 37.5em; }
+    .index .celeb .wrapper {
+      position: relative; }
+    .index .celeb .single {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      margin-top: 2.5em;
+      display: inline-block;
+      max-width: 9.375em;
+      width: 13%;
+      vertical-align: top; }
+      .index .celeb .single .headshots .headshot {
+        opacity: 0.6;
+        width: 80%; }
+        .index .celeb .single .headshots .headshot:hover {
+          opacity: 1;
+          cursor: pointer; }
+      .index .celeb .single .headshots h3 {
+        font-size: 1em; }
+      .index .celeb .single .headshots p {
+        font-size: 0.875em; }
+      .index .celeb .single .info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15.625em;
+        margin: 0 auto;
+        max-width: 80%; } }
+@media all and (min-width: 87.5em) {
+  .index .celeb {
+    padding-bottom: 3.75em;
+    padding-top: 6.875em;
+    min-height: 43.75em; }
+    .index .celeb .single .headshots h3 {
+      font-size: 1.125em; }
+    .index .celeb .single .headshots p {
+      font-size: 1em; }
+    .index .celeb .single .info {
+      top: 16.5625em;
+      max-width: 50%; } }
 .donors {
-  background: transparent url("../images/donors/mobile-donors1.jpg") no-repeat top center;
+  background: transparent url("../images/donors/mobile-donors3.jpg") no-repeat top center;
   background-size: cover;
   display: inline-block;
   min-height: 20.625em;
   text-align: center;
   width: 100%; }
   .donors h2 {
+    color: #fff;
     font-size: 1.25em;
     font-weight: 200;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: 2em auto 1em;
-    max-width: 90%;
-    opacity: 0.7; }
+    max-width: 90%; }
     .donors h2 em {
       font-family: "MyWriteHand", "Brush Script MT", cursive;
-      font-size: 1.25em;
+      font-size: 1.33333em;
       font-style: normal;
       letter-spacing: 0; }
   .donors .donor {
@@ -935,8 +1171,6 @@ ul {
       font-size: 1.125em;
       font-weight: 400;
       text-decoration: none; }
-      .donors .donor a div {
-        opacity: 0.8; }
     .donors .donor .prompt {
       color: #cccccc;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
@@ -975,7 +1209,7 @@ ul {
         font-size: 1.125em; } }
 @media all and (min-width: 45em) {
   .donors {
-    background-image: url("../images/donors/donors1.jpg");
+    background-image: url("../images/donors/donors3.jpg");
     min-height: 34.375em; }
     .donors h2 {
       font-size: 1.75em;
@@ -1000,94 +1234,113 @@ ul {
       .donors .donor a {
         font-size: 2em; } }
 .events {
-  background: transparent url("../images/events/mobile-events1.jpg") no-repeat top center;
-  background-size: cover;
   clear: both; }
   .events .wrapper {
-    padding: 1.875em 0 4.375em;
-    text-align: center;
+    background: transparent url("../images/events/mobile-events3.jpg") no-repeat top center;
+    background-size: cover;
     display: inline-block;
-    max-width: 94%;
-    margin: 0 3%; }
+    padding: 1.875em 0 4.375em;
+    text-align: center; }
+  .events .inner {
+    margin: 0 auto;
+    max-width: 94%; }
   .events .event, .events .book {
-    width: 90%;
-    margin: 0 5%; }
-  .events .event h2 {
-    font-size: 2em;
-    font-weight: 200;
+    margin: 0 5%;
+    width: 90%; }
+  .events h2 {
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: 700;
     letter-spacing: 1px;
     line-height: 1.15;
-    opacity: 0.8;
-    margin: 1.40625em auto 0.78125em; }
+    margin: 0 auto 1.28571em; }
+  .events .event h3 {
+    color: #FBCB43;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    margin: 0.5em auto 0.625em; }
   .events .event p {
-    opacity: 0.8;
+    color: #fff;
     font-weight: 200;
     line-height: 1.5; }
   .events .event .cta-button {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     transition: all 0.3s linear;
-    background-color: #ce8e00;
     color: #fff;
     display: inline-block;
-    text-decoration: none;
-    padding: 1em 4em; }
+    font-size: 1.5em;
+    padding: 0;
+    text-decoration: none; }
+    .events .event .cta-button:after {
+      color: #FBCB43;
+      content: " →";
+      font-size: 1.5625em;
+      line-height: 1;
+      position: relative;
+      top: 0.16em; }
     .events .event .cta-button:hover {
-      background-color: #9b6b00; }
+      opacity: 1; }
+      .events .event .cta-button:hover:after {
+        left: 1px; }
   .events .book {
     margin-top: 2em; }
     .events .book .book-header {
-      background-color: rgba(115, 154, 188, 0.2);
-      padding: 1.125em;
-      display: inline-block; }
+      border-bottom: 1px solid #739abc;
+      display: inline-block;
+      margin: 0.5625em;
+      padding-bottom: 0.5625em; }
       .events .book .book-header .cover {
         float: left;
-        max-width: 30%;
-        margin-right: 5%; }
+        margin-right: 5%;
+        width: 7.5em;
+        max-width: 30%; }
         .events .book .book-header .cover img {
           width: 100%; }
       .events .book .book-header .title {
-        color: #fff;
-        text-decoration: none;
+        color: #FBCB43;
         line-height: 1.3;
-        max-width: 60%; }
-        .events .book .book-header .title h2 {
-          font-weight: 200;
-          text-align: left;
-          font-size: 0.875em;
-          margin: 0; }
+        max-width: 60%;
+        text-decoration: none; }
+        .events .book .book-header .title h3 {
+          font-size: 1.125em;
+          font-weight: 400;
+          margin: 0;
+          text-align: left; }
       .events .book .book-header p {
+        color: #fff;
+        font-size: 0.875em;
         margin: 0.5em 0 0 0;
         padding: 0;
-        text-align: left;
-        font-size: 0.875em; }
+        text-align: left; }
     .events .book .book-body {
-      background-color: rgba(255, 255, 255, 0.15);
-      padding: 1.125em 1.5em;
       display: inline-block;
+      margin: 1.125em 1.5em;
       text-align: left; }
       .events .book .book-body p {
+        color: #fff;
         font-size: 1em;
         line-height: 1.5;
-        opacity: 0.8; }
+        margin-top: 0; }
       .events .book .book-body a {
-        display: block;
-        margin-bottom: 1.125em;
-        margin-top: 0.5em;
-        color: #fff;
-        text-decoration: none;
-        font-size: 0.9375em;
-        opacity: 0.5;
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
-        transition: all 0.3s linear; }
+        transition: all 0.3s linear;
+        color: #fff;
+        display: block;
+        font-size: 0.9375em;
+        margin-bottom: 0.375em;
+        margin-top: 0.5em;
+        text-decoration: none; }
         .events .book .book-body a:after {
+          color: #FBCB43;
           content: " →";
-          color: #ffe09b;
-          font-size: 1.25em;
+          font-size: 1.5625em;
           line-height: 1;
           position: relative;
-          top: 0.1em; }
+          top: 0.16em; }
         .events .book .book-body a:hover {
           opacity: 1; }
           .events .book .book-body a:hover:after {
@@ -1095,101 +1348,127 @@ ul {
 
 .events-after {
   background: transparent url("../images/events/mobile-events-after1.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
-  min-height: 30em;
-  position: static;
   height: 80vh;
   min-height: 80vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
+  position: relative;
+  width: 100%; }
 
 @media all and (min-width: 36.25em) {
-  .events .event, .events .book {
-    width: 70%;
-    margin: 0 15%; }
-  .events .event h2 {
+  .events h2 {
     font-size: 2em;
-    line-height: 1.15;
-    margin: 1.40625em auto 0.78125em; }
-  .events .event .cta-button {
-    padding: 1em 2.75em; }
+    margin: 0 auto 1.125em; }
+  .events .event, .events .book {
+    margin: 0 15%;
+    width: 70%; }
+  .events .event {
+    text-align: left; }
+    .events .event h3 {
+      font-size: 2em;
+      line-height: 1.15;
+      margin: 0.375em auto 0.78125em; }
   .events .book {
     margin-top: 3.5em; }
     .events .book .book-header {
-      padding: 1.5em; }
+      margin: 0.75em;
+      padding-bottom: 0.75em; }
       .events .book .book-header p {
         font-size: 1em; } }
 @media all and (min-width: 45em) {
-  .events {
-    background-image: url("../images/events/events1.jpg"); }
-    .events .wrapper {
-      padding: 7.5em 0 5.625em;
-      max-width: 90%;
-      margin: 0 5%; }
-    .events .event, .events .book {
-      width: 45%;
-      float: left;
-      margin: 0; }
-    .events .event {
-      margin-right: 10%; }
-      .events .event p {
-        font-size: 1.0625em; }
-      .events .event h2 {
-        font-size: 2.625em;
-        line-height: 1.2;
-        margin: 1.78571em auto 1.07143em; }
-      .events .event .cta-button {
-        font-size: 1.125em;
-        margin-top: 1em;
-        padding: 0.88889em 4.44444em; }
+  .events .wrapper {
+    background-image: url("../images/events/events3.jpg");
+    padding: 7.5em 0 5.625em; }
+  .events .inner {
+    max-width: 90%; }
+  .events h2 {
+    font-size: 2.25em;
+    margin: 0 auto 1em; }
+  .events .event {
+    float: left;
+    margin: 0;
+    width: 42%; }
+  .events .book {
+    float: left;
+    margin: 0;
+    width: 48%; }
+    .events .book .book-header .title h3 {
+      font-size: 1.125em; }
+    .events .book .book-header p {
+      font-size: 1.125em; }
+    .events .book .book-body a {
+      font-size: 1.375em; }
+    .events .book .book-header,
+    .events .book .book-body {
+      margin: 1em;
+      padding-bottom: 2em; }
+  .events .event {
+    margin-right: 10%; }
+    .events .event p {
+      font-size: 1.125em; }
+    .events .event h3 {
+      font-size: 2em;
+      line-height: 1.2;
+      margin: 0.375em auto 1.40625em; }
+    .events .event .cta-button {
+      font-size: 1.375em;
+      margin-top: 0.81818em; }
 
   .events-after {
     background-image: url("../images/events/events-after1.jpg");
-    min-height: 45em;
-    position: static;
+    background-position: center center;
+    background-size: cover;
     height: 85vh;
     min-height: 85vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center; } }
+    position: static;
+    width: 100%; } }
 @media all and (min-width: 87.5em) {
   .events .wrapper {
-    padding: 11.25em 0 8.75em;
-    max-width: 70%;
-    margin: 0 15%; }
+    display: block;
+    overflow: auto;
+    padding: 9.375em 0 8.75em; }
+  .events .inner {
+    max-width: 90%;
+    width: 85em; }
+  .events h2 {
+    font-size: 3em;
+    margin: 0 auto 1.5em; }
   .events .event, .events .book {
-    width: 45%; }
+    width: 42%; }
   .events .event {
     margin-right: 10%; }
     .events .event p {
       font-size: 1.375em; }
-    .events .event h2 {
-      font-size: 4em;
+    .events .event h3 {
+      font-size: 2.625em;
       line-height: 1.2;
-      margin: 0.625em auto 0.54688em; }
+      margin: 0.28571em auto 0.83333em; }
     .events .event .cta-button {
-      font-size: 1.25em;
-      margin-top: 0.9em;
-      padding: 0.8em 4em; }
-  .events .book .book-header .title h2 {
-    font-size: 1.25em; }
-  .events .book .book-body p {
-    font-size: 1.125em; }
+      font-size: 1.75em;
+      margin-top: 0.64286em; }
+  .events .book .book-header .title h3 {
+    font-size: 1.625em;
+    font-weight: 400;
+    line-height: 1.4; }
+  .events .book .book-header p {
+    font-size: 1.375em; }
+  .events .book .book-body p, .events .book .book-body a {
+    font-size: 1.375em;
+    letter-spacing: 0.03125em;
+    line-height: 1.5; }
   .events .book .book-body a {
-    font-size: 1em; }
+    font-size: 1.75em; }
 
   .events-after {
-    min-height: 62.5em;
-    position: static;
+    background-position: center center;
+    background-size: cover;
     height: 90vh;
     min-height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center; } }
+    position: static;
+    width: 100%; } }
 footer {
-  background-image: linear-gradient(#152b51, #060e25);
+  background-color: #263f6a;
   font-weight: 200;
   padding-bottom: 3.125em;
   padding-top: 4.375em;
@@ -1211,52 +1490,63 @@ footer {
     margin: 2.625em 0; }
     footer .social a {
       display: inline-block;
-      height: 2em;
+      height: 2.125em;
       margin-left: 1em;
       margin-right: 1em;
       position: relative;
-      width: 2em; }
+      width: 2.125em; }
     footer .social svg path {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear; }
-    footer .social .twitter:hover path {
-      fill: #55acee; }
-    footer .social .pinterest {
-      padding: 0.1875em;
-      bottom: 0.1875em; }
-      footer .social .pinterest:hover path {
-        fill: #bd081c; }
     footer .social .facebook {
       padding: 0.25em;
       bottom: 0.25em; }
       footer .social .facebook:hover path {
         fill: #3b5999; }
-    footer .social .instagram {
-      padding: 0.25em;
-      bottom: 0.25em; }
-      footer .social .instagram:hover path {
-        fill: #3f729b; }
+    footer .social .twitter:hover path {
+      fill: #55acee;
+      margin-right: 0.875em; }
     footer .social .youtube {
       padding: 0.0625em; }
       footer .social .youtube:hover path {
         fill: #cd201f; }
-    footer .social .googleplus {
-      padding: 0.25em;
-      bottom: 0.25em; }
-      footer .social .googleplus:hover path.bg {
-        fill: #dc4e41; }
-    footer .social .linkedin {
+    footer .social .instagram {
       padding: 0.25em;
       bottom: 0.25em;
-      margin-right: 0; }
+      margin-right: 1.75em; }
+      footer .social .instagram:hover path {
+        fill: #3f729b; }
+    footer .social .linkedin {
+      padding: 0.125em;
+      bottom: 0.25em;
+      margin-right: 1.375em; }
       footer .social .linkedin:hover path {
         fill: #0077b5; }
+    footer .social .pinterest {
+      padding: 0.1875em;
+      bottom: 0.1875em;
+      margin-right: 1.5em; }
+      footer .social .pinterest:hover path {
+        fill: #bd081c; }
+    footer .social .googleplus {
+      padding: 0.25em;
+      bottom: 0.25em;
+      margin-right: 1.1875em; }
+      footer .social .googleplus:hover path.bg {
+        fill: #dc4e41; }
+    footer .social .tumblr {
+      padding: 0.4375em;
+      bottom: 0.125em;
+      margin-right: 0; }
+      footer .social .tumblr:hover path {
+        fill: #36465d; }
     footer .social img, footer .social svg {
       height: auto;
       width: 100%; }
   footer .privacy-contact {
-    margin-top: 1.25em; }
+    margin-top: 1.25em;
+    color: #fff; }
   footer .copyright, footer .non-profit {
     color: #c1d1df;
     font-size: 0.6875em;
@@ -1321,9 +1611,14 @@ footer {
     font-size: 1.25em;
     line-height: 1.7; } }
 .index header {
-  background: transparent url("../images/headers/mobile-header1.1.jpg") no-repeat top center;
+  background: transparent url("../images/headers/mobile-header2.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
+  color: #fff;
   display: inline-block;
+  min-height: 80vh;
+  position: relative;
   text-align: center;
   width: 100%; }
   .index header .logo {
@@ -1349,71 +1644,62 @@ footer {
     margin: 0 auto 2.8125em; } }
 @media all and (min-width: 45em) {
   .index header {
-    background-image: url("../images/headers/header1.1.jpg"); }
+    background-image: url("../images/headers/header2.jpg"); }
     .index header .tagline {
       font-size: 5.25em;
       margin: 0 auto 2.85714em; } }
 .intro {
-  background: transparent url("../images/mobile-intro1.jpg") no-repeat top center;
+  background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
   background-size: cover;
+  color: #fff;
   display: inline-block;
   font-size: 0.9375em;
+  line-height: 1.6;
   padding-bottom: 2em;
   padding-top: 3.33333em;
-  line-height: 1.6;
   text-align: center;
   width: 100%; }
   .intro .wrapper {
     margin: 0 auto;
     max-width: 90%; }
   .intro span i {
-    font-style: normal;
-    color: #ce8e00;
+    color: #FBCB43;
     font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 1.33333em;
+    font-style: normal;
     line-height: 1; }
-  .intro span.italic:after {
-    color: #ce8e00; }
-  .intro span.italic i {
-    font-style: italic; }
   .intro .more-button {
     cursor: pointer;
+    font-size: 0.875em;
     margin: 2em auto 0;
-    width: 9.375em;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
-    font-size: 0.875em; }
+    width: 9.375em; }
     .intro .more-button a {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
       color: #c1d1df;
-      text-decoration: none;
-      font-style: italic; }
+      text-decoration: none; }
       .intro .more-button a:after {
         -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        display: block;
-        margin: 0 auto;
-        content: "";
-        width: 0;
-        height: 0;
-        position: relative;
-        top: 0;
+        border-color: transparent transparent transparent transparent;
         border-style: solid;
-        border-width: 0.6875em 0.5em 0 0.5em;
-        border-color: #739abc transparent transparent transparent; }
+        border-width: 0.5625em 0.6875em 0 0.6875em;
+        content: "";
+        display: block;
+        height: 0;
+        margin: 0.5em auto 0;
+        position: relative;
+        width: 0; }
     .intro .more-button:hover a {
       color: #e3eaf0; }
       .intro .more-button:hover a:after {
-        top: 0.1875em;
         border-color: #95b3cd transparent transparent transparent; }
   .intro.showmore .more-button a:after {
-    top: -2.6875em;
-    border-width: 0 0.5em 0.6875em 0.5em;
-    border-color: transparent transparent #739abc transparent; }
+    border-width: 0 0.6875em 0.5625em 0.6875em;
+    top: -3.125em; }
   .intro.showmore .more-button:hover a:after {
-    top: -2.875em;
     border-color: transparent transparent #95b3cd transparent; }
 
 @media all and (min-width: 36.25em) {
@@ -1428,24 +1714,24 @@ footer {
       margin-top: 1.66667em; } }
 @media all and (min-width: 45em) {
   .intro {
-    background-image: url("../images/intro1.jpg");
+    background-image: url("../images/intro/intro2.jpg");
     font-size: 1.375em;
     line-height: 1.6;
-    text-align: center;
-    width: 100%;
     padding-bottom: 2.72727em;
-    padding-top: 5.45455em; }
+    padding-top: 5.45455em;
+    text-align: center;
+    width: 100%; }
     .intro .wrapper {
       margin: 0 auto;
       max-width: 65%; }
     .intro span i {
-      font-style: normal;
-      color: #ce8e00;
+      color: #FBCB43;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.45455em;
+      font-style: normal;
       line-height: 1; }
     .intro span.italic:after {
-      color: #ce8e00; }
+      color: #FBCB43; }
     .intro span.italic i {
       font-style: italic; }
     .intro .more-button {
@@ -1461,19 +1747,19 @@ footer {
     .intro .more-button {
       margin-top: 3.84615em; } }
 .outro {
-  background: transparent url("../images/outro/mobile-outro1.jpg") no-repeat top center;
+  background: transparent url("../images/outro/mobile-outro3.jpg") no-repeat top center;
   background-size: cover;
   display: block;
-  text-align: center;
-  width: 100%;
   overflow: hidden;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  text-align: center;
+  width: 100%; }
   .outro .wrapper {
-    max-width: 96%;
-    margin: 0 2%; }
+    margin: 0 2%;
+    max-width: 96%; }
   .outro .body {
-    max-width: 96%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 96%; }
   .outro h2 {
     font-size: 2em;
     font-weight: 200;
@@ -1488,128 +1774,108 @@ footer {
   .outro .action {
     margin-bottom: 1.5em; }
     .outro .action a {
-      color: #fff;
-      text-decoration: none;
-      display: inline-block; }
-      .outro .action a.donate:after {
+      color: #263f6a;
+      display: block;
+      text-decoration: none; }
+      .outro .action a.donate:after, .outro .action a.attend:after {
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
         transition: all 0.3s linear;
+        color: #3e7fb7;
         content: " →";
-        color: #ffe09b;
-        font-size: 1.25em;
-        line-height: 1;
+        font-size: 1.5em;
+        line-height: 0.7;
         position: relative;
-        top: 0.1em; }
-      .outro .action a:hover.donate:after {
+        top: 0.125em; }
+      .outro .action a:hover.donate:after, .outro .action a:hover.attend:after {
         left: 1px; }
-    .outro .action.event a {
-      -webkit-transition: all 0.3s linear;
-      -moz-transition: all 0.3s linear;
-      transition: all 0.3s linear;
-      background-color: #ce8e00;
-      padding: 1em 4em; }
-      .outro .action.event a:hover {
-        background-color: #9b6b00; }
+    .outro .action h4 {
+      font-size: 0.8em;
+      letter-spacing: 1px;
+      margin-bottom: 0.5em; }
 
 @media all and (min-width: 36.25em) {
   .outro {
     padding-bottom: 1.5em; }
     .outro .wrapper {
-      max-width: 94%;
-      margin: 0 3%; }
+      margin: 0 3%;
+      max-width: 94%; }
     .outro .body {
-      max-width: 96%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 96%; }
     .outro h2 {
       font-size: 2em;
       line-height: 1.15;
       margin: 1.40625em auto 0.78125em;
       max-width: 84%; }
     .outro p {
-      line-height: 1.4;
-      font-size: 1.0625em; }
+      font-size: 1.0625em;
+      line-height: 1.4; }
     .outro h3 {
-      padding: 0.61538em 0 1.23077em;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.625em;
-      font-family: "MyWriteHand", "Brush Script MT", cursive; }
+      padding: 0.61538em 0 1.23077em; }
     .outro .action {
+      display: inline-block;
       margin-bottom: 1.5em;
-      float: left;
-      width: 50%; }
-      .outro .action a.donate:after {
-        font-size: 1.25em;
-        top: 0.1em; }
-      .outro .action.event a {
-        padding: 1em 4em; } }
+      width: 32%;
+      vertical-align: top; } }
 @media all and (min-width: 45em) {
   .outro {
-    background-image: url("../images/outro/outro1.jpg");
+    background-image: url("../images/outro/outro3.jpg");
     padding-bottom: 3.25em; }
     .outro .wrapper {
-      max-width: 80%;
-      margin: 0 10%; }
+      margin: 0 10%;
+      max-width: 80%; }
     .outro .body {
-      max-width: 96%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 96%; }
     .outro h2 {
       font-size: 2.625em;
       line-height: 1.2;
       margin: 1.78571em auto 1.07143em;
       max-width: 75%; }
     .outro p {
-      line-height: 1.4;
-      font-size: 1.125em; }
+      font-size: 1.125em;
+      line-height: 1.4; }
     .outro h3 {
-      padding: 0.5em 0 1em;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 2em;
-      font-family: "MyWriteHand", "Brush Script MT", cursive; }
+      padding: 0.5em 0 1em; }
     .outro .action {
-      margin-bottom: 1.5em;
-      float: left;
-      width: 50%;
-      font-size: 1.0625em; }
-      .outro .action a.donate:after {
-        font-size: 1.29412em;
-        top: 0.11765em; }
-      .outro .action.event a {
-        padding: 1em 4em; } }
+      font-size: 1.0625em;
+      margin-bottom: 1.5em; } }
 @media all and (min-width: 87.5em) {
   .outro {
     padding-bottom: 4.5em; }
     .outro .wrapper {
-      max-width: 87.5em;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 87.5em; }
     .outro .body {
       max-width: 58.125em; }
     .outro h2 {
-      font-size: 2.625em;
-      line-height: 1.2;
-      margin: 2.61905em auto 1.07143em;
+      font-size: 3.75em;
+      margin: 3.33333em auto 0.75em;
       max-width: 65%; }
     .outro p {
-      line-height: 1.6;
-      font-size: 1.375em; }
-    .outro h3 {
-      padding: 0.84211em 0 1.47368em;
-      font-size: 2.375em;
-      font-family: "MyWriteHand", "Brush Script MT", cursive; }
-    .outro .action {
-      padding-top: 0.16667em;
-      margin-bottom: 1.5em;
-      float: left;
-      width: 50%;
       font-size: 1.625em;
       line-height: 1.6; }
-      .outro .action a.donate:after {
-        font-size: 1em;
-        top: 0.07692em; }
-      .outro .action.event a {
-        margin-top: 0.69231em;
-        padding: 1em 5em; } }
+    .outro h3 {
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 3em;
+      padding: 0; }
+    .outro .action {
+      font-size: 1.75em;
+      line-height: 1.6;
+      margin-bottom: 0.5em;
+      padding-top: 0.16667em; }
+      .outro .action h4 {
+        font-size: 1.14286em;
+        margin-bottom: 0.07143em; } }
 .president {
-  background-image: radial-gradient(circle, #20417a, #152b51);
+  background-color: #e9eaec;
   display: inline-block;
+  padding-bottom: 3.125em;
   padding-top: 3.125em;
   width: 100%; }
   .president .wrapper {
@@ -1617,103 +1883,89 @@ footer {
     max-width: 96%; }
   .president .letter-top {
     text-align: center; }
-    .president .letter-top p {
-      color: #fff;
-      font-size: 0.9375em;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      margin: 0;
-      opacity: 0.25;
-      text-transform: uppercase; }
     .president .letter-top h2 {
-      color: #ce8e00;
+      color: #263f6a;
       font-size: 1.625em;
+      font-weight: 700;
+      letter-spacing: 0.07692em;
+      margin-top: 0.46154em; }
+    .president .letter-top h3 {
+      color: #263f6a;
+      font-size: 1.125em;
       font-weight: 200;
-      letter-spacing: 0.11538em;
-      margin-top: 0.46154em;
-      opacity: 0.9; }
+      letter-spacing: 1px; }
+      .president .letter-top h3 em {
+        color: #739abc;
+        font-style: normal;
+        font-family: "MyWriteHand", "Brush Script MT", cursive;
+        font-size: 1.33333em; }
   .president .pic {
-    display: inline-block;
-    margin: 0 10%;
-    max-width: 80%; }
-    .president .pic img {
-      width: 100%; }
-    .president .pic p {
-      font-size: 0.9375em;
+    text-align: center; }
+    .president .pic .sig {
+      color: #263f6a;
+      font-size: 0.875em;
       font-weight: 200;
-      letter-spacing: 0.05em;
-      line-height: 1.3;
       margin-top: 0;
-      opacity: 0.3;
-      padding-left: 0;
       text-align: center; }
+      .president .pic .sig img {
+        margin: 0.25em auto 0.5em;
+        padding: 0;
+        width: auto; }
   .president .body {
-    margin-top: 1em; }
+    margin-top: 2em; }
     .president .body h3 {
       font-size: 1.0625em;
       font-weight: 200;
-      letter-spacing: 0.0625em;
-      opacity: 0.75; }
+      letter-spacing: 0.0625em; }
     .president .body p, .president .body ul {
       font-size: 0.9375em;
       font-weight: 200;
-      letter-spacing: 0.0625em;
-      opacity: 0.75; }
+      letter-spacing: 0.0625em; }
     .president .body .list-top {
-      color: #ce8e00;
       font-size: 1.0625em;
-      opacity: 0.9; }
-  .president .sig {
-    float: right;
-    font-size: 0.875em;
-    margin-bottom: 3.75em;
-    max-width: 45%;
-    opacity: 0.75;
-    text-align: right; }
-    .president .sig img {
-      max-width: 100%; }
+      letter-spacing: 1px;
+      font-weight: 700; }
   .president .more-button {
     cursor: pointer;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
     font-size: 0.875em;
-    margin-top: 2em; }
+    margin-left: 1.14286em;
+    margin-top: 0; }
     .president .more-button a {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
-      color: #c1d1df;
-      font-style: italic;
-      text-decoration: none; }
+      color: #263f6a;
+      opacity: 0.8;
+      text-decoration: none;
+      padding-top: 0.3125em;
+      position: relative; }
       .president .more-button a:after {
         -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        border-color: #739abc transparent transparent transparent;
+        border-color: transparent transparent transparent transparent;
         border-style: solid;
-        border-width: 0.5em 0.375em 0 0.375em;
+        border-width: 0.5625em 0.6875em 0 0.6875em;
         content: "";
         display: block;
         height: 0;
-        left: 5.9375em;
-        position: relative;
-        top: 0.375em;
-        width: 0; }
+        margin: 0;
+        position: absolute;
+        width: 0;
+        left: 1.9em;
+        top: 1.75em; }
     .president .more-button:hover a {
-      color: #e3eaf0; }
+      opacity: 1; }
       .president .more-button:hover a:after {
-        border-color: #95b3cd transparent transparent transparent;
-        top: 0.5em; }
+        border-color: #95b3cd transparent transparent transparent; }
   .president.showmore .more-button a:after {
-    border-color: transparent transparent #739abc transparent;
-    border-width: 0 0.375em 0.5em 0.375em;
-    top: -2.0625em; }
+    border-width: 0 0.6875em 0.5625em 0.6875em;
+    top: -0.625em; }
   .president.showmore .more-button:hover a:after {
-    border-color: transparent transparent #95b3cd transparent;
-    top: -2.25em; }
+    border-color: transparent transparent #95b3cd transparent; }
 
 @media all and (min-width: 36.25em) {
   .president {
-    background-image: radial-gradient(circle closest-side, #20417a, #152b51);
     padding-top: 3.75em; }
     .president .wrapper {
       margin: 0 2%;
@@ -1729,40 +1981,30 @@ footer {
         margin-top: 0.42857em; }
     .president .pic {
       display: inline-block;
-      float: left;
+      float: right;
       margin: 0;
-      padding-bottom: 10.5em;
       max-width: 25%; }
       .president .pic img {
         width: 100%; }
-      .president .pic p {
-        font-size: 0.75em;
-        margin-top: 0.5em;
-        padding-left: 0.5em;
-        text-align: left; }
+      .president .pic .sig {
+        font-size: 0.875em; }
+        .president .pic .sig img {
+          max-width: 100%; }
     .president .body {
-      margin-left: 28%;
       margin-top: 1.75em; }
       .president .body h3 {
         font-size: 1.125em; }
       .president .body p, .president .body ul {
         font-size: 0.9375em; }
       .president .body .list-top {
-        font-size: 1.125em; }
-    .president .sig {
-      font-size: 0.875em;
-      margin-bottom: 3.75em;
-      max-width: 45%; }
-      .president .sig img {
-        max-width: 100%; }
-    .president .more-button {
-      margin-top: 1.5em; } }
+        font-size: 1.125em; } }
 @media all and (min-width: 45em) {
   .president {
+    padding-bottom: 3.75em;
     padding-top: 5.625em; }
     .president .wrapper {
-      margin: 0 3%;
-      max-width: 94%; }
+      margin: 0 auto;
+      width: 60em; }
     .president .letter-top {
       text-align: center; }
       .president .letter-top p {
@@ -1773,61 +2015,50 @@ footer {
         letter-spacing: 0.08824em;
         margin-top: 0.35294em; }
     .president .pic {
-      padding-bottom: 10.5em;
       max-width: 25%; }
-      .president .pic img {
-        width: 100%; }
-      .president .pic p {
-        font-size: 0.875em;
-        margin-top: 0.42857em;
-        padding-left: 0.42857em; }
+      .president .pic .sig {
+        font-size: 1em; }
     .president .body {
-      margin-left: 30%;
       margin-top: 2.625em; }
       .president .body h3 {
         font-size: 1.25em; }
       .president .body p, .president .body ul {
         font-size: 1em; }
       .president .body .list-top {
-        font-size: 1.25em; }
-    .president .sig {
-      font-size: 1em;
-      margin-bottom: 5em; }
-    .president .more-button {
-      margin-top: 1.5em; } }
+        font-size: 1.25em; } }
 @media all and (min-width: 87.5em) {
   .president {
+    padding-bottom: 5em;
     padding-top: 6.875em; }
     .president .wrapper {
-      max-width: 84.6875em; }
+      width: 72.5em; }
     .president .letter-top {
       text-align: center; }
-      .president .letter-top p {
-        font-size: 1.0625em;
-        letter-spacing: 0.17647em; }
       .president .letter-top h2 {
-        font-size: 2.625em;
-        letter-spacing: 0.07143em;
-        margin-top: 0.28571em; }
+        font-size: 3em;
+        letter-spacing: 0.04167em;
+        margin-top: 0.25em; }
+      .president .letter-top h3 {
+        font-size: 1.625em;
+        line-height: 1.5;
+        margin: 0 auto 2em;
+        max-width: 75%; }
     .president .pic {
-      padding-bottom: 16.75em; }
-      .president .pic p {
-        font-size: 1.25em;
-        margin-top: 0.3em;
-        padding-left: 0.3em; }
+      margin-left: 3.125em;
+      width: 18.75em; }
+      .president .pic .sig {
+        font-size: 1em; }
     .president .body {
-      margin-left: 29.6875em;
       margin-top: 2.625em; }
       .president .body h3 {
         font-size: 1.75em; }
       .president .body p, .president .body ul {
-        font-size: 1.375em; }
+        font-size: 1.5em; }
       .president .body .list-top {
         font-size: 1.75em; }
-    .president .sig {
-      font-size: 1.125em; }
     .president .more-button {
-      margin-top: 2em; } }
+      font-size: 1.625em;
+      margin-left: 1.38462em; } }
 @-webkit-keyframes hsIntroStretch {
   from {
     font-size: 0; }
@@ -1871,7 +2102,7 @@ footer {
 .intro.showless .more {
   display: none;
   -webkit-animation: hsIntroShrink 0.6s ease-in 0s 1 normal forwards running, hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running;
-  animation: hsIntroShrink 0.6s ease-in 0s 1 normal forwards running,  hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running; }
+  animation: hsIntroShrink 0.6s ease-in 0s 1 normal forwards running, hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running; }
 .intro.showless .pre:before,
 .intro.showless .post:after {
   content: "..."; }
@@ -1902,12 +2133,12 @@ footer {
   from {
     opacity: 0; }
   to {
-    opacity: 0.75; } }
+    opacity: 1; } }
 @keyframes hsPresFadeIn {
   from {
     opacity: 0; }
   to {
-    opacity: 0.75; } }
+    opacity: 1; } }
 @-webkit-keyframes hsPresShrink {
   from {
     font-size: auto; }
@@ -1920,18 +2151,18 @@ footer {
     font-size: 0; } }
 @-webkit-keyframes hsPresFadeOut {
   from {
-    opacity: 0.75; }
+    opacity: 1; }
   to {
     opacity: 0; } }
 @keyframes hsPresFadeOut {
   from {
-    opacity: 0.75; }
+    opacity: 1; }
   to {
     opacity: 0; } }
 .president.showless .more {
   display: none;
   -webkit-animation: hsPresShrink 0.6s ease-in 0s 1 normal forwards running, hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running;
-  animation: hsPresShrink 0.6s ease-in 0s 1 normal forwards running,  hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running; }
+  animation: hsPresShrink 0.6s ease-in 0s 1 normal forwards running, hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running; }
 .president.showless .pre:before,
 .president.showless .post:after {
   content: "..."; }
@@ -1947,11 +2178,13 @@ footer {
 .president.showmore .post:after,
 .president.showmore .period:after {
   content: ""; }
+.president.showmore .more-button {
+  margin-top: 1.5em; }
 
 .index nav {
   display: none;
   position: fixed;
-  background-color: #152b51;
+  background-color: #263f6a;
   text-align: right;
   width: 100%;
   z-index: 1000; }
@@ -2011,7 +2244,7 @@ footer {
       .index nav .mobile-menu-icon.active div span:after {
         transform: rotate(-45deg) translateY(0); }
   .index nav .mobile-menu {
-    background-color: rgba(21, 43, 81, 0.9);
+    background-color: rgba(38, 63, 106, 0.9);
     bottom: 0;
     display: none;
     left: 0;
@@ -2022,6 +2255,7 @@ footer {
     top: 4.6875em;
     z-index: 100; }
     .index nav .mobile-menu a {
+      color: #fff;
       display: block;
       text-decoration: none;
       font-size: 1.5em;
@@ -2035,7 +2269,7 @@ footer {
   .index nav a.text {
     font-weight: 200;
     font-size: 0.875em;
-    border-bottom: 0.35714em solid #152b51;
+    border-bottom: 0.35714em solid #263f6a;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -2054,107 +2288,124 @@ footer {
 @media all and (min-width: 62.5em) {
   .index nav a.text {
     font-size: 1.125em;
-    border-bottom: 0.27778em solid #152b51;
+    border-bottom: 0.27778em solid #263f6a;
     padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
     .index nav a.text:hover, .index nav a.text.active {
       border-bottom: 0.27778em solid #739abc; } }
-.victories .wrapper {
-  background: transparent url("../images/victories/mobile-victories1.jpg") no-repeat top center;
-  background-size: cover;
+.victories {
   min-height: 30em;
-  padding: 2.5em 0 4.375em;
   text-align: center; }
-  .victories .wrapper .victory {
+  .victories .wrapper {
+    background: transparent url("../images/victories/mobile-victories4.jpg") no-repeat top center;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4%; }
+  .victories .victory {
     display: inline-block;
     margin: 0;
     vertical-align: top;
     width: 80%; }
-  .victories .wrapper h2, .victories .wrapper h3 {
-    color: #ce8e00;
-    font-size: 2em;
-    font-weight: 200;
+  .victories h2 {
+    color: #263f6a;
+    font-size: 1.625em;
+    font-weight: 400;
     letter-spacing: 1px;
-    margin-bottom: 0; }
-    .victories .wrapper h2 small, .victories .wrapper h3 small {
+    margin-bottom: 0.92308em; }
+    .victories h2 em {
+      color: #3e7fb7;
+      display: inline-block;
+      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-size: 1.38462em;
+      font-style: normal;
+      left: -3px;
+      letter-spacing: -0.05em;
+      position: relative; }
+      .victories h2 em::first-letter {
+        letter-spacing: -10px; }
+  .victories h3 {
+    color: #3e7fb7;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 0.6;
+    margin-bottom: 0.625em; }
+    .victories h3 small {
       font-size: 0.5em;
       font-weight: 400;
-      letter-spacing: none; }
-  .victories .wrapper h2 {
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    margin-bottom: 1em; }
-  .victories .wrapper p {
-    color: #739abc;
+      letter-spacing: 0; }
+  .victories p {
+    color: #263f6a;
     font-size: 0.875em;
-    letter-spacing: 0.03125em;
+    font-weight: 200;
+    letter-spacing: 1px;
     margin-top: 0.57143em; }
 
 .victory-after {
-  background: transparent url("../images/victories/mobile-victories-after1.jpg") no-repeat top center;
+  background: transparent url("../images/victories/mobile-victories-after2.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
-  min-height: 30em;
-  position: static;
   height: 80vh;
   min-height: 80vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
+  position: relative;
+  width: 100%; }
 
 @media all and (min-width: 36.25em) {
   .victories .wrapper {
     padding: 2.5em 0 4.375em; }
     .victories .wrapper h2 {
-      font-size: 1.625em; }
+      font-size: 2em;
+      margin-bottom: 0.75em; }
     .victories .wrapper .victory {
       margin: 0.75em 1em 0;
       width: 36%; } }
 @media all and (min-width: 45em) {
-  .victories .wrapper {
-    background-image: url("../images/victories/victories1.jpg");
-    min-height: 45em;
-    padding: 6.25em 0 4.375em; }
-    .victories .wrapper .victory {
-      margin: 1.5em 2em;
-      width: 24%; }
+  .victories {
+    min-height: 45em; }
+    .victories .wrapper {
+      background-image: url("../images/victories/victories4.jpg"); }
+    .victories .victory {
+      margin: 1.5em 2em 1em;
+      width: 28%;
+      max-width: 21.875em; }
 
   .victory-after {
-    background-image: url("../images/victories/victories-after1.jpg");
-    min-height: 45em;
-    position: static;
+    background-image: url("../images/victories/victories-after2.jpg");
+    background-position: center center;
+    background-size: cover;
     height: 85vh;
     min-height: 85vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center; } }
+    position: static;
+    width: 100%; } }
 @media all and (min-width: 87.5em) {
   .victories .wrapper {
-    padding: 9.375em 4em 5.625em; }
+    padding: 6.875em 0 4.5em; }
     .victories .wrapper .victory {
-      margin: 2.25em 4em;
-      width: 22%; }
-    .victories .wrapper h2, .victories .wrapper h3 {
-      font-size: 3.25em;
-      letter-spacing: none; }
-      .victories .wrapper h2 small, .victories .wrapper h3 small {
-        font-size: 0.42308em;
-        letter-spacing: -0.02em; }
+      margin: 1.5em 2em 1em;
+      width: 28%;
+      max-width: 25em; }
     .victories .wrapper h2 {
-      font-size: 2.25em;
-      letter-spacing: 3px;
-      margin-bottom: 0.88889em; }
+      font-size: 3em;
+      margin-bottom: 0.5em; }
+      .victories .wrapper h2 em {
+        font-size: 1.25em;
+        letter-spacing: -0.05em; }
+    .victories .wrapper h3 {
+      font-size: 3.75em;
+      margin-bottom: 0.37037em; }
+      .victories .wrapper h3 small {
+        font-size: 0.51852em; }
     .victories .wrapper p {
-      font-size: 1.25em;
-      letter-spacing: -0.00313em;
-      margin-top: 0.4em; }
+      font-size: 1.5em;
+      margin-top: 0.33333em; }
 
   .victory-after {
-    min-height: 62.5em;
-    position: static;
+    background-position: center center;
+    background-size: cover;
     height: 90vh;
     min-height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center; } }
+    position: static;
+    width: 100%; } }
 
 /*# sourceMappingURL=hsus.css.map */

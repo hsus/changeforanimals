@@ -1,43 +1,62 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .celeb {
-  background: transparent url('../images/mobile-campaign-farm-celeb1.jpg') no-repeat top center; //quality @ 70
-  background-size: cover; 
+  background: transparent url('../images/celebs/mobile-farm2.jpg') no-repeat top center; //quality @ 70
+  background-size: cover;
+  color: $white;
   display: block;
   padding: em(50) 0;
   text-align: center;
   .wrapper {
-    max-width: 94%;
     margin: 0 3%;
+    max-width: 94%;
   }
   .headshot {
     border-radius: 50%;
   }
   h3 {
-    margin-bottom: em(2,28);
+    color: $white;
     font-size: em(28);
     letter-spacing: 1px;
+    margin-bottom: em(2,28);
   }
   .title {
-    margin-top: 0;
     font-size: em(18);
+    margin-top: 0;
   }
   blockquote {
     font-size: em(16);
     font-weight: 200;
-    margin: em(32,16) 0 em(24,16) 0;
     letter-spacing: 1px;
     line-height: 1.4;
+    margin: em(32,16) 0 em(24,16) 0;
     span {
       font-size: em(24,16);
       line-height: 0.4;
     }
   }
-
+  a.watch-video {
+    color: $white;
+    display: block;
+    font-size: em(28);
+    text-decoration: none;
+    &:after {
+      @include default-transition;
+      color: $yellow;
+      content: " →";
+      font-size: em(20);
+      line-height: 1;
+      position: relative;
+      top: em(2,20);
+    }
+    &:hover:after {
+      left: 1px;
+    }
+  }
   .video {
     position: relative;
-    svg path { 
-      @include default-transition; 
+    svg path {
+      @include default-transition;
     }
     .play-button {
       &:hover {
@@ -45,35 +64,35 @@
         path {
           fill: darken($white,10%);
         }
-      }     
+      }
     }
     .overlay {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      display: block;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: none;
       background-color: rgba(0,0,0,0.7);
-      z-index: 1000;      
+      bottom: 0;
+      display: block;
+      display: none;
+      height: 100%;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
 
     // Don't change the .video-container CSS below without reading:
     // http://coolestguidesontheplanet.com/videodrome/youtube/
-    .youtubewrap {  
-      width: 98%;
-      max-width: 1024px;
-      margin: 5% auto;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+    .youtubewrap {
       bottom: 0;
-      z-index: 10000;
       display: none;
+      left: 0;
+      margin: 100px auto 0;
+      max-width: 1024px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 98%;
+      z-index: 10000;
       &:before {
         @include default-transition;
         background-color: rgba(255,255,255,0.9);
@@ -88,44 +107,44 @@
         font-weight: 400;
         height: em(20,21);
         line-height: 0.75;
-        position: relative;
-        margin-top: em(-10);
         margin-left: em(-20);
+        margin-top: em(-10);
+        position: relative;
         width: em(20,21);
         z-index: 100000;
       }
     }
     .video-container {
-      position:relative;
-      padding-bottom:56.25%;
-      padding-top:30px;
       height:0;
       overflow:hidden;
+      padding-bottom:56.25%;
+      padding-top:30px;
+      position:relative;
       z-index: 10000;
     }
-    .video-container iframe, 
-    .video-container object, 
+    .video-container iframe,
+    .video-container object,
     .video-container embed {
+      height:100%;
+      left:0;
       position:absolute;
       top:0;
-      left:0;
       width:100%;
-      height:100%;
     }
   }
 }
 
 //  Tablet
 @media all and (min-width: $tablet) {
-  .celeb {    
+  .celeb {
     padding: em(100) 0 em(100);
     h3 {
-      margin-bottom: em(2,28);
       font-size: em(28);
+      margin-bottom: em(2,28);
     }
     .title {
-      margin-top: 0;
       font-size: em(18);
+      margin-top: 0;
     }
     blockquote {
       font-size: em(18);
@@ -133,9 +152,9 @@
       span {
         font-size: em(24,18);
       }
-    }    
+    }
     .video {
-      .youtubewrap {  
+      .youtubewrap {
         width: 88%;
       }
       .play-button {
@@ -148,19 +167,19 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .celeb {
-    background-image: url('../images/campaign-farm-celeb1.jpg'); //quality @ 70    
+    background-image: url('../images/celebs/farm2.jpg'); //quality @ 70
     padding: em(110) 0 em(120);
     .wrapper {
-      max-width: 74%;
       margin: 0 13%;
+      max-width: 74%;
     }
     h3 {
-      margin-bottom: em(2,28);
       font-size: em(28);
+      margin-bottom: em(2,28);
     }
     .title {
-      margin-top: 0;
       font-size: em(18);
+      margin-top: 0;
     }
     blockquote {
       font-size: em(18);
@@ -170,7 +189,7 @@
       }
     }
     .video {
-      .youtubewrap {  
+      .youtubewrap {
         width: 80%;
       }
       .play-button {
@@ -185,16 +204,16 @@
   .celeb {
     padding: em(150) 0 em(200);
     .wrapper {
-      max-width: 64%;
       margin: 0 18%;
+      max-width: 64%;
     }
     h3 {
-      margin-bottom: em(2,36);
       font-size: em(36);
+      margin-bottom: em(2,36);
     }
     .title {
-      margin-top: 0;
       font-size: em(24);
+      margin-top: 0;
     }
     blockquote {
       font-size: em(22);

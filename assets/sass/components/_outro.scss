@@ -1,20 +1,20 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .outro {
-  background: transparent url('../images/outro/mobile-outro1.jpg') no-repeat top center; //quality @ 70
+  background: transparent url('../images/outro/mobile-outro3.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
   display: block;
-  text-align: center;
-  width: 100%;
   overflow: hidden;
   padding-bottom: em(16);
+  text-align: center;
+  width: 100%;
   .wrapper {
-    max-width: 96%;
     margin: 0 2%;
+    max-width: 96%;
   }
   .body {
-    max-width: 96%;
     margin: 0 auto;
+    max-width: 96%;
   }
   h2 {
     font-size: em(32);
@@ -33,29 +33,28 @@
   .action {
     margin-bottom: em(24);
     a {
-      color: $white;
+      color: $blue;
+      display: block;
       text-decoration: none;
-      display: inline-block;
-      &.donate:after {
+      &.donate:after,
+      &.attend:after {
         @include default-transition;
+        color: $bright-blue;
         content: " →";
-        color: lighten($yellow,40%);
-        font-size: em(20);
-        line-height: 1;
+        font-size: em(24);
+        line-height: 0.7;
         position: relative;
-        top: em(2,20);
+        top: em(2);
       }
-      &:hover.donate:after {
+      &:hover.donate:after,
+      &:hover.attend:after {
         left: 1px;
       }
     }
-    &.event a {
-      @include default-transition;
-      background-color: $yellow;
-      padding: em(16) em(64);
-      &:hover {
-        background-color: darken($yellow,10%);
-      }
+    h4 {
+      font-size: em(16,20);
+      letter-spacing: 1px;
+      margin-bottom: em(8,16);
     }
   }
 }
@@ -65,41 +64,33 @@
   .outro {
     padding-bottom: em(24);
     .wrapper {
-      max-width: 94%;
       margin: 0 3%;
+      max-width: 94%;
     }
     .body {
-      max-width: 96%;
       margin: 0 auto;
+      max-width: 96%;
     }
     h2 {
       font-size: em(32);
       line-height: 1.15;
-      margin: em(45,32) auto em(25,32) ;
+      margin: em(45,32) auto em(25,32);
       max-width: 84%;
     }
     p {
-      line-height: 1.4;
       font-size: em(17);
+      line-height: 1.4;
     }
     h3 {
-      padding: em(16,26) 0 em(32,26);
-      font-size: em(26);
       font-family: $secondary-font;
+      font-size: em(26);
+      padding: em(16,26) 0 em(32,26);
     }
     .action {
+      display: inline-block;
       margin-bottom: em(24);
-      float: left;
-      width: 50%;
-      a {
-        &.donate:after {
-          font-size: em(20);
-          top: em(2,20);
-        }
-      }
-      &.event a {
-        padding: em(16) em(64);
-      }
+      width: 32%;
+      vertical-align: top;
     }
   }
 }
@@ -107,15 +98,15 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .outro {
-    background-image: url('../images/outro/outro1.jpg'); //quality @ 70
+    background-image: url('../images/outro/outro3.jpg'); //quality @ 70
     padding-bottom: em(52);
     .wrapper {
-      max-width: 80%;
       margin: 0 10%;
+      max-width: 80%;
     }
     .body {
-      max-width: 96%;
       margin: 0 auto;
+      max-width: 96%;
     }
     h2 {
       font-size: em(42);
@@ -124,28 +115,17 @@
       max-width: 75%;
     }
     p {
-      line-height: 1.4;
       font-size: em(18);
+      line-height: 1.4;
     }
     h3 {
-      padding: em(16,32) 0 em(32,32);
-      font-size: em(32);
       font-family: $secondary-font;
+      font-size: em(32);
+      padding: em(16,32) 0 em(32,32);
     }
     .action {
-      margin-bottom: em(24);
-      float: left;
-      width: 50%;
       font-size: em(17);
-      a {
-        &.donate:after {
-          font-size: em(22,17);
-          top: em(2,17);
-        }
-      }
-      &.event a {
-        padding: em(16) em(64);
-      }
+      margin-bottom: em(24);
     }
   }
 }
@@ -155,43 +135,34 @@
   .outro {
     padding-bottom: em(72);
     .wrapper {
-      max-width: em(1400);
       margin: 0 auto;
+      max-width: em(1400);
     }
     .body {
       max-width: em(930);
     }
     h2 {
-      font-size: em(42);
-      line-height: 1.2;
-      margin: em(110,42) auto em(45,42) ;
+      font-size: em(60);
+      margin: em(200,60) auto em(45,60) ;
       max-width: 65%;
     }
     p {
-      line-height: 1.6;
-      font-size: em(22);
-    }
-    h3 {
-      padding: em(32,38) 0 em(56,38);
-      font-size: em(38);
-      font-family: $secondary-font;
-    }
-    .action {
-      padding-top: em(4,24);
-      margin-bottom: em(24);
-      float: left;
-      width: 50%;
       font-size: em(26);
       line-height: 1.6;
-      a {
-        &.donate:after {
-          font-size: em(26,26);
-          top: em(2,26);
-        }
-      }
-      &.event a {
-        margin-top: em(18,26);
-        padding: em(16) em(80);
+    }
+    h3 {
+      font-family: $secondary-font;
+      font-size: em(48);
+      padding: 0;
+    }
+    .action {
+      font-size: em(28);
+      line-height: 1.6;
+      margin-bottom: em(12,24);
+      padding-top: em(4,24);
+      h4 {
+        font-size: em(32,28);
+        margin-bottom: em(2,28);
       }
     }
   }

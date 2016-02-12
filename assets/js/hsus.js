@@ -1,26 +1,40 @@
 $(document).ready(function() {
 
+  function is_touch_device() {
+    return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+  }
+
+  if (is_touch_device()) { 
+    $('.victory-after,.campaign header,.events-after,.index header').css('background-attachment','scroll');
+  };
+
   // This function works with sass/components/read-more.scss
   $('#intro .readmore').click(function() {
     var el = $(this),
         wrapper = el.parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
-      $('#intro').css('background-image','url("/assets/images/intro1.jpg")')
+      $('#intro').css('background-image','url("/assets/images/intro/intro2.jpg")')
       wrapper.find('.readmore').text('Read More');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).hide();
-      });
+      });      
+      if (is_touch_device()) { wrapper.find('.more').hide(); };
+      wrapper.toggleClass('showmore showless');
     } else {
       $('#intro').css('background-image','radial-gradient(circle closest-side, #20417a, #152b51)')
       wrapper.find('.readmore').text('Read Less');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).css('display','inline');
       });
+      if (is_touch_device()) { wrapper.find('.more').show().animate({opacity: 1},300);};
+      wrapper.toggleClass('showmore showless');
     };
-
-    wrapper.toggleClass('showmore showless');
-    wrapper.find('.more').css('display','inline');
+    if (!is_touch_device()) { 
+      wrapper.find('.more').css('display','inline');
+    };
   });
 
   // This function works with sass/components/read-more.scss
@@ -29,21 +43,24 @@ $(document).ready(function() {
         wrapper = el.parent().parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
-      wrapper.find('.readmore').text('Read More of Wayne\'s Letter');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.readmore').text('Read More');
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).hide();
       });
+      if (is_touch_device()) { wrapper.find('.more').hide(); };
+      wrapper.toggleClass('showmore showless');
     } else {
-      wrapper.find('.readmore').text('Show Less of Wayne\'s Letter');
-      $('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      wrapper.find('.readmore').text('Read Less');
+      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         $(this).css('display','inline');
       });
+      if (is_touch_device()) { wrapper.find('.more').show().animate({opacity: 1},300);};
+      wrapper.toggleClass('showmore showless');
     };
-
-    wrapper.toggleClass('showmore showless');
-    wrapper.find('.more').css('display','inline');
+    if (!is_touch_device()) { 
+      wrapper.find('.more').css('display','inline');
+    };
   });
-
 
   // Sticky nav
   $(window).on('scroll', function() {
@@ -55,12 +72,6 @@ $(document).ready(function() {
       $('nav').fadeIn();
     } else {
       $('nav').fadeOut();
-    }
-
-    function is_touch_device() {
-     return (('ontouchstart' in window)
-          || (navigator.MaxTouchPoints > 0)
-          || (navigator.msMaxTouchPoints > 0));
     }
 
     // Get viewport height and set trigger point
@@ -105,6 +116,78 @@ $(document).ready(function() {
         el.find('.prompt').css('opacity','0.7');
       } else {
         el.find('.prompt').css('opacity','0');
+      }
+    });
+
+    $('#about').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > -50 ) {
+        $('#menu .about').addClass('active');
+      } else {        
+        $('#menu .about').removeClass('active');
+      }
+    });
+
+    $('#program-areas').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .program-areas').addClass('active');
+      } else {        
+        $('#menu .program-areas').removeClass('active');
+      }
+    });
+
+    $('#events').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .event').addClass('active');
+      } else {        
+        $('#menu .event').removeClass('active');
+      }
+    });
+
+    $('#get-involved').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .get-involved').addClass('active');
+      } else {        
+        $('#menu .get-involved').removeClass('active');
+      }
+    });
+
+    $('#get-involved').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .get-involved').addClass('active');
+      } else {        
+        $('#menu .get-involved').removeClass('active');
+      }
+    });
+
+    $('#goals').each(function() {
+      var el = $(this),
+          thisTop = el.offset().top - elWin.scrollTop(),
+          previewHeight = el.height(),
+          thisBottom = thisTop + previewHeight;
+      if ( thisTop < 75 && thisBottom > 0 ) {
+        $('#menu .about').addClass('active');
+      } else {        
+        $('#menu .about').removeClass('active');
       }
     });
 
@@ -196,6 +279,15 @@ $(document).ready(function() {
     var el = $(this);
     el.find('.overlay').fadeToggle(200,"linear").end()
       .find('.youtubewrap').fadeToggle(600,"linear");
+  });
+
+  // Celeb Wall 
+  $('.celeb .single').first().addClass('active').find('.hide').show();
+  $('.headshot').click(function() {
+    var el = $(this),
+        celeb = el.parent().parent();
+    celeb.siblings().removeClass('active').find('.hide').hide();
+    celeb.toggleClass('active').find('.hide').fadeToggle();
   });
 
 });

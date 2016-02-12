@@ -4,13 +4,12 @@
   <body class="{{page.body-class}}">
     <div class="wrapper">
 
-
         {{content}}
 
-        {% include outro.html %}
-
         {% if page.body-class == 'index' %}
-        {% include donors.html %}
+            {% include outro.html %}
+            {% include celeb-wall.html %}
+            {% include donors.html %}
         {% endif %}
 
         {% include footer.html %}

@@ -1,8 +1,11 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .campaign header {
-  background: transparent url('../images/headers/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
+  background: transparent url('../images/headers/mobile-header-farm1.jpg') no-repeat top center; //quality @ 20
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
+  color: $white;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -47,7 +50,6 @@
     margin-bottom: em(28,32);
     margin-top: em(24,32);
     max-width: 100%;
-    max-width: em(500,32);
   }
   .description {
     font-size: em(16);
@@ -67,7 +69,6 @@
     z-index: 100;
   }
 }
-
 
 //  Tablet
 @media all and (min-width: $tablet) {
@@ -105,9 +106,9 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .campaign header {
-    background-image: url('../images/headers/header1.1.jpg');
+    background-image: url('../images/headers/header-farm1.jpg');
     .gradient {
-      width: 55%;
+      width: 75%;
     }
     .tagline {
       font-size: em(24);
@@ -136,7 +137,7 @@
   .campaign header {
     background-image: url('../images/headers/header1.1.jpg');
     .gradient {
-      width: 50%;
+      width: 80%;
     }
     .wrapper {
       margin: 0 auto;
@@ -152,7 +153,7 @@
       font-size: em(72);
       margin-bottom: em(24,72);
       margin-top: em(48,72);
-      max-width: em(500,72);
+      max-width: em(600,72);
     }
     .description {
       font-size: em(24);

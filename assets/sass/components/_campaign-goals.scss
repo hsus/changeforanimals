@@ -3,28 +3,29 @@
 .goals {
   background: transparent url('../images/goals/mobile-goals1.jpg') no-repeat top center; //quality @ 70
   background-size: cover;
+  color: $white;
   display: block;
   text-align: center;
   .wrapper {
-    max-width: 94%;
     margin: 0 3%;
+    max-width: 94%;
   }
   h2 {
+    color: $white;
+    font-size: em(24);
+    font-weight: 700;
     margin-top: 0;
     padding-bottom: 0;
     padding-top: em(40,24);
-    font-weight: 200;
-    color: $yellow;
-    font-size: em(24);
   }
   .goal {
     display: inline-block;
-    width: 80%;
-    font-weight: 200;
     font-size: em(16);
+    font-weight: 200;
     line-height: 1.5;
-    vertical-align: top;
     margin-bottom: em(40,16);
+    vertical-align: top;
+    width: 80%;
     &:nth-of-type(odd) {
       margin-right: 0%;
       &:last-child {
@@ -32,8 +33,9 @@
       }
     }
     em {
-      font-style: normal;
       color: $yellow;
+      font-style: normal;
+      font-weight: 400;
     }
   }
 }
@@ -43,18 +45,18 @@
 @media all and (min-width: $tablet) {
   .goals {
     .wrapper {
-      max-width: 84%;
       margin: 0 8%;
+      max-width: 84%;
     }
     h2 {
+      font-size: em(28);
       padding-bottom: em(10,28);
       padding-top: em(60,28);
-      font-size: em(28);
     }
     .goal {
-      width: 43%;
       font-size: em(16);
       margin-bottom: em(60,16);
+      width: 43%;
       &:nth-of-type(odd) {
         margin-right: 12%;
       }
@@ -67,18 +69,18 @@
   .goals {
     background-image: url('../images/goals/goals1.jpg'); //quality @ 70
     .wrapper {
-      max-width: 84%;
       margin: 0 8%;
+      max-width: 84%;
     }
     h2 {
+      font-size: em(32);
       padding-bottom: em(20,32);
       padding-top: em(100,32);
-      font-size: em(32);
     }
     .goal {
-      width: 38%;
       font-size: em(17);
       margin-bottom: em(80,17);
+      width: 38%;
       &:nth-of-type(odd) {
         margin-right: 17%;
       }
@@ -90,18 +92,18 @@
 @media all and (min-width: $desktop) {
   .goals {
     .wrapper {
-      max-width: em(1360);
       margin: 0 auto;
+      max-width: em(1360);
     }
     h2 {
-      padding-bottom: em(60,36);
-      padding-top: em(180,36);
-      font-size: em(36);
+      font-size: em(48);
+      padding-bottom: em(60,48);
+      padding-top: em(180,48);
     }
     .goal {
+      font-size: em(26);
+      margin-bottom: em(100,26);
       width: 37%;
-      font-size: em(22);
-      margin-bottom: em(100,22);
       &:nth-of-type(odd) {
         margin-right: 19%;
       }

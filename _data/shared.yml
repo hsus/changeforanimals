@@ -1,4 +1,4 @@
-hsus-url: "//www.humanesociety.org/"
+hsus-url: "//www.humanesociety.org/?credit=web_phil_changinglives"
 
 logos:
   logo:
@@ -9,7 +9,7 @@ logos:
   int:
     url: "//www.hsi.org/"
     image-url: "/assets/images/logos/logo-int.svg"
-    alt: "The Humane Society International"
+    alt: "Humane Society International"
 
 
 tagline: "a humane society<br/>starts with you"
@@ -17,61 +17,46 @@ tagline: "a humane society<br/>starts with you"
 footer-tagline: "Creating transformational change for all animals"
 
 social-links:
-  - channel: "twitter"
-    url: ""
-    icon: "/assets/images/icons/twitter.svg"
-
-  - channel: "pinterest"
-    url: ""
-    icon: "/assets/images/icons/pinterest.svg"
-
   - channel: "facebook"
-    url: ""
+    url: "https://www.facebook.com/humanesociety"
     icon: "/assets/images/icons/facebook.svg"
 
-  - channel: "instagram"
-    url: ""
-    icon: "/assets/images/icons/instagram.svg"
+  - channel: "twitter"
+    url: "http://twitter.com/HumaneSociety"
+    icon: "/assets/images/icons/twitter.svg"
 
   - channel: "youtube"
-    url: ""
+    url: "http://www.youtube.com/user/hsus"
     icon: "/assets/images/icons/youtube.svg"
 
-  - channel: "googleplus"
-    url: ""
-    icon: "/assets/images/icons/googleplus1.svg"
+  - channel: "instagram"
+    url: "http://www.instagram.com/humanesociety"
+    icon: "/assets/images/icons/instagram.svg"
 
   - channel: "linkedin"
-    url: ""
-    icon: "/assets/images/icons/linkedin.svg"
+    url: "http://www.linkedin.com/company/the-humane-society-of-the-united-states"
+    icon: "/assets/images/icons/linkedin2.svg"
 
-visit:
-  title: "Visit"
-  url: "//www.humanesociety.org/"
-  link-text: "humanesociety.org"
+  - channel: "pinterest"
+    url: "http://pinterest.com/humanesociety/"
+    icon: "/assets/images/icons/pinterest.svg"
+
+  - channel: "googleplus"
+    url: "https://plus.google.com/+hsus/posts"
+    icon: "/assets/images/icons/googleplus1.svg"
+
+  - channel: "tumblr"
+    url: "http://humanesociety.tumblr.com/"
+    icon: "/assets/images/icons/tumblr2.svg"
 
 privacy:
   title: "Privacy Policy"
-  url: ""
+  url: "http://www.humanesociety.org/privacy.html?credit=web_phil_changinglives"
 
 contact:
   title: "Contact Us"
-  url: ""
+  url: "mailto:changinglives@humanesociety.org"
 
 copyright: "The Humane Society of the United States"
 
-non-profit-statement: "The HSUS is registered as a 501(c)(3) non-profit organization.<br>Contributions to The Humane Society of the United States are tax-deductible to the extent permitted by law.<br>The HSUS's tax identification number is 53-0225390."
-
-donors:
-  - name: "Don Sinex"
-    url:
-    link-prompt: "Read his story"
-  - name: "Walter Right"
-    url:
-    link-prompt: "Read his story"
-  - name: "Suzie Heart"
-    url:
-    link-prompt: "Read her story"
-  - name: "The Davidson Family"
-    url:
-    link-prompt: "Read their story"
+non-profit-statement: "The Humane Society of the United States (HSUS) is registered as a 501(c)(3) non-profit organization.<br>Contributions to The Humane Society of the United States are tax-deductible to the extent permitted by law.<br>The HSUS's tax identification number is 53-0225390."

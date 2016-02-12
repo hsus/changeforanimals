@@ -1,9 +1,14 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .index header {
-  background: transparent url('../images/headers/mobile-header1.1.jpg') no-repeat top center; //quality @ 20
+  background: transparent url('../images/headers/mobile-header2.jpg') no-repeat top center; //quality @ 20
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
+  color: $white;
   display: inline-block;
+  min-height: 80vh;
+  position: relative;
   text-align: center;
   width: 100%;
   .logo {
@@ -42,7 +47,7 @@
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
   .index header {
-    background-image: url('../images/headers/header1.1.jpg');
+    background-image: url('../images/headers/header2.jpg');
     .tagline {
       font-size: em(84);
       margin: 0 auto em(240,84);
