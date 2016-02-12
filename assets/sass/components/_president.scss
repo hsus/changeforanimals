@@ -49,18 +49,19 @@
   }
   .body {
     margin-top: em(32);
+    font-size: em(15);
     h3 {
-      font-size: em(17);
+      font-size: em(17,15);
       font-weight: 200;
-      letter-spacing: em(1);
+      letter-spacing: em(1,15);
     }
     p,ul {
-      font-size: em(15);
+      font-size: em(15,15);
       font-weight: 200;
-      letter-spacing: em(1);
+      letter-spacing: em(1,15);
     }
     .list-top {
-      font-size: em(17);
+      font-size: em(17,15);
       letter-spacing: 1px;
       font-weight: 700;
     }
@@ -146,15 +147,16 @@
       }
     }
     .body {
-      margin-top: em(28);
+      margin-top: em(28);      
+      font-size: em(15);
       h3 {
-        font-size: em(18);
+        font-size: em(18,15);
       }
       p,ul {
-        font-size: em(15);
+        font-size: em(15,15);
       }
       .list-top {
-        font-size: em(18);
+        font-size: em(18,15);
       }
     }
   }
@@ -189,6 +191,7 @@
     }
     .body {
       margin-top: em(42);
+      font-size: em(16);
       h3 {
         font-size: em(20);
       }
@@ -232,15 +235,16 @@
       }
     }
     .body {
-      margin-top: em(42);
+      margin-top: em(42,24);
+      font-size: em(24);
       h3 {
-        font-size: em(28);
+        font-size: em(28,24);
       }
       p,ul {
-        font-size: em(24);
+        font-size: em(24,24);
       }
       .list-top {
-        font-size: em(28);
+        font-size: em(28,24);
       }
     }
     .more-button {
