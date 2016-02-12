@@ -1062,7 +1062,9 @@ ul {
     max-width: 96%;
     margin: 0 auto; }
   .index .celeb h2 {
-    color: #c1d1df; }
+    color: #c1d1df;
+    font-size: 1.25em;
+    font-weight: 400; }
   .index .celeb .single {
     margin-bottom: 1em; }
     .index .celeb .single .headshots .headshot {
@@ -1091,6 +1093,9 @@ ul {
     font-size: 1.125em;
     cursor: pointer; }
 
+@media all and (min-width: 36.25em) {
+  .index .celeb h2 {
+    font-size: 1.625em; } }
 @media all and (min-width: 45em) {
   .index .celeb {
     background-image: url("/assets/images/celebs/celeb-wall1.jpg");
@@ -1099,9 +1104,11 @@ ul {
     padding-top: 5em;
     text-align: center;
     width: 100%;
-    min-height: 37.5em; }
+    min-height: 40.625em; }
     .index .celeb .wrapper {
       position: relative; }
+    .index .celeb h2 {
+      font-size: 1.75em; }
     .index .celeb .single {
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
@@ -1132,14 +1139,16 @@ ul {
   .index .celeb {
     padding-bottom: 3.75em;
     padding-top: 6.875em;
-    min-height: 43.75em; }
+    min-height: 48.75em; }
+    .index .celeb h2 {
+      font-size: 2.5em; }
     .index .celeb .single .headshots h3 {
       font-size: 1.125em; }
     .index .celeb .single .headshots p {
       font-size: 1em; }
     .index .celeb .single .info {
-      top: 16.5625em;
-      max-width: 50%; } }
+      top: 18.4375em;
+      max-width: 60%; } }
 .donors {
   background: transparent url("../images/donors/mobile-donors3.jpg") no-repeat top center;
   background-size: cover;

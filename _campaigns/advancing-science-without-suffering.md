@@ -46,8 +46,7 @@ celebs:
     title: Musician
     video: ''
     video-cta:
-    quote: |
-      If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, <em>I BELIEVE EVERYONE WOULD LEAVE CRUELTY ON THE SHELF.</em>
+    quote: "If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, I believe everyone would leave cruelty on the shelf."
 
   - class: celeb2
     background: /assets/images/celebs/celeb-science2.jpg

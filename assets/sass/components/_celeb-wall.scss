@@ -14,6 +14,8 @@
   }
   h2 {
     color: $light-gray;
+    font-size: em(20);
+    font-weight: 400;
   }
   .single {
     margin-bottom: em(16);
@@ -57,6 +59,9 @@
 //  Tablet
 @media all and (min-width: $tablet) {
   .index .celeb {
+    h2 {
+      font-size: em(26);
+    }
   }
 }
 
@@ -69,9 +74,12 @@
     padding-top: em(80);
     text-align: center;
     width: 100%;
-    min-height: em(600);
+    min-height: em(650);
     .wrapper {
       position: relative;
+    }
+    h2 {
+      font-size: em(28);
     }
     .single {
       @include default-transition;
@@ -113,7 +121,10 @@
   .index .celeb {
     padding-bottom: em(60);
     padding-top: em(110);
-    min-height: em(700);
+    min-height: em(780);
+    h2 {      
+      font-size: em(40);
+    }
     .single {
       .headshots {
         h3 {
@@ -124,8 +135,8 @@
         }
       }
       .info {
-        top: em(265);
-        max-width: 50%;
+        top: em(295);
+        max-width: 60%;
       }
     }
   }

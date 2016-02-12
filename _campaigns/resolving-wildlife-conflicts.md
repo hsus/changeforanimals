@@ -47,7 +47,7 @@ celebs:
     name: James Cromwell
     title: Actor, <em>Babe</em>
     video: ''
-    quote: "<em>THE HUMANE SOCIETY OF THE UNITED STATES IS LEADING THE CHARGE IN THE WAY WE MANAGE WILDLIFE</em> through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
+    quote: "The humane society of the united states is leading the charge in the way we manage wildlife through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
 
 
 donor_story: 
