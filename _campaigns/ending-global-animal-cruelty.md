@@ -23,7 +23,7 @@ header:
 
 image: "/assets/images/campaigns/campaign-cruelty2.jpg"
 icon: "/assets/images/icons/icon-cruelty.svg"
-caption: "Even after the fight is over, dogfighting dogs aren’t safe. They sometimes die from their wounds or are killed if they lost the fight."
+caption: "Building on our success in the U.S., we’re ready to tackle dogfighting around the world by expanding our reach internationally."
 
 goal_layout:
   - background: /assets/images/goals/goals-cruelty1.jpg
