@@ -2092,7 +2092,7 @@ footer {
 .intro.showless .post:after,
 .president.showless .pre:before,
 .president.showless .post:after {
-  content: "..."; }
+  content: " . . . "; }
 .intro.showless .period:after,
 .president.showless .period:after {
   content: "."; }

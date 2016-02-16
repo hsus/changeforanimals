@@ -15,7 +15,7 @@ financial_tagline:
 
 title: Resolving Wildlife Conflicts
 description: |
-  Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to human-wildlife conflicts. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative immunocontraception research projects in partnership with leading veterinary medicine schools.
+  Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to managing wildlife. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative immunocontraception research projects in partnership with leading veterinary medicine schools. And we’re working internationally to end the cruel trade in wildlife parts and to end the trophy hunting of specific animals.
 
 header:
   - background: /assets/images/headers/header-wildlife1.jpg
@@ -23,16 +23,16 @@ header:
 
 image: "/assets/images/campaigns/campaign-wildlife1.jpg"
 icon: "/assets/images/icons/icon-wildlife.svg"
-caption: We’re at the forefront of humane wildlife management, and we’re ready to share our knowledge.
+caption: We’ve drastically reduced trophy hunting of lions, and we’re doing the same for elephants, leopards and other species.
 
 goal_layout:
   - background: /assets/images/goals/goals-wildlife1.jpg
     mobile-background: /assets/images/goals/mobile-goals-wildlife1.jpg
 
 goals:
-  - <em>Decrease the trade</em> for shark fins, ivory, rhino horns and pangolins.
+  - <em>Decrease the trade</em> in shark fins, ivory, rhino horns and pangolins.
 
-  - Decrease trophy hunting of <em>large carnivores in the US</em> in five states and decrease the import of lion, leopard, elephant, hippo and giraffe trophies to the US.
+  - Decrease trophy hunting of <em>large carnivores in the US</em> in five states and decrease the import of lion, leopard, elephant, hippo and giraffe trophies to the U.S.
 
   - Expand <em>wildlife fertility control</em> to manage 10% of the wild horse and burro population (5,000 horses and 1,000 burros would have received treatment) and to manage white-tailed deer in five urban communities.
 
@@ -50,7 +50,7 @@ celebs:
     quote: "The humane society of the united states is leading the charge in the way we manage wildlife through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
 
 
-donor_story: 
+donor_story:
   - background: /assets/images/donors/donor-story-wildlife1.jpg
     mobile-background: /assets/images/donors/mobile-donor-story-wildlife1.jpg
     image: /assets/images/donors/donor-story1.jpg

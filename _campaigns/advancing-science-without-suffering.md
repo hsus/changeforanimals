@@ -15,7 +15,7 @@ financial_tagline:
 
 title: "Advancing Science Without Suffering"
 description: |
-  Millions of animals are used in cosmetic and toxicity tests worldwide, despite growing recognition of flaws inherent in such tests. We’ve already partnered with Procter & Gamble to develop AltTox.org, a site dedicated to advancing non-animal methods of toxicity testing. We can build on that momentum to promote 21st-century science and speed the adoption of alternatives.
+  Each year in laboratories around the world, millions of animals suffer and die in cruel chemical-poisoning tests for products we use every day, despite growing recognition of flaws inherent in such tests. We’re spearheading a global campaign to ban animal testing for cosmetics and to replace 1940s-era tests on rats, rabbits and dogs with superior modern alternatives based on 21st century science.
 
 header:
   - background: /assets/images/headers/header-science1.jpg
@@ -31,7 +31,7 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-science1.jpg
 
 goals:
-  - <em>Ban testing cosmetics on animals</em> or enact import/ sales bans of animal-tested cosmetics in three major markets and make progress toward ending mandatory cosmetics animal testing in China.
+  - <em>Ban cosmetics animal testing</em> and trade in the world’s largest markets, including the U.S., and make progress toward ending mandatory animal testing for cosmetics in China.
   - Accelerate the development of next-generation animal-testing alternatives by steering public and private funding toward <em>non-animal technologies</em>.
   - Promote the adoption of <em>animal-testing alternatives</em> in international industry regulations.
 
