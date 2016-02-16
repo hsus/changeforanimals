@@ -1,6 +1,7 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
 .campaign-previews {
+  background-color: $off-white;
   display: block;
   overflow: auto;
   width: 100%;
@@ -14,7 +15,7 @@
     text-align: center;
     z-index: 100;
     em {
-      color: $blue;
+      color: $bright-blue;
       display: inline-block;
       font-family: $secondary-font;
       font-size: em(22,18);
@@ -197,7 +198,7 @@
           opacity: 0.7;
         }
         img {
-          margin: em(110) 0 em(55);
+          margin: em(110) 0 em(16);
           width: 15%;
         }
       }

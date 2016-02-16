@@ -201,7 +201,7 @@ html, body {
   font-weight: 200;
   font-size: 16px;
   color: #263f6a;
-  background-color: #e9eaec; }
+  background-color: #14233d; }
 
 h1 {
   color: #263f6a; }
@@ -656,6 +656,7 @@ ul {
     z-index: 100; }
   .campaign header .financial {
     background-color: #263f6a;
+    color: #739abc;
     display: inline-block;
     font-size: 1.5em;
     margin-top: 0;
@@ -758,6 +759,7 @@ ul {
       margin-bottom: 2.91667em;
       width: 50%; } }
 .campaign-previews {
+  background-color: #e9eaec;
   display: block;
   overflow: auto;
   width: 100%; }
@@ -771,7 +773,7 @@ ul {
     text-align: center;
     z-index: 100; }
     .campaign-previews h2.title em {
-      color: #263f6a;
+      color: #3e7fb7;
       display: inline-block;
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.22222em;
@@ -912,7 +914,7 @@ ul {
       line-height: 1.6;
       opacity: 0.7; }
     .campaign-previews .preview .overlay img {
-      margin: 6.875em 0 3.4375em;
+      margin: 6.875em 0 1em;
       width: 15%; }
     .campaign-previews .preview > h3 {
       font-size: 1.5em;
@@ -1079,10 +1081,14 @@ ul {
     .index .celeb .single .headshots h3 {
       margin-top: 0;
       font-size: 1.125em;
-      line-height: 1.2; }
+      line-height: 1.3;
+      width: 114%;
+      margin-left: -7%; }
     .index .celeb .single .headshots p {
       font-size: 1em;
-      line-height: 1.4; }
+      line-height: 1.3;
+      width: 114%;
+      margin-left: -7%; }
     .index .celeb .single.active {
       margin-top: 0; }
       .index .celeb .single.active .headshots .headshot {
@@ -1093,6 +1099,17 @@ ul {
     color: #fff;
     font-size: 1.125em;
     cursor: pointer; }
+    .index .celeb a.video:after {
+      color: #FBCB43;
+      content: " →";
+      font-size: 1.5625em;
+      line-height: 1;
+      position: relative;
+      top: 0.16em; }
+    .index .celeb a.video:hover {
+      opacity: 1; }
+      .index .celeb a.video:hover:after {
+        left: 1px; }
 
 @media all and (min-width: 36.25em) {
   .index .celeb h2 {
@@ -1135,7 +1152,8 @@ ul {
         right: 0;
         top: 15.625em;
         margin: 0 auto;
-        max-width: 80%; } }
+        width: 100%;
+        max-width: 71.875em; } }
 @media all and (min-width: 87.5em) {
   .index .celeb {
     padding-bottom: 3.75em;
@@ -1148,8 +1166,7 @@ ul {
     .index .celeb .single .headshots p {
       font-size: 1em; }
     .index .celeb .single .info {
-      top: 18.4375em;
-      max-width: 60%; } }
+      top: 18.4375em; } }
 .donors {
   background: transparent url("../images/donors/mobile-donors3.jpg") no-repeat top center;
   background-size: cover;
@@ -1643,6 +1660,7 @@ footer {
     display: block;
     font-family: "MyWriteHand";
     font-size: 2.25em;
+    letter-spacing: -0.13889em;
     font-style: normal;
     font-weight: normal;
     line-height: 1.1;
@@ -1653,12 +1671,14 @@ footer {
     margin: 11.25em auto 1.5em; }
   .index header .tagline {
     font-size: 4em;
+    letter-spacing: -0.07813em;
     margin: 0 auto 2.8125em; } }
 @media all and (min-width: 45em) {
   .index header {
     background-image: url("../images/headers/header2.jpg"); }
     .index header .tagline {
       font-size: 5.25em;
+      letter-spacing: -0.05952em;
       margin: 0 auto 2.85714em; } }
 .intro {
   background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
@@ -1802,7 +1822,7 @@ footer {
       .outro .action a:hover.donate:after, .outro .action a:hover.attend:after {
         left: 1px; }
     .outro .action h4 {
-      font-size: 0.8em;
+      font-size: 1em;
       letter-spacing: 1px;
       margin-bottom: 0.5em; }
 
@@ -1827,11 +1847,8 @@ footer {
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.625em;
       padding: 0.61538em 0 1.23077em; }
-    .outro .action {
-      display: inline-block;
-      margin-bottom: 1.5em;
-      width: 32%;
-      vertical-align: top; } }
+    .outro .action h4 {
+      font-size: 1.25em; } }
 @media all and (min-width: 45em) {
   .outro {
     background-image: url("../images/outro/outro3.jpg");
@@ -1854,9 +1871,16 @@ footer {
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 2em;
       padding: 0.5em 0 1em; }
+    .outro .actions {
+      max-width: 59.375em;
+      margin: 0 auto; }
     .outro .action {
-      font-size: 1.0625em;
-      margin-bottom: 1.5em; } }
+      margin-bottom: 1.33333em;
+      display: inline-block;
+      width: 32%;
+      vertical-align: top; }
+      .outro .action h4 {
+        font-size: 1.125em; } }
 @media all and (min-width: 87.5em) {
   .outro {
     padding-bottom: 4.5em; }
@@ -1876,6 +1900,8 @@ footer {
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 3em;
       padding: 0; }
+    .outro .actions {
+      max-width: 87.5em; }
     .outro .action {
       font-size: 1.75em;
       line-height: 1.6;
@@ -1924,17 +1950,16 @@ footer {
         padding: 0;
         width: auto; }
   .president .body {
-    margin-top: 2em; }
+    margin-top: 2em;
+    font-size: 0.9375em;
+    overflow: hidden; }
     .president .body h3 {
-      font-size: 1.0625em;
       font-weight: 200;
-      letter-spacing: 0.0625em; }
+      letter-spacing: 0.06667em; }
     .president .body p, .president .body ul {
-      font-size: 0.9375em;
       font-weight: 200;
-      letter-spacing: 0.0625em; }
+      letter-spacing: 0.06667em; }
     .president .body .list-top {
-      font-size: 1.0625em;
       letter-spacing: 1px;
       font-weight: 700; }
   .president .more-button {
@@ -1947,7 +1972,6 @@ footer {
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
       color: #263f6a;
-      opacity: 0.8;
       text-decoration: none;
       padding-top: 0.3125em;
       position: relative; }
@@ -2003,13 +2027,8 @@ footer {
         .president .pic .sig img {
           max-width: 100%; }
     .president .body {
-      margin-top: 1.75em; }
-      .president .body h3 {
-        font-size: 1.125em; }
-      .president .body p, .president .body ul {
-        font-size: 0.9375em; }
-      .president .body .list-top {
-        font-size: 1.125em; } }
+      margin-top: 1.75em;
+      font-size: 0.9375em; } }
 @media all and (min-width: 45em) {
   .president {
     padding-bottom: 3.75em;
@@ -2031,13 +2050,8 @@ footer {
       .president .pic .sig {
         font-size: 1em; }
     .president .body {
-      margin-top: 2.625em; }
-      .president .body h3 {
-        font-size: 1.25em; }
-      .president .body p, .president .body ul {
-        font-size: 1em; }
-      .president .body .list-top {
-        font-size: 1.25em; } }
+      margin-top: 2.625em;
+      font-size: 1em; } }
 @media all and (min-width: 87.5em) {
   .president {
     padding-bottom: 5em;
@@ -2045,15 +2059,16 @@ footer {
     .president .wrapper {
       width: 72.5em; }
     .president .letter-top {
-      text-align: center; }
+      text-align: center;
+      letter-spacing: 0.03em; }
       .president .letter-top h2 {
         font-size: 3em;
         letter-spacing: 0.04167em;
         margin-top: 0.25em; }
       .president .letter-top h3 {
-        font-size: 1.625em;
-        line-height: 1.5;
-        margin: 0 auto 2em;
+        font-size: 1.5em;
+        line-height: 2.2rem;
+        margin: 0 auto 2.16667em;
         max-width: 75%; }
     .president .pic {
       margin-left: 3.125em;
@@ -2061,136 +2076,44 @@ footer {
       .president .pic .sig {
         font-size: 1em; }
     .president .body {
-      margin-top: 2.625em; }
-      .president .body h3 {
-        font-size: 1.75em; }
-      .president .body p, .president .body ul {
-        font-size: 1.5em; }
-      .president .body .list-top {
-        font-size: 1.75em; }
+      margin-top: 1.75em;
+      font-size: 1.5em;
+      line-height: 2.2rem;
+      letter-spacing: 0.03em; }
     .president .more-button {
-      font-size: 1.625em;
       margin-left: 1.38462em; } }
-@-webkit-keyframes hsIntroStretch {
-  from {
-    font-size: 0; }
-  to {
-    font-size: inherit; } }
-@keyframes hsIntroStretch {
-  from {
-    font-size: 0; }
-  to {
-    font-size: inherit; } }
-@-webkit-keyframes hsIntroFadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes hsIntroFadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes hsIntroShrink {
-  from {
-    font-size: inherit; }
-  to {
-    font-size: 0; } }
-@keyframes hsIntroShrink {
-  from {
-    font-size: inherit; }
-  to {
-    font-size: 0; } }
-@-webkit-keyframes hsIntroFadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-@keyframes hsIntroFadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-.intro.showless .more {
-  display: none;
-  -webkit-animation: hsIntroShrink 0.6s ease-in 0s 1 normal forwards running, hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running;
-  animation: hsIntroShrink 0.6s ease-in 0s 1 normal forwards running, hsIntroFadeOut 0.3s ease-in 0s 1 normal forwards running; }
-.intro.showless .pre:before,
-.intro.showless .post:after {
-  content: "..."; }
-.intro.showless .period:after {
-  content: "."; }
-.intro.showmore .less {
-  display: none; }
-.intro.showmore .more {
-  opacity: 0;
-  -webkit-animation: hsIntroStretch 0.3s ease-out 0s 1 normal forwards running, hsIntroFadeIn 0.3s ease-out 0.3s 1 normal forwards running;
-  animation: hsIntroStretch 0.3s ease-out 0s 1 normal forwards running, hsIntroFadeIn 0.3s ease-out 0.3s 1 normal forwards running; }
-.intro.showmore .pre:before,
-.intro.showmore .post:after,
-.intro.showmore .period:after {
-  content: ""; }
-
-@-webkit-keyframes hsPresStretch {
-  from {
-    font-size: 0; }
-  to {
-    font-size: auto; } }
-@keyframes hsPresStretch {
-  from {
-    font-size: 0; }
-  to {
-    font-size: auto; } }
-@-webkit-keyframes hsPresFadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes hsPresFadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes hsPresShrink {
-  from {
-    font-size: auto; }
-  to {
-    font-size: 0; } }
-@keyframes hsPresShrink {
-  from {
-    font-size: auto; }
-  to {
-    font-size: 0; } }
-@-webkit-keyframes hsPresFadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-@keyframes hsPresFadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
+.intro.showless .more,
 .president.showless .more {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   display: none;
-  -webkit-animation: hsPresShrink 0.6s ease-in 0s 1 normal forwards running, hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running;
-  animation: hsPresShrink 0.6s ease-in 0s 1 normal forwards running, hsPresFadeOut 0.3s ease-in 0s 1 normal forwards running; }
+  opacity: 0; }
+.intro.showless .pre:before,
+.intro.showless .post:after,
 .president.showless .pre:before,
 .president.showless .post:after {
   content: "..."; }
+.intro.showless .period:after,
 .president.showless .period:after {
   content: "."; }
+.intro.showmore .less,
 .president.showmore .less {
   display: none; }
+.intro.showmore .more,
 .president.showmore .more {
-  opacity: 0;
-  -webkit-animation: hsPresStretch 0.3s ease-out 0s 1 normal forwards running, hsPresFadeIn 0.3s ease-out 0.3s 1 normal forwards running;
-  animation: hsPresStretch 0.3s ease-out 0s 1 normal forwards running, hsPresFadeIn 0.3s ease-out 0.3s 1 normal forwards running; }
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+.intro.showmore .pre:before,
+.intro.showmore .post:after,
+.intro.showmore .period:after,
 .president.showmore .pre:before,
 .president.showmore .post:after,
 .president.showmore .period:after {
   content: ""; }
-.president.showmore .more-button {
+
+.president .more-button {
   margin-top: 1.5em; }
 
 .index nav {
@@ -2299,11 +2222,11 @@ footer {
     display: none !important; } }
 @media all and (min-width: 62.5em) {
   .index nav a.text {
-    font-size: 1.125em;
-    border-bottom: 0.27778em solid #263f6a;
-    padding: 1.55556em 0.77778em 1.05556em 0.77778em; }
+    font-size: 1em;
+    border-bottom: 0.3125em solid #263f6a;
+    padding: 1.875em 0.875em 1.375em 0.875em; }
     .index nav a.text:hover, .index nav a.text.active {
-      border-bottom: 0.27778em solid #739abc; } }
+      border-bottom: 0.3125em solid #739abc; } }
 .victories {
   min-height: 30em;
   text-align: center; }
