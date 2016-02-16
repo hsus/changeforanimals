@@ -41,9 +41,9 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-poverty1.jpg
 
 goals:
-  - "Reduce by 200,000 the number of <em>puppies produced by puppy mills</em> by strengthening animal welfare standards, restricting retail sales of puppy mill dogs and persuading pet stores to promote adoption of homeless animals."
-  - "Extend our <em>international street dog initiative</em> to vaccinate and sterilize more than a million street dogs—and convince more governments to stop dog-killing programs."
-  - "Expand our <em>Pets for Life</em> program, which helps local shelters and rescues reach underserved communities, providing care to 200,000 animals in the next five years."
+  - "Reduce by 200,000 the number of <em>puppies produced by puppy mills</em> by strengthening animal welfare standards, restricting retail sales of puppy mill dogs and persuading pet stores to promote adoption of homeless&nbsp;animals."
+  - "Extend our <em>international street dog initiative</em> to vaccinate and sterilize more than a million street dogs—and convince more governments to stop dog-killing&nbsp;programs."
+  - "Expand our <em>Pets for Life</em> program, which helps local shelters and rescues reach underserved communities, providing care to 200,000 animals in the next five&nbsp;years."
 
 donor_story:
   - background: /assets/images/donors/donor-story-poverty1.jpg
