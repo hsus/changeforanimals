@@ -12,7 +12,7 @@ permalink: helping-pets-in-poverty/
 financial_tagline:
   amount: $22.3 MILLION
   text: Makes It Possible
-  
+
 title: "Helping Pets in Poverty"
 description: |
   We’ve made great strides in providing services to underserved communities, stopping puppy mills, fighting for retail sales restrictions and working globally to manage street dogs humanely. Yet U.S. shelters still euthanize 2.8 million animals per year, some communities have shockingly low spay and neuter rates, and large-scale commercial dog breeders produce 2 million puppies annually, displacing shelter pets. Worldwide, 250–300 million dogs live on the street.
@@ -42,7 +42,7 @@ goal_layout:
 
 goals:
   - "Reduce by 200,000 the number of <em>puppies produced by puppy mills</em> by strengthening animal welfare standards, restricting retail sales of puppy mill dogs and persuading pet stores to promote adoption of homeless animals."
-  - "Extend our <em>international street dog initiative</em> to vaccinate and sterilize more than a million street dogs—and convince more governments to stop culls."
+  - "Extend our <em>international street dog initiative</em> to vaccinate and sterilize more than a million street dogs—and convince more governments to stop dog-killing programs."
   - "Expand our <em>Pets for Life</em> program, which helps local shelters and rescues reach underserved communities, providing care to 200,000 animals in the next five years."
 
 donor_story:

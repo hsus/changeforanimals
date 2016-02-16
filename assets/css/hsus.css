@@ -317,8 +317,7 @@ ul {
   color: #fff;
   display: block;
   padding: 3.125em 0;
-  text-align: center;
-  }
+  text-align: center; }
   .celeb .wrapper {
     margin: 0 3%;
     max-width: 94%; }
@@ -2093,7 +2092,7 @@ footer {
 .intro.showless .post:after,
 .president.showless .pre:before,
 .president.showless .post:after {
-  content: "..."; }
+  content: " . . . "; }
 .intro.showless .period:after,
 .president.showless .period:after {
   content: "."; }
