@@ -45,14 +45,15 @@ layout: default
         </section>
 
         {% for celeb in page.celebs %}
-        <style>
-          .celeb.{{ celeb.class }} { background-image: url('{{ celeb.mobile-background }}'); }
-          @media all and (min-width: 45em) {
-            .celeb.{{ celeb.class }} { background-image: url('{{ celeb.background }}'); }
-          }
-        </style>
+        
         <section class="celeb {{ celeb.class }}" id="video">
           <div class="wrapper">
+            <style>
+              .celeb.{{ celeb.class }} { background-image: url('{{ celeb.mobile-background }}'); }
+              @media all and (min-width: 45em) {
+                .celeb.{{ celeb.class }} { background-image: url('{{ celeb.background }}'); }
+              }
+            </style>
             <img class="headshot" src="{{ celeb.image }}" alt="Image: {{ celeb.name }}">
             <h3>{{ celeb.name }}</h3>
             <p class="title">{{ celeb.title }}</p>

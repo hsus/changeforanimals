@@ -23,7 +23,7 @@ header:
 
 image: "/assets/images/campaigns/campaign-farm1.jpg"
 icon: "/assets/images/icons/icon-cow.svg"
-caption: By working with major corporations and institutions, we can improve living conditions for billions of animals.
+caption: "Billions of animals stand to benefit when we encourage meat reduction and work to move animals out of extreme confinement."
 
 goal_layout:
   - background: /assets/images/goals/goals-farm1.jpg

@@ -23,7 +23,7 @@ header:
 
 image: "/assets/images/campaigns/campaign-science1.jpg"
 icon: "/assets/images/icons/icon-chimp.svg"
-caption: Science offers promising new approaches to cosmetics and toxicity testing, saving animals from torturous lives in labs.
+caption: "It’s time to end the use of animals in cosmetic and toxicity tests. By promoting new alternatives and banning animal testing, we can save animals from torturous lives in labs."
 
 
 goal_layout:
@@ -54,7 +54,7 @@ celebs:
     image: /assets/images/celebs/wayne1.jpg
     name: Wayne Pacelle
     title: President and CEO, The Humane Society of the United States
-    video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/vAgQREBFkL4?rel=0" frameborder="0" allowfullscreen></iframe>'
+    video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/GDUO1DzWvDo?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Wayne's Video"
     quote: "Rabbits, guinea pigs, mice and rats are all routinely used in tests designed to determine the degree to which a substance can harm them. The tests are unreliable and the actual consumer protections are overstated."
 

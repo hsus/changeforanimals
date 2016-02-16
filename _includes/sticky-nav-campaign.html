@@ -3,8 +3,8 @@
     <a href="/"><img src="{{ site.data.shared.logos.logo.small-image-url }}" class="logo-sm" alt="Logo: {{site.title}}"></a>
 
     <div class="mobile-menu" id="mobile-menu">
-      <a href="#goals" class="text about">About the Campaign</a>
-      <a href="#get-involved" class="text get-involved">Get Involved</a>      
+      <a href="#goals" class="text get-involved">How We’ll Create Change</a>      
+      <a href="#get-involved" class="text get-involved">Join Us</a>
       {% assign next = page.order | times: 1 | plus: 1 %}
       {% for c in site.campaigns %}
         {% if c.order == next %}
@@ -25,8 +25,8 @@
     </div>
 
     <div class="menu" id="menu">
-      <a href="#goals" class="text left about">About the Campaign</a>
-      <a href="#get-involved" class="text left get-involved">Get Involved</a>
+      <a href="#goals" class="text left get-involved">How We’ll Create Change</a>
+      <a href="#get-involved" class="text get-involved">Join Us</a>
     </div>
 
     <div class="next-menu">
