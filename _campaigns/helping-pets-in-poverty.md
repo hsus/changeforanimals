@@ -23,7 +23,7 @@ header:
 
 image: "/assets/images/campaigns/campaign-poverty1.jpg"
 icon: "/assets/images/icons/icon-cat.svg"
-caption: "Hundreds of thousands of companion animals stand to benefit from our efforts."
+caption: "Around the world, companion animals need our help. By targeting those who need it most, we can help hundreds of thousands of animals."
 
 celebs:
   - class: celeb1
@@ -34,16 +34,16 @@ celebs:
     title: Major League Baseball Player
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/r3uKF_mIZpE?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Chase's Video"
-    quote: "There are an estimated 23 million dogs and cats living in poverty with their loving families in the U.S., but without access to critical care and services. 80 percent of these pets have never seen a veterinarian, and 91 percent are not spayed or neutered. The hsus is working to close these gaps -- bringing critical life-saving services to pets and the families who love them."
+    quote: "There are an estimated 23 million dogs and cats living in poverty with their loving families in the U.S., but without access to critical care and services. 80 percent of these pets have never seen a veterinarian, and 91 percent are not spayed or neutered. The HSUS is working to close these gaps &mdash; bringing critical life-saving services to pets and the families who love them."
 
 goal_layout:
   - background: /assets/images/goals/goals-poverty1.jpg
     mobile-background: /assets/images/goals/mobile-goals-poverty1.jpg
 
 goals:
-  - "Reduce by 200,000 the number of <em>puppies produced by puppy mills</em> by strengthening animal welfare standards, restricting retail sales of puppy mill dogs and persuading pet stores to promote adoption of homeless animals."
-  - "Extend our <em>international street dog initiative</em> to vaccinate and sterilize more than a million street dogs—and convince more governments to stop dog-killing programs."
-  - "Expand our <em>Pets for Life</em> program, which helps local shelters and rescues reach underserved communities, providing care to 200,000 animals in the next five years."
+  - "Reduce by 200,000 the number of <em>puppies produced by puppy mills</em> by strengthening animal welfare standards, restricting retail sales of puppy mill dogs and persuading pet stores to promote adoption of homeless&nbsp;animals."
+  - "Extend our <em>international street dog initiative</em> to vaccinate and sterilize more than a million street dogs—and convince more governments to stop dog-killing&nbsp;programs."
+  - "Expand our <em>Pets for Life</em> program, which helps local shelters and rescues reach underserved communities, providing care to 200,000 animals in the next five&nbsp;years."
 
 donor_story:
   - background: /assets/images/donors/donor-story-poverty1.jpg

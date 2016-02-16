@@ -23,7 +23,7 @@ header:
 
 image: "/assets/images/campaigns/campaign-wildlife1.jpg"
 icon: "/assets/images/icons/icon-wildlife.svg"
-caption: We’ve drastically reduced trophy hunting of lions, and we’re doing the same for elephants, leopards and other species.
+caption: "In the U.S. and internationally, we’re well placed to encourage humane solutions to wildlife conflicts and to discourage the trade in animal parts."
 
 goal_layout:
   - background: /assets/images/goals/goals-wildlife1.jpg
@@ -32,7 +32,7 @@ goal_layout:
 goals:
   - <em>Decrease the trade</em> in shark fins, ivory, rhino horns and pangolins.
 
-  - Decrease trophy hunting of <em>large carnivores in the US</em> in five states and decrease the import of lion, leopard, elephant, hippo and giraffe trophies to the U.S.
+  - Decrease trophy hunting of <em>large carnivores in the U.S.</em> in five states and decrease the import of lion, leopard, elephant, hippo and giraffe trophies to the&nbsp;U.S.
 
   - Expand <em>wildlife fertility control</em> to manage 10% of the wild horse and burro population (5,000 horses and 1,000 burros would have received treatment) and to manage white-tailed deer in five urban communities.
 
@@ -46,8 +46,8 @@ celebs:
     image: "/assets/images/celebs/james-cromwell1.jpg"
     name: James Cromwell
     title: Actor, <em>Babe</em>
-    video: ''
-    quote: "The humane society of the united states is leading the charge in the way we manage wildlife through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
+    video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/cTDTAQB2wIE?rel=0" frameborder="0" allowfullscreen></iframe>'
+    quote: "The Humane Society of the United States is leading the charge in the way we manage wildlife through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
 
 
 donor_story:
