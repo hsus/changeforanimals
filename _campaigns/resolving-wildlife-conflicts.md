@@ -48,6 +48,7 @@ celebs:
     title: Actor, <em>Babe</em>
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/cTDTAQB2wIE?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch James's Video"
+    on-homepage: true
     quote: "The Humane Society of the United States is leading the charge in the way we manage wildlife through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
 
 

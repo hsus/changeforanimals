@@ -33,6 +33,7 @@
   .action {
     margin-bottom: em(24);
     a {
+      @include default-transition;
       color: $blue;
       display: block;
       text-decoration: none;
@@ -46,9 +47,12 @@
         position: relative;
         top: em(2);
       }
+      &:hover {
+        color: $bright-blue;
+      }
       &:hover.donate:after,
       &:hover.attend:after {
-        left: 1px;
+        left: 2px;
       }
     }
     h4 {

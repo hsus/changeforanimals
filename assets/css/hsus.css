@@ -341,6 +341,9 @@ ul {
       font-size: 1.5em;
       line-height: 0.4; }
   .celeb a.watch-video {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
     color: #fff;
     display: block;
     font-size: 1.75em;
@@ -355,8 +358,10 @@ ul {
       line-height: 1;
       position: relative;
       top: 0.1em; }
+    .celeb a.watch-video:hover {
+      color: #FBCB43; }
     .celeb a.watch-video:hover:after {
-      left: 1px; }
+      left: 2px; }
   .celeb .video {
     position: relative; }
     .celeb .video svg path {
@@ -1095,6 +1100,9 @@ ul {
   .index .celeb .hide {
     display: none; }
   .index .celeb a.video {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
     color: #fff;
     font-size: 1.125em;
     cursor: pointer; }
@@ -1106,9 +1114,10 @@ ul {
       position: relative;
       top: 0.16em; }
     .index .celeb a.video:hover {
-      opacity: 1; }
+      opacity: 1;
+      color: #FBCB43; }
       .index .celeb a.video:hover:after {
-        left: 1px; }
+        left: 2px; }
 
 @media all and (min-width: 36.25em) {
   .index .celeb h2 {
@@ -1308,9 +1317,10 @@ ul {
       position: relative;
       top: 0.16em; }
     .events .event .cta-button:hover {
-      opacity: 1; }
+      opacity: 1;
+      color: #FBCB43; }
       .events .event .cta-button:hover:after {
-        left: 1px; }
+        left: 2px; }
   .events .book {
     margin-top: 2em; }
     .events .book .book-header {
@@ -1368,9 +1378,10 @@ ul {
           position: relative;
           top: 0.16em; }
         .events .book .book-body a:hover {
-          opacity: 1; }
+          opacity: 1;
+          color: #FBCB43; }
           .events .book .book-body a:hover:after {
-            left: 1px; }
+            left: 2px; }
 
 .events-after {
   background: transparent url("../images/events/mobile-events-after1.jpg") no-repeat top center;
@@ -1429,6 +1440,9 @@ ul {
     .events .book .book-body {
       margin: 1em;
       padding-bottom: 2em; }
+  .events .event.one-column, .events .book.one-column {
+    width: 50%;
+    margin-left: 25%; }
   .events .event {
     margin-right: 10%; }
     .events .event p {
@@ -1462,6 +1476,9 @@ ul {
     margin: 0 auto 1.5em; }
   .events .event, .events .book {
     width: 42%; }
+  .events .event.one-column, .events .book.one-column {
+    width: 50%;
+    margin-left: 25%; }
   .events .event {
     margin-right: 10%; }
     .events .event p {
@@ -1566,7 +1583,7 @@ footer {
       bottom: 0.125em;
       margin-right: 0; }
       footer .social .tumblr:hover path {
-        fill: #36465d; }
+        fill: #55acee; }
     footer .social img, footer .social svg {
       height: auto;
       width: auto;
@@ -1805,6 +1822,9 @@ footer {
   .outro .action {
     margin-bottom: 1.5em; }
     .outro .action a {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
       color: #263f6a;
       display: block;
       text-decoration: none; }
@@ -1818,8 +1838,10 @@ footer {
         line-height: 0.7;
         position: relative;
         top: 0.125em; }
+      .outro .action a:hover {
+        color: #3e7fb7; }
       .outro .action a:hover.donate:after, .outro .action a:hover.attend:after {
-        left: 1px; }
+        left: 2px; }
     .outro .action h4 {
       font-size: 1em;
       letter-spacing: 1px;

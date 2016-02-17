@@ -34,6 +34,7 @@ celebs:
     title: Major League Baseball Player
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/r3uKF_mIZpE?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Chase's Video"
+    on-homepage: true
     quote: "There are an estimated 23 million dogs and cats living in poverty with their loving families in the U.S., but without access to critical care and services. 80 percent of these pets have never seen a veterinarian, and 91 percent are not spayed or neutered. The HSUS is working to close these gaps &mdash; bringing critical life-saving services to pets and the families who love them."
 
 goal_layout:

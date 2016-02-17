@@ -93,7 +93,7 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > -50 ) {
+      if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .about').addClass('active');
       } else {        
         $('#menu .about').removeClass('active');
@@ -105,22 +105,22 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
+      if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .program-areas').addClass('active');
       } else {        
         $('#menu .program-areas').removeClass('active');
       }
     });
 
-    $('#events').each(function() {
+    $('#supporters').each(function() {
       var el = $(this),
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
-        $('#menu .event').addClass('active');
+      if ( thisTop < 90 && thisBottom > 50 ) {
+        $('#menu .supporters').addClass('active');
       } else {        
-        $('#menu .event').removeClass('active');
+        $('#menu .supporters').removeClass('active');
       }
     });
 
@@ -129,19 +129,7 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
-        $('#menu .get-involved').addClass('active');
-      } else {        
-        $('#menu .get-involved').removeClass('active');
-      }
-    });
-
-    $('#get-involved').each(function() {
-      var el = $(this),
-          thisTop = el.offset().top - elWin.scrollTop(),
-          previewHeight = el.height(),
-          thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
+      if ( thisTop < 75 && thisBottom > 50 ) {
         $('#menu .get-involved').addClass('active');
       } else {        
         $('#menu .get-involved').removeClass('active');
@@ -153,7 +141,7 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
+      if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .about').addClass('active');
       } else {        
         $('#menu .about').removeClass('active');

@@ -9,7 +9,9 @@
         {% if page.body-class == 'index' %}
             {% include outro.html %}
             {% include celeb-wall.html %}
-            {% include donors.html %}
+            {% comment %}
+                {% include donors.html %}
+            {% endcomment %}
         {% endif %}
 
         {% include footer.html %}

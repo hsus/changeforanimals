@@ -4,6 +4,7 @@
       <h2>Voices for Animals</h2>
       {% for campaign in campaigns %}
       {% for celeb in campaign.celebs %}
+      {% if celeb.on-homepage %}
       <div class="single">
         <div class="headshots">
           <img class="headshot" src="{{ celeb.image }}" alt="Image: {{ celeb.name }}">
@@ -20,6 +21,7 @@
           {% endif %}
         </div>
       </div>  
+      {% endif %}
       {% endfor %}
       {% endfor %}
     </div>

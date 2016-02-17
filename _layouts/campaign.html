@@ -71,6 +71,7 @@ layout: default
 
         {% include outro.html %}
 
+      {% comment %}
         {% for donor in page.donor_story %}
         <style>
           .donor-story { background-image: url('{{ donor.mobile-background }}'); }
@@ -86,3 +87,4 @@ layout: default
           </div>
         </section>
         {% endfor %}
+      {% endcomment %}
