@@ -6,22 +6,22 @@ body-class: index
 
 victories:
   - title: "80%"
-    text: "<strong>Drop in euthanasia rates</strong><br>since the 1970s after working in collaboration with shelters and rescue groups to increase spay/neuter"
+    text: "<strong>Drop in euthanasia rates</strong><br>since the 1970s after working in collaboration with shelters and rescue groups to popularize spay/neuter"
   - title: "171,476"
-    text: <strong>Animals cared for by The HSUS</strong><br>and affiliates in the past calendar year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more
+    text: <strong>Animals cared for by The HSUS,<br>Humane Society International and affiliates</strong> in the last calendar year through cruelty interventions, spay/neuter and vaccination programs, sanctuaries, wildlife rehabilitation and more
   - title: "1,000+"
     text: "<strong>State and local laws,</strong><br>regulations and ordinances passed over the last 10 years to help animals"
   - title: "2.9+<br><small>MILLION</small>"
-    text: "<strong>Messages that our supporters</strong><br>sent to government and corporate decision-makers to help raise awareness and drive change for animals"
+    text: "<strong>Messages that our supporters</strong><br>sent to government and corporate decision-makers in 2014 to help raise awareness and drive change for animals"
   - title: "100+"
     text: "<strong>Major corporations that have</strong><br>pledged to go cage-free or gestation-crate-free in their supply chains"
 
 event:
-    header: "We’re Coming to You"
-    body: |
-      The Humane Society of the United States is coming to a city near you! We’re hosting exclusive gatherings to talk to animal advocates like you about how you can make a difference.
-    url: "https://secure.humanesociety.org/site/SPageServer?pagename=humane_startswithyou&s_src=web_phil_changinglives"
-    link-text: "Attend an Event"
+  header: "We’re Coming to You"
+  body: |
+    The Humane Society of the United States is coming to a city near you. We’re hosting exclusive gatherings to talk to animal advocates like you about how you can make a difference.
+  url: "https://secure.humanesociety.org/site/SPageServer?pagename=humane_startswithyou&s_src=web_phil_changinglives"
+  link-text: "Attend an Event"
 
 book:
   image-url: "/assets/images/book/humane-economy-wayne-pacelle-179x270.jpg"
@@ -29,23 +29,22 @@ book:
   url: "http://www.humanesociety.org/about/events/humane-economy/?credit=web_phil_changinglives"
   link-text: "The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals"
   author: "By Wayne Pacelle"
-  blurb: "<em>The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals</em> describes a revolution in American business and public policy that is changing forever how we treat animals and conduct commerce. Wayne Pacelle, president and CEO of the nation’s most powerful animal protection organization, tells the story from the frontlines, in a book that speaks to both mind and heart."
-
+  blurb: "<em>The Humane Economy: How Innovators and Enlightened Consumers Are Transforming the Lives of Animals</em> describes a revolution in American business and public policy that is changing forever how we treat animals and conduct commerce. Wayne Pacelle, President and CEO of the nation’s most powerful animal protection organization, tells the story from the frontlines, in a book that speaks to both mind and heart."
   cta-link: "Available for Pre-Sale"
 
-  donors:
-    - name: "Don Sinex"
-      url:
-      link-prompt: "Read his story"
-    - name: "Walter Right"
-      url:
-      link-prompt: "Read his story"
-    - name: "Suzie Heart"
-      url:
-      link-prompt: "Read her story"
-    - name: "The Davidson Family"
-      url:
-      link-prompt: "Read their story"
+donors:
+  - name: "Don Sinex"
+    url:
+    link-prompt: "Read his story"
+  - name: "Walter Right"
+    url:
+    link-prompt: "Read his story"
+  - name: "Suzie Heart"
+    url:
+    link-prompt: "Read her story"
+  - name: "The Davidson Family"
+    url:
+    link-prompt: "Read their story"
 
 donate:
   url: "https://secure.humanesociety.org/site/Donation2?df_id=17520&17520.donation=form1&s_src=web_phil_changinglives"
@@ -57,8 +56,8 @@ donate:
 
  <section class="intro showless" id="intro">
   <div class="wrapper">
-    <span class="post">For <i>over 60 years</i>, The Humane Society of the United States has made unprecedented change for animals</span>
-    <span class="more">. We’ve taken on the biggest fights wherever we find them: on the ground, in the boardroom, in the courts and on Capitol Hill. And we work to change public opinion by bringing issues of animal cruelty out of the shadows. We’ve made momentous progress already, but we’re setting our sights even higher. With your help, our campaign to create transformational change for all animals will raise $60 million, enabling us to have a far greater impact and wider reach than before.</span>
+    <span class="post">For <i>more than 60 years</i>, The Humane Society of the United States has made unprecedented change for animals<span class="more">.</span></span>
+    <span class="more">We’ve taken on the biggest fights wherever we find them: on the ground, in the boardroom, in the courts and on Capitol Hill. And we work to change public opinion by bringing issues of animal cruelty out of the shadows. We’ve made momentous progress already, but we’re setting our sights even higher. With your help, our campaign will raise $60 million, enabling us to create even more transformational change for animals.</span>
     <br><br>
     <span class="more">Although we and our affiliates provide hands-on care and services to more than 100,000 animals every year,</span> <span class="pre initial-caps">and our goal has always been to <i>enact change</i> by attacking the root causes of animal cruelty.</span> <span class="more">We target institutions and practices that affect millions and even billions of animals—like factory farms, puppy mills, inhumane wildlife management programs and animal-testing labs—and work to become part of the solution. We offer alternatives and help develop more humane practices to ensure lasting change. Our staff is comprised of experts in their fields, whose technical knowledge is matched only by their compassion for animals.</span>
     <br class="more"><br class="more">
@@ -74,7 +73,7 @@ donate:
 
 <section class="victories">
   <div class="wrapper">
-    <h2>We're <em>Transforming</em> Animal Lives</h2>
+    <h2>We’re <em>Transforming</em> Animal Lives</h2>
     {% for item in page.victories %}
     {% if item.title %}
       <div class="victory">
@@ -175,9 +174,9 @@ donate:
           <a class="cta-link" href="{{ page.book.url }}">{{ page.book.cta-link }}</a>
         </div>
       </div>
+      {% endif %}
     </div>
   </div>
-  {% endif %}
   <div class="events-after">&nbsp;</div>
 </section>
 {% endif %}

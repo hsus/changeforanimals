@@ -15,7 +15,7 @@ financial_tagline:
 
 title: "Ending Global Animal Cruelty"
 description: |
-  About 120 countries do not prohibit dogfighting. A fifth of the world’s nations lack even a basic anti-cruelty statute. Many notorious U.S. dogfighting kingpins and kennels sell dogs internationally for fights in other countries. Building on our success at making dogfighting and malicious cruelty to animals a felony in all 50 states, we’ll export this successful approach internationally.
+  About 120 countries do not prohibit dogfighting, and a fifth of the world’s nations lack even a basic anti-cruelty statute. Many notorious U.S. dogfighting kingpins and kennels sell dogs internationally for fights in other countries. Building on our success at making dogfighting and malicious cruelty to animals a felony in all 50 states, we’ll export this successful approach internationally.
 
 header:
   - background: /assets/images/headers/header-cruelty2.jpg
@@ -23,18 +23,18 @@ header:
 
 image: "/assets/images/campaigns/campaign-cruelty2.jpg"
 icon: "/assets/images/icons/icon-cruelty.svg"
-caption: "Even after the fight is over, dogfighting dogs aren’t safe. They sometimes die from their wounds or are killed if they lost the fight."
+caption: "Building on our success in the U.S., we’re ready to tackle dogfighting around the world by expanding our reach internationally."
 
 goal_layout:
   - background: /assets/images/goals/goals-cruelty1.jpg
     mobile-background: /assets/images/goals/mobile-goals-cruelty1.jpg
 
 goals:
-  - Expand our network of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems.
+  - <em>Expand our network</em> of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems.
 
-  - Ban dogfighting in 10 countries and reduce dogfighting by 15 percent in Costa Rica and the Philippines, as measured by raids, arrests and dogfighting rings dismantled.
+  - <em>Build local capacity</em> to support law enforcement in order to ban dogfighting in 10 countries and reduce dogfighting by 15 percent in Costa Rica, the Philippines, Puerto Rico and South Africa, as measured by raids, arrests and dogfighting rings dismantled.
 
-  - Dismantle 30 of the largest organized dogfighting networks in the United States.
+  - Dismantle 30 of the largest organized <em>dogfighting networks</em> in the United States.
 
 celebs:
   - class: celeb1
@@ -45,10 +45,10 @@ celebs:
     title: Actor, <em>Vampire Diaries</em>
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/v57boTG4HEk?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Ian's Video"
-    quote: |
-      <em>PROTECTING ANIMALS</em> from the worst forms of cruelty <em>IS PART OF A CIVIL SOCIETY</em>, and it’s time for every nation in the world to have that. <em>YOU...CAN MAKE IT A REALITY</em>.
+    on-homepage: true
+    quote: "Protecting animals from the worst forms of cruelty is part of a civil society, and it’s time for every nation in the world to have that. You...can make it a reality."
 
-donor_story: 
+donor_story:
   - background: /assets/images/donors/donor-story-farm1.jpg
     mobile-background: /assets/images/donors/mobile-donor-story-farm1.jpg
     image: /assets/images/donors/donor-story1.jpg

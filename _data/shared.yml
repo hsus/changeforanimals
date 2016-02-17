@@ -1,5 +1,13 @@
 hsus-url: "//www.humanesociety.org/?credit=web_phil_changinglives"
 
+event-outro:
+  url: "https://secure.humanesociety.org/site/SPageServer?pagename=humane_startswithyou&s_src=web_phil_changinglives"
+  link-text: "Attend an Event"
+
+donate-outro:
+  url: "https://secure.humanesociety.org/site/Donation2?df_id=17520&17520.donation=form1&s_src=web_phil_changinglives"
+  link-text: "Invest in Our Work"
+
 logos:
   logo:
     image-url: "/assets/images/logos/logo.svg"
@@ -59,4 +67,4 @@ contact:
 
 copyright: "The Humane Society of the United States"
 
-non-profit-statement: "The Humane Society of the United States (HSUS) is registered as a 501(c)(3) non-profit organization.<br>Contributions to The Humane Society of the United States are tax-deductible to the extent permitted by law.<br>The HSUS's tax identification number is 53-0225390."
+non-profit-statement: "The HSUS is registered as a 501(c)(3) non-profit organization.<br>Contributions to The HSUS are tax-deductible to the extent permitted by law.<br>The HSUS's tax identification number is 53-0225390."

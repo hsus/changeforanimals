@@ -15,7 +15,7 @@ financial_tagline:
 
 title: "Advancing Science Without Suffering"
 description: |
-  Millions of animals are used in cosmetic and toxicity tests worldwide, despite growing recognition of flaws inherent in such tests. We’ve already partnered with Procter & Gamble to develop AltTox.org, a site dedicated to advancing non-animal methods of toxicity testing. We can build on that momentum to promote 21st-century science and speed the adoption of alternatives.
+  Each year in laboratories around the world, millions of animals suffer and die in cruel chemical-poisoning tests for products we use every day, despite growing recognition of flaws inherent in such tests. We’re spearheading a global campaign to ban animal testing for cosmetics and to replace 1940s-era tests on rats, rabbits and dogs with superior modern alternatives based on 21st century science.
 
 header:
   - background: /assets/images/headers/header-science1.jpg
@@ -23,7 +23,7 @@ header:
 
 image: "/assets/images/campaigns/campaign-science1.jpg"
 icon: "/assets/images/icons/icon-chimp.svg"
-caption: Science offers promising new approaches to cosmetics and toxicity testing, saving animals from torturous lives in labs.
+caption: "It’s time to end the use of animals in cosmetic and toxicity tests. By promoting new alternatives and banning animal testing, we can save animals from torturous lives in labs."
 
 
 goal_layout:
@@ -31,7 +31,7 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-science1.jpg
 
 goals:
-  - <em>Ban testing cosmetics on animals</em> or enact import/ sales bans of animal-tested cosmetics in three major markets and make progress toward ending mandatory cosmetics animal testing in China.
+  - <em>Ban cosmetics animal testing</em> and trade in the world’s largest markets, including the U.S., and make progress toward ending mandatory animal testing for cosmetics in China.
   - Accelerate the development of next-generation animal-testing alternatives by steering public and private funding toward <em>non-animal technologies</em>.
   - Promote the adoption of <em>animal-testing alternatives</em> in international industry regulations.
 
@@ -46,8 +46,8 @@ celebs:
     title: Musician
     video: ''
     video-cta:
-    quote: |
-      If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, <em>I BELIEVE EVERYONE WOULD LEAVE CRUELTY ON THE SHELF.</em>
+    on-homepage: true
+    quote: "If every cosmetic tested on rabbits or mice had a photo on the packaging showing these animals with weeping swollen eyes and inflamed skin, I believe everyone would leave cruelty on the shelf."
 
   - class: celeb2
     background: /assets/images/celebs/celeb-science2.jpg
@@ -55,8 +55,9 @@ celebs:
     image: /assets/images/celebs/wayne1.jpg
     name: Wayne Pacelle
     title: President and CEO, The Humane Society of the United States
-    video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/vAgQREBFkL4?rel=0" frameborder="0" allowfullscreen></iframe>'
+    video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/GDUO1DzWvDo?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Wayne's Video"
+    on-homepage: false
     quote: "Rabbits, guinea pigs, mice and rats are all routinely used in tests designed to determine the degree to which a substance can harm them. The tests are unreliable and the actual consumer protections are overstated."
 
 

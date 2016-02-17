@@ -56,8 +56,9 @@
       }
       &:hover {
         opacity: 1;
+        color: $yellow;
         &:after {
-          left: 1px;
+          left: 2px;
         }
       }
     }
@@ -125,9 +126,10 @@
           top: em(4,25);
         }
         &:hover {
-          opacity: 1;
+          opacity: 1;          
+          color: $yellow;
           &:after {
-            left: 1px;
+            left: 2px;
           }
         }
       }
@@ -219,6 +221,11 @@
         padding-bottom: em(32);
       }
     }
+    
+    .event.one-column, .book.one-column {
+      width: 50%;
+      margin-left: 25%;
+    }
     .event {
       margin-right: 10%;
       p {
@@ -264,6 +271,10 @@
     }
     .event, .book {
       width: 42%;
+    }
+    .event.one-column, .book.one-column {
+      width: 50%;
+      margin-left: 25%;
     }
     .event {
       margin-right: 10%;

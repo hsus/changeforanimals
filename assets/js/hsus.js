@@ -11,56 +11,25 @@ $(document).ready(function() {
   };
 
   // This function works with sass/components/read-more.scss
-  $('#intro .readmore').click(function() {
+  $('#intro .readmore, #about .readmore').click(function() {
     var el = $(this),
         wrapper = el.parent().parent().parent();
 
     if (wrapper.hasClass('showmore')) {
       $('#intro').css('background-image','url("/assets/images/intro/intro2.jpg")')
       wrapper.find('.readmore').text('Read More');
-      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-        $(this).hide();
-      });      
-      if (is_touch_device()) { wrapper.find('.more').hide(); };
+      wrapper.find('.more').css('font-size','0').animate({opacity: 0},300).hide();
       wrapper.toggleClass('showmore showless');
     } else {
       $('#intro').css('background-image','radial-gradient(circle closest-side, #20417a, #152b51)')
       wrapper.find('.readmore').text('Read Less');
-      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-        $(this).css('display','inline');
+      wrapper.find('.more').show( "slow", function() {
+        $(this).css('display','inline').css('font-size','inherit').animate({opacity: 1},300);
       });
-      if (is_touch_device()) { wrapper.find('.more').show().animate({opacity: 1},300);};
       wrapper.toggleClass('showmore showless');
-    };
-    if (!is_touch_device()) { 
-      wrapper.find('.more').css('display','inline');
     };
   });
 
-  // This function works with sass/components/read-more.scss
-  $('#about .readmore').click(function() {
-    var el = $(this),
-        wrapper = el.parent().parent().parent().parent();
-
-    if (wrapper.hasClass('showmore')) {
-      wrapper.find('.readmore').text('Read More');
-      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-        $(this).hide();
-      });
-      if (is_touch_device()) { wrapper.find('.more').hide(); };
-      wrapper.toggleClass('showmore showless');
-    } else {
-      wrapper.find('.readmore').text('Read Less');
-      wrapper.find('.more').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-        $(this).css('display','inline');
-      });
-      if (is_touch_device()) { wrapper.find('.more').show().animate({opacity: 1},300);};
-      wrapper.toggleClass('showmore showless');
-    };
-    if (!is_touch_device()) { 
-      wrapper.find('.more').css('display','inline');
-    };
-  });
 
   // Sticky nav
   $(window).on('scroll', function() {
@@ -124,7 +93,7 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > -50 ) {
+      if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .about').addClass('active');
       } else {        
         $('#menu .about').removeClass('active');
@@ -136,22 +105,22 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
+      if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .program-areas').addClass('active');
       } else {        
         $('#menu .program-areas').removeClass('active');
       }
     });
 
-    $('#events').each(function() {
+    $('#supporters').each(function() {
       var el = $(this),
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
-        $('#menu .event').addClass('active');
+      if ( thisTop < 90 && thisBottom > 50 ) {
+        $('#menu .supporters').addClass('active');
       } else {        
-        $('#menu .event').removeClass('active');
+        $('#menu .supporters').removeClass('active');
       }
     });
 
@@ -160,19 +129,7 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
-        $('#menu .get-involved').addClass('active');
-      } else {        
-        $('#menu .get-involved').removeClass('active');
-      }
-    });
-
-    $('#get-involved').each(function() {
-      var el = $(this),
-          thisTop = el.offset().top - elWin.scrollTop(),
-          previewHeight = el.height(),
-          thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
+      if ( thisTop < 75 && thisBottom > 50 ) {
         $('#menu .get-involved').addClass('active');
       } else {        
         $('#menu .get-involved').removeClass('active');
@@ -184,7 +141,7 @@ $(document).ready(function() {
           thisTop = el.offset().top - elWin.scrollTop(),
           previewHeight = el.height(),
           thisBottom = thisTop + previewHeight;
-      if ( thisTop < 75 && thisBottom > 0 ) {
+      if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .about').addClass('active');
       } else {        
         $('#menu .about').removeClass('active');
@@ -223,25 +180,20 @@ $(document).ready(function() {
           introTop = parseInt(introPadding, 10);
           if (introTop > 120) { introTop = 0; };
 
-      $('html, body').stop().animate( {
+      $('html, body').animate( {
           'scrollTop': $target.offset().top-introTop
-      }, 700, 'swing', function () {
-          window.location.hash = target;
-      });
+      }, 700, 'swing');
   });
 
   // Scroll to hash - President
   $('#pres-button a[href^="#"]').bind('click.smoothscroll',function (e) {
       e.preventDefault();
       var target = this.hash,
-          $target = $(target),
-          aboutPadding = $('#about').css('padding-top');
+          $target = $(target);
 
-      $('html, body').stop().animate( {
+      $('html, body').animate( {
           'scrollTop': $target.offset().top-100
-      }, 700, 'swing', function () {
-          window.location.hash = target;
-      });
+      }, 700, 'swing');
   });
 
 

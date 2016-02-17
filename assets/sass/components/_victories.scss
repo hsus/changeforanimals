@@ -25,6 +25,7 @@
     em {
       color: $bright-blue;
       display: inline-block;
+      display: -moz-inline-stack;
       font-family: $secondary-font;
       font-size: em(36,26);
       font-style: normal;
@@ -123,6 +124,9 @@
       em {
         font-size: em(60,48);
         letter-spacing: -0.05em;
+        &::first-letter {
+          letter-spacing: -15px;
+        }
       }
     }
     h3 {

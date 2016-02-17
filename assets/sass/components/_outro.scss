@@ -33,6 +33,7 @@
   .action {
     margin-bottom: em(24);
     a {
+      @include default-transition;
       color: $blue;
       display: block;
       text-decoration: none;
@@ -46,15 +47,18 @@
         position: relative;
         top: em(2);
       }
+      &:hover {
+        color: $bright-blue;
+      }
       &:hover.donate:after,
       &:hover.attend:after {
-        left: 1px;
+        left: 2px;
       }
     }
     h4 {
-      font-size: em(16,20);
+      font-size: em(16);
       letter-spacing: 1px;
-      margin-bottom: em(8,16);
+      margin-bottom: em(8);
     }
   }
 }
@@ -87,10 +91,9 @@
       padding: em(16,26) 0 em(32,26);
     }
     .action {
-      display: inline-block;
-      margin-bottom: em(24);
-      width: 32%;
-      vertical-align: top;
+      h4 {
+        font-size: em(20);
+      }
     }
   }
 }
@@ -123,9 +126,18 @@
       font-size: em(32);
       padding: em(16,32) 0 em(32,32);
     }
+    .actions {
+      max-width: em(950);
+      margin: 0 auto;
+    }
     .action {
-      font-size: em(17);
-      margin-bottom: em(24);
+      margin-bottom: em(24,18);
+      display: inline-block;
+      width: 32%;
+      vertical-align: top;
+      h4 {
+        font-size: em(18);
+      }
     }
   }
 }
@@ -154,6 +166,9 @@
       font-family: $secondary-font;
       font-size: em(48);
       padding: 0;
+    }
+    .actions {
+      max-width: em(1400);
     }
     .action {
       font-size: em(28);

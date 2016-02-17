@@ -133,12 +133,12 @@
 @media all and (min-width: em(1000)) {
   .index nav {
     a.text {
-      font-size: em(18);
-      border-bottom: em(5,18) solid $blue;
-      padding: em(28,18) em(14,18) em(19,18) em(14,18);
+      font-size: em(16);
+      border-bottom: em(5) solid $blue;
+      padding: em(30) em(14) em(22) em(14);
       &:hover,
       &.active {
-        border-bottom: em(5,18) solid $light-blue;
+        border-bottom: em(5) solid $light-blue;
       }
     }
   }

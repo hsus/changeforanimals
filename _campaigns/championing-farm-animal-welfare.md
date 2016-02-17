@@ -15,7 +15,7 @@ financial_tagline:
 
 title: Championing Farm Animal Welfare
 description: |
-  In the United States, millions of breeding pigs and egg-laying hens are kept in metal cages where they are virtually immobilized for their entire lives. Demand for meat is rising internationally, and factory-farming practices are spreading to the developing world. In the U.S., we’ve worked with more than 100 major retailers and the biggest names in the food industry to remove extreme confinement practices from their supply chains, and helped more than 100 school systems nationwide go meatless on Mondays. It’s time to expand our reach abroad.
+  Farm animals like chickens and pigs are smart individuals who have personalities, and they want to avoid suffering. Yet these sensitive, intelligent animals are often abused on factory farms in ways that would be illegal if the victims were dogs and cats. But The HSUS and HSI are making transformational changes in how we farm and eat by implementing animal welfare policies at major food buyers, passing laws to prohibit the worst cruelties and helping school systems use less meat.
 
 header:
   - background: /assets/images/headers/header-farm1.jpg
@@ -23,20 +23,20 @@ header:
 
 image: "/assets/images/campaigns/campaign-farm1.jpg"
 icon: "/assets/images/icons/icon-cow.svg"
-caption: By working with major corporations and institutions, we can improve living conditions for billions of animals.
+caption: "Billions of animals stand to benefit when we encourage meat reduction and work to move animals out of extreme confinement."
 
 goal_layout:
   - background: /assets/images/goals/goals-farm1.jpg
     mobile-background: /assets/images/goals/mobile-goals-farm1.jpg
 
 goals:
-  - Pass <em>two major anti-confinement</em> initiatives and work with U.S. farmers and retailers to move a billion animals to higher welfare standards.
+  - Pass <em>two major anti-extreme-confinement</em> initiatives and work with U.S. farmers and retailers to move a billion animals to higher welfare standards.
 
-  - <em>Launch Meatless Monday in five Asian cities</em> and persuade five multinational corporations  to make Asian operations crate-free.
+  - <em>Launch Meatless Monday in five Asian cities</em> and persuade five multinational corporations to make Asian operations cage-free.
 
-  - Work through the finance sector to <em>move 100 million animals out of extreme confinement</em> in  Central Asia and stem the introduction of such systems in Sub-Saharan Africa.
+  - Work through the finance sector to <em>move 100 million animals out of extreme confinement</em> in emerging economies and stem the introduction of such systems in Sub-Saharan Africa.
 
-  - Implement <em>meat-reduction policies</em> at hundreds of institutions across the U.S., such as school  districts, hospital chains, corporate cafeterias and more.
+  - Implement <em>meat-reduction policies</em> at hundreds of institutions across the U.S., such as school districts, hospital chains, corporate cafeterias and more.
 
 celebs:
   - class: celeb1
@@ -45,6 +45,7 @@ celebs:
     image: "/assets/images/celebs/kate-mara1.jpg"
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/pvtoimAyCog?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Kate's Video"
+    on-homepage: true
     name: "Kate Mara"
     title: "Actor, <em>The Martian</em>"
     quote: "The HSUS’s farm animal protection campaign epitomizes effectiveness. They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals and people alike."
@@ -55,12 +56,13 @@ celebs:
     image: "/assets/images/celebs/john-salley1.jpg"
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/lNqovPh1cxg?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch John's Video"
+    on-homepage: true
     name: "John Salley"
     title: "Retired NBA Basketball Player"
     quote: "All animals deserve protection from cruelty. It's time they had a voice."
 
 
-donor_story: 
+donor_story:
   - background: /assets/images/donors/donor-story-farm1.jpg
     mobile-background: /assets/images/donors/mobile-donor-story-farm1.jpg
     image: /assets/images/donors/donor-story1.jpg

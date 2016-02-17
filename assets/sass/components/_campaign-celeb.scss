@@ -36,6 +36,7 @@
     }
   }
   a.watch-video {
+    @include default-transition;
     color: $white;
     display: block;
     font-size: em(28);
@@ -49,8 +50,11 @@
       position: relative;
       top: em(2,20);
     }
+    &:hover {
+      color: $yellow;
+    }
     &:hover:after {
-      left: 1px;
+      left: 2px;
     }
   }
   .video {

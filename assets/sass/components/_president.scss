@@ -49,18 +49,17 @@
   }
   .body {
     margin-top: em(32);
+    font-size: em(15);
+    overflow: hidden;
     h3 {
-      font-size: em(17);
       font-weight: 200;
-      letter-spacing: em(1);
+      letter-spacing: em(1,15);
     }
     p,ul {
-      font-size: em(15);
       font-weight: 200;
-      letter-spacing: em(1);
+      letter-spacing: em(1,15);
     }
     .list-top {
-      font-size: em(17);
       letter-spacing: 1px;
       font-weight: 700;
     }
@@ -74,7 +73,6 @@
     a {
       @include default-transition;
       color: $blue;
-      opacity: 0.8;
       text-decoration: none;
       padding-top: em(5);
       position: relative;
@@ -146,16 +144,8 @@
       }
     }
     .body {
-      margin-top: em(28);
-      h3 {
-        font-size: em(18);
-      }
-      p,ul {
-        font-size: em(15);
-      }
-      .list-top {
-        font-size: em(18);
-      }
+      margin-top: em(28);      
+      font-size: em(15);
     }
   }
 }
@@ -189,15 +179,7 @@
     }
     .body {
       margin-top: em(42);
-      h3 {
-        font-size: em(20);
-      }
-      p,ul {
-        font-size: em(16);
-      }
-      .list-top {
-        font-size: em(20);
-      }
+      font-size: em(16);
     }
   }
 }
@@ -212,15 +194,16 @@
     }
     .letter-top {
       text-align: center;
+      letter-spacing: 0.03em;
       h2 {
         font-size: em(48);
         letter-spacing: em(2,48);
         margin-top: em(12,48);
       }
       h3 {
-        font-size: em(26);
-        line-height: 1.5;
-        margin: 0 auto em(52,26);
+        font-size: em(24);
+        line-height: 2.2rem;
+        margin: 0 auto em(52,24);
         max-width: 75%;
       }
     }
@@ -232,19 +215,12 @@
       }
     }
     .body {
-      margin-top: em(42);
-      h3 {
-        font-size: em(28);
-      }
-      p,ul {
-        font-size: em(24);
-      }
-      .list-top {
-        font-size: em(28);
-      }
+      margin-top: em(42,24);
+      font-size: em(24);
+      line-height: 2.2rem;
+      letter-spacing: 0.03em;
     }
     .more-button {
-      font-size: em(26);
       margin-left: em(36,26);
     }
   }

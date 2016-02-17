@@ -57,12 +57,14 @@ footer {
     .googleplus { padding: em(4); bottom: em(4);  margin-right: em(19);
       &:hover path.bg { fill: #dc4e41; }
     }
-    .tumblr { padding: em(7); bottom: em(2); margin-right: 0;
-      &:hover path { fill: #36465d; }
+    .tumblr { padding: em(5); bottom: em(2); margin-right: 0;
+      &:hover path { fill: #55acee; }
     }
     img,svg {
       height: auto;
-      width: 100%;
+      width: auto;
+      max-height: 100%;
+      max-width: 100%;
     }
   }
   .privacy-contact {
