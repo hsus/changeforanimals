@@ -57,7 +57,7 @@ celebs:
     title: President and CEO, The Humane Society of the United States
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/GDUO1DzWvDo?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Wayne's Video"
-    on-homepage: true
+    on-homepage: false
     quote: "Rabbits, guinea pigs, mice and rats are all routinely used in tests designed to determine the degree to which a substance can harm them. The tests are unreliable and the actual consumer protections are overstated."
 
 
