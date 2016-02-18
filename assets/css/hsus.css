@@ -1085,14 +1085,10 @@ ul {
     .index .celeb .single .headshots h3 {
       margin-top: 0;
       font-size: 1.125em;
-      line-height: 1.3;
-      width: 114%;
-      margin-left: -7%; }
+      line-height: 1.3; }
     .index .celeb .single .headshots p {
       font-size: 1em;
-      line-height: 1.3;
-      width: 114%;
-      margin-left: -7%; }
+      line-height: 1.3; }
     .index .celeb .single.active {
       margin-top: 0; }
       .index .celeb .single.active .headshots .headshot {
@@ -1121,7 +1117,14 @@ ul {
 
 @media all and (min-width: 36.25em) {
   .index .celeb h2 {
-    font-size: 1.625em; } }
+    font-size: 1.625em; }
+
+  .single .headshots h3 {
+    width: 114%;
+    margin-left: -7%; }
+  .single .headshots p {
+    width: 114%;
+    margin-left: -7%; } }
 @media all and (min-width: 45em) {
   .index .celeb {
     background-image: url("/assets/images/celebs/celeb-wall1.jpg");
