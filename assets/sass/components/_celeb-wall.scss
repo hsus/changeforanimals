@@ -79,18 +79,6 @@
       font-size: em(26);
     }
   }
-  .single {
-    .headshots {
-      h3 {
-        width: 114%;
-        margin-left: -7%;
-      }
-      p {
-        width: 114%;
-        margin-left: -7%;
-      }
-    }
-  }
 }
 
 //  Large Tablet
@@ -128,9 +116,13 @@
         }
         h3 {
           font-size: em(16);
+          width: 114%;
+          margin-left: -7%;
         }
         p {
           font-size: em(14);
+          width: 114%;
+          margin-left: -7%;
         }
       }
       .info {
