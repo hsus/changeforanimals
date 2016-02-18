@@ -1117,14 +1117,7 @@ ul {
 
 @media all and (min-width: 36.25em) {
   .index .celeb h2 {
-    font-size: 1.625em; }
-
-  .single .headshots h3 {
-    width: 114%;
-    margin-left: -7%; }
-  .single .headshots p {
-    width: 114%;
-    margin-left: -7%; } }
+    font-size: 1.625em; } }
 @media all and (min-width: 45em) {
   .index .celeb {
     background-image: url("/assets/images/celebs/celeb-wall1.jpg");
@@ -1154,9 +1147,13 @@ ul {
           opacity: 1;
           cursor: pointer; }
       .index .celeb .single .headshots h3 {
-        font-size: 1em; }
+        font-size: 1em;
+        width: 114%;
+        margin-left: -7%; }
       .index .celeb .single .headshots p {
-        font-size: 0.875em; }
+        font-size: 0.875em;
+        width: 114%;
+        margin-left: -7%; }
       .index .celeb .single .info {
         position: absolute;
         left: 0;
