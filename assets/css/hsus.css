@@ -899,7 +899,8 @@ ul {
       margin: 0.38462em auto 0; }
   .campaign-previews .preview {
     min-height: 37.8125em;
-    width: 33.333%; }
+    width: 33.333%;
+    background-position: center; }
     .campaign-previews .preview.first {
       width: 50%; }
     .campaign-previews .preview.second {
