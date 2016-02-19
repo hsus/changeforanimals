@@ -1933,7 +1933,8 @@ footer {
     .president .letter-top h3 {
       color: #263f6a;
       font-size: 1.125em;
-      font-weight: 200; }
+      font-weight: 200;
+      line-height: 1.8rem; }
       .president .letter-top h3 em {
         color: #739abc;
         font-style: normal;
