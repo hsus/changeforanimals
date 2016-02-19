@@ -21,7 +21,7 @@ header:
   - background: /assets/images/headers/header-wildlife-lion.jpg
     mobile-background: /assets/images/headers/mobile-header-wildlife-lion.jpg
 
-image: "/assets/images/campaigns/campaign-wildlife1.jpg"
+image: "/assets/images/campaigns/campaign-wildlife-lion.jpg"
 icon: "/assets/images/icons/icon-wildlife.svg"
 caption: "In the U.S. and internationally, we’re well placed to encourage humane solutions to wildlife conflicts and to discourage the trade in animal parts."
 
