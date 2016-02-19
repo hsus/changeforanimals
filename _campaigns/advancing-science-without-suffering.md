@@ -18,10 +18,10 @@ description: |
   Each year in laboratories around the world, millions of animals suffer and die in cruel chemical-poisoning tests for products we use every day, despite growing recognition of flaws inherent in such tests. We’re spearheading a global campaign to ban animal testing for cosmetics and to replace 1940s-era tests on rats, rabbits and dogs with superior modern alternatives based on 21st century science.
 
 header:
-  - background: /assets/images/headers/header-science1.jpg
-    mobile-background: /assets/images/headers/mobile-header-science1.jpg
+  - background: /assets/images/headers/header-science-mouse.jpg
+    mobile-background: /assets/images/headers/mobile-header-science-mouse.jpg
 
-image: "/assets/images/campaigns/campaign-science1.jpg"
+image: "/assets/images/campaigns/campaign-science-mouse.jpg"
 icon: "/assets/images/icons/icon-chimp.svg"
 caption: "It’s time to end the use of animals in cosmetic and toxicity tests. By promoting new alternatives and banning animal testing, we can save animals from torturous lives in labs."
 
