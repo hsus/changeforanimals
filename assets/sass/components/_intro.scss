@@ -31,6 +31,7 @@
       @include default-transition;
       color: $light-grey;
       text-decoration: none;
+      text-transform: uppercase;
       &:after {
         @include transition(all 0.3s cubic-bezier(0.4, 0, 0.2, 1));
         border-color: transparent transparent transparent transparent;
@@ -45,7 +46,7 @@
       }
     }
     &:hover a {
-      color: lighten($light-grey, 10%);      
+      color: lighten($light-grey, 10%);
       &:after {
         border-color: lighten($light-blue, 10%) transparent transparent transparent;
       }
@@ -124,4 +125,3 @@
     }
   }
 }
-

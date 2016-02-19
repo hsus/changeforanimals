@@ -1676,7 +1676,6 @@ footer {
     display: block;
     font-family: "MyWriteHand";
     font-size: 2.25em;
-    letter-spacing: -0.02778em;
     font-style: normal;
     font-weight: normal;
     line-height: 1.1;
@@ -1687,14 +1686,12 @@ footer {
     margin: 11.25em auto 1.5em; }
   .index header .tagline {
     font-size: 4em;
-    letter-spacing: -0.07813em;
     margin: 0 auto 2.8125em; } }
 @media all and (min-width: 45em) {
   .index header {
     background-image: url("../images/headers/header2.jpg"); }
     .index header .tagline {
       font-size: 5.25em;
-      letter-spacing: -0.05952em;
       margin: 0 auto 2.85714em; } }
 .intro {
   background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
@@ -1726,7 +1723,8 @@ footer {
       -moz-transition: all 0.3s linear;
       transition: all 0.3s linear;
       color: #c1d1df;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: uppercase; }
       .intro .more-button a:after {
         -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
