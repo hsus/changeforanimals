@@ -18,7 +18,7 @@ description: |
   Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to managing wildlife. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative immunocontraception research projects in partnership with leading veterinary medicine schools. And we’re working internationally to end the cruel trade in wildlife parts and to end the trophy hunting of specific animals.
 
 header:
-  - background: /assets/images/headers/header-wildlife1.jpg
+  - background: /assets/images/headers/header-wildlife-lion.jpg
     mobile-background: /assets/images/headers/mobile-header-wildlife1.jpg
 
 image: "/assets/images/campaigns/campaign-wildlife1.jpg"
