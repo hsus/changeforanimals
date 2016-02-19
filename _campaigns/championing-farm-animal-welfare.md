@@ -18,8 +18,8 @@ description: |
   Farm animals like chickens and pigs are smart individuals who have personalities, and they want to avoid suffering. Yet these sensitive, intelligent animals are often abused on factory farms in ways that would be illegal if the victims were dogs and cats. But The HSUS and HSI are making transformational changes in how we farm and eat by implementing animal welfare policies at major food buyers, passing laws to prohibit the worst cruelties and helping school systems use less meat.
 
 header:
-  - background: /assets/images/headers/header-farm1.jpg
-    mobile-background: /assets/images/headers/mobile-header-farm1.jpg
+  - background: /assets/images/headers/header-farm-pig.jpg
+    mobile-background: /assets/images/headers/mobile-header-farm-pig.jpg
 
 image: "/assets/images/campaigns/campaign-farm-pig.jpg"
 icon: "/assets/images/icons/icon-cow.svg"
