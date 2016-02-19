@@ -29,7 +29,6 @@
       font-size: em(36,26);
       font-style: normal;
       left: -3px;
-      letter-spacing: -0.05em;
       position: relative;
       &::first-letter {
         letter-spacing: -10px;
@@ -119,7 +118,6 @@
       margin-bottom: em(24,48);
       em {
         font-size: em(60,48);
-        letter-spacing: -0.05em;
         &::first-letter {
           letter-spacing: -15px;
         }

@@ -2013,6 +2013,9 @@ footer {
       .president .letter-top h2 {
         font-size: 1.75em;
         margin-top: 0.42857em; }
+      .president .letter-top h3 {
+        margin: 0 auto 2.16667em;
+        max-width: 75%; }
     .president .pic {
       display: inline-block;
       float: right;
@@ -2061,9 +2064,7 @@ footer {
         margin-top: 0.25em; }
       .president .letter-top h3 {
         font-size: 1.5em;
-        line-height: 2.2rem;
-        margin: 0 auto 2.16667em;
-        max-width: 75%; }
+        line-height: 2.2rem; }
     .president .pic {
       margin-left: 3.125em;
       width: 18.75em; }
@@ -2074,7 +2075,8 @@ footer {
       font-size: 1.5em;
       line-height: 2.2rem; }
     .president .more-button {
-      margin-left: 1.38462em; } }
+      margin-left: 1.38462em;
+      font-size: 0.8125em; } }
 .intro.showless .more,
 .president.showless .more {
   -webkit-transition: all 0.3s linear;
@@ -2248,7 +2250,6 @@ footer {
       font-size: 1.38462em;
       font-style: normal;
       left: -3px;
-      letter-spacing: -0.05em;
       position: relative; }
       .victories h2 em::first-letter {
         letter-spacing: -10px; }
@@ -2315,8 +2316,7 @@ footer {
       font-size: 3em;
       margin-bottom: 0.5em; }
       .victories .wrapper h2 em {
-        font-size: 1.25em;
-        letter-spacing: -0.05em; }
+        font-size: 1.25em; }
         .victories .wrapper h2 em::first-letter {
           letter-spacing: -15px; }
     .victories .wrapper h3 {
