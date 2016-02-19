@@ -27,8 +27,8 @@ caption: "It’s time to end the use of animals in cosmetic and toxicity tests. 
 
 
 goal_layout:
-  - background: /assets/images/goals/goals-science1.jpg
-    mobile-background: /assets/images/goals/mobile-goals-science1.jpg
+  - background: /assets/images/goals/goals-science-rabbit.jpg
+    mobile-background: /assets/images/goals/mobile-goals-science-rabbit.jpg
 
 goals:
   - <em>Ban cosmetics animal testing</em> and trade in the world’s largest markets, including the U.S., and make progress toward ending mandatory animal testing for cosmetics in China.
