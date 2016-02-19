@@ -21,7 +21,7 @@ header:
   - background: /assets/images/headers/header-poverty1.jpg
     mobile-background: /assets/images/headers/mobile-header-poverty1.jpg
 
-image: "/assets/images/campaigns/campaign-poverty1.jpg"
+image: "/assets/images/campaigns/campaign-poverty-cat.jpg"
 icon: "/assets/images/icons/icon-cat.svg"
 caption: "Around the world, companion animals need our help. By targeting those who need it most, we can help hundreds of thousands of animals."
 
