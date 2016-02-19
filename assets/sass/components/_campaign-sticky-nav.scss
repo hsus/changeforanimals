@@ -91,6 +91,22 @@
       padding: em(16,24);
       text-decoration: none;
     }
+    a.next {
+      &:after {
+        color: $yellow;
+        content: " →";
+        font-size: em(22);
+        line-height: 0.7;
+        position: relative;
+        top: em(3,22);
+      }
+      &:hover {
+        opacity: 1;
+        &:after {
+          left: 1px;
+        }
+      }
+    }
   }
   .menu,
   .next-menu {
