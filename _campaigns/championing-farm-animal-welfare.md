@@ -44,7 +44,7 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-farm1.jpg
     image: "/assets/images/celebs/kate-mara1.jpg"
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/pvtoimAyCog?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch Kate's Video"
+    video-cta: "Watch Kate’s Video"
     on-homepage: true
     name: "Kate Mara"
     title: "Actor, <em>The Martian</em>"
@@ -55,11 +55,11 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-farm2.jpg
     image: "/assets/images/celebs/john-salley1.jpg"
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/lNqovPh1cxg?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch John's Video"
+    video-cta: "Watch John’s Video"
     on-homepage: true
     name: "John Salley"
     title: "Retired NBA Basketball Player"
-    quote: "All animals deserve protection from cruelty. It's time they had a voice."
+    quote: "All animals deserve protection from cruelty. It’s time they had a voice."
 
 
 donor_story:
