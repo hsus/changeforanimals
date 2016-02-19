@@ -19,7 +19,7 @@ description: |
 
 header:
   - background: /assets/images/headers/header-wildlife-lion.jpg
-    mobile-background: /assets/images/headers/mobile-header-wildlife1.jpg
+    mobile-background: /assets/images/headers/mobile-header-wildlife-lion.jpg
 
 image: "/assets/images/campaigns/campaign-wildlife1.jpg"
 icon: "/assets/images/icons/icon-wildlife.svg"
