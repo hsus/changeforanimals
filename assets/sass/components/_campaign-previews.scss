@@ -176,6 +176,7 @@
     .preview {
       min-height: em(605);
       width: 33.333%;
+      background-position: center;
       &.first {
         width: 50%;
       }
@@ -209,4 +210,8 @@
       }
     }
   }
+}
+
+//  Large Desktop
+@media all and (min-width: $lg-desktop) {
 }
