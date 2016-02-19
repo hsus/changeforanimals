@@ -1002,6 +1002,17 @@ ul {
       line-height: 1.2;
       padding: 0.66667em;
       text-decoration: none; }
+    .campaign nav .mobile-menu a.next:after {
+      color: #FBCB43;
+      content: " →";
+      font-size: 1.375em;
+      line-height: 0.7;
+      position: relative;
+      top: 0.13636em; }
+    .campaign nav .mobile-menu a.next:hover {
+      opacity: 1; }
+      .campaign nav .mobile-menu a.next:hover:after {
+        left: 1px; }
   .campaign nav .menu,
   .campaign nav .next-menu {
     display: none; }
