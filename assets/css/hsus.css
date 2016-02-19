@@ -326,7 +326,6 @@ ul {
   .celeb h3 {
     color: #fff;
     font-size: 1.75em;
-    letter-spacing: 1px;
     margin-bottom: 0.07143em; }
   .celeb .title {
     font-size: 1.125em;
@@ -334,7 +333,6 @@ ul {
   .celeb blockquote {
     font-size: 1em;
     font-weight: 200;
-    letter-spacing: 1px;
     line-height: 1.4;
     margin: 2em 0 1.5em 0; }
     .celeb blockquote span {
@@ -770,7 +768,6 @@ ul {
   .campaign-previews h2.title {
     font-size: 1.125em;
     font-weight: 200;
-    letter-spacing: 1px;
     margin: 0 auto 0.88889em;
     max-width: 96%;
     position: relative;
@@ -783,7 +780,6 @@ ul {
       font-size: 1.22222em;
       font-style: normal;
       left: -1px;
-      letter-spacing: 0;
       position: relative; }
       .campaign-previews h2.title em::first-letter {
         letter-spacing: -10px; }
@@ -923,7 +919,6 @@ ul {
     .campaign-previews .preview > h3 {
       font-size: 1.5em;
       height: 20%;
-      letter-spacing: 0.03125em;
       line-height: 6;
       padding-left: 2.08333em;
       width: 100%; } }
@@ -1026,7 +1021,6 @@ ul {
     display: inline-block;
     font-size: 0.875em;
     font-weight: 200;
-    letter-spacing: 1px;
     padding: 2.14286em 0.5em 1.57143em 0.5em;
     text-decoration: none; }
     .campaign nav a.text:hover, .campaign nav a.text.active {
@@ -1186,15 +1180,13 @@ ul {
     color: #fff;
     font-size: 1.25em;
     font-weight: 200;
-    letter-spacing: 1px;
     line-height: 1.5;
     margin: 2em auto 1em;
     max-width: 90%; }
     .donors h2 em {
       font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.33333em;
-      font-style: normal;
-      letter-spacing: 0; }
+      font-style: normal; }
   .donors .donor {
     display: inline-block;
     line-height: 1.2;
@@ -1233,7 +1225,6 @@ ul {
     min-height: 27.5em; }
     .donors h2 {
       font-size: 1.625em;
-      letter-spacing: 2px;
       margin-top: 4.61538em; }
       .donors h2 em {
         font-size: 1.23077em; }
@@ -1254,8 +1245,7 @@ ul {
     .donors .donor {
       margin-top: 3em; }
       .donors .donor a {
-        font-size: 1.375em;
-        letter-spacing: 1px; } }
+        font-size: 1.375em; } }
 @media all and (min-width: 87.5em) {
   .donors {
     min-height: 41.25em; }
@@ -1286,14 +1276,12 @@ ul {
     color: #fff;
     font-size: 1.75em;
     font-weight: 700;
-    letter-spacing: 1px;
     line-height: 1.15;
     margin: 0 auto 1.28571em; }
   .events .event h3 {
     color: #FBCB43;
     font-size: 1.5em;
     font-weight: 700;
-    letter-spacing: 1px;
     line-height: 1.15;
     margin: 0.5em auto 0.625em; }
   .events .event p {
@@ -1498,7 +1486,6 @@ ul {
     font-size: 1.375em; }
   .events .book .book-body p, .events .book .book-body a {
     font-size: 1.375em;
-    letter-spacing: 0.03125em;
     line-height: 1.5; }
   .events .book .book-body a {
     font-size: 1.75em; }
@@ -1649,8 +1636,7 @@ footer {
       width: 2.875em; }
   footer .visit,
   footer .privacy-contact {
-    font-size: 1.25em;
-    letter-spacing: 2px; }
+    font-size: 1.25em; }
   footer .copyright,
   footer .non-profit {
     font-size: 1.25em;
@@ -1791,7 +1777,8 @@ footer {
       margin: 0 auto;
       max-width: 50%; }
     .intro .more-button {
-      margin-top: 3.84615em; } }
+      margin-top: 3.84615em;
+      font-size: 0.8125em; } }
 .outro {
   background: transparent url("../images/outro/mobile-outro3.jpg") no-repeat top center;
   background-size: cover;
@@ -1809,7 +1796,6 @@ footer {
   .outro h2 {
     font-size: 2em;
     font-weight: 200;
-    letter-spacing: 1px;
     line-height: 1.15;
     margin: 1.40625em auto 0.78125em;
     max-width: 84%; }
@@ -1842,7 +1828,6 @@ footer {
         left: 2px; }
     .outro .action h4 {
       font-size: 1em;
-      letter-spacing: 1px;
       margin-bottom: 0.5em; }
 
 @media all and (min-width: 36.25em) {
@@ -1944,13 +1929,11 @@ footer {
       color: #263f6a;
       font-size: 1.625em;
       font-weight: 700;
-      letter-spacing: 0.07692em;
       margin-top: 0.46154em; }
     .president .letter-top h3 {
       color: #263f6a;
       font-size: 1.125em;
-      font-weight: 200;
-      letter-spacing: 1px; }
+      font-weight: 200; }
       .president .letter-top h3 em {
         color: #739abc;
         font-style: normal;
@@ -1973,13 +1956,10 @@ footer {
     font-size: 0.9375em;
     overflow: hidden; }
     .president .body h3 {
-      font-weight: 200;
-      letter-spacing: 0.06667em; }
+      font-weight: 200; }
     .president .body p, .president .body ul {
-      font-weight: 200;
-      letter-spacing: 0.06667em; }
+      font-weight: 200; }
     .president .body .list-top {
-      letter-spacing: 1px;
       font-weight: 700; }
   .president .more-button {
     cursor: pointer;
@@ -1992,6 +1972,7 @@ footer {
       transition: all 0.3s linear;
       color: #263f6a;
       text-decoration: none;
+      text-transform: uppercase;
       padding-top: 0.3125em;
       position: relative; }
       .president .more-button a:after {
@@ -2028,11 +2009,9 @@ footer {
     .president .letter-top {
       text-align: center; }
       .president .letter-top p {
-        font-size: 0.9375em;
-        letter-spacing: 0.2em; }
+        font-size: 0.9375em; }
       .president .letter-top h2 {
         font-size: 1.75em;
-        letter-spacing: 0.10714em;
         margin-top: 0.42857em; }
     .president .pic {
       display: inline-block;
@@ -2058,11 +2037,9 @@ footer {
     .president .letter-top {
       text-align: center; }
       .president .letter-top p {
-        font-size: 1em;
-        letter-spacing: 0.1875em; }
+        font-size: 1em; }
       .president .letter-top h2 {
         font-size: 2.125em;
-        letter-spacing: 0.08824em;
         margin-top: 0.35294em; }
     .president .pic {
       max-width: 25%; }
@@ -2078,11 +2055,9 @@ footer {
     .president .wrapper {
       width: 72.5em; }
     .president .letter-top {
-      text-align: center;
-      letter-spacing: 0.03em; }
+      text-align: center; }
       .president .letter-top h2 {
         font-size: 3em;
-        letter-spacing: 0.04167em;
         margin-top: 0.25em; }
       .president .letter-top h3 {
         font-size: 1.5em;
@@ -2097,8 +2072,7 @@ footer {
     .president .body {
       margin-top: 1.75em;
       font-size: 1.5em;
-      line-height: 2.2rem;
-      letter-spacing: 0.03em; }
+      line-height: 2.2rem; }
     .president .more-button {
       margin-left: 1.38462em; } }
 .intro.showless .more,
@@ -2112,7 +2086,9 @@ footer {
 .intro.showless .post:after,
 .president.showless .pre:before,
 .president.showless .post:after {
-  content: " . . . "; }
+  content: "...";
+  letter-spacing: 3px;
+  padding-left: 3px; }
 .intro.showless .period:after,
 .president.showless .period:after {
   content: "."; }
@@ -2227,7 +2203,6 @@ footer {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    letter-spacing: 1px;
     padding: 2.14286em 0.5em 1.57143em 0.5em;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -2264,7 +2239,6 @@ footer {
     color: #263f6a;
     font-size: 1.625em;
     font-weight: 400;
-    letter-spacing: 1px;
     margin-bottom: 0.92308em; }
     .victories h2 em {
       color: #3e7fb7;
@@ -2282,18 +2256,15 @@ footer {
     color: #3e7fb7;
     font-size: 2em;
     font-weight: 700;
-    letter-spacing: 1px;
     line-height: 0.6;
     margin-bottom: 0.625em; }
     .victories h3 small {
       font-size: 0.5em;
-      font-weight: 400;
-      letter-spacing: 0; }
+      font-weight: 400; }
   .victories p {
     color: #263f6a;
     font-size: 0.875em;
     font-weight: 200;
-    letter-spacing: 1px;
     margin-top: 0.57143em; }
 
 .victory-after {

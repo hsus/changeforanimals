@@ -1,6 +1,6 @@
 // Component template. See helpers/_02-config.scss for actual widths.
 // Default / Mobile
-.events { 
+.events {
   clear: both;
   .wrapper {
     background: transparent url('../images/events/mobile-events3.jpg') no-repeat top center; //quality @ 70
@@ -9,7 +9,7 @@
     padding: em(30) 0 em(70);
     text-align: center;
   }
-  .inner {    
+  .inner {
     margin: 0 auto;
     max-width: 94%;
   }
@@ -17,11 +17,10 @@
     margin: 0 5%;
     width: 90%;
   }
-  h2 {    
+  h2 {
     color: $white;
     font-size: em(28);
     font-weight: 700;
-    letter-spacing: 1px;
     line-height: 1.15;
     margin: 0 auto em(36,28) ;
   }
@@ -30,7 +29,6 @@
       color: $yellow;
       font-size: em(24);
       font-weight: 700;
-      letter-spacing: 1px;
       line-height: 1.15;
       margin: em(12,24) auto em(15,24) ;
     }
@@ -126,7 +124,7 @@
           top: em(4,25);
         }
         &:hover {
-          opacity: 1;          
+          opacity: 1;
           color: $yellow;
           &:after {
             left: 2px;
@@ -150,7 +148,7 @@
 //  Tablet
 @media all and (min-width: $tablet) {
   .events {
-    h2 {    
+    h2 {
       font-size: em(32);
       margin: 0 auto em(36,32) ;
     }
@@ -181,15 +179,15 @@
 
 //  Large Tablet
 @media all and (min-width: $lg-tablet) {
-  .events {    
+  .events {
     .wrapper {
       background-image: url('../images/events/events3.jpg'); //quality @ 70
       padding: em(120) 0 em(90);
     }
-    .inner {    
+    .inner {
       max-width: 90%;
     }
-    h2 {    
+    h2 {
       font-size: em(36);
       margin: 0 auto em(36,36) ;
     }
@@ -221,7 +219,7 @@
         padding-bottom: em(32);
       }
     }
-    
+
     .event.one-column, .book.one-column {
       width: 50%;
       margin-left: 25%;
@@ -260,12 +258,12 @@
       display: block;
       overflow: auto;
       padding: em(150) 0 em(140);
-    }    
-    .inner {    
+    }
+    .inner {
       max-width: 90%;
       width: em(1360);
     }
-    h2 {    
+    h2 {
       font-size: em(48);
       margin: 0 auto em(72,48) ;
     }
@@ -307,7 +305,6 @@
       .book-body {
         p,a {
           font-size: em(22);
-          letter-spacing: em(0.5);
           line-height: 1.5;
         }
         a {

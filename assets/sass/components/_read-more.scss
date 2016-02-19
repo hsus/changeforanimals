@@ -10,7 +10,9 @@
     }
     .pre:before,
     .post:after {
-      content: " . . . ";
+      content: "...";
+      letter-spacing: 3px;
+      padding-left: 3px;
     }
     .period:after {
       content: ".";
