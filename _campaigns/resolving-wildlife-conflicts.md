@@ -18,10 +18,10 @@ description: |
   Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to managing wildlife. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative immunocontraception research projects in partnership with leading veterinary medicine schools. And we’re working internationally to end the cruel trade in wildlife parts and to end the trophy hunting of specific animals.
 
 header:
-  - background: /assets/images/headers/header-wildlife1.jpg
-    mobile-background: /assets/images/headers/mobile-header-wildlife1.jpg
+  - background: /assets/images/headers/header-wildlife-lion.jpg
+    mobile-background: /assets/images/headers/mobile-header-wildlife-lion.jpg
 
-image: "/assets/images/campaigns/campaign-wildlife1.jpg"
+image: "/assets/images/campaigns/campaign-wildlife-lion.jpg"
 icon: "/assets/images/icons/icon-wildlife.svg"
 caption: "In the U.S. and internationally, we’re well placed to encourage humane solutions to wildlife conflicts and to discourage the trade in animal parts."
 
@@ -47,7 +47,7 @@ celebs:
     name: James Cromwell
     title: Actor, <em>Babe</em>
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/cTDTAQB2wIE?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch James's Video"
+    video-cta: "Watch James’s Video"
     on-homepage: true
     quote: "The Humane Society of the United States is leading the charge in the way we manage wildlife through innovative non-lethal techniques that are humane, effective and provide sustainable solutions for our communities nationwide."
 

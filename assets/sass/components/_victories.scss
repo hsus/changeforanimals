@@ -5,7 +5,7 @@
   text-align: center;
   .wrapper {
     background: transparent url('../images/victories/mobile-victories4.jpg') no-repeat top center; //quality @ 70
-    background-size: cover;    
+    background-size: cover;
     max-width: 100%;
     margin: 0 auto;
     padding: 4%;
@@ -20,7 +20,6 @@
     color: $blue;
     font-size: em(26);
     font-weight: 400;
-    letter-spacing: 1px;
     margin-bottom: em(24,26);
     em {
       color: $bright-blue;
@@ -30,7 +29,6 @@
       font-size: em(36,26);
       font-style: normal;
       left: -3px;
-      letter-spacing: -0.05em;
       position: relative;
       &::first-letter {
         letter-spacing: -10px;
@@ -41,20 +39,17 @@
     color: $bright-blue;
     font-size: em(32);
     font-weight: 700;
-    letter-spacing: 1px;
     line-height: 0.6;
     margin-bottom: em(20,32);
     small {
       font-size: em(16,32);
       font-weight: 400;
-      letter-spacing: 0;
     }
   }
   p {
     color: $blue;
     font-size: em(14);
     font-weight: 200;
-    letter-spacing: 1px;
     margin-top: em(8,14);
   }
 }
@@ -123,7 +118,6 @@
       margin-bottom: em(24,48);
       em {
         font-size: em(60,48);
-        letter-spacing: -0.05em;
         &::first-letter {
           letter-spacing: -15px;
         }

@@ -18,10 +18,10 @@ description: |
   About 120 countries do not prohibit dogfighting, and a fifth of the world’s nations lack even a basic anti-cruelty statute. Many notorious U.S. dogfighting kingpins and kennels sell dogs internationally for fights in other countries. Building on our success at making dogfighting and malicious cruelty to animals a felony in all 50 states, we’ll export this successful approach internationally.
 
 header:
-  - background: /assets/images/headers/header-cruelty2.jpg
-    mobile-background: /assets/images/headers/mobile-header-cruelty2.jpg
+  - background: /assets/images/headers/header-cruelty-dog.jpg
+    mobile-background: /assets/images/headers/mobile-header-cruelty-dog.jpg
 
-image: "/assets/images/campaigns/campaign-cruelty2.jpg"
+image: "/assets/images/campaigns/campaign-cruelty-dog.jpg"
 icon: "/assets/images/icons/icon-cruelty.svg"
 caption: "Building on our success in the U.S., we’re ready to tackle dogfighting around the world by expanding our reach internationally."
 
@@ -44,7 +44,7 @@ celebs:
     name: Ian Somerhalder
     title: Actor, <em>Vampire Diaries</em>
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/v57boTG4HEk?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch Ian's Video"
+    video-cta: "Watch Ian’s Video"
     on-homepage: true
     quote: "Protecting animals from the worst forms of cruelty is part of a civil society, and it’s time for every nation in the world to have that. You...can make it a reality."
 

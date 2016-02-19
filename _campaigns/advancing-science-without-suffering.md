@@ -18,17 +18,17 @@ description: |
   Each year in laboratories around the world, millions of animals suffer and die in cruel chemical-poisoning tests for products we use every day, despite growing recognition of flaws inherent in such tests. We’re spearheading a global campaign to ban animal testing for cosmetics and to replace 1940s-era tests on rats, rabbits and dogs with superior modern alternatives based on 21st century science.
 
 header:
-  - background: /assets/images/headers/header-science1.jpg
-    mobile-background: /assets/images/headers/mobile-header-science1.jpg
+  - background: /assets/images/headers/header-science-mouse.jpg
+    mobile-background: /assets/images/headers/mobile-header-science-mouse.jpg
 
-image: "/assets/images/campaigns/campaign-science1.jpg"
+image: "/assets/images/campaigns/campaign-science-mouse.jpg"
 icon: "/assets/images/icons/icon-chimp.svg"
 caption: "It’s time to end the use of animals in cosmetic and toxicity tests. By promoting new alternatives and banning animal testing, we can save animals from torturous lives in labs."
 
 
 goal_layout:
-  - background: /assets/images/goals/goals-science1.jpg
-    mobile-background: /assets/images/goals/mobile-goals-science1.jpg
+  - background: /assets/images/goals/goals-science-rabbit.jpg
+    mobile-background: /assets/images/goals/mobile-goals-science-rabbit.jpg
 
 goals:
   - <em>Ban cosmetics animal testing</em> and trade in the world’s largest markets, including the U.S., and make progress toward ending mandatory animal testing for cosmetics in China.
@@ -56,7 +56,7 @@ celebs:
     name: Wayne Pacelle
     title: President and CEO, The Humane Society of the United States
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/GDUO1DzWvDo?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch Wayne's Video"
+    video-cta: "Watch Wayne’s Video"
     on-homepage: false
     quote: "Rabbits, guinea pigs, mice and rats are all routinely used in tests designed to determine the degree to which a substance can harm them. The tests are unreliable and the actual consumer protections are overstated."
 

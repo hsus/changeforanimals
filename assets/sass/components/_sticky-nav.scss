@@ -111,7 +111,6 @@
       display: inline-block;
       text-decoration: none;
       color: $white;
-      letter-spacing: 1px;
       padding: em(30,14) em(7,14) em(22,14) em(7,14);
       @include default-transition;
       &:hover,

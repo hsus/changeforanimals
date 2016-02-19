@@ -16,14 +16,12 @@
       color: $blue;
       font-size: em(26);
       font-weight: 700;
-      letter-spacing: em(2,26);
       margin-top: em(12,26);
     }
     h3 {
       color: $blue;
       font-size: em(18);
       font-weight: 200;
-      letter-spacing: 1px;
       em {
         color: $light-blue;
         font-style: normal;
@@ -53,14 +51,11 @@
     overflow: hidden;
     h3 {
       font-weight: 200;
-      letter-spacing: em(1,15);
     }
     p,ul {
       font-weight: 200;
-      letter-spacing: em(1,15);
     }
     .list-top {
-      letter-spacing: 1px;
       font-weight: 700;
     }
   }
@@ -74,6 +69,7 @@
       @include default-transition;
       color: $blue;
       text-decoration: none;
+      text-transform: uppercase;
       padding-top: em(5);
       position: relative;
       &:after {
@@ -86,7 +82,7 @@
         height: 0;
         margin: 0;
         position: absolute;
-        width: 0;        
+        width: 0;
         left: em(38,20);
         top: em(35,20);
       }
@@ -120,12 +116,14 @@
       text-align: center;
       p {
         font-size: em(15);
-        letter-spacing: em(3,15);
       }
       h2 {
         font-size: em(28);
-        letter-spacing: em(3,28);
         margin-top: em(12,28);
+      }
+      h3 {
+        margin: 0 auto em(52,24);
+        max-width: 75%;
       }
     }
     .pic {
@@ -144,7 +142,7 @@
       }
     }
     .body {
-      margin-top: em(28);      
+      margin-top: em(28);
       font-size: em(15);
     }
   }
@@ -163,11 +161,9 @@
       text-align: center;
       p {
         font-size: em(16);
-        letter-spacing: em(3,16);
       }
       h2 {
         font-size: em(34);
-        letter-spacing: em(3,34);
         margin-top: em(12,34);
       }
     }
@@ -194,17 +190,13 @@
     }
     .letter-top {
       text-align: center;
-      letter-spacing: 0.03em;
       h2 {
         font-size: em(48);
-        letter-spacing: em(2,48);
         margin-top: em(12,48);
       }
       h3 {
         font-size: em(24);
         line-height: 2.2rem;
-        margin: 0 auto em(52,24);
-        max-width: 75%;
       }
     }
     .pic {
@@ -218,11 +210,10 @@
       margin-top: em(42,24);
       font-size: em(24);
       line-height: 2.2rem;
-      letter-spacing: 0.03em;
     }
     .more-button {
       margin-left: em(36,26);
+      font-size: em(13);
     }
   }
 }
-

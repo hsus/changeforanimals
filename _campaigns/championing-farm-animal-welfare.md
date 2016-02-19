@@ -18,10 +18,10 @@ description: |
   Farm animals like chickens and pigs are smart individuals who have personalities, and they want to avoid suffering. Yet these sensitive, intelligent animals are often abused on factory farms in ways that would be illegal if the victims were dogs and cats. But The HSUS and HSI are making transformational changes in how we farm and eat by implementing animal welfare policies at major food buyers, passing laws to prohibit the worst cruelties and helping school systems use less meat.
 
 header:
-  - background: /assets/images/headers/header-farm1.jpg
-    mobile-background: /assets/images/headers/mobile-header-farm1.jpg
+  - background: /assets/images/headers/header-farm-pig.jpg
+    mobile-background: /assets/images/headers/mobile-header-farm-pig.jpg
 
-image: "/assets/images/campaigns/campaign-farm1.jpg"
+image: "/assets/images/campaigns/campaign-farm-pig.jpg"
 icon: "/assets/images/icons/icon-cow.svg"
 caption: "Billions of animals stand to benefit when we encourage meat reduction and work to move animals out of extreme confinement."
 
@@ -44,7 +44,7 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-farm1.jpg
     image: "/assets/images/celebs/kate-mara1.jpg"
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/pvtoimAyCog?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch Kate's Video"
+    video-cta: "Watch Kate’s Video"
     on-homepage: true
     name: "Kate Mara"
     title: "Actor, <em>The Martian</em>"
@@ -55,11 +55,11 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-farm2.jpg
     image: "/assets/images/celebs/john-salley1.jpg"
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/lNqovPh1cxg?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch John's Video"
+    video-cta: "Watch John’s Video"
     on-homepage: true
     name: "John Salley"
     title: "Retired NBA Basketball Player"
-    quote: "All animals deserve protection from cruelty. It's time they had a voice."
+    quote: "All animals deserve protection from cruelty. It’s time they had a voice."
 
 
 donor_story:
