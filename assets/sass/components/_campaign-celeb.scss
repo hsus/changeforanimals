@@ -17,7 +17,6 @@
   h3 {
     color: $white;
     font-size: em(28);
-    letter-spacing: 1px;
     margin-bottom: em(2,28);
   }
   .title {
@@ -27,7 +26,6 @@
   blockquote {
     font-size: em(16);
     font-weight: 200;
-    letter-spacing: 1px;
     line-height: 1.4;
     margin: em(32,16) 0 em(24,16) 0;
     span {
@@ -228,4 +226,3 @@
     }
   }
 }
-

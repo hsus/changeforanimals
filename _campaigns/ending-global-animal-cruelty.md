@@ -44,7 +44,7 @@ celebs:
     name: Ian Somerhalder
     title: Actor, <em>Vampire Diaries</em>
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/v57boTG4HEk?rel=0" frameborder="0" allowfullscreen></iframe>'
-    video-cta: "Watch Ian's Video"
+    video-cta: "Watch Ian’s Video"
     on-homepage: true
     quote: "Protecting animals from the worst forms of cruelty is part of a civil society, and it’s time for every nation in the world to have that. You...can make it a reality."
 

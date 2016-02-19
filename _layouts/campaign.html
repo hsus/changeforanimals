@@ -10,7 +10,7 @@ layout: default
           .campaign header { background-image: url('{{ header.background }}'); }
           }
         </style>
-        {% endfor %}        
+        {% endfor %}
         <header class="campaign-header">
           <div class="gradient">&nbsp;</div>
           <div class="wrapper">
@@ -37,7 +37,7 @@ layout: default
         {% endfor %}
         <section class="goals" id="goals">
           <div class="wrapper">
-            <h2>How We'll Create Change</h2>
+            <h2>How We’ll Create Change</h2>
             {% for goal in page.goals %}
               <div class="goal">{{ goal }}</div>
             {% endfor %}
@@ -45,7 +45,7 @@ layout: default
         </section>
 
         {% for celeb in page.celebs %}
-        
+
         <section class="celeb {{ celeb.class }}" id="video">
           <div class="wrapper">
             <style>
