@@ -21,7 +21,7 @@ header:
   - background: /assets/images/headers/header-farm1.jpg
     mobile-background: /assets/images/headers/mobile-header-farm1.jpg
 
-image: "/assets/images/campaigns/campaign-farm1.jpg"
+image: "/assets/images/campaigns/campaign-farm-pig.jpg"
 icon: "/assets/images/icons/icon-cow.svg"
 caption: "Billions of animals stand to benefit when we encourage meat reduction and work to move animals out of extreme confinement."
 
