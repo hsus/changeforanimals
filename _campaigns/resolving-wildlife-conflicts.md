@@ -7,15 +7,15 @@ campaign-layout: three-up
 order: 3
 # END LAYOUT DATA
 
-permalink: resolving-wildlife-conflicts/
+permalink: protecting-wildlife-and-solving-conflicts/
 
 financial_tagline:
   amount: $8.2 MILLION
   text: Leads the Way
 
-title: Resolving Wildlife Conflicts
+title: Protecting Wildlife and Solving Conflicts
 description: |
-  Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to managing wildlife. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative immunocontraception research projects in partnership with leading veterinary medicine schools. And we’re working internationally to end the cruel trade in wildlife parts and to end the trophy hunting of specific animals.
+  Wild animals have suffered too much, for too long, because of outdated, destructive and lethal “solutions” to managing wildlife. We need humane, science-based approaches to co-existing with our wild neighbors. We’re on the forefront of this research, carrying out innovative immunocontraception research projects in partnership with leading veterinary medicine schools. And we’re working internationally and in the U.S. to end the cruel trade in wildlife parts and to end the trophy hunting of specific animals.
 
 header:
   - background: /assets/images/headers/header-wildlife-lion.jpg
@@ -23,7 +23,7 @@ header:
 
 image: "/assets/images/campaigns/campaign-wildlife-lion.jpg"
 icon: "/assets/images/icons/icon-wildlife.svg"
-caption: "In the U.S. and internationally, we’re well placed to encourage humane solutions to wildlife conflicts and to discourage the trade in animal parts."
+caption: "We’ve drastically reduced trophy hunting of lions, and we’re doing the same for elephants, leopards and other species."
 
 goal_layout:
   - background: /assets/images/goals/goals-wildlife1.jpg
@@ -45,7 +45,7 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-wildlife1.jpg
     image: "/assets/images/celebs/james-cromwell1.jpg"
     name: James Cromwell
-    title: Actor, <em>Babe</em>
+    title: Actor
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/cTDTAQB2wIE?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch James’s Video"
     on-homepage: true

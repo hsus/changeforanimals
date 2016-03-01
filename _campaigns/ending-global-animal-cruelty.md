@@ -32,7 +32,7 @@ goal_layout:
 goals:
   - <em>Expand our network</em> of offices and representatives into 20 new countries with the gravest cruelty problems and the best opportunities to solve those problems.
 
-  - <em>Build local capacity</em> to support law enforcement in order to ban dogfighting in 10 countries and reduce dogfighting by 15 percent in Costa Rica, the Philippines, Puerto Rico and South Africa, as measured by raids, arrests and dogfighting rings dismantled.
+  - Build local capacity to support law enforcement in order to <em>ensure animal cruelty laws are enforced,</em> ban dogfighting in 10 countries and reduce dogfighting by 15 percent in Costa Rica, the Philippines, Puerto Rico and South Africa, as measured by raids, arrests and dogfighting rings dismantled.
 
   - Dismantle 30 of the largest organized <em>dogfighting networks</em> in the United States.
 
@@ -42,7 +42,7 @@ celebs:
     mobile-background: /assets/images/celebs/mobile-celeb-cruelty1.jpg
     image: /assets/images/celebs/ian-somerhalder1.jpg
     name: Ian Somerhalder
-    title: Actor, <em>Vampire Diaries</em>
+    title: Actor
     video: '<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/v57boTG4HEk?rel=0" frameborder="0" allowfullscreen></iframe>'
     video-cta: "Watch Ian’s Video"
     on-homepage: true
