@@ -7,13 +7,13 @@ campaign-layout: two-up second
 order: 2
 # END LAYOUT DATA
 
-permalink: championing-farm-animal-welfare/
+permalink: championing-farm-animal-protection/
 
 financial_tagline:
   amount: $16.3 MILLION
   text: Escalates the Fight
 
-title: Championing Farm Animal Welfare
+title: Championing Farm Animal Protection
 description: |
   Farm animals like chickens and pigs are smart individuals who have personalities, and they want to avoid suffering. Yet these sensitive, intelligent animals are often abused on factory farms in ways that would be illegal if the victims were dogs and cats. But The HSUS and HSI are making transformational changes in how we farm and eat by implementing animal welfare policies at major food buyers, passing laws to prohibit the worst cruelties and helping school systems use less meat.
 
@@ -47,7 +47,7 @@ celebs:
     video-cta: "Watch Kate’s Video"
     on-homepage: true
     name: "Kate Mara"
-    title: "Actor, <em>The Martian</em>"
+    title: "Actor"
     quote: "The HSUS’s farm animal protection campaign epitomizes effectiveness. They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals and people alike."
 
   - class: celeb2

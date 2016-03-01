@@ -6,7 +6,7 @@ $(document).ready(function() {
       || (navigator.msMaxTouchPoints > 0));
   }
 
-  if (is_touch_device()) { 
+  if (is_touch_device()) {
     $('.victory-after,.campaign header,.events-after,.index header').css('background-attachment','scroll');
   };
 
@@ -71,8 +71,8 @@ $(document).ready(function() {
           el.find('.overlay').css('transform','translateY(100%)')
              .end().find('> h3').css('opacity','1');
         }
-      });      
-    } 
+      });
+    }
 
     $('.donor').each(function() {
       var el = $(this),
@@ -95,7 +95,7 @@ $(document).ready(function() {
           thisBottom = thisTop + previewHeight;
       if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .about').addClass('active');
-      } else {        
+      } else {
         $('#menu .about').removeClass('active');
       }
     });
@@ -107,7 +107,7 @@ $(document).ready(function() {
           thisBottom = thisTop + previewHeight;
       if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .program-areas').addClass('active');
-      } else {        
+      } else {
         $('#menu .program-areas').removeClass('active');
       }
     });
@@ -119,7 +119,7 @@ $(document).ready(function() {
           thisBottom = thisTop + previewHeight;
       if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .supporters').addClass('active');
-      } else {        
+      } else {
         $('#menu .supporters').removeClass('active');
       }
     });
@@ -131,7 +131,7 @@ $(document).ready(function() {
           thisBottom = thisTop + previewHeight;
       if ( thisTop < 75 && thisBottom > 50 ) {
         $('#menu .get-involved').addClass('active');
-      } else {        
+      } else {
         $('#menu .get-involved').removeClass('active');
       }
     });
@@ -143,7 +143,7 @@ $(document).ready(function() {
           thisBottom = thisTop + previewHeight;
       if ( thisTop < 90 && thisBottom > 50 ) {
         $('#menu .about').addClass('active');
-      } else {        
+      } else {
         $('#menu .about').removeClass('active');
       }
     });
@@ -182,7 +182,9 @@ $(document).ready(function() {
 
       $('html, body').animate( {
           'scrollTop': $target.offset().top-introTop
-      }, 700, 'swing');
+      }, 700, 'swing', function () {
+          window.location.hash = target;
+      });
   });
 
   // Scroll to hash - President
@@ -193,9 +195,10 @@ $(document).ready(function() {
 
       $('html, body').animate( {
           'scrollTop': $target.offset().top-100
-      }, 700, 'swing');
+      }, 700, 'swing', function () {
+          window.location.hash = target;
+      });
   });
-
 
   // Top of page
   $('.index .logo-sm').bind('click.smoothscroll',function (e) {
@@ -204,6 +207,7 @@ $(document).ready(function() {
       $('html, body').stop().animate({'scrollTop': 0}, 700, 'swing');
       $('.mobile-menu-icon').removeClass('active');
       $('#mobile-menu').fadeOut();
+      window.location.hash = "";
   });
 
   // Find images of class 'svg' and embed code directly.
@@ -233,7 +237,7 @@ $(document).ready(function() {
       .find('.youtubewrap').fadeToggle(600,"linear");
   });
 
-  // Celeb Wall 
+  // Celeb Wall
   $('.celeb .single').first().addClass('active').find('.hide').show();
   $('.headshot').click(function() {
     var el = $(this),

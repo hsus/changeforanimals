@@ -15,7 +15,7 @@ financial_tagline:
 
 title: "Helping Pets in Poverty"
 description: |
-  We’ve made great strides in providing services to underserved communities, stopping puppy mills, fighting for retail sales restrictions and working globally to manage street dogs humanely. Yet U.S. shelters still euthanize 2.8 million animals per year, some communities have shockingly low spay and neuter rates, and large-scale commercial dog breeders produce 2 million puppies annually, displacing shelter pets. Worldwide, 250–300 million dogs live on the street.
+  We’ve made great strides in providing services to underserved communities, stopping puppy mills, fighting for retail sales restrictions of puppies, kittens and bunnies and working globally to manage street dogs humanely. Yet U.S. shelters still euthanize 2.8 million animals per year, some communities have shockingly low spay and neuter rates, and large-scale commercial dog breeders produce 2 million puppies annually, displacing shelter pets. Worldwide, 250–300 million dogs live on the street.
 
 header:
   - background: /assets/images/headers/header-poverty1.jpg
