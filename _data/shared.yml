@@ -1,11 +1,11 @@
-hsus-url: "//www.humanesociety.org/?credit=web_phil_changinglives"
+hsus-url: "//www.humanesociety.org/?credit=web_phil_changeforanimals"
 
 event-outro:
-  url: "https://secure.humanesociety.org/site/SPageServer?pagename=humane_startswithyou&s_src=web_phil_changinglives"
+  url: "https://secure.humanesociety.org/site/SPageServer?pagename=humane_startswithyou&s_src=web_phil_changeforanimals"
   link-text: "Attend an Event"
 
 donate-outro:
-  url: "https://secure.humanesociety.org/site/Donation2?df_id=17520&17520.donation=form1&s_src=web_phil_changinglives"
+  url: "https://secure.humanesociety.org/site/Donation2?df_id=17520&17520.donation=form1&s_src=web_phil_changeforanimals"
   link-text: "Invest in Our Work"
 
 logos:
@@ -20,9 +20,9 @@ logos:
     alt: "Humane Society International"
 
 
-tagline: "a humane society<br/>starts with you"
+tagline: "transformational<br/>change for animals<br/>starts with you"
 
-footer-tagline: "Creating transformational change for all animals"
+footer-tagline: "Transformational change for animals"
 
 social-links:
   - channel: "facebook"
@@ -59,7 +59,7 @@ social-links:
 
 privacy:
   title: "Privacy Policy"
-  url: "http://www.humanesociety.org/privacy.html?credit=web_phil_changinglives"
+  url: "http://www.humanesociety.org/privacy.html?credit=web_phil_changeforanimals"
 
 contact:
   title: "Contact Us"
