@@ -1683,13 +1683,13 @@ footer {
   .index header .logo {
     margin: 11.25em auto 1.5em; }
   .index header .tagline {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0 auto 2.8125em; } }
 @media all and (min-width: 45em) {
   .index header {
     background-image: url("../images/headers/header2.jpg"); }
     .index header .tagline {
-      font-size: 5.25em;
+      font-size: 4em;
       margin: 0 auto 2.85714em; } }
 .intro {
   background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
