@@ -6,7 +6,8 @@ s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 
 # Amazon s3 bucket name.
-s3_bucket: production.changinglives.humanesociety.org
+#s3_bucket: production.changinglives.humanesociety.org
+s3_bucket: production.changeforanimals.humanesociety.org
 
 # Cloudfront settings
 cloudfront_distribution_id: E1XYTMSM5HGUOM
