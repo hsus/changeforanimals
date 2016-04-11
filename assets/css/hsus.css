@@ -776,7 +776,7 @@ ul {
     .campaign-previews h2.title em {
       color: #3e7fb7;
       display: inline-block;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 1.22222em;
       font-style: normal;
       left: -1px;
@@ -1196,7 +1196,7 @@ ul {
     margin: 2em auto 1em;
     max-width: 90%; }
     .donors h2 em {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 1.33333em;
       font-style: normal; }
   .donors .donor {
@@ -1212,7 +1212,7 @@ ul {
       text-decoration: none; }
     .donors .donor .prompt {
       color: #cccccc;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 0.77778em;
       opacity: 0;
       -webkit-transition: all 0.3s linear;
@@ -1525,7 +1525,7 @@ footer {
     max-width: 5.625em; }
   footer .tagline {
     color: #c1d1df;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-family: "Frutiger W01", "Brush Script MT", cursive;
     font-size: 1.5em;
     margin-top: 2em; }
   footer .social {
@@ -1672,7 +1672,7 @@ footer {
       max-width: 60%; }
   .index header .tagline {
     display: block;
-    font-family: "MyWriteHand";
+    font-family: "Frutiger W01";
     font-size: 2.25em;
     font-style: normal;
     font-weight: normal;
@@ -1707,7 +1707,7 @@ footer {
     max-width: 90%; }
   .intro span i {
     color: #FBCB43;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-family: "Frutiger W01", "Brush Script MT", cursive;
     font-size: 1.33333em;
     font-style: normal;
     line-height: 1; }
@@ -1770,7 +1770,7 @@ footer {
       max-width: 65%; }
     .intro span i {
       color: #FBCB43;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 1.45455em;
       font-style: normal;
       line-height: 1; }
@@ -1860,7 +1860,7 @@ footer {
       font-size: 1.0625em;
       line-height: 1.4; }
     .outro h3 {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 1.625em;
       padding: 0.61538em 0 1.23077em; }
     .outro .action h4 {
@@ -1884,7 +1884,7 @@ footer {
       font-size: 1.125em;
       line-height: 1.4; }
     .outro h3 {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 2em;
       padding: 0.5em 0 1em; }
     .outro .actions {
@@ -1913,7 +1913,7 @@ footer {
       font-size: 1.625em;
       line-height: 1.6; }
     .outro h3 {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 3em;
       padding: 0; }
     .outro .actions {
@@ -1950,7 +1950,7 @@ footer {
       .president .letter-top h3 em {
         color: #739abc;
         font-style: normal;
-        font-family: "MyWriteHand", "Brush Script MT", cursive;
+        font-family: "Frutiger W01", "Brush Script MT", cursive;
         font-size: 1.33333em; }
   .president .pic {
     text-align: center; }
@@ -2259,7 +2259,7 @@ footer {
       color: #3e7fb7;
       display: inline-block;
       display: -moz-inline-stack;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: "Frutiger W01", "Brush Script MT", cursive;
       font-size: 1.38462em;
       font-style: normal;
       left: -3px;
