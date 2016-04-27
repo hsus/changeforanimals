@@ -30,13 +30,13 @@ goal_layout:
     mobile-background: /assets/images/goals/mobile-goals-farm1.jpg
 
 goals:
-  - Pass <em>two major anti-extreme-confinement</em> initiatives and work with U.S. farmers and retailers to move a billion animals to higher welfare standards.
+  - Pass <em>two major anti-extreme-confinement</em> initiatives and work with U.S. farmers and retailers to move 100 million animals to higher welfare standards.
 
   - <em>Launch Meatless Monday in five Asian cities</em> and persuade five multinational corporations to make Asian operations cage-free.
 
   - Work through the finance sector to <em>move 100 million animals out of extreme confinement</em> in emerging economies and stem the introduction of such systems in Sub-Saharan Africa.
 
-  - Implement <em>meat-reduction policies</em> at hundreds of institutions across the U.S., such as school districts, hospital chains, corporate cafeterias and more.
+  - Work with the top global financial institutions to help producers in emerging economies transition away from extreme confinement systems.
 
 celebs:
   - class: celeb1
@@ -48,7 +48,7 @@ celebs:
     on-homepage: true
     name: "Kate Mara"
     title: "Actor"
-    quote: "The HSUS’s farm animal protection campaign epitomizes effectiveness. They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals and people alike."
+    quote: "The HSUS’ farm animal protection campaign epitomizes effectiveness. They’re combating factory farming, slashing demand for meat, and are building a better world for all of us, animals and people alike."
 
   - class: celeb2
     background: /assets/images/celebs/celeb-farm2.jpg
