@@ -21,9 +21,6 @@
       font-style: normal;
       left: -1px;
       position: relative;
-      &::first-letter {
-        letter-spacing: -10px;
-      }
     }
   }
   .preview {
@@ -101,9 +98,6 @@
       margin: 0 auto em(-32,20);
       em {
         font-size: em(28,20);
-        &::first-letter {
-          letter-spacing: -10px;
-        }
       }
       &:after {
         @include transition(all 0.3s cubic-bezier(0.4, 0, 0.2, 1));
@@ -165,9 +159,6 @@
       margin: 0 auto em(-32,26);
       em {
         font-size: em(34,26);
-        &::first-letter {
-          letter-spacing: -10px;
-        }
       }
       &:after {
         margin: em(10,26) auto 0;
