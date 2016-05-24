@@ -679,7 +679,8 @@ ul {
     font-size: 2em;
     margin-bottom: 0.875em;
     margin-top: 0.75em;
-    max-width: 100%; }
+    max-width: 100%;
+    font-family: minion-pro, serif; }
   .campaign header .description {
     font-size: 1em;
     line-height: 1.5;
@@ -772,7 +773,8 @@ ul {
     max-width: 96%;
     position: relative;
     text-align: center;
-    z-index: 100; }
+    z-index: 100;
+    font-family: minion-pro, serif; }
     .campaign-previews h2.title em {
       color: #3e7fb7;
       display: inline-block;
@@ -1071,7 +1073,8 @@ ul {
   .index .celeb h2 {
     color: #c1d1df;
     font-size: 1.25em;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: minion-pro, serif; }
   .index .celeb .single {
     margin-bottom: 1em; }
     .index .celeb .single .headshots .headshot {
@@ -1280,6 +1283,7 @@ ul {
     width: 90%; }
   .events h2 {
     color: #fff;
+    font-family: minion-pro, serif;
     font-size: 1.75em;
     font-weight: 700;
     line-height: 1.15;
@@ -1660,31 +1664,31 @@ footer {
   width: 100%; }
   .index header .logo {
     display: block;
-    margin: 7.5em auto 1em; }
+    margin: 7.5em auto 2em; }
     .index header .logo img {
       height: auto;
       max-width: 60%; }
   .index header .tagline {
     display: block;
     font-family: "Frutiger W01";
-    font-size: 2.25em;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: normal;
     line-height: 1.1;
-    margin: 0 auto 3.33333em; }
+    margin: 0 auto 5em; }
 
 @media all and (min-width: 36.25em) {
   .index header .logo {
-    margin: 11.25em auto 1.5em; }
+    margin: 11.25em auto 3em; }
   .index header .tagline {
-    font-size: 3em;
-    margin: 0 auto 2.8125em; } }
+    font-size: 2.75em;
+    margin: 0 auto 4.09091em; } }
 @media all and (min-width: 45em) {
   .index header {
     background-image: url("../images/headers/header2.jpg"); }
     .index header .tagline {
-      font-size: 4em;
-      margin: 0 auto 2.85714em; } }
+      font-size: 3.5em;
+      margin: 0 auto 4.28571em; } }
 .intro {
   background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
   background-size: cover;
@@ -1701,7 +1705,7 @@ footer {
     max-width: 90%; }
   .intro span i {
     color: #FBCB43;
-    font-family: minion-pro, serif;
+    font-family: "Frutiger W01", sans-serif;
     font-size: 1.33333em;
     font-style: normal;
     line-height: 1; }
@@ -1764,7 +1768,7 @@ footer {
       max-width: 65%; }
     .intro span i {
       color: #FBCB43;
-      font-family: minion-pro, serif;
+      font-family: "Frutiger W01", sans-serif;
       font-size: 1.45455em;
       font-style: normal;
       line-height: 1; }
@@ -1933,6 +1937,7 @@ footer {
     text-align: center; }
     .president .letter-top h2 {
       color: #263f6a;
+      font-family: minion-pro, serif;
       font-size: 1.625em;
       font-weight: 700;
       margin-top: 0.46154em; }
@@ -1942,7 +1947,6 @@ footer {
       font-weight: 200;
       line-height: 1.8rem; }
       .president .letter-top h3 em {
-        color: #739abc;
         font-style: normal;
         font-family: minion-pro, serif;
         font-size: 1.33333em; }
@@ -2248,12 +2252,12 @@ footer {
     color: #263f6a;
     font-size: 1.625em;
     font-weight: 400;
-    margin-bottom: 0.92308em; }
+    margin-bottom: 0.92308em;
+    font-family: minion-pro, serif; }
     .victories h2 em {
       color: #3e7fb7;
       display: inline-block;
       display: -moz-inline-stack;
-      font-family: minion-pro, serif;
       font-size: 1.38462em;
       font-style: normal;
       left: -3px;
