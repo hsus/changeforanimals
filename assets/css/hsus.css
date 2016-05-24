@@ -642,7 +642,8 @@ ul {
   color: #fff;
   display: inline-block;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  /*dummy comment*/ }
   .campaign header .gradient {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
     height: 100%;
