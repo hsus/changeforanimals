@@ -21,11 +21,11 @@
     font-size: em(26);
     font-weight: 400;
     margin-bottom: em(24,26);
+    font-family: $secondary-font;
     em {
       color: $bright-blue;
       display: inline-block;
       display: -moz-inline-stack;
-      font-family: $secondary-font;
       font-size: em(36,26);
       font-style: normal;
       left: -3px;
