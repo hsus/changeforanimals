@@ -13,7 +13,7 @@
   width: 100%;
   .logo {
     display: block;
-    margin: em(120) auto em(16);
+    margin: em(120) auto em(48);
     img {
       height: auto;
       max-width: 60%;
@@ -21,12 +21,12 @@
   }
   .tagline {
     display: block;
-    font-family: "MyWriteHand";
-    font-size: em(36);
+    font-family: "Frutiger W01";
+    font-size: em(24);
     font-style: normal;
     font-weight: normal;
     line-height: 1.1;
-    margin: 0 auto em(120,36);
+    margin: 0 auto em(120,24);
   }
 }
 
@@ -35,11 +35,11 @@
 @media all and (min-width: $tablet) {
   .index header {
     .logo {
-      margin: em(180) auto em(24);
+      margin: em(180) auto em(64);
     }
     .tagline {
-      font-size: em(48);
-      margin: 0 auto em(180,64);
+      font-size: em(44);
+      margin: 0 auto em(180,44);
     }
   }
 }
@@ -49,8 +49,8 @@
   .index header {
     background-image: url('../images/headers/header2.jpg');
     .tagline {
-      font-size: em(64);
-      margin: 0 auto em(240,84);
+      font-size: em(56);
+      margin: 0 auto em(240,56);
     }
   }
 }

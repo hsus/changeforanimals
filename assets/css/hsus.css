@@ -642,7 +642,8 @@ ul {
   color: #fff;
   display: inline-block;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  /*dummy comment*/ }
   .campaign header .gradient {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
     height: 100%;
@@ -679,7 +680,8 @@ ul {
     font-size: 2em;
     margin-bottom: 0.875em;
     margin-top: 0.75em;
-    max-width: 100%; }
+    max-width: 100%;
+    font-family: minion-pro, serif; }
   .campaign header .description {
     font-size: 1em;
     line-height: 1.5;
@@ -772,17 +774,16 @@ ul {
     max-width: 96%;
     position: relative;
     text-align: center;
-    z-index: 100; }
+    z-index: 100;
+    font-family: minion-pro, serif; }
     .campaign-previews h2.title em {
       color: #3e7fb7;
       display: inline-block;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: minion-pro, serif;
       font-size: 1.22222em;
       font-style: normal;
       left: -1px;
       position: relative; }
-      .campaign-previews h2.title em::first-letter {
-        letter-spacing: -10px; }
   .campaign-previews .preview {
     background-size: cover;
     display: block;
@@ -846,8 +847,6 @@ ul {
     margin: 0 auto -1.6em; }
     .campaign-previews h2.title em {
       font-size: 1.4em; }
-      .campaign-previews h2.title em::first-letter {
-        letter-spacing: -10px; }
     .campaign-previews h2.title:after {
       -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -893,8 +892,6 @@ ul {
     margin: 0 auto -1.23077em; }
     .campaign-previews h2.title em {
       font-size: 1.30769em; }
-      .campaign-previews h2.title em::first-letter {
-        letter-spacing: -10px; }
     .campaign-previews h2.title:after {
       margin: 0.38462em auto 0; }
   .campaign-previews .preview {
@@ -1077,7 +1074,8 @@ ul {
   .index .celeb h2 {
     color: #c1d1df;
     font-size: 1.25em;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: minion-pro, serif; }
   .index .celeb .single {
     margin-bottom: 1em; }
     .index .celeb .single .headshots .headshot {
@@ -1196,7 +1194,7 @@ ul {
     margin: 2em auto 1em;
     max-width: 90%; }
     .donors h2 em {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: minion-pro, serif;
       font-size: 1.33333em;
       font-style: normal; }
   .donors .donor {
@@ -1212,7 +1210,7 @@ ul {
       text-decoration: none; }
     .donors .donor .prompt {
       color: #cccccc;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: minion-pro, serif;
       font-size: 0.77778em;
       opacity: 0;
       -webkit-transition: all 0.3s linear;
@@ -1286,6 +1284,7 @@ ul {
     width: 90%; }
   .events h2 {
     color: #fff;
+    font-family: minion-pro, serif;
     font-size: 1.75em;
     font-weight: 700;
     line-height: 1.15;
@@ -1525,7 +1524,7 @@ footer {
     max-width: 5.625em; }
   footer .tagline {
     color: #c1d1df;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
+    font-family: minion-pro, serif;
     font-size: 1.5em;
     margin-top: 2em; }
   footer .social {
@@ -1666,31 +1665,31 @@ footer {
   width: 100%; }
   .index header .logo {
     display: block;
-    margin: 7.5em auto 1em; }
+    margin: 7.5em auto 3em; }
     .index header .logo img {
       height: auto;
       max-width: 60%; }
   .index header .tagline {
     display: block;
-    font-family: "MyWriteHand";
-    font-size: 2.25em;
+    font-family: "Frutiger W01";
+    font-size: 1.5em;
     font-style: normal;
     font-weight: normal;
     line-height: 1.1;
-    margin: 0 auto 3.33333em; }
+    margin: 0 auto 5em; }
 
 @media all and (min-width: 36.25em) {
   .index header .logo {
-    margin: 11.25em auto 1.5em; }
+    margin: 11.25em auto 4em; }
   .index header .tagline {
-    font-size: 3em;
-    margin: 0 auto 2.8125em; } }
+    font-size: 2.75em;
+    margin: 0 auto 4.09091em; } }
 @media all and (min-width: 45em) {
   .index header {
     background-image: url("../images/headers/header2.jpg"); }
     .index header .tagline {
-      font-size: 4em;
-      margin: 0 auto 2.85714em; } }
+      font-size: 3.5em;
+      margin: 0 auto 4.28571em; } }
 .intro {
   background: transparent url("../images/intro/mobile-intro2.jpg") no-repeat top center;
   background-size: cover;
@@ -1707,8 +1706,7 @@ footer {
     max-width: 90%; }
   .intro span i {
     color: #FBCB43;
-    font-family: "MyWriteHand", "Brush Script MT", cursive;
-    font-size: 1.33333em;
+    font-family: "Frutiger W01", sans-serif;
     font-style: normal;
     line-height: 1; }
   .intro .more-button {
@@ -1770,8 +1768,7 @@ footer {
       max-width: 65%; }
     .intro span i {
       color: #FBCB43;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
-      font-size: 1.45455em;
+      font-family: "Frutiger W01", sans-serif;
       font-style: normal;
       line-height: 1; }
     .intro span.italic:after {
@@ -1860,7 +1857,7 @@ footer {
       font-size: 1.0625em;
       line-height: 1.4; }
     .outro h3 {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: minion-pro, serif;
       font-size: 1.625em;
       padding: 0.61538em 0 1.23077em; }
     .outro .action h4 {
@@ -1884,7 +1881,7 @@ footer {
       font-size: 1.125em;
       line-height: 1.4; }
     .outro h3 {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: minion-pro, serif;
       font-size: 2em;
       padding: 0.5em 0 1em; }
     .outro .actions {
@@ -1913,7 +1910,7 @@ footer {
       font-size: 1.625em;
       line-height: 1.6; }
     .outro h3 {
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
+      font-family: minion-pro, serif;
       font-size: 3em;
       padding: 0; }
     .outro .actions {
@@ -1939,6 +1936,7 @@ footer {
     text-align: center; }
     .president .letter-top h2 {
       color: #263f6a;
+      font-family: minion-pro, serif;
       font-size: 1.625em;
       font-weight: 700;
       margin-top: 0.46154em; }
@@ -1948,10 +1946,8 @@ footer {
       font-weight: 200;
       line-height: 1.8rem; }
       .president .letter-top h3 em {
-        color: #739abc;
         font-style: normal;
-        font-family: "MyWriteHand", "Brush Script MT", cursive;
-        font-size: 1.33333em; }
+        font-weight: 400; }
   .president .pic {
     text-align: center; }
     .president .pic .sig {
@@ -2254,18 +2250,16 @@ footer {
     color: #263f6a;
     font-size: 1.625em;
     font-weight: 400;
-    margin-bottom: 0.92308em; }
+    margin-bottom: 0.92308em;
+    font-family: minion-pro, serif; }
     .victories h2 em {
       color: #3e7fb7;
       display: inline-block;
       display: -moz-inline-stack;
-      font-family: "MyWriteHand", "Brush Script MT", cursive;
       font-size: 1.38462em;
       font-style: normal;
       left: -3px;
       position: relative; }
-      .victories h2 em::first-letter {
-        letter-spacing: -10px; }
   .victories h3 {
     color: #3e7fb7;
     font-size: 2em;
@@ -2330,8 +2324,6 @@ footer {
       margin-bottom: 0.5em; }
       .victories .wrapper h2 em {
         font-size: 1.25em; }
-        .victories .wrapper h2 em::first-letter {
-          letter-spacing: -15px; }
     .victories .wrapper h3 {
       font-size: 3.75em;
       margin-bottom: 0.37037em; }

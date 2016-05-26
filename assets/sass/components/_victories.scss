@@ -21,18 +21,15 @@
     font-size: em(26);
     font-weight: 400;
     margin-bottom: em(24,26);
+    font-family: $secondary-font;
     em {
       color: $bright-blue;
       display: inline-block;
       display: -moz-inline-stack;
-      font-family: $secondary-font;
       font-size: em(36,26);
       font-style: normal;
       left: -3px;
       position: relative;
-      &::first-letter {
-        letter-spacing: -10px;
-      }
     }
   }
   h3 {
@@ -118,9 +115,6 @@
       margin-bottom: em(24,48);
       em {
         font-size: em(60,48);
-        &::first-letter {
-          letter-spacing: -15px;
-        }
       }
     }
     h3 {
