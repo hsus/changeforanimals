@@ -1665,7 +1665,7 @@ footer {
   width: 100%; }
   .index header .logo {
     display: block;
-    margin: 7.5em auto 2em; }
+    margin: 7.5em auto 3em; }
     .index header .logo img {
       height: auto;
       max-width: 60%; }
@@ -1680,7 +1680,7 @@ footer {
 
 @media all and (min-width: 36.25em) {
   .index header .logo {
-    margin: 11.25em auto 3em; }
+    margin: 11.25em auto 4em; }
   .index header .tagline {
     font-size: 2.75em;
     margin: 0 auto 4.09091em; } }
@@ -1707,7 +1707,6 @@ footer {
   .intro span i {
     color: #FBCB43;
     font-family: "Frutiger W01", sans-serif;
-    font-size: 1.33333em;
     font-style: normal;
     line-height: 1; }
   .intro .more-button {
@@ -1770,7 +1769,6 @@ footer {
     .intro span i {
       color: #FBCB43;
       font-family: "Frutiger W01", sans-serif;
-      font-size: 1.45455em;
       font-style: normal;
       line-height: 1; }
     .intro span.italic:after {
@@ -1949,8 +1947,7 @@ footer {
       line-height: 1.8rem; }
       .president .letter-top h3 em {
         font-style: normal;
-        font-family: minion-pro, serif;
-        font-size: 1.33333em; }
+        font-weight: 400; }
   .president .pic {
     text-align: center; }
     .president .pic .sig {

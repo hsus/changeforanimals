@@ -13,7 +13,7 @@
   width: 100%;
   .logo {
     display: block;
-    margin: em(120) auto em(32);
+    margin: em(120) auto em(48);
     img {
       height: auto;
       max-width: 60%;
@@ -35,7 +35,7 @@
 @media all and (min-width: $tablet) {
   .index header {
     .logo {
-      margin: em(180) auto em(48);
+      margin: em(180) auto em(64);
     }
     .tagline {
       font-size: em(44);
